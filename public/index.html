@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>React App</title>
+  </head>
+
+  <body>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-37241853-1");
+      gtag("config", "AW-343334761");
+    </script>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+    <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "Organization",
+        "name": "Divya Jyoti Jagrati Sansthan",
+        "url": "https://www.djjs.org",
+        "logo": "https://www.djjs.org/images/djjs-logo.jpg",
+        "founder": "Shri Ashutosh Maharaj",
+        "foundingDate": "1991",
+        "sameAs": [
+          "http://www.youtube.com/djjsworld",
+          "http://www.facebook.com/djjsworld",
+          "http://twitter.com/djjsworld",
+          "https://www.instagram.com/djjsworld"
+        ],
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://www.djjs.org/search?q={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      }
+    </script>
+    <script>
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod
+            ? n.callMethod.apply(n, arguments)
+            : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = "2.0";
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(
+        window,
+        document,
+        "script",
+        "../connect.facebook.net/en_US/fbevents.js"
+      );
+      fbq("init", "1859821527551813");
+      fbq("track", "PageView");
+    </script>
+
+    <script>
+      jQuery(document).ready(function () {
+        jQuery(".lity-close").click(function (e) {
+          $.post("welcome/setmodalcookie");
+        });
+
+        jQuery("#modalimage").click(function (e) {
+          e.preventDefault();
+          $.post("welcome/setmodalcookie");
+          window.location.href = "webcast.html";
+        });
+      });
+    </script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        var width = $("#cover-carousel .carousel-item").width();
+        var additionalWidth = screen.width < 480 ? 200 : 0;
+        $(
+          "#cover-carousel .carousel-item, #cover-carousel .liquid-lp-media"
+        ).height((800 / 1200) * width + additionalWidth + "px");
+        $("ul.filter-list li[data-filter]").click(function () {
+          $(".ld-sf-spinner,.w-overlay").addClass("active");
+          $("ul.filter-list li").removeClass("active");
+          $(this).addClass("active");
+          var category = $(this).data("filter");
+          var moreurl =
+            category == "all"
+              ? window.location.origin + "/news/category/spiritual/"
+              : window.location.origin + "/news/category/social/" + category;
+          $("#latestcategory").load(
+            "https://www.djjs.org/news/loadcategorynews/" + category,
+            {},
+            function () {
+              $("#seeall").attr("href", moreurl);
+              $(".ld-sf-spinner,.w-overlay").removeClass("active");
+            }
+          );
+        });
+      });
+    </script>
+    <script src="../src/assets/vendors/jquery.min.js"></script>
+    <script src="../src/assets/js/theme-vendors.js"></script>
+    <script src="../src/assets/js/theme.min.js"></script>
+    <script src="../src/assets/js/custom.js"></script>
+
+    <script>
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod
+            ? n.callMethod.apply(n, arguments)
+            : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = "2.0";
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(
+        window,
+        document,
+        "script",
+        "../connect.facebook.net/en_US/fbevents.js"
+      );
+      fbq("init", "1859821527551813");
+      fbq("track", "PageView");
+    </script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-37241853-1");
+      gtag("config", "AW-343334761");
+    </script>
+    <script src="assets/vendors/jquery.min.js"></script>
+    <script src="assets/js/theme-vendors.js"></script>
+    <script src="assets/js/theme.min.js"></script>
+    <script src="scripts/menu.js"></script>
+    <script src="js/flickity-fade.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script>
+      jQuery(document).ready(function () {
+        //jQuery('#messagemodal').trigger('click');
+
+        jQuery(".lity-close").click(function (e) {
+          $.post("welcome/setmodalcookie");
+        });
+
+        jQuery("#modalimage").click(function (e) {
+          e.preventDefault();
+          $.post("welcome/setmodalcookie");
+          window.location.href = "webcast.html";
+        });
+      });
+    </script>
+    <script>
+      $(document).ready(function () {
+        if (screen.width > 480) {
+          var height = screen.width * 0.57 + "px";
+          //var height = screen.width * 0.33 + 'px'
+          $("#bg-cover").css({ height: height });
+        } else {
+          $("#bg-cover").addClass("fullheight");
+        }
+
+        $("#bg-cover").click(function (e) {
+          window.location = "webcast.html";
+        });
+
+        $("#home-subscribe").click(function (e) {
+          e.preventDefault();
+          var email = $("#home-email").val().trim();
+          var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
+          if (!email) {
+            $("#home-subscribe")
+              .parents("form")
+              .next(".ld_sf_response")
+              .html("Please Enter Your Email!");
+            return;
+          } else if (!emailReg.test(email)) {
+            $("#home-subscribe")
+              .parents("form")
+              .next(".ld_sf_response")
+              .html("Invalid email!");
+            return false;
+          }
+          $(this).parents("form").addClass("form-submitting");
+          $("#home-subscribe").parents("form").next(".ld_sf_response").html("");
+          $.post("news/subscribe.html", { email: email }, function (res) {
+            var result = JSON.parse(res);
+            $("#home-subscribe").parents("form").removeClass("form-submitting");
+
+            $("#home-subscribe")
+              .parents("form")
+              .next(".ld_sf_response")
+              .html(result.msg);
+
+            if (result.status == 1) $("#home-email").val("");
+            setTimeout(function () {
+              $("#home-subscribe")
+                .parents("form")
+                .next(".ld_sf_response")
+                .html("");
+            }, 5000);
+          });
+        });
+      });
+
+      $(document).ready(function () {
+        $("ul.filter-list li[data-filter]").click(function () {
+          $(".ld-sf-spinner,.w-overlay").addClass("active");
+          $("ul.filter-list li").removeClass("active");
+          $("ul.filter-list li a").removeClass("btn-solid");
+          $(this).addClass("active");
+          $(this).find("a").addClass("btn-solid");
+          var category = $(this).data("filter");
+          $("#loadinitiatives").load(
+            "https://www.djjs.org/initiatives/loadcategory/" + category,
+            {},
+            function () {
+              $(".ld-sf-spinner,.w-overlay").removeClass("active");
+              $("#seeallinitiatives").attr(
+                "href",
+                window.location.origin + "/initiatives/" + category
+              );
+            }
+          );
+        });
+      });
+    </script>
+    <script>
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod
+            ? n.callMethod.apply(n, arguments)
+            : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = "2.0";
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(
+        window,
+        document,
+        "script",
+        "../connect.facebook.net/en_US/fbevents.js"
+      );
+      fbq("init", "1859821527551813");
+      fbq("track", "PageView");
+    </script>
+
+    <script src="scripts/photoswipe/photoswipe.min.js"></script>
+
+    <script src="scripts/photoswipe/photoswipe-ui-default.min.js"></script>
+    <script>
+      jQuery(document).ready(function () {
+        //jQuery('#messagemodal').trigger('click');
+
+        jQuery(".lity-close").click(function (e) {
+          $.post("welcome/setmodalcookie");
+        });
+
+        jQuery("#modalimage").click(function (e) {
+          e.preventDefault();
+          $.post("welcome/setmodalcookie");
+          window.location.href = "webcast.html";
+        });
+      });
+    </script>
+    <script type="text/javascript">
+      var openPhotoSwipe = function (index) {
+        var pswpElement = document.querySelectorAll(".pswp")[0];
+        var items = [
+          {
+            src: "files/5c91bf64687482117088676.jpg",
+            w: 1200,
+            h: 800,
+          },
+
+          {
+            src: "files/5c91bf63c106c1222713213.jpg",
+            w: 1200,
+            h: 800,
+          },
+
+          {
+            src: "files/5c91bf63a62de56520909.jpg",
+            w: 1200,
+            h: 800,
+          },
+
+          {
+            src: "files/5c91bf6322682539512913.jpg",
+            w: 1200,
+            h: 800,
+          },
+
+          {
+            src: "files/5c91bf62d0e0b502554070.jpg",
+            w: 1200,
+            h: 800,
+          },
+
+          {
+            src: "files/5c91bf62a94a0872702225.jpg",
+            w: 1200,
+            h: 800,
+          },
+
+          {
+            src: "files/5c91bf6254131121013392.jpg",
+            w: 1200,
+            h: 800,
+          },
+
+          {
+            src: "files/5c91bf61b502e1792075216.jpg",
+            w: 1200,
+            h: 800,
+          },
+
+          {
+            src: "files/5c91bf61782f61672876587.jpg",
+            w: 1200,
+            h: 800,
+          },
+
+          {
+            src: "files/5c91bf6134cac142644504.jpg",
+            w: 1200,
+            h: 800,
+          },
+
+          {
+            src: "files/5c91bf60b4eac96134444.jpg",
+            w: 1200,
+            h: 800,
+          },
+
+          {
+            src: "files/5c91bf609ac7e363069424.jpg",
+            w: 1200,
+            h: 800,
+          },
+
+          {
+            src: "files/5c91bf5fd577b952057243.jpg",
+            w: 1200,
+            h: 800,
+          },
+
+          {
+            src: "files/5c91bf5e7826d400689149.jpg",
+            w: 1200,
+            h: 800,
+          },
+
+          {
+            src: "files/5c91bf5e4c3831790209194.jpg",
+            w: 1200,
+            h: 800,
+          },
+
+          {
+            src: "files/5c91bf5de059e1515538767.jpg",
+            w: 1200,
+            h: 800,
+          },
+
+          {
+            src: "files/5c91bf5d89cb71278729137.jpg",
+            w: 1200,
+            h: 800,
+          },
+
+          {
+            src: "files/5c91bf5d5557c23066155.jpg",
+            w: 1200,
+            h: 800,
+          },
+
+          {
+            src: "files/5c91bf5c2a45b773442582.jpg",
+            w: 1200,
+            h: 800,
+          },
+
+          {
+            src: "files/5c91bf5c1743d2077197017.jpg",
+            w: 1200,
+            h: 800,
+          },
+
+          {
+            src: "files/5c91bf5a2968f1164586618.jpg",
+            w: 1200,
+            h: 800,
+          },
+
+          {
+            src: "files/5c91bf579905740211437.jpg",
+            w: 1200,
+            h: 800,
+          },
+
+          {
+            src: "https://www.djjs.org/uploads/news/im_516014c243303.jpg",
+            w: 1200,
+            h: 800,
+          },
+
+          {
+            src: "https://www.djjs.org/uploads/news/im_516014c22d622.jpg",
+            w: 1200,
+            h: 800,
+          },
+
+          {
+            src: "https://www.djjs.org/uploads/news/im_516014c218776.jpg",
+            w: 1200,
+            h: 800,
+          },
+
+          {
+            src: "https://www.djjs.org/uploads/news/im_516014c1f18a7.jpg",
+            w: 1200,
+            h: 800,
+          },
+
+          {
+            src: "https://www.djjs.org/uploads/news/im_516014c1cab0d.jpg",
+            w: 1200,
+            h: 800,
+          },
+
+          {
+            src: "https://www.djjs.org/uploads/news/im_516014c1b1392.jpg",
+            w: 1200,
+            h: 800,
+          },
+
+          {
+            src: "https://www.djjs.org/uploads/news/im_516014c19ad7a.jpg",
+            w: 1200,
+            h: 800,
+          },
+
+          {
+            src: "https://www.djjs.org/uploads/news/im_516014c17d0f6.jpg",
+            w: 1200,
+            h: 800,
+          },
+
+          {
+            src: "https://www.djjs.org/uploads/news/im_516014c15d522.jpg",
+            w: 1200,
+            h: 800,
+          },
+        ];
+
+        var options = {
+          history: false,
+          focus: false,
+
+          showAnimationDuration: 0,
+          hideAnimationDuration: 0,
+        };
+
+        var gallery = new PhotoSwipe(
+          pswpElement,
+          PhotoSwipeUI_Default,
+          items,
+          options
+        );
+        gallery.init();
+        gallery.goTo(index);
+      };
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        // Activate initial filter
+        $(".filter-list li").on("click", function () {
+          $(".filter-list li").removeClass("active");
+          $(this).addClass("active");
+          var filterValue = $(this).attr("data-filter");
+          $("#loadinitiatives .fancy-box").hide();
+          $(
+            '#loadinitiatives .fancy-box[data-filter="' + filterValue + '"]'
+          ).show();
+
+          // Hide all content sections initially
+          $(".initiative-details").hide();
+          // Show the content section corresponding to the clicked tab
+          $("#" + filterValue + "-details").show();
+        });
+      });
+    </script>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="../src/assets/js/theme.min.js"></script>
+
+<script>
+$(document).ready(function(){
+  $('#branches').change(function(){
+    var selectedTab = $(this).val();
+    $('.tabs-pane').removeClass('active');
+    $('#tab-' + selectedTab).addClass('active');
+  });
+});
+
+</script>
+  </body>
+</html>

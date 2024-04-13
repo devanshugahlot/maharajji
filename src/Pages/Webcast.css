@@ -1,0 +1,55 @@
+div.webcast {
+  position: relative;
+  padding-top: 25px;
+  padding-bottom: 67.5%;
+  height: 0;
+}
+div.webcast iframe {
+  box-sizing: border-box;
+  /* background: url(images/tv1.png) center center no-repeat; */
+  background-size: contain;
+  padding: 10.4% 13% 17.5%;
+  /*padding: 11.9% 15.5% 14.8%;*/
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+.fluid-width-video-wrapper {
+  position: static;
+}
+
+@media screen and (max-width: 768px) {
+  div.webcast {
+    margin: 0 !important;
+  }
+  div.webcast iframe {
+    padding: 0;
+    background: none;
+  }
+}
+#impmessage,
+#messagemodal,
+#modal-2,
+.lity {
+  display: none;
+}
+
+.watch-on-youtube {
+  background-color: #e86740;
+}
+
+.radiobtn {
+  background: url(https://www.djjs.org/simages/tune.jpg) no-repeat;
+  width: 70px;
+  height: 71px;
+  position: relative;
+  margin: 0 auto;
+}
+
+body {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}

@@ -1,0 +1,352 @@
+.ach-title {
+    color: #fff;
+    padding: 60px 0;
+    margin: 0 !important;
+    text-align: center;
+    font-weight: 400
+}
+
+.property__plan-icon {
+    padding-top: 15px
+}
+
+.banner__title--2 span {
+    color: #ccc;
+    font-size: 100px;
+    font-weight: 600;
+    display: block
+}
+
+.mb30 {
+    margin-bottom: 30px
+}
+
+.mt20 {
+    margin-top: 20px
+}
+
+.slider--dots .slider__controls {
+    background: 0 0;
+    padding: 0;
+    line-height: 1;
+    visibility: hidden;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    bottom: auto;
+    z-index: 100
+}
+
+.slider--dots .slider__control--next {
+    right: 70px;
+    position: absolute
+}
+
+.slider--dots .slider__control--prev {
+    left: 70px;
+    position: absolute
+}
+
+ul.topmenu {
+    padding: 0;
+    margin: 0
+}
+
+ul.topmenu li {
+    float: left;
+    list-style: none;
+    margin: 10px
+}
+
+ul.topmenu li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+    text-transform: uppercase
+}
+
+.navbar--brand .navbar__row {
+    background: rgba(0, 0, 0, .2)
+}
+
+@media screen and (max-width:991px) {
+    .banner--slider .banner__container {
+        background: url(../media-demo/banner/slider_2.jpg) 50% 0 no-repeat;
+        background-size: auto auto;
+        background-size: cover
+    }
+}
+
+.color {
+    color: #e25c23 !important
+}
+
+.widget__title {
+    line-height: 1.2
+}
+
+.widget__headline {
+    font-size: 18px !important
+}
+
+.left {
+    float: left
+}
+
+.thumb {
+    float: left
+}
+
+.thumb img {
+    margin-right: 10px
+}
+
+.lead {
+    font-size: 22px;
+    font-weight: 700
+}
+
+.enquiry-button {
+    position: fixed;
+    right: -32px;
+    top: 50%;
+    transform: rotate(-90deg);
+    box-shadow: 1px 1px 6px #666;
+    font-weight: 700;
+    background: #e25c23
+}
+
+@media screen and (max-width:480px) {
+    .enquiry-button {
+        width: 100%;
+        transform: none;
+        top: 92%;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 50px;
+        font-size: 16px;
+        padding: 0
+    }
+}
+
+.mt-20 {
+    margin-top: 20px
+}
+
+.nomargintop {
+    margin-top: 0
+}
+
+.mb-20 {
+    margin-bottom: 20px
+}
+
+.mb-15 {
+    margin-bottom: 15px
+}
+
+.modal {
+    text-align: center
+}
+
+@media screen and (min-width:768px) {
+    .modal:before {
+        display: inline-block;
+        vertical-align: middle;
+        content: " ";
+        height: 100%
+    }
+}
+
+.modal-dialog {
+    display: inline-block;
+    text-align: left;
+    vertical-align: middle
+}
+
+.navbar__wrap--init {
+    background: #e25c23
+}
+
+.modal-title {
+    font-weight: 700
+}
+
+.social--circles .social__item.book {
+    border: none;
+    width: auto
+}
+
+.ui-pnotify-container.alert-success {
+    background: #e25c23
+}
+
+.melaaccommodation .properties__thumb {
+    position: relative
+}
+
+.melaaccommodation .properties__thumb img.ps {
+    position: absolute;
+    bottom: 0;
+    left: 0
+}
+
+.nodisp {
+    display: none
+}
+
+.hi-title {
+    text-align: center;
+    font-size: 30px;
+    line-height: 1.8;
+    font-weight: 700
+}
+
+.font22 {
+    font-size: 22px
+}
+
+.font24 {
+    font-size: 24px;
+    font-weight: 400
+}
+
+.font47 {
+    font-size: 47px
+}
+
+.h1 {
+    margin-top: 20px;
+    text-align: center;
+    float: none;
+    display: block;
+    font-weight: 700
+}
+
+.pricing__total {
+    background: #e25c23;
+    color: #000
+}
+
+#kumbhpackages .pricing__item--col .pricing__total {
+    height: auto
+}
+
+#kumbhpackages .pricing__type--heading {
+    font-weight: 600
+}
+
+.nomargin {
+    margin: 0
+}
+
+.pricing__feature.noborder {
+    border-bottom: 1px solid transparent
+}
+
+.bolder {
+    font-weight: 700
+}
+
+.bold {
+    font-weight: 400
+}
+
+.pricing__feature.img {
+    padding: 0 0 30px;
+    border: none
+}
+
+.social--header .social__item:hover {
+    color: #fff
+}
+
+.black {
+    color: #000
+}
+
+td.package {
+    width: 25%;
+    padding: 10px 20px
+}
+
+.review--wide .review__info-quote--close {
+    margin-top: -20px
+}
+
+.properties__price.snan {
+    font-size: 16px
+}
+
+.whatkumbh {
+    padding: 10px 0 40px
+}
+
+.whatkumbh .row {
+    display: flex;
+    flex: 1;
+    margin: 0
+}
+
+.whatkumbh .col-md-6 {
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.l_txt {
+    font-weight: 700;
+    font-size: 30px
+}
+
+.select-100 {
+    width: 80px
+}
+
+.svg-inline--fa.fa-fw {
+    width: 1.25em
+}
+
+.ml20 {
+    margin-left: 20pxx
+}
+
+.white {
+    color: #fff !important
+}
+
+.bookingpage .breadcrumbs__link::after {
+    font-size: 16px
+}
+
+.bookingpage .property__price a {
+    font-size: 24px
+}
+
+.bookingpage .property__price a.disabled {
+    color: #ccc
+}
+
+.convert {
+    font-size: 12px !important;
+    float: right
+}
+
+#pricetag .property__price {
+    width: 250px
+}
+
+.formone .form--wide .form-group {
+    width: 33%
+}
+
+.opensright .ranges {
+    display: block !important
+}
+
+.navbar__item {
+    margin: 3px 0 0 30px;
+    font-size: 14px
+}
