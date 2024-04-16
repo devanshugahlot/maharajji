@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { FaPlay, FaVideo } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 
 const Home = () => {
@@ -81,9 +82,8 @@ const Home = () => {
       <main id="" className="">
         <section
           id="bg-cover"
-          className="bg-contain bg-center d-flex align-items-center py-5"
+          className="bg-contain bg-center d-flex align-items-center py-5 home-bg-img"
           style={{
-            backgroundImage: `url('https://www.djjs.org/images/slider/djjs-shri-ashutosh-maharaj.jpg')`,
             backgroundSize: "cover",
             backgroundPosition: "center !important",
             width: "100%",
@@ -95,6 +95,7 @@ const Home = () => {
         </section>
         <section
           id="topsection"
+          className="container"
           style={{ background: 'url("images/new/bg-79.svg")' }}
         >
           <div
@@ -118,13 +119,14 @@ const Home = () => {
                         <picture>
                           <source
                             type=""
-                            data-srcset="https://www.djjs.org/images/god-can-be-seen.jpg"
+                            data-srcset="https://bhurijanadasa.com/wp-content/uploads/2020/12/bhurijan-prabhu-lecture.jpg"
                           />
                           <img
+                            style={{ width: "450px" }}
                             alt="Brahm gyan DJJS"
                             className="ld-lazyload"
-                            src="https://www.djjs.org/images/god-can-be-seen.jpg"
-                            data-src="https://www.djjs.org/images/god-can-be-seen.jpg"
+                            src="https://bhurijanadasa.com/wp-content/uploads/2020/12/bhurijan-prabhu-lecture.jpg"
+                            data-src="https://bhurijanadasa.com/wp-content/uploads/2020/12/bhurijan-prabhu-lecture.jpg"
                           />
                         </picture>
                       </figure>
@@ -191,251 +193,7 @@ const Home = () => {
           </div>
         </section>
 
-        <section
-          className="vc_row pt-50 pb-50 pb-xs-0 weekly_insights"
-          data-custom-animations="true"
-          data-ca-options='{"triggerHandler":"inview","animationTarget":".lqd-column","duration":"1200","delay":"150","easing":"easeOutQuint","direction":"forward","initValues":{"translateY":55,"rotateX":-1,"opacity":0},"animations":{"translateY":0,"rotateX":0,"opacity":1}}'
-        >
-          <div className="container">
-            <div className="row">
-              <div className="lqd-column col-md-12">
-                <header className="fancy-title mb-70 text-center">
-                  <h2 className="mt-0 h1">
-                    <span className="text-secondary ld-fh-txt text-gradient">
-                      Weekly Insights
-                    </span>
-                  </h2>
-                  <p className="font-size-16">
-                    Keep you connected with your innerself
-                  </p>
-                </header>
-              </div>
-              <div className="lqd-column col-md-12">
-                <div className="liquid-blog-posts">
-                  <div
-                    className="liquid-blog-grid row"
-                    data-liquid-masonry="true"
-                  >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      xmlnsXlink="http://www.w3.org/1999/xlink"
-                      xmlSpace="preserve"
-                      className="liquid-lp-gradient"
-                      width={0}
-                      height={0}
-                    >
-                      <defs>
-                        <linearGradient
-                          id="liquid-lp-gradient"
-                          x1="0%"
-                          y1="0%"
-                          x2="100%"
-                          y2="0%"
-                        >
-                          <stop offset="0%" />
-                          <stop offset="100%" />
-                        </linearGradient>
-                      </defs>
-                    </svg>
-                    <div className="lqd-column col-md-10 col-md-offset-1 col-lg-6 col-lg-offset-0 masonry-item">
-                      <article className=" liquid-lp-sp-block liquid-lp-featured">
-                        <figure
-                          data-bg="url(https://www.djjs.org/uploads/blog/99ad5ffb1fc78d7d4603cf51290a9eb6.png)"
-                          className="liquid-lp-media ld-lazyload"
-                        >
-                          <img
-                            data-src="https://www.djjs.org/uploads/blog/99ad5ffb1fc78d7d4603cf51290a9eb6.png"
-                            src="https://www.djjs.org/uploads/blog/99ad5ffb1fc78d7d4603cf51290a9eb6.png"
-                            alt="Om Namah Shivay | Glory of Adi Guru | Shiv Stuti | Mahashivratri 2022 | DJJS Bhajan"
-                          />
-                        </figure>
-                        <div className="liquid-lp-inner justify-content-end">
-                          <a
-                            href="blog/winning-the-devils-bargain-fight-against-substance-abuse.html"
-                            className="liquid-overlay-link"
-                          />
-                          <header className="liquid-lp-header">
-                            <a
-                              href="blog.html"
-                              className="btn btn-solid text-uppercase btn-xsm small semi-round btn-bordered border-none btn-gradient font-size-12 font-weight-bold lh-2 ltr-sp-05 mb-2"
-                            >
-                              <span>
-                                <span className="btn-gradient-bg" />
-                                <span className="btn-txt">BLOG</span>
-                                <span className="btn-gradient-bg btn-gradient-bg-hover bg-gradient-secondary-rl" />
-                              </span>
-                            </a>
-                            <h2 className="liquid-lp-title h5 font-weight-bold">
-                              <a href="blog/winning-the-devils-bargain-fight-against-substance-abuse.html">
-                                Winning the Devils Bargain: Fight against
-                                Substance Abuse
-                              </a>
-                            </h2>
-                          </header>
-                        </div>
-                      </article>
-                    </div>
-                    <div className="lqd-column col-md-10 col-md-offset-1 col-lg-6 col-lg-offset-0 masonry-item">
-                      <article className="liquid-lp liquid-lp-sp-block shadow-1">
-                        <figure
-                          data-bg="url(https://www.djjs.org/uploads/blog/bbd739969d84fd8b124b65c3883aaf3d.jpg)"
-                          className="liquid-lp-media ld-lazyload"
-                        >
-                          <a href="blog/fomo-to-jomo.html">
-                            <img
-                              className="ld-lazyload"
-                              data-src="https://www.djjs.org/uploads/blog/bbd739969d84fd8b124b65c3883aaf3d.jpg"
-                              alt="FOMO to JOMO"
-                              src="https://www.djjs.org/uploads/blog/bbd739969d84fd8b124b65c3883aaf3d.jpg"
-                            />
-                          </a>
-                        </figure>
-                        <div className="liquid-lp-inner">
-                          <header className="liquid-lp-header">
-                            <ul className="liquid-lp-category bordered square">
-                              <li>
-                                <a href="blog.html">
-                                  <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    xmlnsXlink="http://www.w3.org/1999/xlink"
-                                    xmlSpace="preserve"
-                                    className="liquid-lp-gradient-border"
-                                    width="100%"
-                                    height="100%"
-                                  >
-                                    <rect
-                                      x={0}
-                                      y={0}
-                                      rx={0}
-                                      ry={0}
-                                      width="100%"
-                                      height="100%"
-                                      stroke="url(#btn-grad-1)"
-                                    />
-                                  </svg>
-                                  <span>Blog</span>
-                                </a>
-                              </li>
-                            </ul>
-                            <h2 className="liquid-lp-title h5 font-weight-bold">
-                              <a href="blog/fomo-to-jomo.html">FOMO to JOMO</a>
-                            </h2>
-                          </header>
-                          <div className="liquid-lp-excerpt">
-                            <p />
-                          </div>
-                          <footer className="liquid-lp-footer">
-                            <time
-                              className="liquid-lp-date text-uppercase ltr-sp-1"
-                              dateTime="2023-05-13"
-                            >
-                              May 13 2023
-                            </time>
-                          </footer>
-                        </div>
-                      </article>
-                    </div>
-                    <div className="lqd-column col-md-10 col-md-offset-1 col-lg-6 col-lg-offset-0 masonry-item">
-                      <article className="liquid-lp liquid-lp-sp-block liquid-lp-reverse shadow-1">
-                        <figure
-                          data-bg="url(https://www.djjs.org/uploads/blog/021ebc5eae8b8b02d1295f0ae8b7c511.jpg)"
-                          className="liquid-lp-media ld-lazyload"
-                        >
-                          <a href="blog/conquering-corporates-unknown-battlegrounds.html">
-                            <img
-                              className="ld-lazyload"
-                              data-src="https://www.djjs.org/uploads/blog/021ebc5eae8b8b02d1295f0ae8b7c511.jpg"
-                              alt="FOMO to JOMO"
-                              src="https://www.djjs.org/uploads/blog/021ebc5eae8b8b02d1295f0ae8b7c511.jpg"
-                            />
-                          </a>
-                        </figure>
-                        <div className="liquid-lp-inner">
-                          <header className="liquid-lp-header">
-                            <ul className="liquid-lp-category bordered square">
-                              <li>
-                                <a href="blog.html">
-                                  <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    xmlnsXlink="http://www.w3.org/1999/xlink"
-                                    xmlSpace="preserve"
-                                    className="liquid-lp-gradient-border"
-                                    width="100%"
-                                    height="100%"
-                                  >
-                                    <rect
-                                      x={0}
-                                      y={0}
-                                      rx={0}
-                                      ry={0}
-                                      width="100%"
-                                      height="100%"
-                                      stroke="url(#btn-grad-1)"
-                                    />
-                                  </svg>
-                                  <span>Blog</span>
-                                </a>
-                              </li>
-                            </ul>
-                            <h2 className="liquid-lp-title h5 font-weight-bold">
-                              <a href="blog/conquering-corporates-unknown-battlegrounds.html">
-                                Conquering Corporate’s Unknown Battlegrounds
-                              </a>
-                            </h2>
-                          </header>
-                          <div className="liquid-lp-excerpt">
-                            <p />
-                          </div>
-                          <footer className="liquid-lp-footer">
-                            <time
-                              className="liquid-lp-date text-uppercase ltr-sp-1"
-                              dateTime="2023-02-12"
-                            >
-                              February 12 2023
-                            </time>
-                          </footer>
-                        </div>
-                      </article>
-                    </div>
-                    <div className="lqd-column col-md-10 col-md-offset-1 col-lg-6 col-lg-offset-0 masonry-item">
-                      <article className="liquid-lp liquid-lp-sp-block liquid-lp-sp-instagram">
-                        <figure
-                          data-bg="url(https://www.djjs.org/uploads/blog/83089aa08151b3241de96636b5d9eaa0.jpg)"
-                          className="liquid-lp-media ld-lazyload"
-                        >
-                          <img
-                            // className="ld-lazyload"
-                            data-src="https://www.djjs.org/uploads/blog/83089aa08151b3241de96636b5d9eaa0.jpg"
-                            alt="Shrimad Devi Bhagwat Katha 2021 | TEASER | DJJS Katha | Sadhvi Aditi Bharti Ji"
-                            src="https://www.djjs.org/uploads/blog/83089aa08151b3241de96636b5d9eaa0.jpg"
-                          />
-                        </figure>
-                        <div className="liquid-lp-inner">
-                          <a
-                            href="blog/body-positivity.html"
-                            className="liquid-overlay-link"
-                          />
-                          <header className="liquid-lp-header">
-                            <ul className="liquid-lp-category bordered square">
-                              <li>
-                                <a href="blog.html">Blog</a>
-                              </li>
-                            </ul>
-                          </header>
-                          <h3 className="font-weight-semibold">
-                            <a href="blog/body-positivity.html">
-                              Body Positivity
-                            </a>
-                          </h3>
-                        </div>
-                      </article>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+      
         <section className="vc_row pt-80 pb-70 pb-xs-0 bg-athens-gray">
           <div className="container">
             <div className="row">
@@ -451,10 +209,10 @@ const Home = () => {
                       className={activeTab === 0 ? "active" : ""}
                     >
                       <a
-                        href="#ld-tab-pane-0"
+                        // href="#ld-tab-pane-0"
                         aria-controls="ld-tab-pane-0"
                         role="tab"
-                        onClick={() => handleTabChange(0)}
+                        onClick={() => handleTabChange(0)}vay
                       >
                         Om Namah Shivay | Glory of Adi Guru | Shiv Stuti |
                         Mahashivratri 2022 | DJJS Bhajan
@@ -465,7 +223,7 @@ const Home = () => {
                       className={activeTab === 1 ? "active" : ""}
                     >
                       <a
-                        href="#ld-tab-pane-1"
+                        // href="#ld-tab-pane-1"
                         aria-controls="ld-tab-pane-1"
                         role="tab"
                         onClick={() => handleTabChange(1)}
@@ -498,19 +256,19 @@ const Home = () => {
                             >
                               <img
                                 className="  ld-lazyload"
-                                data-src="https://img.youtube.com/vi/Vlp7zC1YxQk/maxresdefault.jpg"
-                                src="https://img.youtube.com/vi/Vlp7zC1YxQk/maxresdefault.jpg"
+                                data-src="https://bhurijanadasa.com/wp-content/uploads/2021/08/Mustard_wuna-495x400.jpg"
+                                src="https://bhurijanadasa.com/wp-content/uploads/2021/08/Mustard_wuna-495x400.jpg"
                                 alt="Om Namah Shivay | Glory of Adi Guru | Shiv Stuti | Mahashivratri 2022 | DJJS Bhajan"
                               />
                             </figure>
                             <div className="liquid-img-group-content content-floated-mid">
                               <a
-                                href="https://youtu.be/Vlp7zC1YxQk"
+                                // href="https://youtu.be/Vlp7zC1YxQk"
                                 className="btn btn-naked fresco btn-icon-block btn-icon-top btn-icon-lg btn-icon-circle btn-icon-solid btn-icon-ripple"
                               >
                                 <span>
                                   <span className="btn-icon font-size-26">
-                                    <i className="icon-md-play" />
+                                  <FaPlay />
                                   </span>
                                 </span>
                               </a>
@@ -550,19 +308,19 @@ const Home = () => {
                             >
                               <img
                                 className="  ld-lazyload"
-                                data-src="https://img.youtube.com/vi/xtclpuBy6cE/maxresdefault.jpg"
-                                src="https://img.youtube.com/vi/xtclpuBy6cE/maxresdefault.jpg"
+                                data-src="https://bhurijanadasa.com/wp-content/uploads/2021/08/sadhu_enterfrs001-495x400.jpg"
+                                src="https://bhurijanadasa.com/wp-content/uploads/2021/08/sadhu_enterfrs001-495x400.jpg"
                                 alt="Shrimad Devi Bhagwat Katha 2021 | TEASER | DJJS Katha | Sadhvi Aditi Bharti Ji"
                               />
                             </figure>
                             <div className="liquid-img-group-content content-floated-mid">
                               <a
-                                href="https://youtu.be/xtclpuBy6cE"
+                                // href="https://youtu.be/xtclpuBy6cE"
                                 className="btn btn-naked fresco btn-icon-block btn-icon-top btn-icon-lg btn-icon-circle btn-icon-solid btn-icon-ripple"
                               >
                                 <span>
                                   <span className="btn-icon font-size-26">
-                                    <i className="icon-md-play" />
+                                  <FaPlay />
                                   </span>
                                 </span>
                               </a>
@@ -591,7 +349,7 @@ const Home = () => {
                   <span>
                     <span className="btn-txt">See All</span>
                     <span className="btn-icon">
-                      <i className="icon-ion-ios-arrow-forward" />
+                      <FaPlay />
                     </span>
                   </span>
                 </a>
@@ -610,7 +368,7 @@ const Home = () => {
               <div className="lqd-column col-md-12">
                 <div className="liquid-filter-items justify-content-between align-items-center mb-5 m-xs-0">
                   <div className="liquid-filter-items-inner">
-                    <a href="initiatives.html">
+                    <a >
                       <h3 className="m-0 text-gradient font-size-40 t600">
                         DJJS Initiatives
                       </h3>
@@ -622,7 +380,7 @@ const Home = () => {
                         onClick={handlesocialbutton}
                       >
                         <button className="btn btn-default btn-solid text-uppercase btn-sm circle btn-bordered border-thin font-size-12 lh-15 font-weight-bold ltr-sp-05 mb-2">
-                          <span className="btn-txt">Social Initiatives</span>
+                          <span style={{color:"#FFB09F"}} className="btn-txt">Social Initiatives</span>
                         </button>
                       </li>
                       <li
@@ -854,7 +612,7 @@ const Home = () => {
                     Provide complete nourishment to your body-mind-soul !
                   </h2>
                   <p>
-                    <a className="nocolor" href="akhandgyan.html">
+                    <a className="nocolor" >
                       <strong>AKHAND GYAN</strong>
                     </a>
                     is a revolutionary monthly magazine of DJJS. Raising voice
@@ -863,7 +621,7 @@ const Home = () => {
                   </p>
                 </header>
                 <a
-                  href="akhandgyan.html"
+                  // href="akhandgyan.html"
                   className="btn text-uppercase btn-lg semi-round btn-bordered border-thin font-size-12 font-weight-bold ltr-sp-2 px-2 p-xs-0"
                 >
                   <span>
@@ -874,7 +632,7 @@ const Home = () => {
                   </span>
                 </a>
                 <a
-                  href="akhandgyan/subscribe.html"
+                  // href="akhandgyan/subscribe.html"
                   className="btn btn-solid text-uppercase btn-lg semi-round btn-bordered border-thin font-size-12 font-weight-bold ltr-sp-2 px-2 p-xs-0"
                   data-localscroll="true"
                   data-localscroll-options="{ 'scrollBelowSection': true }"
@@ -909,10 +667,9 @@ const Home = () => {
                             Watch Promotional Video
                           </span>
                           <span className="btn-icon font-size-24">
-                            <span className="btn-gradient-bg bg-gradient-primary-lr" />
-                            <span className="btn-gradient-bg btn-gradient-bg-hover" />
-                            <i className="icon-md-play" />
-                          </span>
+                            {/* <span className="btn-gradient-bg bg-gradient-primary-lr" />
+                            <span className="btn-gradient-bg btn-gradient-bg-hover" /> */}
+                            <FaPlay />                          </span>
                         </span>
                       </a>
                     </div>
@@ -965,7 +722,7 @@ const Home = () => {
                       <figure className="mb-3">
                         <a
                           className="img_scale"
-                          href="news/shri-ram-katha-reinvigorated-the-spiritual-legacy-of-lord-ram-at-rewari-haryana.html"
+                          // href="news/shri-ram-katha-reinvigorated-the-spiritual-legacy-of-lord-ram-at-rewari-haryana.html"
                         >
                           <img
                             className="ld-lazyload"
@@ -982,7 +739,7 @@ const Home = () => {
                         data-split-text="true"
                         data-split-options='{"type":"lines"}'
                       >
-                        <a href="news/shri-ram-katha-reinvigorated-the-spiritual-legacy-of-lord-ram-at-rewari-haryana.html">
+                        <a >
                           Shri Ram Katha reinvigorated the spiritual legacy of
                           Lord Ram at Rewari, Haryana
                         </a>
@@ -1002,7 +759,7 @@ const Home = () => {
                       <figure className="mb-3">
                         <a
                           className="img_scale"
-                          href="news/shri-ram-katha-satiated-the-thirst-for-spiritual-knowledge-in-kurukshetra-haryana.html"
+                          // href="news/shri-ram-katha-satiated-the-thirst-for-spiritual-knowledge-in-kurukshetra-haryana.html"
                         >
                           <img
                             className="ld-lazyload"
@@ -1019,7 +776,7 @@ const Home = () => {
                         data-split-text="true"
                         data-split-options='{"type":"lines"}'
                       >
-                        <a href="news/shri-ram-katha-satiated-the-thirst-for-spiritual-knowledge-in-kurukshetra-haryana.html">
+                        <a >
                           Shri Ram Katha satiated the thirst for Spiritual
                           Knowledge in Kurukshetra, Haryana
                         </a>
@@ -1039,7 +796,7 @@ const Home = () => {
                       <figure className="mb-3">
                         <a
                           className="img_scale"
-                          href="news/djjs-celebrated-national-youth-day-with-an-awakening-call-to-the-youth-at-rudrapur-uttarakhand.html"
+                          // href="news/djjs-celebrated-national-youth-day-with-an-awakening-call-to-the-youth-at-rudrapur-uttarakhand.html"
                         >
                           <img
                             className="ld-lazyload"
@@ -1056,7 +813,7 @@ const Home = () => {
                         data-split-text="true"
                         data-split-options='{"type":"lines"}'
                       >
-                        <a href="news/djjs-celebrated-national-youth-day-with-an-awakening-call-to-the-youth-at-rudrapur-uttarakhand.html">
+                        <a >
                           DJJS Celebrated National Youth Day with an Awakening
                           Call to the Youth at Rudrapur, Uttarakhand
                         </a>
@@ -1072,7 +829,7 @@ const Home = () => {
                 </div>
               </div>
             </div>
-            <div className="lqd-column row">
+            <div style={{marginTop:"20px"}} className="lqd-column row">
               <div className="col-md-12 text-center">
                 <p>
                   <a
@@ -1080,9 +837,9 @@ const Home = () => {
                     onClick={() => navigate("/events")}
                     className="btn btn-sm btn-solid btn-gradient circle text-uppercase wide ld-lp-carousel-filterable-btn"
                   >
-                    <span>
+                    <span >
                       <span className="btn-gradient-bg" />
-                      <span className="btn-txt">See all News</span>
+                      <span  className="btn-txt">See all News</span>
                       <span className="btn-gradient-bg btn-gradient-bg-hover" />
                     </span>
                   </a>
@@ -1103,6 +860,249 @@ const Home = () => {
               />
             </div>
           </div>
+          <section
+          className="vc_row pt-50 pb-50 pb-xs-0 weekly_insights"
+          data-custom-animations="true"
+          data-ca-options='{"triggerHandler":"inview","animationTarget":".lqd-column","duration":"1200","delay":"150","easing":"easeOutQuint","direction":"forward","initValues":{"translateY":55,"rotateX":-1,"opacity":0},"animations":{"translateY":0,"rotateX":0,"opacity":1}}'
+        >
+          <div className="container">
+            <div className="row">
+              <div className="lqd-column col-md-12">
+                <header className="fancy-title mb-70 text-center">
+                  <h2 className="mt-0 h1">
+                    <span className="text-secondary ld-fh-txt text-gradient">
+                      Weekly Insights
+                    </span>
+                  </h2>
+                  <p className="font-size-16">
+                    Keep you connected with your innerself
+                  </p>
+                </header>
+              </div>
+              <div className="lqd-column col-md-12">
+                <div className="liquid-blog-posts">
+                  <div
+                    className="liquid-blog-grid row"
+                    data-liquid-masonry="true"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlnsXlink="http://www.w3.org/1999/xlink"
+                      xmlSpace="preserve"
+                      className="liquid-lp-gradient"
+                      width={0}
+                      height={0}
+                    >
+                      <defs>
+                        <linearGradient
+                          id="liquid-lp-gradient"
+                          x1="0%"
+                          y1="0%"
+                          x2="100%"
+                          y2="0%"
+                        >
+                          <stop offset="0%" />
+                          <stop offset="100%" />
+                        </linearGradient>
+                      </defs>
+                    </svg>
+                    <div className="lqd-column col-md-10 col-md-offset-1 col-lg-6 col-lg-offset-0 masonry-item">
+                      <article className=" liquid-lp-sp-block liquid-lp-featured">
+                        <figure
+                          data-bg="url(https://www.djjs.org/uploads/blog/99ad5ffb1fc78d7d4603cf51290a9eb6.png)"
+                          className="liquid-lp-media ld-lazyload"
+                        >
+                          <img
+                            data-src="https://www.djjs.org/uploads/blog/99ad5ffb1fc78d7d4603cf51290a9eb6.png"
+                            src="https://www.djjs.org/uploads/blog/99ad5ffb1fc78d7d4603cf51290a9eb6.png"
+                            alt="Om Namah Shivay | Glory of Adi Guru | Shiv Stuti | Mahashivratri 2022 | DJJS Bhajan"
+                          />
+                        </figure>
+                        <div className="liquid-lp-inner justify-content-end">
+                          <a
+                            className="liquid-overlay-link"
+                          />
+                          <header className="liquid-lp-header">
+                            <a
+                              className="btn btn-solid text-uppercase btn-xsm small semi-round btn-bordered border-none btn-gradient font-size-12 font-weight-bold lh-2 ltr-sp-05 mb-2"
+                            >
+                              <span>
+                                <span className="btn-gradient-bg" />
+                                <span className="btn-txt">BLOG</span>
+                                <span className="btn-gradient-bg btn-gradient-bg-hover bg-gradient-secondary-rl" />
+                              </span>
+                            </a>
+                            <h2 className="liquid-lp-title h5 font-weight-bold">
+                              <a >
+                                Winning the Devils Bargain: Fight against
+                                Substance Abuse
+                              </a>
+                            </h2>
+                          </header>
+                        </div>
+                      </article>
+                    </div>
+                    <div className="lqd-column col-md-10 col-md-offset-1 col-lg-6 col-lg-offset-0 masonry-item">
+                      <article className="liquid-lp liquid-lp-sp-block shadow-1">
+                        <figure
+                          data-bg="url(https://www.djjs.org/uploads/blog/bbd739969d84fd8b124b65c3883aaf3d.jpg)"
+                          className="liquid-lp-media ld-lazyload"
+                        >
+                          <a >
+                            <img
+                              className="ld-lazyload"
+                              data-src="https://www.djjs.org/uploads/blog/bbd739969d84fd8b124b65c3883aaf3d.jpg"
+                              alt="FOMO to JOMO"
+                              src="https://www.djjs.org/uploads/blog/bbd739969d84fd8b124b65c3883aaf3d.jpg"
+                            />
+                          </a>
+                        </figure>
+                        <div className="liquid-lp-inner">
+                          <header className="liquid-lp-header">
+                            <ul className="liquid-lp-category bordered square">
+                              <li>
+                                <a >
+                                  <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    xmlnsXlink="http://www.w3.org/1999/xlink"
+                                    xmlSpace="preserve"
+                                    className="liquid-lp-gradient-border"
+                                    width="100%"
+                                    height="100%"
+                                  >
+                                    <rect
+                                      x={0}
+                                      y={0}
+                                      rx={0}
+                                      ry={0}
+                                      width="100%"
+                                      height="100%"
+                                      stroke="url(#btn-grad-1)"
+                                    />
+                                  </svg>
+                                  <span>Blog</span>
+                                </a>
+                              </li>
+                            </ul>
+                            <h2 className="liquid-lp-title h5 font-weight-bold">
+                              <a >FOMO to JOMO</a>
+                            </h2>
+                          </header>
+                          <div className="liquid-lp-excerpt">
+                            <p />
+                          </div>
+                          <footer className="liquid-lp-footer">
+                            <time
+                              className="liquid-lp-date text-uppercase ltr-sp-1"
+                              dateTime="2023-05-13"
+                            >
+                              May 13 2023
+                            </time>
+                          </footer>
+                        </div>
+                      </article>
+                    </div>
+                    <div className="lqd-column col-md-10 col-md-offset-1 col-lg-6 col-lg-offset-0 masonry-item">
+                      <article className="liquid-lp liquid-lp-sp-block liquid-lp-reverse shadow-1">
+                        <figure
+                          data-bg="url(https://www.djjs.org/uploads/blog/021ebc5eae8b8b02d1295f0ae8b7c511.jpg)"
+                          className="liquid-lp-media ld-lazyload"
+                        >
+                          <a >
+                            <img
+                              className="ld-lazyload"
+                              data-src="https://www.djjs.org/uploads/blog/021ebc5eae8b8b02d1295f0ae8b7c511.jpg"
+                              alt="FOMO to JOMO"
+                              src="https://www.djjs.org/uploads/blog/021ebc5eae8b8b02d1295f0ae8b7c511.jpg"
+                            />
+                          </a>
+                        </figure>
+                        <div className="liquid-lp-inner">
+                          <header className="liquid-lp-header">
+                            <ul className="liquid-lp-category bordered square">
+                              <li>
+                                <a >
+                                  <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    xmlnsXlink="http://www.w3.org/1999/xlink"
+                                    xmlSpace="preserve"
+                                    className="liquid-lp-gradient-border"
+                                    width="100%"
+                                    height="100%"
+                                  >
+                                    <rect
+                                      x={0}
+                                      y={0}
+                                      rx={0}
+                                      ry={0}
+                                      width="100%"
+                                      height="100%"
+                                      stroke="url(#btn-grad-1)"
+                                    />
+                                  </svg>
+                                  <span>Blog</span>
+                                </a>
+                              </li>
+                            </ul>
+                            <h2 className="liquid-lp-title h5 font-weight-bold">
+                              <a >
+                                Conquering Corporate’s Unknown Battlegrounds
+                              </a>
+                            </h2>
+                          </header>
+                          <div className="liquid-lp-excerpt">
+                            <p />
+                          </div>
+                          <footer className="liquid-lp-footer">
+                            <time
+                              className="liquid-lp-date text-uppercase ltr-sp-1"
+                              dateTime="2023-02-12"
+                            >
+                              February 12 2023
+                            </time>
+                          </footer>
+                        </div>
+                      </article>
+                    </div>
+                    <div className="lqd-column col-md-10 col-md-offset-1 col-lg-6 col-lg-offset-0 masonry-item">
+                      <article className="liquid-lp liquid-lp-sp-block liquid-lp-sp-instagram">
+                        <figure
+                          data-bg="url(https://www.djjs.org/uploads/blog/83089aa08151b3241de96636b5d9eaa0.jpg)"
+                          className="liquid-lp-media ld-lazyload"
+                        >
+                          <img
+                            // className="ld-lazyload"
+                            data-src="https://www.djjs.org/uploads/blog/83089aa08151b3241de96636b5d9eaa0.jpg"
+                            alt="Shrimad Devi Bhagwat Katha 2021 | TEASER | DJJS Katha | Sadhvi Aditi Bharti Ji"
+                            src="https://www.djjs.org/uploads/blog/83089aa08151b3241de96636b5d9eaa0.jpg"
+                          />
+                        </figure>
+                        <div className="liquid-lp-inner">
+                          <a
+                            
+                            className="liquid-overlay-link"
+                          />
+                          <header className="liquid-lp-header">
+                            <ul className="liquid-lp-category bordered square">
+                              <li>
+                                <a >Blog</a>
+                              </li>
+                            </ul>
+                          </header>
+                          <h3 className="font-weight-semibold">
+                            <a >
+                              Body Positivity
+                            </a>
+                          </h3>
+                        </div>
+                      </article>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
           <div className="container">
             <div className="row">
               <div className="lqd-column col-md-8 col-md-offset-2 text-center bg-white white-box-shadow pt-70 pb-50">
@@ -1139,8 +1139,7 @@ const Home = () => {
                           className="ld_sf_submit font-weight-semibold bg-gradient-secondary-lr"
                         >
                           <span className="submit-icon font-size-26">
-                            <i className="icon-md-paper-plane" />
-                          </span>
+                          <FaPlay />                          </span>
                           <span className="submit-text">Subscribe</span>
                           <span className="ld-sf-spinner">
                             <span>Sending </span>

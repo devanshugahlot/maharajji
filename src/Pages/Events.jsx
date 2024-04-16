@@ -20,13 +20,67 @@ const Events = () => {
   };
   const categories = [
     { id: "all", name: "All" },
-    { id: "manthan", name: "Education" },
-    { id: "aarogya", name: "Health" },
-    { id: "sanrakshan", name: "Environment" },
-    { id: "santulan", name: "Gender Equality" },
-    { id: "bodh", name: "Drug Abuse" },
+    { id: "Upcoming", name: "Upcoming Events" },
+    { id: "past", name: "Past Events" },
+    { id: "retret", name: "Retreats" },
+ 
     // Add more categories as needed
   ];
+
+  const workshops = [
+    {
+      title: "Youth Empowerment Takes Center Stage: SAM Shines at Yuva Utsav India@2047",
+      image: "https://www.djjs.org/uploads/news/im_65fa4ad49d027.jpg",
+      link: "news/youth-empowerment-takes-center-stage-sam-shines-at-yuva-utsav-india2047.html",
+      date: "2024-03-20"
+    },
+    {
+      title: "Unique Workshop on Mental Health Held by PEACE Program for Working Professionals",
+      image: "https://www.djjs.org/uploads/news/im_65cd838ad9731.jpg",
+      link: "news/unique-workshop-on-mental-health-held-by-peace-program-for-working-professionals.html",
+      date: "2024-02-15"
+    },
+    {
+      title: "SAM Hosts Grand National Youth Day Celebration at Central Park, Connaught Place",
+      image: "https://www.djjs.org/uploads/news/im_65ae11789af55.png",
+      link: "news/sam-hosts-grand-national-youth-day-celebration-at-central-park-connaught-place.html",
+      date: "2024-01-22"
+    },
+    {
+      title: "PEACE inspires corporate minds in a unique workshop on Psychology of Relationships",
+      image: "https://www.djjs.org/uploads/news/im_65a3b8028b87d.jpg",
+      link: "news/peace-inspires-corporate-minds-in-a-unique-workshop-on-psychology-of-relationships.html",
+      date: "2024-01-14"
+    }
+  ];
+
+  const otherNews = [
+    {
+      title: "Theology of Divine Science unveiled at Spiritual Forum organized by DJJS at London, UK",
+      image: "https://www.djjs.org/uploads/news/im_65f10d31d2d4f.jpg",
+      link: "news/theology-of-divine-science-unveiled-at-spiritual-forum-organized-by-djjs-at-london-uk.html",
+      date: "2024-03-13"
+    },
+    {
+      title: "Active Participation of DJJS in Nakshatra Fair, 2024 at Pragati Maidan, New Delhi; motivated people for Spiritual Upliftment",
+      image: "https://www.djjs.org/uploads/news/im_65e135eca7254.jpg",
+      link: "news/djjs-active-participation-in-nakshatra-fair-2024-at-pragati-maidan-new-delhi-motivated-people-for-spiritual-upliftment.html",
+      date: "2024-03-01"
+    },
+    {
+      title: "DJJS Celebrated National Youth Day with an Awakening Call to the Youth at Rudrapur, Uttarakhand",
+      image: "https://www.djjs.org/uploads/news/im_65d5d58e376cd.jpg",
+      link: "news/djjs-celebrated-national-youth-day-with-an-awakening-call-to-the-youth-at-rudrapur-uttarakhand.html",
+      date: "2024-02-21"
+    },
+    {
+      title: "DJJS organized hundreds of spiritual and cultural programs across the world to commemorate the establishment of Shri Ram Temple",
+      image: "https://www.djjs.org/uploads/news/im_65f10d31d2d4f.jpg",
+      link: "news/djjs-organized-hundreds-of-spiritual-and-cultural-programs-across-the-world-to-commemorate-the-establishment-of-shri-ram-temple.html",
+      date: "2024-02-15"
+    }
+  ];
+  
 
   return (
     <div>
@@ -43,7 +97,7 @@ const Events = () => {
               <div className="titlebar-col col-md-6 text-md-right">
                 <ol className="breadcrumb reset-ul inline-nav">
                   <li>
-                    <a href="index.html">
+                    <a >
                       <span>Home</span>
                     </a>
                   </li>
@@ -63,7 +117,7 @@ const Events = () => {
             <div className="col-md-12">
               <div className="ld-dropdown-menu">
                 <a
-                  href="javascript:void(0)"
+                  
                   className="btn btn-default btn-naked border-thin btn-icon-left btn-icon-circle btn-icon-solid font-size-12 font-weight-bold text-uppercase ltr-sp-05 mb-2"
                   data-ld-toggle="true"
                   data-toggle="collapse"
@@ -92,52 +146,52 @@ const Events = () => {
                     </div>
                   </li>
                   <li>
-                    <a href="news/category/spiritual/shrimadbhagwatkatha.html">
+                    <a >
                       Shrimad Bhagwat Katha
                     </a>
                   </li>
                   <li>
-                    <a href="news/category/spiritual/shriramkatha.html">
+                    <a>
                       Shri Ram Katha
                     </a>
                   </li>
                   <li>
-                    <a href="news/category/spiritual/devibhagwatkatha.html">
+                    <a >
                       Devi Bhagwat Katha
                     </a>
                   </li>
                   <li>
-                    <a href="news/category/spiritual/bhajansandhya.html">
+                    <a >
                       Bhajan Sandhya
                     </a>
                   </li>
                   <li>
-                    <a href="news/category/spiritual/jagran-chowki.html">
+                    <a>
                       Jagran and Chowki
                     </a>
                   </li>
                   <li>
-                    <a href="news/category/spiritual/shiv-katha.html">
+                    <a>
                       Shiv Katha
                     </a>
                   </li>
                   <li>
-                    <a href="news/category/spiritual/janmashtami.html">
+                    <a >
                       Shri Krishna Janmashtami
                     </a>
                   </li>
                   <li>
-                    <a href="news/category/spiritual/krishna-katha.html">
+                    <a >
                       Shri Krishna Katha
                     </a>
                   </li>
                   <li>
-                    <a href="news/category/spiritual/holi-mahotsav.html">
+                    <a >
                       Holi Mahotstav
                     </a>
                   </li>
                   <li>
-                    <a href="news/category/spiritual/guru-poornima.html">
+                    <a >
                       Guru Purnima
                     </a>
                   </li>
@@ -148,42 +202,42 @@ const Events = () => {
                     </div>
                   </li>
                   <li>
-                    <a href="news/category/social/hitkarikheti.html">
+                    <a >
                       Hitkari Kheti
                     </a>
                   </li>
                   <li>
-                    <a href="news/category/social/manthan.html">Manthan</a>
+                    <a >Manthan</a>
                   </li>
                   <li>
-                    <a href="news/category/social/kamdhenu.html">Kamdhenu</a>
+                    <a >Kamdhenu</a>
                   </li>
                   <li>
-                    <a href="news/category/social/antardrishti.html">
+                    <a >
                       Antardrishti
                     </a>
                   </li>
                   <li>
-                    <a href="news/category/social/antarkranti.html">
+                    <a >
                       Antarkranti
                     </a>
                   </li>
                   <li>
-                    <a href="news/category/social/bodh.html">Bodh</a>
+                    <a >Bodh</a>
                   </li>
                   <li>
-                    <a href="news/category/social/santulan.html">Santulan</a>
+                    <a >Santulan</a>
                   </li>
                   <li>
-                    <a href="news/category/social/sanrakshan.html">
+                    <a >
                       Sanrakshan
                     </a>
                   </li>
                   <li>
-                    <a href="news/category/social/aarogya.html">Aarogya</a>
+                    <a >Aarogya</a>
                   </li>
                   <li>
-                    <a href="news/category/social/samadhan.html">Samadhan</a>
+                    <a >Samadhan</a>
                   </li>
                   <li role="separator" className="divider" />
                   <li>
@@ -192,15 +246,15 @@ const Events = () => {
                     </div>
                   </li>
                   <li>
-                    <a href="news/category/workshop/sam.html">SAM Workshop</a>
+                    <a >SAM Workshop</a>
                   </li>
                   <li>
-                    <a href="news/category/workshop/peace.html">
+                    <a >
                       PEACE Workshop
                     </a>
                   </li>
                   <li>
-                    <a href="news/category/workshop/way.html">WAY Workshop</a>
+                    <a >WAY Workshop</a>
                   </li>
                 </ul>
               </div>
@@ -244,7 +298,7 @@ const Events = () => {
                       <div className="fancy-box-footer">
                         <a
                           target="_blank"
-                          href="news/bhagwan-shiv-katha-highlighted-the-vital-requisite-of-attaining-the-divine-knowledge-in-jodhpur-rajasthan.html"
+                          // href="news/bhagwan-shiv-katha-highlighted-the-vital-requisite-of-attaining-the-divine-knowledge-in-jodhpur-rajasthan.html"
                           className="btn btn-naked text-uppercase text-white"
                         >
                           <span>
@@ -259,7 +313,7 @@ const Events = () => {
                   </div>
                   <a
                     className="liquid-overlay-link z-index-3"
-                    href="news/bhagwan-shiv-katha-highlighted-the-vital-requisite-of-attaining-the-divine-knowledge-in-jodhpur-rajasthan.html"
+                    // href="news/bhagwan-shiv-katha-highlighted-the-vital-requisite-of-attaining-the-divine-knowledge-in-jodhpur-rajasthan.html"
                   />
                 </div>
               </div>
@@ -293,7 +347,7 @@ const Events = () => {
                         <p>&nbsp;</p>
                         <div className="fancy-box-footer">
                           <a
-                            href="news/shri-ram-katha-reinvigorated-the-spiritual-legacy-of-lord-ram-at-rewari-haryana.html"
+                            // href="news/shri-ram-katha-reinvigorated-the-spiritual-legacy-of-lord-ram-at-rewari-haryana.html"
                             className="btn btn-naked text-uppercase text-white"
                           >
                             <span>
@@ -308,7 +362,7 @@ const Events = () => {
                     </div>
                     <a
                       className="liquid-overlay-link z-index-3"
-                      href="news/shri-ram-katha-reinvigorated-the-spiritual-legacy-of-lord-ram-at-rewari-haryana.html"
+                      // href="news/shri-ram-katha-reinvigorated-the-spiritual-legacy-of-lord-ram-at-rewari-haryana.html"
                     />
                   </div>
                 </div>
@@ -341,7 +395,7 @@ const Events = () => {
                         <p>&nbsp;</p>
                         <div className="fancy-box-footer">
                           <a
-                            href="news/shri-ram-katha-satiated-the-thirst-for-spiritual-knowledge-in-kurukshetra-haryana.html"
+                            // href="news/shri-ram-katha-satiated-the-thirst-for-spiritual-knowledge-in-kurukshetra-haryana.html"
                             className="btn btn-naked text-uppercase text-white"
                           >
                             <span>
@@ -356,7 +410,7 @@ const Events = () => {
                     </div>
                     <a
                       className="liquid-overlay-link z-index-3"
-                      href="news/shri-ram-katha-satiated-the-thirst-for-spiritual-knowledge-in-kurukshetra-haryana.html"
+                      // href="news/shri-ram-katha-satiated-the-thirst-for-spiritual-knowledge-in-kurukshetra-haryana.html"
                     />
                   </div>
                 </div>
@@ -389,7 +443,7 @@ const Events = () => {
                         <p>&nbsp;</p>
                         <div className="fancy-box-footer">
                           <a
-                            href="news/bhagwan-shiv-katha-urges-the-people-of-chhatarpur-delhi-to-perceive-god-through-divine-knowledge.html"
+                            // href="news/bhagwan-shiv-katha-urges-the-people-of-chhatarpur-delhi-to-perceive-god-through-divine-knowledge.html"
                             className="btn btn-naked text-uppercase text-white"
                           >
                             <span>
@@ -404,7 +458,7 @@ const Events = () => {
                     </div>
                     <a
                       className="liquid-overlay-link z-index-3"
-                      href="news/bhagwan-shiv-katha-urges-the-people-of-chhatarpur-delhi-to-perceive-god-through-divine-knowledge.html"
+                      // href="news/bhagwan-shiv-katha-urges-the-people-of-chhatarpur-delhi-to-perceive-god-through-divine-knowledge.html"
                     />
                   </div>
                 </div>
@@ -437,7 +491,7 @@ const Events = () => {
                         <p>&nbsp;</p>
                         <div className="fancy-box-footer">
                           <a
-                            href="news/djjs-active-participation-in-nakshatra-fair-2024-at-pragati-maidan-new-delhi-motivated-people-for-spiritual-upliftment.html"
+                            // href="news/djjs-active-participation-in-nakshatra-fair-2024-at-pragati-maidan-new-delhi-motivated-people-for-spiritual-upliftment.html"
                             className="btn btn-naked text-uppercase text-white"
                           >
                             <span>
@@ -452,7 +506,7 @@ const Events = () => {
                     </div>
                     <a
                       className="liquid-overlay-link z-index-3"
-                      href="news/djjs-active-participation-in-nakshatra-fair-2024-at-pragati-maidan-new-delhi-motivated-people-for-spiritual-upliftment.html"
+                      // href="news/djjs-active-participation-in-nakshatra-fair-2024-at-pragati-maidan-new-delhi-motivated-people-for-spiritual-upliftment.html"
                     />
                   </div>
                 </div>
@@ -466,7 +520,7 @@ const Events = () => {
               <div className="lqd-column col-md-12">
                 <div className="liquid-filter-items justify-content-between align-items-center mb-5 m-xs-0">
                   <div className="liquid-filter-items-inner">
-                    <a href="#">
+                    <a >
                       <h3 className="m-0 text-gradient">
                         Latest in Categories
                       </h3>
@@ -501,7 +555,7 @@ const Events = () => {
                       <div className="entry-image mb-10">
                         <a
                           className="img_scale"
-                          href="news/shri-ram-katha-satiated-the-thirst-for-spiritual-knowledge-in-kurukshetra-haryana.html"
+                          // href="news/shri-ram-katha-satiated-the-thirst-for-spiritual-knowledge-in-kurukshetra-haryana.html"
                         >
                           <img
                             className="image_fade ld-lazyload"
@@ -513,7 +567,7 @@ const Events = () => {
                       </div>
                       <div className="entry-title">
                         <h4 className="font-size-22 font-weight-semibold">
-                          <a href="news/shri-ram-katha-satiated-the-thirst-for-spiritual-knowledge-in-kurukshetra-haryana.html">
+                          <a >
                             Shri Ram Katha satiated the thirst for Spiritual
                             Knowledge in Kurukshetra, Haryana
                           </a>
@@ -528,13 +582,13 @@ const Events = () => {
                     </div>
                   </div>
                 )}
-                {activeTab === "manthan" && (
+                {activeTab === "Upcoming" && (
                   <div className="col_one_third mb-xs ">
                     <div className="ipost clearfix">
                       <div className="entry-image mb-10">
                         <a
                           className="img_scale"
-                          href="news/shri-ram-katha-satiated-the-thirst-for-spiritual-knowledge-in-kurukshetra-haryana.html"
+                          // href="news/shri-ram-katha-satiated-the-thirst-for-spiritual-knowledge-in-kurukshetra-haryana.html"
                         >
                           <img
                             className="image_fade ld-lazyload"
@@ -546,7 +600,7 @@ const Events = () => {
                       </div>
                       <div className="entry-title">
                         <h4 className="font-size-22 font-weight-semibold">
-                          <a href="news/shri-ram-katha-satiated-the-thirst-for-spiritual-knowledge-in-kurukshetra-haryana.html">
+                          <a>
                             Shri Ram Katha satiated the thirst for Spiritual
                             Knowledge in Kurukshetra, Haryana
                           </a>
@@ -567,7 +621,7 @@ const Events = () => {
             <div className="d-flex flex-1 justify-content-center mb-30">
               <a
                 id="seeall"
-                href="news/category/spiritual.html"
+                // href="news/category/spiritual.html"
                 className="btn btn-sm btn-solid btn-gradient circle text-uppercase wide ld-lp-carousel-filterable-btn"
               >
                 <span>
@@ -579,293 +633,120 @@ const Events = () => {
             </div>
           </div>
           <div className="container clearfix">
-            <div className="col_full m-xs-0 topmargin clearfix">
-              <div className="row w-100 d-flex flex-wrap align-items-center">
-                <div className="col-xs-9 col-md-9">
-                  <div className="heading-block noborder mb-15">
-                    <h3>
-                      <span className="text-gradient">
-                        <a
-                          className="text-gradient"
-                          href="news/category/workshop.html"
-                        >
-                          Workshops
-                        </a>
-                      </span>
-                    </h3>
-                  </div>
-                </div>
-                <div className="col-xs-3 col-md-3 text-right">
-                  <a
-                    href="news/category/workshop.html"
-                    className="btn btn-naked text-uppercase font-weight-bold nowrap"
-                  >
-                    <span>
-                      <span className="btn-txt">See all</span>
-                    </span>
-                  </a>
-                </div>
-              </div>
-              <div className="row">
-                <div className="col-md-3 col-sm-6 mb-xs ">
-                  <div className="ipost clearfix">
-                    <div className="entry-image mb-15">
-                      <a href="news/youth-empowerment-takes-center-stage-sam-shines-at-yuva-utsav-india2047.html">
-                        <img
-                          className="image_fade ld-lazyload"
-                          data-src="https://www.djjs.org/uploads/news/im_65fa4ad49d027.jpg"
-                          src="https://www.djjs.org/uploads/news/im_65fa4ad49d027.jpg"
-                          alt="Image"
-                        />
-                      </a>
-                    </div>
-                    <div className="entry-title">
-                      <h4 className="font-weight-semibold">
-                        <a href="news/youth-empowerment-takes-center-stage-sam-shines-at-yuva-utsav-india2047.html">
-                          Youth Empowerment Takes Center Stage: SAM Shines at
-                          Yuva Utsav India@2047
-                        </a>
-                      </h4>
-                    </div>
-                    <time
-                      className="liquid-lp-date text-uppercase ltr-sp-1 my-0"
-                      dateTime="2024-03-20"
-                    >
-                      March 20, 2024
-                    </time>
-                  </div>
-                </div>
-                <div className="col-md-3 col-sm-6 mb-xs ">
-                  <div className="ipost clearfix">
-                    <div className="entry-image mb-15">
-                      <a href="news/unique-workshop-on-mental-health-held-by-peace-program-for-working-professionals.html">
-                        <img
-                          className="image_fade ld-lazyload"
-                          data-src="https://www.djjs.org/uploads/news/im_65cd838ad9731.jpg"
-                          src="https://www.djjs.org/uploads/news/im_65cd838ad9731.jpg"
-                          alt="Image"
-                        />
-                      </a>
-                    </div>
-                    <div className="entry-title">
-                      <h4 className="font-weight-semibold">
-                        <a href="news/unique-workshop-on-mental-health-held-by-peace-program-for-working-professionals.html">
-                          Unique Workshop on Mental Health Held by PEACE Program
-                          for Working Professionals
-                        </a>
-                      </h4>
-                    </div>
-                    <time
-                      className="liquid-lp-date text-uppercase ltr-sp-1 my-0"
-                      dateTime="2024-02-15"
-                    >
-                      February 15, 2024
-                    </time>
-                  </div>
-                </div>
-                <div className="col-md-3 col-sm-6 mb-xs ">
-                  <div className="ipost clearfix">
-                    <div className="entry-image mb-15">
-                      <a href="news/sam-hosts-grand-national-youth-day-celebration-at-central-park-connaught-place.html">
-                        <img
-                          className="image_fade ld-lazyload"
-                          data-src="https://www.djjs.org/uploads/news/im_65ae11789af55.png"
-                          src="https://www.djjs.org/uploads/news/im_65ae11789af55.png"
-                          alt="Image"
-                        />
-                      </a>
-                    </div>
-                    <div className="entry-title">
-                      <h4 className="font-weight-semibold">
-                        <a href="news/sam-hosts-grand-national-youth-day-celebration-at-central-park-connaught-place.html">
-                          SAM Hosts Grand National Youth Day Celebration at
-                          Central Park, Connaught Place{" "}
-                        </a>
-                      </h4>
-                    </div>
-                    <time
-                      className="liquid-lp-date text-uppercase ltr-sp-1 my-0"
-                      dateTime="2024-01-22"
-                    >
-                      January 22, 2024
-                    </time>
-                  </div>
-                </div>
-                <div className="col-md-3 col-sm-6 mb-xs col_last">
-                  <div className="ipost clearfix">
-                    <div className="entry-image mb-15">
-                      <a href="news/peace-inspires-corporate-minds-in-a-unique-workshop-on-psychology-of-relationships.html">
-                        <img
-                          className="image_fade ld-lazyload"
-                          data-src="https://www.djjs.org/uploads/news/im_65a3b8028b87d.jpg"
-                          src="https://www.djjs.org/uploads/news/im_65a3b8028b87d.jpg"
-                          alt="Image"
-                        />
-                      </a>
-                    </div>
-                    <div className="entry-title">
-                      <h4 className="font-weight-semibold">
-                        <a href="news/peace-inspires-corporate-minds-in-a-unique-workshop-on-psychology-of-relationships.html">
-                          PEACE inspires corporate minds in a unique workshop on
-                          Psychology of Relationships
-                        </a>
-                      </h4>
-                    </div>
-                    <time
-                      className="liquid-lp-date text-uppercase ltr-sp-1 my-0"
-                      dateTime="2024-01-14"
-                    >
-                      January 14, 2024
-                    </time>
-                  </div>
-                </div>
-              </div>
-              <div className="clear" />
-            </div>
-            <div className="col_full">
-              <div className="row w-100 d-flex flex-wrap align-items-center">
-                <div className="col-xs-9 col-md-9">
-                  <div className="heading-block noborder mb-15">
-                    <h3>
-                      <span className="text-gradient">
-                        <a
-                          className="text-gradient"
-                          href="news/category/spiritual/spiritual-others.html"
-                        >
-                          Other News
-                        </a>
-                      </span>
-                    </h3>
-                  </div>
-                </div>
-                <div className="col-xs-3 col-md-3 text-right">
-                  <a
-                    href="news/category/spiritual/spiritual-others.html"
-                    className="btn btn-naked nowrap text-uppercase font-weight-bold"
-                  >
-                    <span>
-                      <span className="btn-txt">See all</span>
-                    </span>
-                  </a>
-                </div>
-              </div>
-              <div className="row">
-                <div className="col-md-3 col-sm-6 mb-xs">
-                  <div className="ipost clearfix">
-                    <div className="entry-image mb-15">
-                      <a href="news/theology-of-divine-science-unveiled-at-spiritual-forum-organized-by-djjs-at-london-uk.html">
-                        <img
-                          className="image_fade ld-lazyload"
-                          data-src="https://www.djjs.org/uploads/news/im_65f10d31d2d4f.jpg"
-                          src="https://www.djjs.org/uploads/news/im_6614f9f67e48b.jpg"
-                          alt="Image"
-                        />
-                      </a>
-                    </div>
-                    <div className="entry-title">
-                      <h4 className="font-weight-semibold">
-                        <a href="news/theology-of-divine-science-unveiled-at-spiritual-forum-organized-by-djjs-at-london-uk.html">
-                          Theology of Divine Science unveiled at Spiritual Forum
-                          organized by DJJS at London, UK
-                        </a>
-                      </h4>
-                    </div>
-                    <time
-                      className="liquid-lp-date text-uppercase ltr-sp-1 my-0"
-                      dateTime="2024-03-13"
-                    >
-                      March 13, 2024
-                    </time>
-                  </div>
-                </div>
-                <div className="col-md-3 col-sm-6 mb-xs">
-                  <div className="ipost clearfix">
-                    <div className="entry-image mb-15">
-                      <a href="news/djjs-active-participation-in-nakshatra-fair-2024-at-pragati-maidan-new-delhi-motivated-people-for-spiritual-upliftment.html">
-                        <img
-                          className="image_fade ld-lazyload"
-                          data-src="https://www.djjs.org/uploads/news/im_65f10d31d2d4f.jpg"
-                          src="https://www.djjs.org/uploads/news/im_65e135eca7254.jpg"
-                          alt="Image"
-                        />
-                      </a>
-                    </div>
-                    <div className="entry-title">
-                      <h4 className="font-weight-semibold">
-                        <a href="news/djjs-active-participation-in-nakshatra-fair-2024-at-pragati-maidan-new-delhi-motivated-people-for-spiritual-upliftment.html">
-                          Active Participation of DJJS in Nakshatra Fair, 2024
-                          at Pragati Maidan, New Delhi; motivated people for
-                          Spiritual Upliftment
-                        </a>
-                      </h4>
-                    </div>
-                    <time
-                      className="liquid-lp-date text-uppercase ltr-sp-1 my-0"
-                      dateTime="2024-03-01"
-                    >
-                      March 1, 2024
-                    </time>
-                  </div>
-                </div>
-                <div className="col-md-3 col-sm-6 mb-xs">
-                  <div className="ipost clearfix">
-                    <div className="entry-image mb-15">
-                      <a href="news/djjs-celebrated-national-youth-day-with-an-awakening-call-to-the-youth-at-rudrapur-uttarakhand.html">
-                        <img
-                          className="image_fade ld-lazyload"
-                          data-src="https://www.djjs.org/uploads/news/im_65d5d58e376cd.jpg"
-                          src="https://www.djjs.org/uploads/news/im_65d5d58e376cd.jpg"
-                          alt="Image"
-                        />
-                      </a>
-                    </div>
-                    <div className="entry-title">
-                      <h4 className="font-weight-semibold">
-                        <a href="news/djjs-celebrated-national-youth-day-with-an-awakening-call-to-the-youth-at-rudrapur-uttarakhand.html">
-                          DJJS Celebrated National Youth Day with an Awakening
-                          Call to the Youth at Rudrapur, Uttarakhand
-                        </a>
-                      </h4>
-                    </div>
-                    <time
-                      className="liquid-lp-date text-uppercase ltr-sp-1 my-0"
-                      dateTime="2024-02-21"
-                    >
-                      February 21, 2024
-                    </time>
-                  </div>
-                </div>
-                <div className="col-md-3 col-sm-6 mb-xs">
-                  <div className="ipost clearfix">
-                    <div className="entry-image mb-15">
-                      <a href="news/djjs-organized-hundreds-of-spiritual-and-cultural-programs-across-the-world-to-commemorate-the-establishment-of-shri-ram-temple.html">
-                        <img
-                          className="image_fade ld-lazyload"
-                          data-src="https://www.djjs.org/uploads/news/im_65cd81617f7c0.jpg"
-                          src="https://www.djjs.org/uploads/news/im_65f10d31d2d4f.jpg"
-                          alt="Image"
-                        />
-                      </a>
-                    </div>
-                    <div className="entry-title">
-                      <h4 className="font-weight-semibold">
-                        <a href="news/djjs-organized-hundreds-of-spiritual-and-cultural-programs-across-the-world-to-commemorate-the-establishment-of-shri-ram-temple.html">
-                          DJJS organized hundreds of spiritual and cultural
-                          programs across the world to commemorate the
-                          establishment of Shri Ram Temple
-                        </a>
-                      </h4>
-                    </div>
-                    <time
-                      className="liquid-lp-date text-uppercase ltr-sp-1 my-0"
-                      dateTime="2024-02-15"
-                    >
-                      February 15, 2024
-                    </time>
-                  </div>
-                </div>
-              </div>
-            </div>
+          <div className="col_full m-xs-0 topmargin clearfix">
+  <div className="row w-100 d-flex flex-wrap align-items-center">
+    <div className="col-xs-9 col-md-9">
+      <div className="heading-block noborder mb-15">
+        <h3>
+          <span className="text-gradient">
+            <a className="text-gradient" >
+              Workshops
+            </a>
+          </span>
+        </h3>
+      </div>
+    </div>
+    <div className="col-xs-3 col-md-3 text-right">
+      <a
+        
+        className="btn btn-naked text-uppercase font-weight-bold nowrap"
+      >
+        <span>
+          <span className="btn-txt">See all</span>
+        </span>
+      </a>
+    </div>
+  </div>
+  <div className="row">
+    {/* Use the map function to render workshop items */}
+    {workshops.map((workshop, index) => (
+      <div className="col-md-3 col-sm-6 mb-xs" key={index}>
+        <div className="ipost clearfix">
+          <div className="entry-image mb-15">
+            <a href={workshop.link}>
+              <img
+                className="image_fade ld-lazyload"
+                data-src={workshop.image}
+                src={workshop.image}
+                alt="Image"
+              />
+            </a>
+          </div>
+          <div className="entry-title">
+            <h4 className="font-weight-semibold">
+              <a href={workshop.link}>{workshop.title}</a>
+            </h4>
+          </div>
+          <time
+            className="liquid-lp-date text-uppercase ltr-sp-1 my-0"
+            dateTime={workshop.date}
+          >
+            {workshop.date}
+          </time>
+        </div>
+      </div>
+    ))}
+  </div>
+  <div className="clear" />
+</div>
+<div className="col_full">
+  <div className="row w-100 d-flex flex-wrap align-items-center">
+    <div className="col-xs-9 col-md-9">
+      <div className="heading-block noborder mb-15">
+        <h3>
+          <span className="text-gradient">
+            <a
+              className="text-gradient"
+              // href="news/category/spiritual/spiritual-others.html"
+            >
+              Other News
+            </a>
+          </span>
+        </h3>
+      </div>
+    </div>
+    <div className="col-xs-3 col-md-3 text-right">
+      <a
+        // href="news/category/spiritual/spiritual-others.html"
+        className="btn btn-naked nowrap text-uppercase font-weight-bold"
+      >
+        <span>
+          <span className="btn-txt">See all</span>
+        </span>
+      </a>
+    </div>
+  </div>
+  <div className="row">
+    {/* Use the map function to render other news items */}
+    {otherNews.map((newsItem, index) => (
+      <div className="col-md-3 col-sm-6 mb-xs" key={index}>
+        <div className="ipost clearfix">
+          <div className="entry-image mb-15">
+            <a href={newsItem.link}>
+              <img
+                className="image_fade ld-lazyload"
+                data-src={newsItem.image}
+                src={newsItem.image}
+                alt="Image"
+              />
+            </a>
+          </div>
+          <div className="entry-title">
+            <h4 className="font-weight-semibold">
+              <a href={newsItem.link}>{newsItem.title}</a>
+            </h4>
+          </div>
+          <time
+            className="liquid-lp-date text-uppercase ltr-sp-1 my-0"
+            dateTime={newsItem.date}
+          >
+            {newsItem.date}
+          </time>
+        </div>
+      </div>
+    ))}
+  </div>
+</div>
           </div>
         </div>
       </main>

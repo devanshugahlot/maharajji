@@ -1,69 +1,218 @@
-import React from "react";
+import React, { useState } from "react";
 import "../Pages/brahmgyan.css";
-import "./audio.css"
+import "./audio.css";
 import { FaAngleUp } from "react-icons/fa";
+import Audioslider from "./Audioslider";
+import ColorSlider from "./AudioSlidermain";
+import ListItemButton from "@mui/material/ListItemButton";
+import ListItemIcon from "@mui/material/ListItemIcon";
+import ListItemText from "@mui/material/ListItemText";
+import Collapse from "@mui/material/Collapse";
+import List from "@mui/material/List";
 
-
-
+import PeopleIcon from "@mui/icons-material/People";
+import ExpandLess from "@mui/icons-material/ExpandLess";
+import ExpandMore from "@mui/icons-material/ExpandMore";
+import KeyboardBackspaceIcon from "@mui/icons-material/KeyboardBackspace";
+import StarBorder from "@mui/icons-material/StarBorder";
+import { Divider } from "@mui/material";
+// import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
+// import ArrowDropUpIcon from "@mui/icons-material/ArrowDropUpIcon";
+import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
+import ArrowDropUpIcon from "@mui/icons-material/ArrowDropUp"; 
 const AudioGallery = () =>
 {
+  const categories = [
+    {
+      name: "COVID19",
+      subcategories: [
+        {
+          name: "Subcategory 1",
+          subsubcategories: [
+            {
+              name: "Subsubcategory 1A",
+              subsubsubcategories: [
+                "Subsubsubcategory 1AA",
+                "Subsubsubcategory 1AB",
+              ],
+            },
+            {
+              name: "Subsubcategory 1B",
+              subsubsubcategories: [
+                "Subsubsubcategory 1BA",
+                "Subsubsubcategory 1BB",
+              ],
+            },
+          ],
+        },
+        {
+          name: "Subcategory 2",
+          subsubcategories: [
+            {
+              name: "Subsubcategory 2A",
+              subsubsubcategories: [
+                "Subsubsubcategory 2AA",
+                "Subsubsubcategory 2AB",
+              ],
+            },
+            {
+              name: "Subsubcategory 2B",
+              subsubsubcategories: [
+                "Subsubsubcategory 2BA",
+                "Subsubsubcategory 2BB",
+              ],
+            },
+          ],
+        },
+        // Add more subcategories with their respective subsubcategories as needed
+      ],
+    },
+    {
+      name: "meditation",
+      subcategories: [
+        {
+          name: "Subcategory 1",
+          subsubcategories: [
+            {
+              name: "Subsubcategory 1A",
+              subsubsubcategories: [
+                "Subsubsubcategory 1AA",
+                "Subsubsubcategory 1AB",
+              ],
+            },
+            {
+              name: "Subsubcategory 1B",
+              subsubsubcategories: [
+                "Subsubsubcategory 1BA",
+                "Subsubsubcategory 1BB",
+              ],
+            },
+          ],
+        },
+        {
+          name: "Subcategory 2",
+          subsubcategories: [
+            {
+              name: "Subsubcategory 2A",
+              subsubsubcategories: [
+                "Subsubsubcategory 2AA",
+                "Subsubsubcategory 2AB",
+              ],
+            },
+            {
+              name: "Subsubcategory 2B",
+              subsubsubcategories: [
+                "Subsubsubcategory 2BA",
+                "Subsubsubcategory 2BB",
+              ],
+            },
+          ],
+        },
+        // Add more subcategories with their respective subsubcategories as needed
+      ],
+    },
+    {
+      name: "SAMADHI",
+      subcategories: [
+        {
+          name: "Subcategory 1",
+          subsubcategories: [
+            {
+              name: "Subsubcategory 1A",
+              subsubsubcategories: [
+                "Subsubsubcategory 1AA",
+                "Subsubsubcategory 1AB",
+              ]
+            },
+            {
+              name: "Subsubcategory 1B",
+              subsubsubcategories: [
+                "Subsubsubcategory 1BA",
+                "Subsubsubcategory 1BB",
+              ],
+            },
+          ]
+        },
+        {
+          name: "Subcategory 2",
+          subsubcategories: [
+            {
+              name: "Subsubcategory 1B",
+              subsubsubcategories: [
+                "Subsubsubcategory 1AA",
+                "Subsubsubcategory 1AB",
+              ]
+            },
+            {
+              name: "Subsubcategory 1B",
+              subsubsubcategories: [
+                "Subsubsubcategory 1BA",
+                "Subsubsubcategory 1BB",
+              ],
+            },
+          ]
+        },
+      ]
+    }
+    // Add more main categories with their subcategories and subsubcategories as needed
+  ];
   const bhajans = [
     {
       id: 1,
-      imageUrl: 'https://images4.alphacoders.com/936/936378.jpg',
-      length: '2:55',
+      imageUrl: "https://images4.alphacoders.com/936/936378.jpg",
+      length: "2:55",
       videoTitle: "Gokhan 'YokanJS' Yildiz",
-      videoOwner: 'YokanJS'
+      videoOwner: "YokanJS",
     },
     {
       id: 2,
-      imageUrl: 'https://images4.alphacoders.com/936/936378.jpg',
-      length: '2:55',
+      imageUrl: "https://images4.alphacoders.com/936/936378.jpg",
+      length: "2:55",
       videoTitle: "Gokhan 'YokanJS' Yildiz",
-      videoOwner: 'YokanJS'
+      videoOwner: "YokanJS",
     },
     {
       id: 3,
-      imageUrl: 'https://images4.alphacoders.com/936/936378.jpg',
-      length: '2:55',
+      imageUrl: "https://images4.alphacoders.com/936/936378.jpg",
+      length: "2:55",
       videoTitle: "Gokhan 'YokanJS' Yildiz",
-      videoOwner: 'YokanJS'
+      videoOwner: "YokanJS",
     },
     {
       id: 4,
-      imageUrl: 'https://images4.alphacoders.com/936/936378.jpg',
-      length: '2:55',
+      imageUrl: "https://images4.alphacoders.com/936/936378.jpg",
+      length: "2:55",
       videoTitle: "Gokhan 'YokanJS' Yildiz",
-      videoOwner: 'YokanJS'
+      videoOwner: "YokanJS",
     },
     {
       id: 4,
-      imageUrl: 'https://images4.alphacoders.com/936/936378.jpg',
-      length: '2:55',
+      imageUrl: "https://images4.alphacoders.com/936/936378.jpg",
+      length: "2:55",
       videoTitle: "Gokhan 'YokanJS' Yildiz",
-      videoOwner: 'YokanJS'
+      videoOwner: "YokanJS",
     },
     {
       id: 4,
-      imageUrl: 'https://images4.alphacoders.com/936/936378.jpg',
-      length: '2:55',
+      imageUrl: "https://images4.alphacoders.com/936/936378.jpg",
+      length: "2:55",
       videoTitle: "Gokhan 'YokanJS' Yildiz",
-      videoOwner: 'YokanJS'
+      videoOwner: "YokanJS",
     },
     {
       id: 4,
-      imageUrl: 'https://images4.alphacoders.com/936/936378.jpg',
-      length: '2:55',
+      imageUrl: "https://images4.alphacoders.com/936/936378.jpg",
+      length: "2:55",
       videoTitle: "Gokhan 'YokanJS' Yildiz",
-      videoOwner: 'YokanJS'
+      videoOwner: "YokanJS",
     },
 
     {
       id: 4,
-      imageUrl: 'https://images4.alphacoders.com/936/936378.jpg',
-      length: '2:55',
+      imageUrl: "https://images4.alphacoders.com/936/936378.jpg",
+      length: "2:55",
       videoTitle: "Gokhan 'YokanJS' Yildiz",
-      videoOwner: 'YokanJS'
+      videoOwner: "YokanJS",
     },
     // Add more items as needed
   ];
@@ -71,63 +220,88 @@ const AudioGallery = () =>
   const bhajanstwo = [
     {
       id: 1,
-      imageUrl: 'https://images4.alphacoders.com/936/936378.jpg',
-      length: '2:55',
+      imageUrl: "https://images4.alphacoders.com/936/936378.jpg",
+      length: "2:55",
       videoTitle: "Gokhan 'YokanJS' Yildiz",
-      videoOwner: 'YokanJS'
+      videoOwner: "YokanJS",
     },
     {
       id: 2,
-      imageUrl: 'https://images4.alphacoders.com/936/936378.jpg',
-      length: '2:55',
+      imageUrl: "https://images4.alphacoders.com/936/936378.jpg",
+      length: "2:55",
       videoTitle: "Gokhan 'YokanJS' Yildiz",
-      videoOwner: 'YokanJS'
+      videoOwner: "YokanJS",
     },
     {
       id: 3,
-      imageUrl: 'https://images4.alphacoders.com/936/936378.jpg',
-      length: '2:55',
+      imageUrl: "https://images4.alphacoders.com/936/936378.jpg",
+      length: "2:55",
       videoTitle: "Gokhan 'YokanJS' Yildiz",
-      videoOwner: 'YokanJS'
+      videoOwner: "YokanJS",
     },
     {
       id: 4,
-      imageUrl: 'https://images4.alphacoders.com/936/936378.jpg',
-      length: '2:55',
+      imageUrl: "https://images4.alphacoders.com/936/936378.jpg",
+      length: "2:55",
       videoTitle: "Gokhan 'YokanJS' Yildiz",
-      videoOwner: 'YokanJS'
+      videoOwner: "YokanJS",
     },
     {
       id: 4,
-      imageUrl: 'https://images4.alphacoders.com/936/936378.jpg',
-      length: '2:55',
+      imageUrl: "https://images4.alphacoders.com/936/936378.jpg",
+      length: "2:55",
       videoTitle: "Gokhan 'YokanJS' Yildiz",
-      videoOwner: 'YokanJS'
+      videoOwner: "YokanJS",
     },
     {
       id: 4,
-      imageUrl: 'https://images4.alphacoders.com/936/936378.jpg',
-      length: '2:55',
+      imageUrl: "https://images4.alphacoders.com/936/936378.jpg",
+      length: "2:55",
       videoTitle: "Gokhan 'YokanJS' Yildiz",
-      videoOwner: 'YokanJS'
+      videoOwner: "YokanJS",
     },
     {
       id: 4,
-      imageUrl: 'https://images4.alphacoders.com/936/936378.jpg',
-      length: '2:55',
+      imageUrl: "https://images4.alphacoders.com/936/936378.jpg",
+      length: "2:55",
       videoTitle: "Gokhan 'YokanJS' Yildiz",
-      videoOwner: 'YokanJS'
+      videoOwner: "YokanJS",
     },
 
     {
       id: 4,
-      imageUrl: 'https://images4.alphacoders.com/936/936378.jpg',
-      length: '2:55',
+      imageUrl: "https://images4.alphacoders.com/936/936378.jpg",
+      length: "2:55",
       videoTitle: "Gokhan 'YokanJS' Yildiz",
-      videoOwner: 'YokanJS'
+      videoOwner: "YokanJS",
     },
-    // Add more items as needed
+  
   ];
+  const [openCategory, setOpenCategory] = useState(null);
+  const [ openSubCategory, setOpenSubCategory ] = useState( null ); 
+  const [openSubSubCategory, setOpenSubSubCategory] = useState(null); // State to manage which subsubcategory is open
+
+  const handleCategoryClick = (index) => {
+    if (openCategory === index) {
+      setOpenCategory(null);
+    } else {
+      setOpenCategory(index);
+    }
+  };
+  const handleSubCategoryClick = (index) => {
+    if (openSubCategory === index) {
+      setOpenSubCategory(null);
+    } else {
+      setOpenSubCategory(index);
+    }
+  };
+  const handleSubSubCategoryClick = (index) => {
+    if (openSubSubCategory === index) {
+      setOpenSubSubCategory(null);
+    } else {
+      setOpenSubSubCategory(index);
+    }
+  };
   return (
     <div>
       <div className="titlebar titlebar-sm scheme-dark bg-gray-2 bb-fade-black-005">
@@ -186,6 +360,7 @@ const AudioGallery = () =>
             </div>
           </div>
           <div className="container-fluid clearfix">
+            {/* slider div */}
             <div className="mt-4 carousel-container carousel-shadow-all carousel-nav-left carousel-nav-md carousel-dots-style4 ">
               <div
                 className="carousel-items row"
@@ -193,400 +368,111 @@ const AudioGallery = () =>
                 data-ca-options='{"triggerHandler":"inview","animationTarget":".carousel-item","duration":"1200","delay":"150","easing":"easeOutQuint","direction":"forward","initValues":{"translateY":-55,"rotateX":-1,"opacity":0},"animations":{"translateY":0,"rotateX":0,"opacity":1}}'
                 data-lqd-flickity='{"cellAlign":"center","prevNextButtons":false,"buttonsAppendTo":"self","pageDots":false,"groupCells":true,"wrapAround":true,"pauseAutoPlayOnHover":false}'
               >
-                <div className="carousel-item lqd-column col-sm-4 col-md-3 col-lg-2 col-xs-12 ">
-                  <div
-                    className="amplitude-song-container amplitude-play-pause"
-                    data-amplitude-song-index={0}
-                    data-amplitude-playlist="prerna"
-                  >
-                    <div
-                      className="fancy-box mb-0 fancy-box-travel"
-                      data-slideelement-onhover="true"
-                      data-slideelement-options='{ "visibleElement": ".fancy-box-header", "hiddenElement": ".fancy-box-info" }'
-                    >
-                      <figure
-                        className="fancy-box-image"
-                        style={{
-                          backgroundImage:
-                            "url(../../i1.sndcdn.com/artworks-000191278583-265df7-t500x500.jpg)",
-                        }}
-                      >
-                        <img
-                          src="https://i1.sndcdn.com/artworks-000191278583-265df7-t500x500.jpg"
-                          alt="Content Box"
-                        />
-                      </figure>
-                      <div
-                        className="fancy-box-contents"
-                        style={{ margin: 10 }}
-                      >
-                        <div className="fancy-box-header">
-                          <span className="fancy-box-time">9:22</span>
-                          <p className="text-white font-size-13 lh-15">
-                            PP144-Prathana (Hindi)
-                          </p>
-                        </div>
-                        <div className="fancy-box-info">
-                          <p>&nbsp;</p>
-                          <div className="fancy-box-footer">
-                            <a
-                              href="#"
-                              className="play-icon track-list btn btn-naked text-uppercase"
-                              data-track="https://www.djjs.org/feed/playtrack/290619604?client_id=989dab6caab0f1cce36f9b8be8967360&oauth_token=2-111630--mZ9ImDpY3sDJATxFCA9C8Rf"
-                              data-poster="https://i1.sndcdn.com/artworks-000191278583-265df7-t500x500.jpg"
-                              data-title="PP144-Prathana (Hindi)"
-                              data-singer="Prerna Pravah"
-                            >
-                              <span>
-                                <span className="btn-txt">Listen</span>
-                                <span className="btn-icon">
-                                  <i className="fa fa-play" />
-                                </span>
-                              </span>
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                      <a href="#" className=" liquid-overlay-link z-index-3" />
-                    </div>
-                  </div>
-                </div>
-                <div className="carousel-item lqd-column col-sm-4 col-md-3 col-lg-2 col-xs-12 ">
-                  <div
-                    className="amplitude-song-container amplitude-play-pause"
-                    data-amplitude-song-index={1}
-                    data-amplitude-playlist="prerna"
-                  >
-                    <div
-                      className="fancy-box mb-0 fancy-box-travel"
-                      data-slideelement-onhover="true"
-                      data-slideelement-options='{ "visibleElement": ".fancy-box-header", "hiddenElement": ".fancy-box-info" }'
-                    >
-                      <figure
-                        className="fancy-box-image"
-                        style={{
-                          backgroundImage:
-                            "url(../../i1.sndcdn.com/artworks-000190405270-m56359-t500x500.jpg)",
-                        }}
-                      >
-                        <img
-                          src="https://i1.sndcdn.com/artworks-000190405270-m56359-t500x500.jpg"
-                          alt="Content Box"
-                        />
-                      </figure>
-                      <div
-                        className="fancy-box-contents"
-                        style={{ margin: 10 }}
-                      >
-                        <div className="fancy-box-header">
-                          <span className="fancy-box-time">6:59</span>
-                          <p className="text-white font-size-13 lh-15">
-                            PP143-Shreya Aur Preya Marg (Hindi)
-                          </p>
-                        </div>
-                        <div className="fancy-box-info">
-                          <p>&nbsp;</p>
-                          <div className="fancy-box-footer">
-                            <a
-                              href="#"
-                              className="play-icon track-list btn btn-naked text-uppercase"
-                              data-track="https://www.djjs.org/feed/playtrack/289691449?client_id=989dab6caab0f1cce36f9b8be8967360&oauth_token=2-111630--mZ9ImDpY3sDJATxFCA9C8Rf"
-                              data-poster="https://i1.sndcdn.com/artworks-000190405270-m56359-t500x500.jpg"
-                              data-title="PP143-Shreya Aur Preya Marg (Hindi)"
-                              data-singer="Prerna Pravah"
-                            >
-                              <span>
-                                <span className="btn-txt">Listen</span>
-                                <span className="btn-icon">
-                                  <i className="fa fa-play" />
-                                </span>
-                              </span>
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                      <a href="#" className=" liquid-overlay-link z-index-3" />
-                    </div>
-                  </div>
-                </div>
-                <div className="carousel-item lqd-column col-sm-4 col-md-3 col-lg-2 col-xs-12 ">
-                  <div
-                    className="amplitude-song-container amplitude-play-pause"
-                    data-amplitude-song-index={2}
-                    data-amplitude-playlist="prerna"
-                  >
-                    <div
-                      className="fancy-box mb-0 fancy-box-travel"
-                      data-slideelement-onhover="true"
-                      data-slideelement-options='{ "visibleElement": ".fancy-box-header", "hiddenElement": ".fancy-box-info" }'
-                    >
-                      <figure
-                        className="fancy-box-image"
-                        style={{
-                          backgroundImage: "url(../images/app/pp/pp42.webp)",
-                        }}
-                      >
-                        <img
-                          src="https://www.djjs.org/images/app/pp/pp42.webp"
-                          alt="Content Box"
-                        />
-                      </figure>
-                      <div
-                        className="fancy-box-contents"
-                        style={{ margin: 10 }}
-                      >
-                        <div className="fancy-box-header">
-                          <span className="fancy-box-time">8:18</span>
-                          <p className="text-white font-size-13 lh-15">
-                            PP142-Guru Mahima (Hindi)
-                          </p>
-                        </div>
-                        <div className="fancy-box-info">
-                          <p>&nbsp;</p>
-                          <div className="fancy-box-footer">
-                            <a
-                              href="#"
-                              className="play-icon track-list btn btn-naked text-uppercase"
-                              data-track="https://www.djjs.org/feed/playtrack/288199099?client_id=989dab6caab0f1cce36f9b8be8967360&oauth_token=2-111630--mZ9ImDpY3sDJATxFCA9C8Rf"
-                              data-poster="https://www.djjs.org/images/app/pp/pp42.webp"
-                              data-title="PP142-Guru Mahima (Hindi)"
-                              data-singer="Prerna Pravah"
-                            >
-                              <span>
-                                <span className="btn-txt">Listen</span>
-                                <span className="btn-icon">
-                                  <i className="fa fa-play" />
-                                </span>
-                              </span>
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                      <a href="#" className=" liquid-overlay-link z-index-3" />
-                    </div>
-                  </div>
-                </div>
-                <div className="carousel-item lqd-column col-sm-4 col-md-3 col-lg-2 col-xs-12 ">
-                  <div
-                    className="amplitude-song-container amplitude-play-pause"
-                    data-amplitude-song-index={2}
-                    data-amplitude-playlist="prerna"
-                  >
-                    <div
-                      className="fancy-box mb-0 fancy-box-travel"
-                      data-slideelement-onhover="true"
-                      data-slideelement-options='{ "visibleElement": ".fancy-box-header", "hiddenElement": ".fancy-box-info" }'
-                    >
-                      <figure
-                        className="fancy-box-image"
-                        style={{
-                          backgroundImage: "url(../images/app/pp/pp42.webp)",
-                        }}
-                      >
-                        <img
-                          src="https://www.djjs.org/images/app/pp/pp42.webp"
-                          alt="Content Box"
-                        />
-                      </figure>
-                      <div
-                        className="fancy-box-contents"
-                        style={{ margin: 10 }}
-                      >
-                        <div className="fancy-box-header">
-                          <span className="fancy-box-time">8:18</span>
-                          <p className="text-white font-size-13 lh-15">
-                            PP142-Guru Mahima (Hindi)
-                          </p>
-                        </div>
-                        <div className="fancy-box-info">
-                          <p>&nbsp;</p>
-                          <div className="fancy-box-footer">
-                            <a
-                              href="#"
-                              className="play-icon track-list btn btn-naked text-uppercase"
-                              data-track="https://www.djjs.org/feed/playtrack/288199099?client_id=989dab6caab0f1cce36f9b8be8967360&oauth_token=2-111630--mZ9ImDpY3sDJATxFCA9C8Rf"
-                              data-poster="https://www.djjs.org/images/app/pp/pp42.webp"
-                              data-title="PP142-Guru Mahima (Hindi)"
-                              data-singer="Prerna Pravah"
-                            >
-                              <span>
-                                <span className="btn-txt">Listen</span>
-                                <span className="btn-icon">
-                                  <i className="fa fa-play" />
-                                </span>
-                              </span>
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                      <a href="#" className=" liquid-overlay-link z-index-3" />
-                    </div>
-                  </div>
-                </div>
-                <div className="carousel-item lqd-column col-sm-4 col-md-3 col-lg-2 col-xs-12 ">
-                  <div
-                    className="amplitude-song-container amplitude-play-pause"
-                    data-amplitude-song-index={2}
-                    data-amplitude-playlist="prerna"
-                  >
-                    <div
-                      className="fancy-box mb-0 fancy-box-travel"
-                      data-slideelement-onhover="true"
-                      data-slideelement-options='{ "visibleElement": ".fancy-box-header", "hiddenElement": ".fancy-box-info" }'
-                    >
-                      <figure
-                        className="fancy-box-image"
-                        style={{
-                          backgroundImage: "url(../images/app/pp/pp42.webp)",
-                        }}
-                      >
-                        <img
-                          src="https://www.djjs.org/images/app/pp/pp42.webp"
-                          alt="Content Box"
-                        />
-                      </figure>
-                      <div
-                        className="fancy-box-contents"
-                        style={{ margin: 10 }}
-                      >
-                        <div className="fancy-box-header">
-                          <span className="fancy-box-time">8:18</span>
-                          <p className="text-white font-size-13 lh-15">
-                            PP142-Guru Mahima (Hindi)
-                          </p>
-                        </div>
-                        <div className="fancy-box-info">
-                          <p>&nbsp;</p>
-                          <div className="fancy-box-footer">
-                            <a
-                              href="#"
-                              className="play-icon track-list btn btn-naked text-uppercase"
-                              data-track="https://www.djjs.org/feed/playtrack/288199099?client_id=989dab6caab0f1cce36f9b8be8967360&oauth_token=2-111630--mZ9ImDpY3sDJATxFCA9C8Rf"
-                              data-poster="https://www.djjs.org/images/app/pp/pp42.webp"
-                              data-title="PP142-Guru Mahima (Hindi)"
-                              data-singer="Prerna Pravah"
-                            >
-                              <span>
-                                <span className="btn-txt">Listen</span>
-                                <span className="btn-icon">
-                                  <i className="fa fa-play" />
-                                </span>
-                              </span>
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                      <a href="#" className=" liquid-overlay-link z-index-3" />
-                    </div>
-                  </div>
-                </div>
-                <div className="carousel-item lqd-column col-sm-4 col-md-3 col-lg-2 col-xs-12 ">
-                  <div
-                    className="amplitude-song-container amplitude-play-pause"
-                    data-amplitude-song-index={2}
-                    data-amplitude-playlist="prerna"
-                  >
-                    <div
-                      className="fancy-box mb-0 fancy-box-travel"
-                      data-slideelement-onhover="true"
-                      data-slideelement-options='{ "visibleElement": ".fancy-box-header", "hiddenElement": ".fancy-box-info" }'
-                    >
-                      <figure
-                        className="fancy-box-image"
-                        style={{
-                          backgroundImage: "url(../images/app/pp/pp42.webp)",
-                        }}
-                      >
-                        <img
-                          src="https://www.djjs.org/images/app/pp/pp42.webp"
-                          alt="Content Box"
-                        />
-                      </figure>
-                      <div
-                        className="fancy-box-contents"
-                        style={{ margin: 10 }}
-                      >
-                        <div className="fancy-box-header">
-                          <span className="fancy-box-time">8:18</span>
-                          <p className="text-white font-size-13 lh-15">
-                            PP142-Guru Mahima (Hindi)
-                          </p>
-                        </div>
-                        <div className="fancy-box-info">
-                          <p>&nbsp;</p>
-                          <div className="fancy-box-footer">
-                            <a
-                              href="#"
-                              className="play-icon track-list btn btn-naked text-uppercase"
-                              data-track="https://www.djjs.org/feed/playtrack/288199099?client_id=989dab6caab0f1cce36f9b8be8967360&oauth_token=2-111630--mZ9ImDpY3sDJATxFCA9C8Rf"
-                              data-poster="https://www.djjs.org/images/app/pp/pp42.webp"
-                              data-title="PP142-Guru Mahima (Hindi)"
-                              data-singer="Prerna Pravah"
-                            >
-                              <span>
-                                <span className="btn-txt">Listen</span>
-                                <span className="btn-icon">
-                                  <i className="fa fa-play" />
-                                </span>
-                              </span>
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                      <a href="#" className=" liquid-overlay-link z-index-3" />
-                    </div>
-                  </div>
-                </div>
+                {/* slider component */}
+                <Audioslider />
               </div>
             </div>
             <div className="container">
               <div className="listContainer">
                 <div>
-      <div className="listHeader">
-        <div className="listHeaderL">
-          <p className="listTitle">Devotional Bhajans</p>
-        </div>
-      </div>
-      <div className="listContent" id="playlist">
-        {/* Iterate over the bhajans array using map */}
-        {bhajans.map(bhajan => (
-          <div key={bhajan.id} className="listItem">
-            <div className="itemImage">
-              <img src={bhajan.imageUrl} alt="" />
-              <button className="itemLength">{bhajan.length}</button>
-            </div>
-            <div className="itemInfo">
-              <p className="videoTitle">{bhajan.videoTitle}</p>
-              <p className="videoOwner">{bhajan.videoOwner}</p>
-            </div>
-          </div>
-        ))}
+                  <div className="listHeader">
+                    <div className="listHeaderL">
+                      <p className="listTitle">Devotional Bhajans</p>
+                    </div>
+                  </div>
+                  <div className="listContent" id="playlist">
+                    {/* Iterate over the bhajans array using map */}
+                    {bhajans.map((bhajan) => (
+                      <div key={bhajan.id} className="listItem">
+                        <div className="itemImage">
+                          <img src={bhajan.imageUrl} alt="" />
+                          <button className="itemLength">
+                            {bhajan.length}
+                          </button>
+                        </div>
+                        <div className="itemInfo">
+                          <p className="videoTitle">{bhajan.videoTitle}</p>
+                          <p className="videoOwner">{bhajan.videoOwner}</p>
+                        </div>
+                      </div>
+                    ))}
                   </div>
                 </div>
-                
+
                 <div>
-      <div className="listHeader">
-        <div className="listHeaderL">
-          <p className="listTitle">Spiritual Discourses</p>
-        </div>
-      </div>
-      <div className="listContent" id="playlist">
-        {/* Iterate over the bhajans array using map */}
-        {bhajanstwo.map(bhajan => (
-          <div key={bhajan.id} className="listItem">
-            <div className="itemImage">
-              <img src={bhajan.imageUrl} alt="" />
-              <button className="itemLength">{bhajan.length}</button>
-            </div>
-            <div className="itemInfo">
-              <p className="videoTitle">{bhajan.videoTitle}</p>
-              <p className="videoOwner">{bhajan.videoOwner}</p>
-            </div>
-          </div>
+                  <div className="listHeader">
+                    <div className="listHeaderL">
+                      <p className="listTitle">Spiritual Discourses</p>
+                    </div>
+                  </div>
+                  <div className="listContent" id="playlist">
+                    {/* Iterate over the bhajans array using map */}
+                    {bhajanstwo.map((bhajan) => (
+                      <div key={bhajan.id} className="listItem">
+                        <div className="itemImage">
+                          <img src={bhajan.imageUrl} alt="" />
+                          <button className="itemLength">
+                            {bhajan.length}
+                          </button>
+                        </div>
+                        <div className="itemInfo">
+                          <p className="videoTitle">{bhajan.videoTitle}</p>
+                          <p className="videoOwner">{bhajan.videoOwner}</p>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+                <div>
+                <div className="widget">
+      <h3 className="widget-title">Categories</h3>
+      <List>
+        {categories.map((category, index) => (
+          <React.Fragment key={index}>
+            <ListItemButton onClick={() => handleCategoryClick(index)} className={openCategory === index ? 'open' : ''}>
+              {openCategory === index ? <ArrowDropUpIcon /> : <ArrowDropDownIcon />}
+              <ListItemText  primary={category.name} />
+            </ListItemButton>
+            {openCategory === index && (
+              <List component="div" disablePadding>
+                {category.subcategories.map((subcategory, subIndex) => (
+                  <React.Fragment key={subIndex}>
+                    <ListItemButton onClick={() => handleSubCategoryClick(subIndex)} className={openSubCategory === subIndex ? 'open' : ''}>
+                      {openSubCategory === subIndex ? <ArrowDropUpIcon /> : <ArrowDropDownIcon />}
+                      <ListItemText  primary={subcategory.name} />
+                    </ListItemButton>
+                    {openSubCategory === subIndex && subcategory.subsubcategories && (
+                      <List component="div" disablePadding>
+                        {subcategory.subsubcategories.map((subsubcategory, subsubIndex) => (
+                          <React.Fragment key={subsubIndex}>
+                            <ListItemButton onClick={() => handleSubSubCategoryClick(subsubIndex)} className={openSubSubCategory === subsubIndex ? 'open' : ''}>
+                              {openSubSubCategory === subsubIndex ? <ArrowDropUpIcon /> : <ArrowDropDownIcon />}
+                              <ListItemText primary={subsubcategory.name} />
+                            </ListItemButton>
+                            {openSubSubCategory === subsubIndex && subsubcategory.subsubsubcategories && (
+                              <List component="div" disablePadding>
+                                {subsubcategory.subsubsubcategories.map((subsubsubcategory, subsubsubIndex) => (
+                                  <ListItemButton key={subsubsubIndex} className="sub-sub-sub-item">
+                                    <ListItemText primary={subsubsubcategory} />
+                                  </ListItemButton>
+                                ))}
+                              </List>
+                            )}
+                          </React.Fragment>
+                        ))}
+                      </List>
+                    )}
+                  </React.Fragment>
+                ))}
+              </List>
+            )}
+            {index !== categories.length - 1 && <Divider />}
+          </React.Fragment>
         ))}
-                  </div>
-                  </div>
+      </List>
     </div>
+                </div>
+              </div>
               <div className="heading-block bottommargin-sm topmargin noborder">
                 <h3 className="t500 font-size-26">
                   <span className="text-gradient">Featured Categories</span>
@@ -642,7 +528,10 @@ const AudioGallery = () =>
                     />
                   </div>
                   <div className="col-md-6">
-                    <img src="https://www.djjs.org/images/new/discourse.jpg" alt />
+                    <img
+                      src="https://www.djjs.org/images/new/discourse.jpg"
+                      alt
+                    />
                     <div className="overlay">
                       <div className="text-overlay">
                         <span className="font-primary">Food for soul</span>
@@ -770,6 +659,72 @@ const AudioGallery = () =>
           </div>
         </div>
       </section>
+      <div className="gradient-bg" id="player">
+        <div className="d-flex h-100">
+          <div
+            className="row d-flex flex-wrap justify-content-center align-items-center"
+            style={{ width: "100%" }}
+          >
+            <div className="d-none d-sm-block align-self-center col-md-3 mx-auto">
+              <div className="meta-container">
+                <span
+                  data-amplitude-song-info="name"
+                  className="song-name lh-1"
+                >
+                  Guru Dev Daya
+                </span>
+                <span
+                  className="hidden-xs artist-name text-white lh-1"
+                  data-amplitude-song-info="artist"
+                >
+                  Mere Gurudev
+                </span>
+              </div>
+            </div>
+            <div className="col-md-4 align-self-center mx-auto playerbuttons">
+              <div className="audiobtn d-flex align-items-center justify-content-center">
+                <span className="amplitude-shuffle amplitude-shuffle-off">
+                  <i className="fa fa-random" />
+                </span>
+                <span className="amplitude-prev ml-1">
+                  <i className="text-white fa fa-backward" />
+                </span>
+                <span className="amplitude-play-pause mx-4 amplitude-paused">
+                  <a className="btn btn-naked btn-icon-block btn-icon-top btn-icon-circle btn-icon-solid btn-icon-lg">
+                    <span>
+                      <span className="btn-icon  shadow">
+                        <i className="fa fa-play" />
+                      </span>
+                    </span>
+                  </a>
+                </span>
+                <span className="amplitude-next mr-1">
+                  <i className="text-white fa fa-forward" />
+                </span>
+                <span className="amplitude-repeat-song amplitude-repeat-off amplitude-repeat-song-off">
+                  <i className="fa fa-repeat" />
+                </span>
+              </div>
+            </div>
+            <div className="d-none d-sm-block col-md-3 align-self-center mx-auto range-slider">
+              <div
+                style={{ marginTop: "10px" }}
+                className="d-flex align-items-center"
+              >
+                <span className="current-time">
+                  <span className="amplitude-current-minutes">00</span>:
+                  <span className="amplitude-current-seconds">00</span>
+                </span>
+                <ColorSlider />
+                <span className="duration">
+                  <span className="amplitude-duration-minutes">04</span>:
+                  <span className="amplitude-duration-seconds">51</span>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };

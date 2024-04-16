@@ -2,27 +2,31 @@ import React, { useState } from "react";
 import Lightbox from "react-image-lightbox";
 import "react-image-lightbox/style.css";
 
-const DailyDivine = () => {
+const Ebooks = () => {
   const dailydivineimage = [
     {
       image:
-        "https://images.ctfassets.net/hrltx12pl8hq/28ECAQiPJZ78hxatLTa7Ts/2f695d869736ae3b0de3e56ceaca3958/free-nature-images.jpg?fit=fill&w=1200&h=630",
+        "https://bhurijanadasa.com/wp-content/uploads/2021/08/Mustard_wuna-495x400.jpg",
     },
     {
       image:
-        "https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg",
+        "https://bhurijanadasa.com/wp-content/uploads/2021/08/Peacefully_4.jpg8_-495x400.jpg",
     },
     {
       image:
-        "https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg",
+        "https://bhurijanadasa.com/wp-content/uploads/2021/08/sadhu_enterfrs001-495x400.jpg",
     },
     {
       image:
-        "https://images.ctfassets.net/hrltx12pl8hq/28ECAQiPJZ78hxatLTa7Ts/2f695d869736ae3b0de3e56ceaca3958/free-nature-images.jpg?fit=fill&w=1200&h=630",
+        "https://bhurijanadasa.com/wp-content/uploads/2021/08/Mustard_wuna-495x400.jpg",
     },
     {
       image:
-        "https://images.ctfassets.net/hrltx12pl8hq/28ECAQiPJZ78hxatLTa7Ts/2f695d869736ae3b0de3e56ceaca3958/free-nature-images.jpg?fit=fill&w=1200&h=630",
+        "https://bhurijanadasa.com/wp-content/uploads/2021/08/Peacefully_4.jpg8_-495x400.jpg",
+    },
+    {
+      image:
+        "https://bhurijanadasa.com/wp-content/uploads/2021/08/sadhu_enterfrs001-495x400.jpg",
     },
   ];
 
@@ -68,7 +72,7 @@ const DailyDivine = () => {
                 data-fittext="true"
                 data-fittext-options='{{ "maxFontSize": 60, "minFontSize": 32 }}'
               >
-                Daily Divine Inspiration
+                E-Books
               </h1>
               <p>Charaiveti Charaiveti</p>
               <a
@@ -117,4 +121,4 @@ const DailyDivine = () => {
   );
 };
 
-export default DailyDivine;
+export default Ebooks;

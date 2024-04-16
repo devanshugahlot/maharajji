@@ -2,6 +2,57 @@ import React from "react";
 import "./brahmgyan.css";
 
 const Brahmgyan = () => {
+  const Posts = [
+    {
+      id: 1,
+      title: "ब्रह्मज्ञान और उसके चार पदार्थ",
+      image: "https://www.djjs.org/uploads/blog/djjsblog_510611369d1d8ce70.91997434.jpg",
+      excerpt:
+        "हम मंदिर में दीप प्रज्वलित क्यों करते है? घंटियाँ क्यों बजाते है?...",
+      link: "blog/tan-to-mandir-hai-hriday-hai-vrindavan.html",
+    },
+    {
+      id: 2,
+      title: "Brahm Gyan- The Ultimate Tool to Enhance Psycho-Immunity",
+      image: "https://www.djjs.org/uploads/blog/djjsblog_36461d988ae2d157311223744.jpg",
+      excerpt:
+        "Brahm Gyan based meditation is the essential procedure, the only divine asset through which psycho-immunity can be augmented.",
+      link: "blog/brahm-gyan-the-ultimate-tool-to-enhance-psycho-immunity.html",
+    },
+    {
+      id: 3,
+      title: "Supreme Devotion",
+      image: "https://www.djjs.org/uploads/blog/djjsblog_3061d988ae27957780828876.jpg",
+      excerpt:
+        "Supreme devotion is the flow of thought towards the supreme source, God, the common essence of everything existing in the whole creation. Our scientific world reveals the secret of the whole creation …",
+      link: "blog/supreme-devotion.html",
+    },
+    {
+      id: 4,
+      title: "Litmus Test for a True Master",
+      image: "https://www.djjs.org/uploads/blog/djjsblog_1346035d9387dfc30.65375150.jpg",
+      excerpt:
+        "Q: I presently have a spiritual teacher whom I am very loyal to. What more DJJS (Divya Jyoti Jagriti Sansthan) can offer me that I may change my chosen guru? How can DJJS enhance my spiritual evolutio…",
+      link: "blog/litmus-test-for-a-true-master.html",
+    },
+    {
+      id: 5,
+      title: "Believing without seeing is blind following",
+      image: "https://www.djjs.org/uploads/blog/f3bfc3468a70d09c9c744d6ee9617deb.jpg",
+      excerpt:
+        "You must have heard people declaring at the top of their voices: ‘We are Christians’ or ‘We are Hindus’ or ‘We are Jews’, etc. Basically, this is all a matter o…",
+      link: "blog/believing-without-seeing-is-blind-following.html",
+    },
+    {
+      id: 6,
+      title: "Attaining Access to Sixth Sense",
+      image: "https://djjs.org/uploads/blog/djjsblog_161d988ae294f3618361964.jpg",
+      excerpt:
+        "Those of you, who have read The Bhagvat Gita, not in a ritualistic fashion but with a view to comprehend the eternal verities, will understand better the truth hidden underneath the word ‘Si…",
+      link: "blog/attaining-access-to-sixth-sense.html",
+    },
+   
+  ];
   return (
     <div>
       <div>
@@ -1092,379 +1143,42 @@ const Brahmgyan = () => {
                   </h2>
                 </div>
                 <div className="liquid-blog-posts">
-                  <div
-                    className="liquid-blog-grid row"
-                    data-liquid-masonry="true"
-                    data-custom-animations="true"
-                    data-ca-options='{"triggerHandler":"inview","animationTarget":".lqd-column","duration":"1200","delay":"150","easing":"easeOutQuint","direction":"forward","initValues":{"translateY":50,"opacity":0},"animations":{"translateY":0,"opacity":1}}'
-                  >
-                    <div className="lqd-column col-md-4 masonry-item">
-                      <article className="liquid-lp">
-                        <figure className="liquid-lp-media">
-                          <a href="blog/tan-to-mandir-hai-hriday-hai-vrindavan.html">
-                            <img
-                              src="uploads/blog/djjsblog_510611369d1d8ce70.91997434.jpg"
-                              alt="ब्रह्मज्ञान और उसके चार पदार्थ"
-                            />
-                          </a>
-                        </figure>
-                        <header className="liquid-lp-header">
-                          <h2 className="liquid-lp-title h4 font-weight-semibold">
-                            <a href="blog/tan-to-mandir-hai-hriday-hai-vrindavan.html">
-                              ब्रह्मज्ञान और उसके चार पदार्थ
+                  <div className="liquid-blog-grid row">
+                    {Posts.map((post, index) => (
+                      <div
+                        key={index}
+                        className="lqd-column col-md-4 masonry-item"
+                      >
+                        <article className="liquid-lp">
+                          <figure className="liquid-lp-media">
+                            <a href={post.link}>
+                              <img src={post.image} alt={post.altText} />
                             </a>
-                          </h2>
-                        </header>
-                        <div className="liquid-lp-excerpt">
-                          <p>
-                            हम मंदिर में दीप प्रज्वलित क्यों करते है? घंटियाँ
-                            क्यों बजाते है? सभी धार्मिक ग्रन्थों में नाम की
-                            महिमा है, वह आदिनाम क्या है? अमृत जल वह क्या है?..
-                            यह चारों पदार्थ जिसे हनुमान चालीसा में- बरनऊँ रघुबर
-                            बिमल जसु जो दायकु फल चारि। यही चारों पदार्थ
-                            ब्रह्मज्ञान की दीक्षा के समय सद्गुरु प्रदान करते है।
-                            ईश्वर हमारे भीतर ही है-'शरीरं मंदिरं'। बाहर जो धर्म
-                            के नाम पर संकेत है वह हमारे मार्ग प्रशस्त करने के
-                            लिए है।
-                          </p>
-                        </div>
-                        <footer className="liquid-lp-footer">
-                          <a
-                            href="blog/tan-to-mandir-hai-hriday-hai-vrindavan.html"
-                            className="btn btn-naked liquid-lp-read-more font-weight-bold"
-                          >
-                            <span>
-                              <span className="btn-txt">Read more</span>
-                              <span className="btn-icon">
-                                <i className="fa fa-angle-right" />
+                          </figure>
+                          <header className="liquid-lp-header">
+                            <h2 className="liquid-lp-title h4 font-weight-semibold">
+                              <a href={post.link}>{post.title}</a>
+                            </h2>
+                          </header>
+                          <div className="liquid-lp-excerpt">
+                            <p>{post.excerpt}</p>
+                          </div>
+                          <footer className="liquid-lp-footer">
+                            <a
+                              href={post.readMoreLink}
+                              className="btn btn-naked liquid-lp-read-more font-weight-bold"
+                            >
+                              <span>
+                                <span className="btn-txt">Read more</span>
+                                <span className="btn-icon">
+                                  <i className="fa fa-angle-right" />
+                                </span>
                               </span>
-                            </span>
-                          </a>
-                        </footer>
-                      </article>
-                    </div>
-                    <div className="lqd-column col-md-4 masonry-item">
-                      <article className="liquid-lp">
-                        <figure className="liquid-lp-media">
-                          <a href="blog/brahm-gyan-the-ultimate-tool-to-enhance-psycho-immunity.html">
-                            <img
-                              src="uploads/blog/djjsblog_36461d988ae2d157311223744.jpg"
-                              alt="Brahm Gyan- The Ultimate Tool to Enhance Psycho-Immunity"
-                            />
-                          </a>
-                        </figure>
-                        <header className="liquid-lp-header">
-                          <h2 className="liquid-lp-title h4 font-weight-semibold">
-                            <a href="blog/brahm-gyan-the-ultimate-tool-to-enhance-psycho-immunity.html">
-                              Brahm Gyan- The Ultimate Tool to Enhance
-                              Psycho-Immunity
                             </a>
-                          </h2>
-                        </header>
-                        <div className="liquid-lp-excerpt">
-                          <p>
-                            Brahm Gyan based meditation is the essential
-                            procedure, the only divine asset through which
-                            psycho-immunity can be augmented.
-                          </p>
-                        </div>
-                        <footer className="liquid-lp-footer">
-                          <a
-                            href="blog/brahm-gyan-the-ultimate-tool-to-enhance-psycho-immunity.html"
-                            className="btn btn-naked liquid-lp-read-more font-weight-bold"
-                          >
-                            <span>
-                              <span className="btn-txt">Read more</span>
-                              <span className="btn-icon">
-                                <i className="fa fa-angle-right" />
-                              </span>
-                            </span>
-                          </a>
-                        </footer>
-                      </article>
-                    </div>
-                    <div className="lqd-column col-md-4 masonry-item">
-                      <article className="liquid-lp">
-                        <figure className="liquid-lp-media">
-                          <a href="blog/supreme-devotion.html">
-                            <img
-                              src="uploads/blog/djjsblog_3061d988ae27957780828876.jpg"
-                              alt="Supreme Devotion"
-                            />
-                          </a>
-                        </figure>
-                        <header className="liquid-lp-header">
-                          <h2 className="liquid-lp-title h4 font-weight-semibold">
-                            <a href="blog/supreme-devotion.html">
-                              Supreme Devotion
-                            </a>
-                          </h2>
-                        </header>
-                        <div className="liquid-lp-excerpt">
-                          <p>
-                            Supreme devotion is the flow of thought towards the
-                            supreme source, God, the common essence of
-                            everything existing in the whole creation. Our
-                            scientific world reveals the secret of the whole
-                            creation …
-                          </p>
-                        </div>
-                        <footer className="liquid-lp-footer">
-                          <a
-                            href="blog/supreme-devotion.html"
-                            className="btn btn-naked liquid-lp-read-more font-weight-bold"
-                          >
-                            <span>
-                              <span className="btn-txt">Read more</span>
-                              <span className="btn-icon">
-                                <i className="fa fa-angle-right" />
-                              </span>
-                            </span>
-                          </a>
-                        </footer>
-                      </article>
-                    </div>
-                    <div className="lqd-column col-md-4 masonry-item">
-                      <article className="liquid-lp">
-                        <figure className="liquid-lp-media">
-                          <a href="blog/litmus-test-for-a-true-master.html">
-                            <img
-                              src="uploads/blog/f3bfc3468a70d09c9c744d6ee9617deb.jpg"
-                              alt="Litmus Test for a True Master"
-                            />
-                          </a>
-                        </figure>
-                        <header className="liquid-lp-header">
-                          <h2 className="liquid-lp-title h4 font-weight-semibold">
-                            <a href="blog/litmus-test-for-a-true-master.html">
-                              Litmus Test for a True Master
-                            </a>
-                          </h2>
-                        </header>
-                        <div className="liquid-lp-excerpt">
-                          <p>
-                            Q: I presently have a spiritual teacher whom I am
-                            very loyal to. What more DJJS (Divya Jyoti Jagriti
-                            Sansthan) can offer me that I may change my chosen
-                            guru? How can DJJS enhance my spiritual evolutio…
-                          </p>
-                        </div>
-                        <footer className="liquid-lp-footer">
-                          <a
-                            href="blog/litmus-test-for-a-true-master.html"
-                            className="btn btn-naked liquid-lp-read-more font-weight-bold"
-                          >
-                            <span>
-                              <span className="btn-txt">Read more</span>
-                              <span className="btn-icon">
-                                <i className="fa fa-angle-right" />
-                              </span>
-                            </span>
-                          </a>
-                        </footer>
-                      </article>
-                    </div>
-                    <div className="lqd-column col-md-4 masonry-item">
-                      <article className="liquid-lp">
-                        <figure className="liquid-lp-media">
-                          <a href="blog/believing-without-seeing-is-blind-following.html">
-                            <img
-                              src="uploads/blog/djjsblog_161d988ae294f3618361964.jpg"
-                              alt="Believing without seeing is blind following"
-                            />
-                          </a>
-                        </figure>
-                        <header className="liquid-lp-header">
-                          <h2 className="liquid-lp-title h4 font-weight-semibold">
-                            <a href="blog/believing-without-seeing-is-blind-following.html">
-                              Believing without seeing is blind following
-                            </a>
-                          </h2>
-                        </header>
-                        <div className="liquid-lp-excerpt">
-                          <p>
-                            You must have heard people declaring at the top of
-                            their voices: ‘We are Christians’ or ‘We are Hindus’
-                            or ‘We are Jews’, etc. Basically, this is all a
-                            matter o…
-                          </p>
-                        </div>
-                        <footer className="liquid-lp-footer">
-                          <a
-                            href="blog/believing-without-seeing-is-blind-following.html"
-                            className="btn btn-naked liquid-lp-read-more font-weight-bold"
-                          >
-                            <span>
-                              <span className="btn-txt">Read more</span>
-                              <span className="btn-icon">
-                                <i className="fa fa-angle-right" />
-                              </span>
-                            </span>
-                          </a>
-                        </footer>
-                      </article>
-                    </div>
-                    <div className="lqd-column col-md-4 masonry-item">
-                      <article className="liquid-lp">
-                        <figure className="liquid-lp-media">
-                          <a href="blog/attaining-access-to-sixth-sense.html">
-                            <img
-                              src="uploads/blog/djjsblog_1346035d9387dfc30.65375150.jpg"
-                              alt="Attaining Access to Sixth Sense"
-                            />
-                          </a>
-                        </figure>
-                        <header className="liquid-lp-header">
-                          <h2 className="liquid-lp-title h4 font-weight-semibold">
-                            <a href="blog/attaining-access-to-sixth-sense.html">
-                              Attaining Access to Sixth Sense
-                            </a>
-                          </h2>
-                        </header>
-                        <div className="liquid-lp-excerpt">
-                          <p>
-                            Those of you, who have read The Bhagvat Gita, not in
-                            a ritualistic fashion but with a view to comprehend
-                            the eternal verities, will understand better the
-                            truth hidden underneath the word ‘Si…
-                          </p>
-                        </div>
-                        <footer className="liquid-lp-footer">
-                          <a
-                            href="blog/attaining-access-to-sixth-sense.html"
-                            className="btn btn-naked liquid-lp-read-more font-weight-bold"
-                          >
-                            <span>
-                              <span className="btn-txt">Read more</span>
-                              <span className="btn-icon">
-                                <i className="fa fa-angle-right" />
-                              </span>
-                            </span>
-                          </a>
-                        </footer>
-                      </article>
-                    </div>
-                    <div className="lqd-column col-md-4 masonry-item">
-                      <article className="liquid-lp">
-                        <figure className="liquid-lp-media">
-                          <a href="blog/to-be-in-meditation-2.html">
-                            <img
-                              src="uploads/blog/djjsblog_13761d988ae26e8c380143457.jpg"
-                              alt="To be In Meditation 2"
-                            />
-                          </a>
-                        </figure>
-                        <header className="liquid-lp-header">
-                          <h2 className="liquid-lp-title h4 font-weight-semibold">
-                            <a href="blog/to-be-in-meditation-2.html">
-                              To be In Meditation 2
-                            </a>
-                          </h2>
-                        </header>
-                        <div className="liquid-lp-excerpt">
-                          <p>
-                            There is a firmament within, in which the sun, the
-                            moon, and the stars are seen. meditation is a
-                            voyage, an incessant exploration of the Universal
-                            Truth, which lies in the vast skies of the inner
-                            worl…
-                          </p>
-                        </div>
-                        <footer className="liquid-lp-footer">
-                          <a
-                            href="blog/to-be-in-meditation-2.html"
-                            className="btn btn-naked liquid-lp-read-more font-weight-bold"
-                          >
-                            <span>
-                              <span className="btn-txt">Read more</span>
-                              <span className="btn-icon">
-                                <i className="fa fa-angle-right" />
-                              </span>
-                            </span>
-                          </a>
-                        </footer>
-                      </article>
-                    </div>
-                    <div className="lqd-column col-md-4 masonry-item">
-                      <article className="liquid-lp">
-                        <figure className="liquid-lp-media">
-                          <a href="blog/to-be-in-meditation.html">
-                            <img
-                              src="uploads/blog/djjsblog_13661d988ae271e2891213191.jpg"
-                              alt="To be In Meditation 1"
-                            />
-                          </a>
-                        </figure>
-                        <header className="liquid-lp-header">
-                          <h2 className="liquid-lp-title h4 font-weight-semibold">
-                            <a href="blog/to-be-in-meditation.html">
-                              To be In Meditation 1
-                            </a>
-                          </h2>
-                        </header>
-                        <div className="liquid-lp-excerpt">
-                          <p>
-                            Each personality has his or her preference for
-                            living, eating, working, etc. meditation does not
-                            escape the idiosyncrasies of each individual. It is
-                            broken into various fragments and every person is i…
-                          </p>
-                        </div>
-                        <footer className="liquid-lp-footer">
-                          <a
-                            href="blog/to-be-in-meditation.html"
-                            className="btn btn-naked liquid-lp-read-more font-weight-bold"
-                          >
-                            <span>
-                              <span className="btn-txt">Read more</span>
-                              <span className="btn-icon">
-                                <i className="fa fa-angle-right" />
-                              </span>
-                            </span>
-                          </a>
-                        </footer>
-                      </article>
-                    </div>
-                    <div className="lqd-column col-md-4 masonry-item">
-                      <article className="liquid-lp">
-                        <figure className="liquid-lp-media">
-                          <a href="blog/zero-a-mystical-representation-of-consciousness.html">
-                            <img
-                              src="uploads/blog/zero-a-thumbnail.jpg"
-                              alt="Zero - A mystical representation of Consciousness"
-                            />
-                          </a>
-                        </figure>
-                        <header className="liquid-lp-header">
-                          <h2 className="liquid-lp-title h4 font-weight-semibold">
-                            <a href="blog/zero-a-mystical-representation-of-consciousness.html">
-                              Zero - A mystical representation of Consciousness
-                            </a>
-                          </h2>
-                        </header>
-                        <div className="liquid-lp-excerpt">
-                          <p>
-                            In the Brihadaranyaka Upanishad, sage Yajnavalkya
-                            was asked by his pupils to explain the nature of
-                            Brahman, Universal Consciousness. The sage replied:
-                            "Neti Neti - neither This nor That - such is…
-                          </p>
-                        </div>
-                        <footer className="liquid-lp-footer">
-                          <a
-                            href="blog/zero-a-mystical-representation-of-consciousness.html"
-                            className="btn btn-naked liquid-lp-read-more font-weight-bold"
-                          >
-                            <span>
-                              <span className="btn-txt">Read more</span>
-                              <span className="btn-icon">
-                                <i className="fa fa-angle-right" />
-                              </span>
-                            </span>
-                          </a>
-                        </footer>
-                      </article>
-                    </div>
+                          </footer>
+                        </article>
+                      </div>
+                    ))}
                   </div>
                 </div>
               </div>

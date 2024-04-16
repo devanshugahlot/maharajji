@@ -1,11 +1,59 @@
 import React from "react";
 
 const Akhandgyan = () => {
+  const categories = [
+    {
+      name: "Corporate Zone",
+      link: "akhandgyan/category/corporate-zone.html",
+    },
+    {
+      name: "Discipleship Zone",
+      link: "akhandgyan/category/discipleship-zone.html",
+    },
+    {
+      name: "Health Bytes",
+      link: "akhandgyan/category/health-bytes.html",
+    },
+    {
+      name: "Insightful Zone",
+      link: "akhandgyan/category/insightful-zone.html",
+    },
+    {
+      name: "Lifestyle",
+      link: "akhandgyan/category/lifestyle.html",
+    },
+    {
+      name: "Management Sutras",
+      link: "akhandgyan/category/management-sutras.html",
+    },
+    {
+      name: "Meditation",
+      link: "akhandgyan/category/meditation.html",
+    },
+    {
+      name: "Science & Spirituality",
+      link: "akhandgyan/category/science-spirituality.html",
+    },
+    {
+      name: "Values Breed Success",
+      link: "akhandgyan/category/values-breed-success.html",
+    },
+    {
+      name: "पर्व विशेष",
+      link: "akhandgyan/category/parv-vishesh.html",
+    },
+    {
+      name: "सफल जीवन के सूत्र",
+      link: "akhandgyan/category/safal-jivan-ke-sutra.html",
+    },
+  ];
   return (
     <div>
       <section
         className="vc_row  d-flex flex-wrap align-items-center bg-cover pt-8 pb-5"
-        style={{ backgroundImage: "url(https://www.djjs.org/images/new/ag-bg.jpg)" }}
+        style={{
+          backgroundImage: "url(https://www.djjs.org/images/new/ag-bg.jpg)",
+        }}
         data-parallax="true"
         data-parallax-options='{ "parallaxBG": true }'
       >
@@ -418,7 +466,6 @@ const Akhandgyan = () => {
                             type="search"
                             className="search-field"
                             placeholder="Search Articles"
-                          
                             name="search"
                           />
                         </label>
@@ -437,105 +484,17 @@ const Akhandgyan = () => {
                         Top Categories
                       </h3>
                       <ul>
-                        <li>
-                          {" "}
-                          <a
-                            className="mb-3 text-uppercase ls2 noborder"
-                            href="akhandgyan/category/corporate-zone.html"
-                          >
-                            Corporate Zone{" "}
-                          </a>
-                        </li>
-                        <li>
-                          {" "}
-                          <a
-                            className="mb-3 text-uppercase ls2 noborder"
-                            href="akhandgyan/category/discipleship-zone.html"
-                          >
-                            Discipleship Zone{" "}
-                          </a>
-                        </li>
-                        <li>
-                          {" "}
-                          <a
-                            className="mb-3 text-uppercase ls2 noborder"
-                            href="akhandgyan/category/health-bytes.html"
-                          >
-                            Health Bytes{" "}
-                          </a>
-                        </li>
-                        <li>
-                          {" "}
-                          <a
-                            className="mb-3 text-uppercase ls2 noborder"
-                            href="akhandgyan/category/insightful-zone.html"
-                          >
-                            Insightful Zone{" "}
-                          </a>
-                        </li>
-                        <li>
-                          {" "}
-                          <a
-                            className="mb-3 text-uppercase ls2 noborder"
-                            href="akhandgyan/category/lifestyle.html"
-                          >
-                            Lifestyle{" "}
-                          </a>
-                        </li>
-                        <li>
-                          {" "}
-                          <a
-                            className="mb-3 text-uppercase ls2 noborder"
-                            href="akhandgyan/category/management-sutras.html"
-                          >
-                            Management Sutras{" "}
-                          </a>
-                        </li>
-                        <li>
-                          {" "}
-                          <a
-                            className="mb-3 text-uppercase ls2 noborder"
-                            href="akhandgyan/category/meditation.html"
-                          >
-                            Meditation{" "}
-                          </a>
-                        </li>
-                        <li>
-                          {" "}
-                          <a
-                            className="mb-3 text-uppercase ls2 noborder"
-                            href="akhandgyan/category/science-spirituality.html"
-                          >
-                            Science &amp; Spirituality{" "}
-                          </a>
-                        </li>
-                        <li>
-                          {" "}
-                          <a
-                            className="mb-3 text-uppercase ls2 noborder"
-                            href="akhandgyan/category/values-breed-success.html"
-                          >
-                            Values Breed Success{" "}
-                          </a>
-                        </li>
-                        <li>
-                          {" "}
-                          <a
-                            className="mb-3 text-uppercase ls2 noborder"
-                            href="akhandgyan/category/parv-vishesh.html"
-                          >
-                            पर्व विशेष{" "}
-                          </a>
-                        </li>
-                        <li>
-                          {" "}
-                          <a
-                            className="mb-3 text-uppercase ls2 noborder"
-                            href="akhandgyan/category/safal-jivan-ke-sutra.html"
-                          >
-                            सफल जीवन के सूत्र{" "}
-                          </a>
-                        </li>
+                        {/* Map through the categories array and create a list item for each category */}
+                        {categories.map((category, index) => (
+                          <li key={index}>
+                            <a
+                              className="mb-3 text-uppercase ls2 noborder"
+                              href={category.link}
+                            >
+                              {category.name}
+                            </a>
+                          </li>
+                        ))}
                       </ul>
                     </div>
                     <div className="widget widget_categories">
@@ -609,7 +568,7 @@ const Akhandgyan = () => {
                 <header className="fancy-title mb-0">
                   <h3 className="text-gradient font-weight-semibold">
                     <a href="akhandgyan/category/science-spirituality.html">
-                      Science &amp; Spirituality
+                    Science &amp; Spirituality
                     </a>
                   </h3>
                 </header>

@@ -1,6 +1,40 @@
 import React from "react";
 
 const Radio = () => {
+
+  const schedule = [
+    {
+      header: 'WEEKLY PROGRAMS (SAT & SUN)',
+      rows: [
+        [{ data: '5pm-6pm' }, { data: 'Jeevan Ke Falsafe from Akhand Gyan' }],
+        [{ data: '2am-3am' }, { data: 'Jeevan Ke Falsafe from Akhand Gyan' }]
+      ]
+    },
+    {
+      header: 'DAILY PROGRAMS',
+      rows: [
+        [{ data: '6am-7am' }, { data: 'Ved Mantra' }],
+        [{ data: '7am-8am' }, { data: 'Bhajan Pravah' }],
+        [{ data: '8am-9am' }, { data: 'Guru Archana & Prerna Pravah' }],
+        [{ data: '9am-12pm' }, { data: 'Satsang Pravah - Satsang & Bhajans' }],
+        [{ data: '12pm-1pm' }, { data: 'Katha Pravah - Shrimad Bhagwat Katha' }],
+        [{ data: '1pm-2pm' }, { data: 'Prerna Pravah & Bhajan' }],
+        [{ data: '2pm-3pm' }, { data: 'Prerna Pravah & Bhajan' }],
+        [{ data: '3pm-4pm' }, { data: 'Katha Pravah - Shriram Katha Amrit' }],
+        [{ data: '4pm-5pm' }, { data: 'Swar Sadhna' }],
+        [{ data: '5pm-6pm' }, { data: 'Chintan' }],
+        [{ data: '6pm-7pm' }, { data: 'Katha Pravah - Shrimad Bhagwat Katha' }],
+        [{ data: '7pm-8pm' }, { data: 'Guru Archana & Prerna Pravah' }],
+        [{ data: '8pm-9pm' }, { data: 'Bhajan Pravah' }],
+        [{ data: '9pm-10pm' }, { data: 'Katha Pravah - Shriram Katha Amrit' }],
+        [{ data: '10pm-1am' }, { data: 'Satsang Pravah - Satsang & Bhajans' }],
+        [{ data: '1am-2am' }, { data: 'Katha Pravah - Shrimad Bhagwat Katha' }],
+        [{ data: '2am-3am' }, { data: 'Prerna Pravah & Bhajan' }],
+        [{ data: '3am-6am' }, { data: 'Divya Raaga' }]
+      ]
+    }
+  ];
+  
   return (
     <div>
       <div>
@@ -217,184 +251,35 @@ const Radio = () => {
                     </p>
                   </div>
                   <div className="col-md-5">
-                    <h4>Schedule (Indian Standard Time)</h4>
-                    <div style={{ height: 500, overflow: "auto" }}>
-                      <table className="table" width="100%" cellPadding={10}>
-                        <tbody>
-                          <tr>
-                            <th className="active" />
-                            <td colSpan={2}>
-                              <strong>WEEKLY PROGRAMS (SAT &amp; SUN)</strong>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>5pm-6pm</td>
-                            <td>
-                              <span className="program_name">
-                                Jeevan Ke Falsafe from Akhand Gyan
-                              </span>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>2am-3am</td>
-                            <td>
-                              <span className="program_name">
-                                Jeevan Ke Falsafe from Akhand Gyan
-                              </span>
-                            </td>
-                          </tr>
-                          <tr>
-                            <th className="active" />
-                            <td colSpan={2}>
-                              <strong>DAILY PROGRAMS</strong>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>6am-7am</td>
-                            <td>
-                              <span className="program_name ">Ved Mantra</span>
-                            </td>
-                          </tr>
-                          <tr className>
-                            <td>7am-8am</td>
-                            <td>
-                              <span className="program_name">
-                                Bhajan Pravah
-                              </span>
-                            </td>
-                          </tr>
-                          <tr className>
-                            <td>8am-9am </td>
-                            <td>
-                              <span className="program_name">
-                                Guru Archana &amp; Prerna Pravah <br />
-                              </span>
-                            </td>
-                          </tr>
-                          <tr className>
-                            <td>9am-12pm </td>
-                            <td>
-                              <span className="program_name">
-                                Satsang Pravah- Satsang &amp; Bhajans
-                              </span>
-                            </td>
-                          </tr>
-                          <tr className>
-                            <td>12pm-1pm </td>
-                            <td>
-                              <span className="program_name">
-                                Katha Pravah-Shrimad Bhagwat Katha
-                              </span>
-                            </td>
-                          </tr>
-                          <tr className>
-                            <td>1pm-2pm </td>
-                            <td>
-                              <span className="program_name">
-                                Prerna Pravah &amp; Bhajan
-                              </span>
-                            </td>
-                          </tr>
-                          <tr className>
-                            <td>2pm-3pm </td>
-                            <td>
-                              <span className="program_name">
-                                Prerna Pravah &amp; Bhajan
-                                <br />
-                              </span>
-                            </td>
-                          </tr>
-                          <tr className>
-                            <td>3pm-4pm </td>
-                            <td>
-                              <span className="program_name">
-                                Katha Pravah-Shriram Katha Amrit
-                              </span>
-                            </td>
-                          </tr>
-                          <tr className>
-                            <td>4pm-5pm </td>
-                            <td>
-                              <span className="program_name">Swar Sadhna</span>
-                            </td>
-                          </tr>
-                          <tr className>
-                            <td>5pm-6pm </td>
-                            <td>
-                              <span className="program_name">Chintan</span>
-                            </td>
-                          </tr>
-                          <tr className>
-                            <td>6pm-7pm </td>
-                            <td>
-                              <span className="program_name">
-                                Katha Pravah- Shrimad Bhagwat Katha
-                              </span>
-                            </td>
-                          </tr>
-                          <tr className>
-                            <td>7pm-8pm </td>
-                            <td>
-                              <span className="program_name">
-                                Guru Archana &amp; Prerna Pravah
-                              </span>
-                            </td>
-                          </tr>
-                          <tr className>
-                            <td>8pm-9pm </td>
-                            <td>
-                              <span className="program_name">
-                                Bhajan Pravah
-                                <br />
-                                <br />
-                              </span>
-                            </td>
-                          </tr>
-                          <tr className>
-                            <td>9pm-10pm </td>
-                            <td>
-                              <span className="program_name">
-                                Katha Pravah-Shriram Katha Amrit
-                              </span>
-                            </td>
-                          </tr>
-                          <tr className>
-                            <td>10pm-1am </td>
-                            <td>
-                              <span className="program_name">
-                                Satsang Pravah- Satsang &amp; Bhajans
-                              </span>
-                            </td>
-                          </tr>
-                          <tr className>
-                            <td>1am-2am </td>
-                            <td>
-                              <span className="program_name">
-                                Katha Pravah- Shrimad Bhagwat Katha
-                              </span>
-                            </td>
-                          </tr>
-                          <tr className>
-                            <td>2am-3am </td>
-                            <td>
-                              <span className="program_name">
-                                Prerna Pravah &amp; Bhajan
-                              </span>
-                            </td>
-                          </tr>
-                          <tr style={{ border: "none" }} className>
-                            <td>3am-6am </td>
-                            <td>
-                              <span className="program_name">
-                                Divya Raaga
-                                <br />
-                              </span>
-                            </td>
-                          </tr>
-                        </tbody>
-                      </table>
-                    </div>
-                  </div>
+  <h4>Schedule (Indian Standard Time)</h4>
+  <div style={{ height: 500, overflow: "auto" }}>
+    <table className="table" width="100%" cellPadding={10}>
+      <tbody>
+        {schedule.map((item, index) => (
+          <React.Fragment key={index}>
+            {item.header && (
+              <tr>
+                <th className="active" colSpan={2}>
+                  <strong>{item.header}</strong>
+                </th>
+              </tr>
+            )}
+            {item.rows.map((row, rowIndex) => (
+              <tr key={rowIndex}>
+                {row.map((cell, cellIndex) => (
+                  <React.Fragment key={cellIndex}>
+                    {cell.header && <th className="active">{cell.header}</th>}
+                    {cell.data && <td>{cell.data}</td>}
+                  </React.Fragment>
+                ))}
+              </tr>
+            ))}
+          </React.Fragment>
+        ))}
+      </tbody>
+    </table>
+  </div>
+</div>
                 </div>
               </div>
             </div>

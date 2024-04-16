@@ -20067,7 +20067,7 @@ ol.breadcrumb.text-darker a:hover {
   left: 50%;
   margin-top: -30px;
   margin-left: -30px; */
-  background-image: url("https://www.djjs.org/images/new/mjs1.jpg");
+  background-image: url("../assetimg10.png");
   /* background-position: center;
   background-size: 38px; */
   background-repeat: no-repeat;
@@ -31150,3 +31150,7 @@ MOBULE HEADER
 }
 
 /*# sourceMappingURL=theme.min.css.map */
+
+/* .homiimg{
+  background-image: url('/src/assets/assetimg3.jpg');
+} */

@@ -2,6 +2,8 @@ import React, { useState, useEffect, useRef } from "react";
 import { IoMenu } from "react-icons/io5";
 import { IoMdArrowDropdown } from "react-icons/io";
 import { useNavigate } from "react-router-dom";
+import "./Header.css";
+import img1 from "../assets/assetimg1.png"
 
 const Headers = () => {
   const navigate = useNavigate();
@@ -39,10 +41,9 @@ const Headers = () => {
   return (
     <div className="top-header">
       <div className="main-navbar-div">
-        <div onClick={() => navigate("/")} className="navbar-logo-div">
-          <img
-            style={{ width: "70px", cursor: "pointer" }}
-            src="https://www.djjs.org/images/logo-dark@2x.png"
+        <div style={{cursor:"pointer"}} onClick={() => navigate("/")} className="navbar-logo-div">
+          <img  
+            src={img1}
             alt=""
           />
         </div>
@@ -53,38 +54,44 @@ const Headers = () => {
               style={{ alignItems: "center", display: "flex" }}
               onClick={handleWisdomClick}
             >
-              Wisdom
+             Media
               <IoMdArrowDropdown />
               {isAboutHovered && (
                 <div className="dropdown">
                   <ul>
-                    <li onClick={() => navigate("/brahmgyan")}>Brahm Gyan</li>
-                    <li onClick={() => navigate("/akhandgyan")}>
+                    {/* <li onClick={() => navigate("/brahmgyan")}>Brahm Gyan</li> */}
+                    {/* <li onClick={() => navigate("/akhandgyan")}>
                       Akhand Gyan{" "}
-                    </li>
-                    <li onClick={() => navigate("/blog")}>Blog</li>
+                    </li> */}
+                    {/* <li </li> */}
                     <li onClick={() => navigate("/video-gallery")}>
                       Video Gallery
                     </li>
                     <li onClick={() => navigate("/audio-gallery")}>
                       Audio Gallery
                     </li>
-                    <li onClick={() => navigate("/daily-divine-inspiration")}>
-                      Daily Divine Inspiration(Charaiveti)
+                    <li onClick={() => navigate("/Ebooks")}>
+                      E-book
                     </li>
                   </ul>
                 </div>
               )}
             </li>
             <li onClick={() => navigate("/initiatives")}>Initiatives</li>
-            <li onClick={() => navigate("/events")}>News</li>
-            <li onClick={() => navigate("/webcast")}>Webcast</li>
-            <li onClick={() => navigate("/radio")}>Radio</li>
+            <li onClick={() => navigate("/events")}>Events</li>
+            <li onClick={() => navigate("/Livecast")}>Livecast</li>
+            <li onClick={() => navigate("/blog")}>Blog</li>
             <li onClick={() => navigate("/contribute")}>Contribute</li>
             <li onClick={() => navigate("/contact")}>Contact</li>
           </ul>
           <div className="menu-icons" onClick={handleMenuIconClick}>
             <IoMenu />
+          </div>
+          <div className="BHURIJANA">
+            <img 
+              src="https://bhurijanadasa.com/wp-content/uploads/2020/12/logo-bhurijana-dark-300x96.png"
+              alt=""
+            />
           </div>
         </div>
         {resnavopen && (
@@ -102,62 +109,24 @@ const Headers = () => {
                 style={{ alignItems: "center", display: "flex" }}
                 onClick={handleWisdomClick}
               >
-                Wisdom
+               Media
                 <IoMdArrowDropdown />
                 {isAboutHovered && (
-                  <div className="dropdown">
-                    <ul>
-                      <li
-                        onClick={() => {
-                          closeResNav();
-                          navigate("/brahmgyan");
-                        }}
-                      >
-                        Brahm Gyan
-                      </li>
-                      <li
-                        onClick={() => {
-                          closeResNav();
-                          navigate("/akhandgyan");
-                        }}
-                      >
-                        Akhand Gyan
-                      </li>
-                      <li
-                        onClick={() => {
-                          closeResNav();
-                          navigate("/blog");
-                        }}
-                      >
-                        Blog
-                      </li>
-                      <li
-                        onClick={() => {
-                          closeResNav();
-                          navigate("/video-gallery");
-                        }}
-                      >
-                        Video Gallery
-                      </li>
-                      <li
-                        onClick={() => {
-                          closeResNav();
-                          navigate("/audio-gallery");
-                        }}
-                      >
-                        Audio Gallery
-                      </li>
-                      <li
-                        onClick={() => {
-                          closeResNav();
-                          navigate("/daily-divine-inspiration");
-                        }}
-                      >
-                        Daily Divine Inspiration(Charaiveti)
-                      </li>
-                    </ul>
-                  </div>
-                )}
+  <div className="dropdown">
+    <ul>
+      <li onClick={() => { closeResNav(); navigate("/video-gallery"); }}>
+        Video Gallery
+      </li>
+      <li onClick={() => { closeResNav(); navigate("/audio-gallery"); }}>
+        Audio Gallery
+      </li>
+      <li onClick={() => { closeResNav(); navigate("/Ebooks"); }}>
+        E-book
+      </li>
+    </ul>
+  </div>
+)}
+
               </li>
               <li
                 onClick={() => {
@@ -173,7 +142,7 @@ const Headers = () => {
                   navigate("/events");
                 }}
               >
-                News
+                Events
               </li>
               <li
                 onClick={() => {
@@ -184,12 +153,7 @@ const Headers = () => {
                 Webcast
               </li>
               <li
-                onClick={() => {
-                  closeResNav();
-                  navigate("/radio");
-                }}
-              >
-                Radio
+                onClick={() => navigate("/blog")}>Blog
               </li>
               <li
                 onClick={() => {
