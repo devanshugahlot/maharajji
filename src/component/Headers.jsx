@@ -82,8 +82,8 @@ const Headers = () => {
             </li>
             <li onClick={() => navigate("/initiatives")}>Initiatives</li>
             <li onClick={() => navigate("/events")}>Events</li>
-            <li onClick={() => navigate("/Livecast")}>Livecast</li>
             <li onClick={() => navigate("/blog")}>Blog</li>
+            <li onClick={() => navigate("/Livecast")}>Livecast</li>
             {/* <li onClick={() => navigate("/contribute")}>Contribute</li> */}
             <li onClick={() => navigate("/contact")}>Contact</li>
           </ul>

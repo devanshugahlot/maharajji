@@ -54,7 +54,7 @@ const Home = () =>
       description:
         "Manthan is a Holistic Education Program for the underprivileged and underperforming children some of whom are drop-outs or even first generation learners.",
       imageUrl: "https://www.djjs.org/images/new/initiatives/manthan.jpg",
-      link: "manthan/index.html",
+      link: "",
     },
     {
       title: "Kamdhenu",
@@ -62,7 +62,7 @@ const Home = () =>
       description:
         "In the Indian spiritual and religious texts, cow has been extremely revered and Kamdhenu Gaushala under the guidance of founder Shri Ashutosh Maharaj is working for conservation and propagation of this hol",
       imageUrl: "https://www.djjs.org/images/new/initiatives/kamdhenu.jpg",
-      link: "kamdhenu.html",
+      link: "",
     },
   ];
 
@@ -73,7 +73,7 @@ const Home = () =>
       description:
         "In the Indian spiritual and religious texts, cow has been extremely revered and Kamdhenu Gaushala under the guidance of founder Shri Ashutosh Maharaj is working for conservation and propagation of this hol",
       imageUrl: "https://www.djjs.org/images/new/initiatives/kamdhenu.jpg",
-      link: "kamdhenu.html",
+      link: "",
     },
     {
       title: "Manthan",
@@ -81,7 +81,7 @@ const Home = () =>
       description:
         "Manthan is a Holistic Education Program for the underprivileged and underperforming children some of whom are drop-outs or even first generation learners.",
       imageUrl: "https://www.djjs.org/images/new/initiatives/manthan.jpg",
-      link: "manthan/index.html",
+      link: "",
     },
   ];
   const filteredInitiatives = initiatives.filter(
@@ -538,7 +538,7 @@ const Home = () =>
                         onClick={handlesocialbutton}
                       >
                         <button className="btn btn-default btn-solid text-uppercase btn-sm circle btn-bordered border-thin font-size-12 lh-15 font-weight-bold ltr-sp-05 mb-2">
-                          <span style={{color:"#FFB09F"}} className="btn-txt">VIHE</span>
+                          <span style={{color:"#E86740"}} className="btn-txt">VIHE</span>
                         </button>
                       </li>
                       <li
@@ -547,7 +547,7 @@ const Home = () =>
                         onClick={handlespiritualbutton}
                       >
                         <button className="btn btn-default text-uppercase btn-sm circle btn-bordered border-thin font-size-12 lh-15 font-weight-bold ltr-sp-05 mb-2">
-                          <span className="btn-txt">Gopinath Dham</span>
+                          <span style={{color:"#E86740"}} className="btn-txt">Gopinath Dham</span>
                         </button>
                       </li>
                       <li
@@ -556,7 +556,7 @@ const Home = () =>
                         onClick={handledevelopmentbutton}
                       >
                         <button className="btn btn-default text-uppercase btn-sm circle btn-bordered border-thin font-size-12 lh-15 font-weight-bold ltr-sp-05 mb-2">
-                          <span className="btn-txt">
+                          <span style={{color:"#E86740"}} className="btn-txt">
                             GRC
                           </span>
                         </button>
@@ -569,7 +569,7 @@ const Home = () =>
                         onClick={handledevelopmentbutton}
                       >
                         <button className="btn btn-default text-uppercase btn-sm circle btn-bordered border-thin font-size-12 lh-15 font-weight-bold ltr-sp-05 mb-2">
-                          <span className="btn-txt">
+                          <span style={{color:"#E86740"}} className="btn-txt">
                           Scared India Gallery
                           </span>
                         </button>
@@ -580,7 +580,7 @@ const Home = () =>
                         onClick={handledevelopmentbutton}
                       >
                         <button className="btn btn-default text-uppercase btn-sm circle btn-bordered border-thin font-size-12 lh-15 font-weight-bold ltr-sp-05 mb-2">
-                          <span className="btn-txt">
+                          <span style={{color:"#E86740"}} className="btn-txt">
                           Others
                           </span>
                         </button>
@@ -1053,7 +1053,7 @@ const Home = () =>
                 <header className="fancy-title mb-70 text-center">
                   <h2 className="mt-0 h1">
                     <span className="text-secondary ld-fh-txt text-gradient">
-                    Blogs
+                    Blog
                     </span>
                   </h2>
                   <p className="font-size-16">
@@ -1141,48 +1141,7 @@ const Home = () =>
             <div className="row">
               <div className="lqd-column col-md-8 col-md-offset-2 text-center bg-white white-box-shadow pt-70 pb-50">
                 <div className="row">
-                  <div className="col-md-10 col-md-offset-1">
-                    <header className="fancy-title mb-40 px-3">
-                      <h2 className="h1 mt-4 text-gradient">
-                        Subscribe Newsletter
-                      </h2>
-                      <p className="font-size-18">
-                        All our latest News &amp; Events delivered to your inbox
-                        once a month.
-                      </p>
-                    </header>
-                    <div className="ld-sf ld-sf--input-solid ld-sf--button-solid ld-sf--size-lg ld-sf--circle ld-sf--border-thin ld-sf--input-shadow ld-sf--button-show">
-                      <form
-                        id="ld_subscribe_form"
-                        action="https://www.djjs.org/news/subscribe"
-                        name="mc-embedded-subscribe-form"
-                        method="post"
-                      >
-                        <p className="ld_sf_paragraph pr-2">
-                          <input
-                            type="email"
-                            className="ld_sf_text"
-                            id="home-email"
-                            name="EMAIL"
-                            placeholder="Enter your email address"
-                          />
-                        </p>
-                        <button
-                          id="home-subscribe"
-                          type="submit"
-                          className="ld_sf_submit font-weight-semibold bg-gradient-secondary-lr"
-                        >
-                          <span className="submit-icon font-size-26">
-                          <FaPlay />                          </span>
-                          <span className="submit-text">Subscribe</span>
-                          <span className="ld-sf-spinner">
-                            <span>Sending </span>
-                          </span>
-                        </button>
-                      </form>
-                      <div id="home-response" className="ld_sf_response" />
-                    </div>
-                  </div>
+                  
                 </div>
               </div>
             </div>

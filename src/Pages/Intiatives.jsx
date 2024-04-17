@@ -230,7 +230,7 @@ const Intiatives = () => {
                           <a className="btn btn-default text-uppercase btn-sm circle btn-bordered border-thin btn-solid font-size-12 lh-15 font-weight-bold ltr-sp-05 mb-2">
                             <span>
                               <span
-                                style={{ color: "#FFB09F" }}
+                               style={{color:"#E86740"}}
                                 className="btn-txt"
                               >
                                 VIHE
@@ -241,7 +241,7 @@ const Intiatives = () => {
                         <li onClick={handlespiritualbutton}>
                           <a className="btn btn-default text-uppercase btn-sm circle btn-bordered border-thin  font-size-12 lh-15 font-weight-bold ltr-sp-05 mb-2">
                             <span>
-                              <span className="btn-txt">
+                              <span style={{color:"#E86740"}} className="btn-txt">
                               Gopinath Dham
                               </span>
                             </span>
@@ -250,7 +250,7 @@ const Intiatives = () => {
                         <li onClick={handledevelopmentbutton}>
                           <a className="btn btn-default text-uppercase btn-sm circle btn-bordered border-thin  font-size-12 lh-15 font-weight-bold ltr-sp-05 mb-2">
                             <span>
-                              <span className="btn-txt">
+                              <span style={{color:"#E86740"}} className="btn-txt">
                               GRC
                               </span>
                             </span>
@@ -259,7 +259,7 @@ const Intiatives = () => {
                         <li >
                           <a className="btn btn-default text-uppercase btn-sm circle btn-bordered border-thin  font-size-12 lh-15 font-weight-bold ltr-sp-05 mb-2">
                             <span>
-                              <span className="btn-txt">
+                              <span style={{color:"#E86740"}} className="btn-txt">
                               Scared India Gallery 
                               </span>
                             </span>
@@ -268,7 +268,7 @@ const Intiatives = () => {
                         <li >
                           <a className="btn btn-default text-uppercase btn-sm circle btn-bordered border-thin  font-size-12 lh-15 font-weight-bold ltr-sp-05 mb-2">
                             <span>
-                              <span className="btn-txt">
+                              <span style={{color:"#E86740"}} className="btn-txt">
                               Others  
                               </span>
                             </span>

@@ -39,10 +39,10 @@ const Contact = () => {
       <div className="supprt-right-container">
         <div className="support-right-header">
           <h3>Request For CallBack</h3>
-          <p>
+          {/* <p>
             To know more about courses offered by us kindly fill in the
             below mention details you will get a call back soon.
-          </p>
+          </p> */}
         </div>
         <div className="support-input-main-div">
           <div className="support-input-row-1">

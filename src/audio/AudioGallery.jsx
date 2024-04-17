@@ -373,107 +373,7 @@ const AudioGallery = () =>
               </div>
             </div>
             <div className="container">
-              <div className="listContainer">
-                <div>
-                  <div className="listHeader">
-                    <div className="listHeaderL">
-                      <p className="listTitle">Devotional Bhajans</p>
-                    </div>
-                  </div>
-                  <div className="listContent" id="playlist">
-                    {/* Iterate over the bhajans array using map */}
-                    {bhajans.map((bhajan) => (
-                      <div key={bhajan.id} className="listItem">
-                        <div className="itemImage">
-                          <img src={bhajan.imageUrl} alt="" />
-                          <button className="itemLength">
-                            {bhajan.length}
-                          </button>
-                        </div>
-                        <div className="itemInfo">
-                          <p className="videoTitle">{bhajan.videoTitle}</p>
-                          <p className="videoOwner">{bhajan.videoOwner}</p>
-                        </div>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-
-                <div>
-                  <div className="listHeader">
-                    <div className="listHeaderL">
-                      <p className="listTitle">Spiritual Discourses</p>
-                    </div>
-                  </div>
-                  <div className="listContent" id="playlist">
-                    {/* Iterate over the bhajans array using map */}
-                    {bhajanstwo.map((bhajan) => (
-                      <div key={bhajan.id} className="listItem">
-                        <div className="itemImage">
-                          <img src={bhajan.imageUrl} alt="" />
-                          <button className="itemLength">
-                            {bhajan.length}
-                          </button>
-                        </div>
-                        <div className="itemInfo">
-                          <p className="videoTitle">{bhajan.videoTitle}</p>
-                          <p className="videoOwner">{bhajan.videoOwner}</p>
-                        </div>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-                <div>
-                <div className="widget">
-      <h3 className="widget-title">Categories</h3>
-      <List>
-        {categories.map((category, index) => (
-          <React.Fragment key={index}>
-            <ListItemButton onClick={() => handleCategoryClick(index)} className={openCategory === index ? 'open' : ''}>
-              {openCategory === index ? <ArrowDropUpIcon /> : <ArrowDropDownIcon />}
-              <ListItemText  primary={category.name} />
-            </ListItemButton>
-            {openCategory === index && (
-              <List component="div" disablePadding>
-                {category.subcategories.map((subcategory, subIndex) => (
-                  <React.Fragment key={subIndex}>
-                    <ListItemButton onClick={() => handleSubCategoryClick(subIndex)} className={openSubCategory === subIndex ? 'open' : ''}>
-                      {openSubCategory === subIndex ? <ArrowDropUpIcon /> : <ArrowDropDownIcon />}
-                      <ListItemText  primary={subcategory.name} />
-                    </ListItemButton>
-                    {openSubCategory === subIndex && subcategory.subsubcategories && (
-                      <List component="div" disablePadding>
-                        {subcategory.subsubcategories.map((subsubcategory, subsubIndex) => (
-                          <React.Fragment key={subsubIndex}>
-                            <ListItemButton onClick={() => handleSubSubCategoryClick(subsubIndex)} className={openSubSubCategory === subsubIndex ? 'open' : ''}>
-                              {openSubSubCategory === subsubIndex ? <ArrowDropUpIcon /> : <ArrowDropDownIcon />}
-                              <ListItemText primary={subsubcategory.name} />
-                            </ListItemButton>
-                            {openSubSubCategory === subsubIndex && subsubcategory.subsubsubcategories && (
-                              <List component="div" disablePadding>
-                                {subsubcategory.subsubsubcategories.map((subsubsubcategory, subsubsubIndex) => (
-                                  <ListItemButton key={subsubsubIndex} className="sub-sub-sub-item">
-                                    <ListItemText primary={subsubsubcategory} />
-                                  </ListItemButton>
-                                ))}
-                              </List>
-                            )}
-                          </React.Fragment>
-                        ))}
-                      </List>
-                    )}
-                  </React.Fragment>
-                ))}
-              </List>
-            )}
-            {index !== categories.length - 1 && <Divider />}
-          </React.Fragment>
-        ))}
-      </List>
-    </div>
-                </div>
-              </div>
-              <div className="heading-block bottommargin-sm topmargin noborder">
+            <div className="heading-block bottommargin-sm topmargin noborder">
                  <h2
                       className="lh-115 mb-0"
                       data-fittext="true"
@@ -587,11 +487,116 @@ const AudioGallery = () =>
                   </div>
                 </div>
               </div>
+              <div className="listContainer">
+                
+                <div>
+                  <div className="listHeader">
+                    <div className="listHeaderL">
+                      <p className="listTitle">Devotional Bhajans</p>
+                    </div>
+                  </div>
+                  <div className="listContent" id="playlist">
+                    {/* Iterate over the bhajans array using map */}
+                    {bhajans.map((bhajan) => (
+                      <div key={bhajan.id} className="listItem">
+                        <div className="itemImage">
+                          <img src={bhajan.imageUrl} alt="" />
+                          <button className="itemLength">
+                            {bhajan.length}
+                          </button>
+                        </div>
+                        <div className="itemInfo">
+                          <p className="videoTitle">{bhajan.videoTitle}</p>
+                          <p className="videoOwner">{bhajan.videoOwner}</p>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+
+                <div>
+                  <div className="listHeader">
+                    <div className="listHeaderL">
+                      <p className="listTitle">Spiritual Discourses</p>
+                    </div>
+                  </div>
+                  <div className="listContent" id="playlist">
+                    {/* Iterate over the bhajans array using map */}
+                    {bhajanstwo.map((bhajan) => (
+                      <div key={bhajan.id} className="listItem">
+                        <div className="itemImage">
+                          <img src={bhajan.imageUrl} alt="" />
+                          <button className="itemLength">
+                            {bhajan.length}
+                          </button>
+                        </div>
+                        <div className="itemInfo">
+                          <p className="videoTitle">{bhajan.videoTitle}</p>
+                          <p className="videoOwner">{bhajan.videoOwner}</p>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+                <div>
+                <div className="widget">
+      <h3 className="widget-title">Categories</h3>
+      <List>
+        {categories.map((category, index) => (
+          <React.Fragment key={index}>
+            <ListItemButton onClick={() => handleCategoryClick(index)} className={openCategory === index ? 'open' : ''}>
+              {openCategory === index ? <ArrowDropUpIcon /> : <ArrowDropDownIcon />}
+              <ListItemText  primary={category.name} />
+            </ListItemButton>
+            {openCategory === index && (
+              <List component="div" disablePadding>
+                {category.subcategories.map((subcategory, subIndex) => (
+                  <React.Fragment key={subIndex}>
+                    <ListItemButton onClick={() => handleSubCategoryClick(subIndex)} className={openSubCategory === subIndex ? 'open' : ''}>
+                      {openSubCategory === subIndex ? <ArrowDropUpIcon /> : <ArrowDropDownIcon />}
+                      <ListItemText  primary={subcategory.name} />
+                    </ListItemButton>
+                    {openSubCategory === subIndex && subcategory.subsubcategories && (
+                      <List component="div" disablePadding>
+                        {subcategory.subsubcategories.map((subsubcategory, subsubIndex) => (
+                          <React.Fragment key={subsubIndex}>
+                            <ListItemButton onClick={() => handleSubSubCategoryClick(subsubIndex)} className={openSubSubCategory === subsubIndex ? 'open' : ''}>
+                              {openSubSubCategory === subsubIndex ? <ArrowDropUpIcon /> : <ArrowDropDownIcon />}
+                              <ListItemText primary={subsubcategory.name} />
+                            </ListItemButton>
+                            {openSubSubCategory === subsubIndex && subsubcategory.subsubsubcategories && (
+                              <List component="div" disablePadding>
+                                {subsubcategory.subsubsubcategories.map((subsubsubcategory, subsubsubIndex) => (
+                                  <ListItemButton key={subsubsubIndex} className="sub-sub-sub-item">
+                                    <ListItemText primary={subsubsubcategory} />
+                                  </ListItemButton>
+                                ))}
+                              </List>
+                            )}
+                          </React.Fragment>
+                        ))}
+                      </List>
+                    )}
+                  </React.Fragment>
+                ))}
+              </List>
+            )}
+            {index !== categories.length - 1 && <Divider />}
+          </React.Fragment>
+        ))}
+      </List>
+    </div>
+                </div>
+              </div>
+            
            
         
             </div>
+            
           </div>
+          
         </div>
+        
       </section>
       <div className="gradient-bg" id="player">
         <div className="d-flex h-100">

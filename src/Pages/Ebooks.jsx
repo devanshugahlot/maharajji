@@ -70,12 +70,12 @@ const Ebooks = () => {
   };
 
   const rows = [];
-  for (let i = 0; i < dailydivineimage.length; i += 3) {
-    const rowImages = dailydivineimage.slice(i, i + 3);
+  for (let i = 0; i < dailydivineimage.length; i += 4) {
+    const rowImages = dailydivineimage.slice(i, i + 4);
     rows.push(
       <div className="row" key={i}>
         {rowImages.map((item, index) => (
-          <div className="col-md-4 text-center" key={i + index}>
+          <div className="col-md-3 text-center" key={i + index}>
             <div onClick={() => openLightbox(i + index)}>
               <img
                 style={{ width: "auto", height: "45vh", cursor: "pointer" }}
@@ -88,6 +88,7 @@ const Ebooks = () => {
       </div>
     );
   }
+
 
   return (
     <div>
@@ -141,6 +142,7 @@ const Ebooks = () => {
           }
         />
       )}
+
     </div>
   );
 };

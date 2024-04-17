@@ -25,12 +25,14 @@ import AudioGallery from "./audio/AudioGallery";
 import Livecast from "./Pages/Livecast";
 import Ebooks from "./Pages/Ebooks";
 import ImageGallery from "./Pages/ImageGallery";
+import { ScrollToScroll } from "./WindowToScroll";
 
 
 function App() {
   return (
     <div>
       <Headers />
+      <ScrollToScroll/>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/hisholiness" element={<HisHoliness />} />

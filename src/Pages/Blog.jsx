@@ -291,7 +291,7 @@ const Blog = () => {
           <div className="container titlebar-container">
             <div className="row titlebar-container">
               <div className="titlebar-col col-md-6">
-                <h1 className="font-size-26 mb-1">Blogs</h1>
+                <h1 className="font-size-26 mb-1">Blog</h1>
                 <p className="font-size-14 text-fade-dark-06">
                   Swing with the divine melodies
                 </p>
