@@ -23,6 +23,9 @@ const Events = () => {
     { id: "Upcoming", name: "Upcoming Events" },
     { id: "past", name: "Past Events" },
     { id: "retret", name: "Retreats" },
+    { id: "alone", name: "Alone with Krishna " },
+    { id: "holy", name: "Holy Name Retreat" },
+    // { id: "Govardhan", name: "Govardhan Retreat" },
  
     // Add more categories as needed
   ];
@@ -261,7 +264,126 @@ const Events = () => {
             </div>
           </div>
         </div>{" "}
-        <section className="vc_row pt-45 pb-45">
+       
+        <div>
+          <div id="tabs" className="container topmargin clearfix m-xs-0">
+            <div className="row">
+              <div className="lqd-column col-md-12">
+                <div className="liquid-filter-items justify-content-between align-items-center mb-5 m-xs-0">
+                  <div className="liquid-filter-items-inner">
+                    <a >
+                      <h3 className="m-0 text-gradient">
+                        Latest in Categories
+                      </h3>
+                    </a>
+                    <ul
+                      className="filter-list filter-list-inline size-md mb-0"
+                      id="portdolio-grid-1"
+                    >
+                      {categories.map((category) => (
+                        <li
+                          key={category.id}
+                          className={activeTab === category.id ? "active" : ""}
+                          onClick={() => handleCategoryClick(category.id)}
+                        >
+                          <span>{category.name}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="relative d-flex ">
+              <span className="ld-sf-spinner">
+                <span>Loading </span>
+              </span>
+              <div className="w-overlay" />
+              <div id="latestcategory" className="col_full mb-0 m-xs-0">
+                {activeTab === "all" && (
+                  <div className="col_one_third mb-xs ">
+                    <div className="ipost clearfix">
+                      <div className="entry-image mb-10">
+                        <a
+                          className="img_scale"
+                          // href="news/shri-ram-katha-satiated-the-thirst-for-spiritual-knowledge-in-kurukshetra-haryana.html"
+                        >
+                          <img
+                            className="image_fade ld-lazyload"
+                            data-src="https://www.djjs.org/uploads/news/im_660a098258abb.jpg"
+                            alt
+                            src="https://www.djjs.org/uploads/news/im_660a098258abb.jpg"
+                          />
+                        </a>
+                      </div>
+                      <div className="entry-title">
+                        <h4 className="font-size-22 font-weight-semibold">
+                          <a >
+                            Shri Ram Katha satiated the thirst for Spiritual
+                            Knowledge in Kurukshetra, Haryana
+                          </a>
+                        </h4>
+                      </div>
+                      <time
+                        className="liquid-lp-date text-uppercase ltr-sp-1 my-0"
+                        dateTime="2024-04-01"
+                      >
+                        April 1, 2024
+                      </time>
+                    </div>
+                  </div>
+                )}
+                {activeTab === "Upcoming" && (
+                  <div className="col_one_third mb-xs ">
+                    <div className="ipost clearfix">
+                      <div className="entry-image mb-10">
+                        <a
+                          className="img_scale"
+                          // href="news/shri-ram-katha-satiated-the-thirst-for-spiritual-knowledge-in-kurukshetra-haryana.html"
+                        >
+                          <img
+                            className="image_fade ld-lazyload"
+                            data-src="https://www.djjs.org/uploads/news/im_660a0a1b1991f.jpg"
+                            alt
+                            src="https://www.djjs.org/uploads/news/im_660a0a1b1991f.jpg"
+                          />
+                        </a>
+                      </div>
+                      <div className="entry-title">
+                        <h4 className="font-size-22 font-weight-semibold">
+                          <a>
+                            Shri Ram Katha satiated the thirst for Spiritual
+                            Knowledge in Kurukshetra, Haryana
+                          </a>
+                        </h4>
+                      </div>
+                      <time
+                        className="liquid-lp-date text-uppercase ltr-sp-1 my-0"
+                        dateTime="2024-04-01"
+                      >
+                        April 3, 2024
+                      </time>
+                    </div>
+                  </div>
+                )}
+              </div>
+              <div className="clear" />
+            </div>
+            <div className="d-flex flex-1 justify-content-center mb-30">
+              <a
+                id="seeall"
+                // href="news/category/spiritual.html"
+                className="btn btn-sm btn-solid btn-gradient circle text-uppercase wide ld-lp-carousel-filterable-btn"
+              >
+                <span>
+                  <span className="btn-gradient-bg bg-gradient-primary-lr" />
+                  <span className="btn-txt">See More</span>
+                  <span className="btn-gradient-bg btn-gradient-bg-hover bg-gradient-secondary-rl" />
+                </span>
+              </a>
+            </div>
+          </div>
+          <section className="vc_row pt-45 pb-45">
           <div className="container">
             <div className="row slide-mask colorbox" id="topnews">
               <div className="lqd-column col-md-6 p-0">
@@ -514,124 +636,6 @@ const Events = () => {
             </div>
           </div>
         </section>
-        <div>
-          <div id="tabs" className="container topmargin clearfix m-xs-0">
-            <div className="row">
-              <div className="lqd-column col-md-12">
-                <div className="liquid-filter-items justify-content-between align-items-center mb-5 m-xs-0">
-                  <div className="liquid-filter-items-inner">
-                    <a >
-                      <h3 className="m-0 text-gradient">
-                        Latest in Categories
-                      </h3>
-                    </a>
-                    <ul
-                      className="filter-list filter-list-inline size-md mb-0"
-                      id="portdolio-grid-1"
-                    >
-                      {categories.map((category) => (
-                        <li
-                          key={category.id}
-                          className={activeTab === category.id ? "active" : ""}
-                          onClick={() => handleCategoryClick(category.id)}
-                        >
-                          <span>{category.name}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="relative d-flex ">
-              <span className="ld-sf-spinner">
-                <span>Loading </span>
-              </span>
-              <div className="w-overlay" />
-              <div id="latestcategory" className="col_full mb-0 m-xs-0">
-                {activeTab === "all" && (
-                  <div className="col_one_third mb-xs ">
-                    <div className="ipost clearfix">
-                      <div className="entry-image mb-10">
-                        <a
-                          className="img_scale"
-                          // href="news/shri-ram-katha-satiated-the-thirst-for-spiritual-knowledge-in-kurukshetra-haryana.html"
-                        >
-                          <img
-                            className="image_fade ld-lazyload"
-                            data-src="https://www.djjs.org/uploads/news/im_660a098258abb.jpg"
-                            alt
-                            src="https://www.djjs.org/uploads/news/im_660a098258abb.jpg"
-                          />
-                        </a>
-                      </div>
-                      <div className="entry-title">
-                        <h4 className="font-size-22 font-weight-semibold">
-                          <a >
-                            Shri Ram Katha satiated the thirst for Spiritual
-                            Knowledge in Kurukshetra, Haryana
-                          </a>
-                        </h4>
-                      </div>
-                      <time
-                        className="liquid-lp-date text-uppercase ltr-sp-1 my-0"
-                        dateTime="2024-04-01"
-                      >
-                        April 1, 2024
-                      </time>
-                    </div>
-                  </div>
-                )}
-                {activeTab === "Upcoming" && (
-                  <div className="col_one_third mb-xs ">
-                    <div className="ipost clearfix">
-                      <div className="entry-image mb-10">
-                        <a
-                          className="img_scale"
-                          // href="news/shri-ram-katha-satiated-the-thirst-for-spiritual-knowledge-in-kurukshetra-haryana.html"
-                        >
-                          <img
-                            className="image_fade ld-lazyload"
-                            data-src="https://www.djjs.org/uploads/news/im_660a0a1b1991f.jpg"
-                            alt
-                            src="https://www.djjs.org/uploads/news/im_660a0a1b1991f.jpg"
-                          />
-                        </a>
-                      </div>
-                      <div className="entry-title">
-                        <h4 className="font-size-22 font-weight-semibold">
-                          <a>
-                            Shri Ram Katha satiated the thirst for Spiritual
-                            Knowledge in Kurukshetra, Haryana
-                          </a>
-                        </h4>
-                      </div>
-                      <time
-                        className="liquid-lp-date text-uppercase ltr-sp-1 my-0"
-                        dateTime="2024-04-01"
-                      >
-                        April 3, 2024
-                      </time>
-                    </div>
-                  </div>
-                )}
-              </div>
-              <div className="clear" />
-            </div>
-            <div className="d-flex flex-1 justify-content-center mb-30">
-              <a
-                id="seeall"
-                // href="news/category/spiritual.html"
-                className="btn btn-sm btn-solid btn-gradient circle text-uppercase wide ld-lp-carousel-filterable-btn"
-              >
-                <span>
-                  <span className="btn-gradient-bg bg-gradient-primary-lr" />
-                  <span className="btn-txt">See More</span>
-                  <span className="btn-gradient-bg btn-gradient-bg-hover bg-gradient-secondary-rl" />
-                </span>
-              </a>
-            </div>
-          </div>
           <div className="container clearfix">
           <div className="col_full m-xs-0 topmargin clearfix">
   <div className="row w-100 d-flex flex-wrap align-items-center">

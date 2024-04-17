@@ -1,8 +1,41 @@
 import React, { useState } from "react";
 import { FaPlay, FaVideo } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
+import { convertToIST } from "../helpers/formatFunctions";
+const Home = () =>
+{
+  const posts = [
+    {
+      _id: 1,
+      heading: "Firm, Resolute & Stout-Hearted Mother of King Bharata - SHAKUNTALA!",
+      subHeading: "Do I have the success that I thought I would have? Where am I going with my life? Have I been able t…",
+      images: [
+        "https://www.djjs.org/uploads/blog/aa38226f0fffabbcce83094ef3378fad.jpg",
+        "image2.jpg",
+        "image3.jpg",
+      ],
+      category: "sdfg",
+      author: "Example Author",
+      createdAt: "2024-04-12T10:38:23.367+00:00",
+    },
+    {
+      _id: 2,
+      heading: "Vedic Women: The Paragon of Absolute Women Empowerment",
+      subHeading: "In Indian classic literature like Ramayan, Mahabharata and the compendiums documented by Rishis in t…",
+      images: [
+        "https://www.djjs.org/uploads/blog/2b3916f02f98b2302094f78bab7845f9.jpg",
+        "image2.jpg",
+        "image3.jpg",
+      ],
+      category: "sdfg",
+      author: "Example Author",
+      createdAt: "2024-04-12T10:38:23.367+00:00",
+    },
+   
 
-const Home = () => {
+
+
+  ];
   const navigate = useNavigate("");
   const [activeTab, setActiveTab] = useState(0);
 
@@ -358,6 +391,131 @@ const Home = () => {
           </div>
         </section>
 
+
+        <div style={ {
+          display: "flex",
+          flexDirection: "column",
+        padding:"100px "} }>
+      <div className="lqd-column col-md-12 text-center">
+                <h2 className="h1 mt-0 mb-3 text-gradient">Audios</h2>
+                <p className="font-size-16">Top Picks from Audio gallery</p>
+              </div>
+              <div className="row clearfix albumcategory">
+                <div className="col-md-6">
+                  <img src="https://www.djjs.org/images/new/falsafe.jpg" alt />
+                  <div className="overlay">
+                    <div className="text-overlay">
+                      <span className="font-primary text-white">
+                        Akhand Gyan
+                      </span>
+                      <div className="text-overlay-title">
+                        <h2>
+                          <a >Jeevan Ke Falsafe</a>
+                        </h2>
+                      </div>
+                      <a
+                        
+                        className="btn btn-sm btn-solid btn-gradient circle text-uppercase wide ld-lp-carousel-filterable-btn split-inner"
+                      >
+                        <span>
+                          <span className="btn-gradient-bg bg-gradient-primary-rl" />
+                          <span className="btn-txt">Play Now</span>
+                          <span className="btn-gradient-bg btn-gradient-bg-hover" />
+                        </span>
+                      </a>
+                    </div>
+                  </div>
+                  <a
+                    className="liquid-overlay-link z-index-3"
+                    
+                  />
+                </div>
+                <div className="row mx-0 px-0 mt-3 mt-md-0 col-md-6">
+                  <div className="col-md-6">
+                    <img src="https://www.djjs.org/images/new/bhajan.jpg" alt />
+                    <div className="overlay">
+                      <div className="text-overlay">
+                        <span className="font-primary">divine melodies</span>
+                        <div className="text-overlay-title">
+                          <h2>
+                            <a href="audio/bhajan.html">Bhajans</a>
+                          </h2>
+                        </div>
+                      </div>
+                    </div>
+                    <a
+                      className="liquid-overlay-link z-index-3"
+                      href="audio/bhajan.html"
+                    />
+                  </div>
+                  <div className="col-md-6">
+                    <img
+                      src="https://www.djjs.org/images/new/discourse.jpg"
+                      alt
+                    />
+                    <div className="overlay">
+                      <div className="text-overlay">
+                        <span className="font-primary">Food for soul</span>
+                        <div className="text-overlay-title">
+                          <h2>
+                            <a href="audio/discourses.html">Discourses</a>
+                          </h2>
+                        </div>
+                      </div>
+                    </div>
+                    <a
+                      className="liquid-overlay-link z-index-3"
+                      href="audio/discourses.html"
+                    />
+                  </div>
+                  <div className="col-md-12 mt-3 amplitude-song-container">
+                    <img src="https://www.djjs.org/images/new/naman.jpg" alt />
+                    <div className="overlay">
+                      <div className="text-overlay">
+                        <span className="font-primary">Daily Mangal Aarti</span>
+                        <div className="text-overlay-title">
+                          <h2>
+                            <a href="#">Naman &amp; Aarti</a>
+                          </h2>
+                        </div>
+                        <a
+                          data-amplitude-song-index={0}
+                          data-amplitude-playlist="aarti"
+                          className="amplitude-play-pause btn btn-sm btn-solid btn-gradient circle text-uppercase wide ld-lp-carousel-filterable-btn split-inner track-list"
+                          data-track="https://www.djjs.org/feed/playtrack/505856367?client_id=989dab6caab0f1cce36f9b8be8967360&oauth_token=2-111630--mZ9ImDpY3sDJATxFCA9C8Rf"
+                          data-poster="demos/music/tracks/poster-images/something-about-love.jpg"
+                          data-title="Naman & Aarti"
+                          data-singer="DJJS"
+                        >
+                          <span>
+                            <span className="btn-gradient-bg bg-gradient-primary-rl" />
+                            <span className="btn-txt">Play Now</span>
+                            <span className="btn-icon">
+                              <i className="fa fa-play" />
+                            </span>
+                            <span className="btn-gradient-bg btn-gradient-bg-hover" />
+                          </span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+          </div>
+          <div style={{marginTop:"20px"}} className="text-center">
+                <a
+                  onClick={() => navigate("/audio-gallery")}
+                  className="btn btn-solid text-uppercase btn-lg semi-round btn-bordered border-thin font-size-12 font-weight-bold ltr-sp-2 px-2 p-xs-0"
+                >
+                  <span>
+                    <span className="btn-txt">See All</span>
+                    <span className="btn-icon">
+                      <FaPlay />
+                    </span>
+                  </span>
+                </a>
+              </div>
+        </div>
+
         <section className="vc_row pt-50 pb-50">
           <div className="container">
             <span className="ld-sf-spinner">
@@ -370,7 +528,7 @@ const Home = () => {
                   <div className="liquid-filter-items-inner">
                     <a >
                       <h3 className="m-0 text-gradient font-size-40 t600">
-                        DJJS Initiatives
+                      Bhurijana Dasa
                       </h3>
                     </a>
                     <ul className="filter-list filter-list-inline size-md mb-0 m-xs-0">
@@ -380,7 +538,7 @@ const Home = () => {
                         onClick={handlesocialbutton}
                       >
                         <button className="btn btn-default btn-solid text-uppercase btn-sm circle btn-bordered border-thin font-size-12 lh-15 font-weight-bold ltr-sp-05 mb-2">
-                          <span style={{color:"#FFB09F"}} className="btn-txt">Social Initiatives</span>
+                          <span style={{color:"#FFB09F"}} className="btn-txt">VIHE</span>
                         </button>
                       </li>
                       <li
@@ -389,7 +547,7 @@ const Home = () => {
                         onClick={handlespiritualbutton}
                       >
                         <button className="btn btn-default text-uppercase btn-sm circle btn-bordered border-thin font-size-12 lh-15 font-weight-bold ltr-sp-05 mb-2">
-                          <span className="btn-txt">Spiritual Initiatives</span>
+                          <span className="btn-txt">Gopinath Dham</span>
                         </button>
                       </li>
                       <li
@@ -399,7 +557,31 @@ const Home = () => {
                       >
                         <button className="btn btn-default text-uppercase btn-sm circle btn-bordered border-thin font-size-12 lh-15 font-weight-bold ltr-sp-05 mb-2">
                           <span className="btn-txt">
-                            Developmental Workshops
+                            GRC
+                          </span>
+                        </button>
+                      </li>
+
+
+                      <li
+                        data-filter="workshop"
+                        className={activeFilter === "workshop" ? "active" : ""}
+                        onClick={handledevelopmentbutton}
+                      >
+                        <button className="btn btn-default text-uppercase btn-sm circle btn-bordered border-thin font-size-12 lh-15 font-weight-bold ltr-sp-05 mb-2">
+                          <span className="btn-txt">
+                          Scared India Gallery
+                          </span>
+                        </button>
+                      </li>
+                      <li
+                        data-filter="workshop"
+                        className={activeFilter === "workshop" ? "active" : ""}
+                        onClick={handledevelopmentbutton}
+                      >
+                        <button className="btn btn-default text-uppercase btn-sm circle btn-bordered border-thin font-size-12 lh-15 font-weight-bold ltr-sp-05 mb-2">
+                          <span className="btn-txt">
+                          Others
                           </span>
                         </button>
                       </li>
@@ -871,7 +1053,7 @@ const Home = () => {
                 <header className="fancy-title mb-70 text-center">
                   <h2 className="mt-0 h1">
                     <span className="text-secondary ld-fh-txt text-gradient">
-                      Weekly Insights
+                    Blogs
                     </span>
                   </h2>
                   <p className="font-size-16">
@@ -880,225 +1062,77 @@ const Home = () => {
                 </header>
               </div>
               <div className="lqd-column col-md-12">
-                <div className="liquid-blog-posts">
+              <div className="liquid-blog-posts">
                   <div
                     className="liquid-blog-grid row"
                     data-liquid-masonry="true"
                   >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      xmlnsXlink="http://www.w3.org/1999/xlink"
-                      xmlSpace="preserve"
-                      className="liquid-lp-gradient"
-                      width={0}
-                      height={0}
-                    >
-                      <defs>
-                        <linearGradient
-                          id="liquid-lp-gradient"
-                          x1="0%"
-                          y1="0%"
-                          x2="100%"
-                          y2="0%"
-                        >
-                          <stop offset="0%" />
-                          <stop offset="100%" />
-                        </linearGradient>
-                      </defs>
-                    </svg>
-                    <div className="lqd-column col-md-10 col-md-offset-1 col-lg-6 col-lg-offset-0 masonry-item">
-                      <article className=" liquid-lp-sp-block liquid-lp-featured">
-                        <figure
-                          data-bg="url(https://www.djjs.org/uploads/blog/99ad5ffb1fc78d7d4603cf51290a9eb6.png)"
-                          className="liquid-lp-media ld-lazyload"
-                        >
-                          <img
-                            data-src="https://www.djjs.org/uploads/blog/99ad5ffb1fc78d7d4603cf51290a9eb6.png"
-                            src="https://www.djjs.org/uploads/blog/99ad5ffb1fc78d7d4603cf51290a9eb6.png"
-                            alt="Om Namah Shivay | Glory of Adi Guru | Shiv Stuti | Mahashivratri 2022 | DJJS Bhajan"
-                          />
-                        </figure>
-                        <div className="liquid-lp-inner justify-content-end">
-                          <a
-                            className="liquid-overlay-link"
-                          />
-                          <header className="liquid-lp-header">
-                            <a
-                              className="btn btn-solid text-uppercase btn-xsm small semi-round btn-bordered border-none btn-gradient font-size-12 font-weight-bold lh-2 ltr-sp-05 mb-2"
-                            >
-                              <span>
-                                <span className="btn-gradient-bg" />
-                                <span className="btn-txt">BLOG</span>
-                                <span className="btn-gradient-bg btn-gradient-bg-hover bg-gradient-secondary-rl" />
-                              </span>
+                    {posts.map((post) => (
+                      <div
+                        className="lqd-column col-md-6  masonry-item"
+                        key={post._id}
+                      >
+                        <article className="liquid-lp mb-60 shadow">
+                          <figure className="liquid-lp-media">
+                            <a href={post.url}>
+                              <img src={post.images[0]} />
                             </a>
-                            <h2 className="liquid-lp-title h5 font-weight-bold">
-                              <a >
-                                Winning the Devils Bargain: Fight against
-                                Substance Abuse
-                              </a>
-                            </h2>
-                          </header>
-                        </div>
-                      </article>
-                    </div>
-                    <div className="lqd-column col-md-10 col-md-offset-1 col-lg-6 col-lg-offset-0 masonry-item">
-                      <article className="liquid-lp liquid-lp-sp-block shadow-1">
-                        <figure
-                          data-bg="url(https://www.djjs.org/uploads/blog/bbd739969d84fd8b124b65c3883aaf3d.jpg)"
-                          className="liquid-lp-media ld-lazyload"
-                        >
-                          <a >
-                            <img
-                              className="ld-lazyload"
-                              data-src="https://www.djjs.org/uploads/blog/bbd739969d84fd8b124b65c3883aaf3d.jpg"
-                              alt="FOMO to JOMO"
-                              src="https://www.djjs.org/uploads/blog/bbd739969d84fd8b124b65c3883aaf3d.jpg"
-                            />
-                          </a>
-                        </figure>
-                        <div className="liquid-lp-inner">
-                          <header className="liquid-lp-header">
-                            <ul className="liquid-lp-category bordered square">
-                              <li>
-                                <a >
-                                  <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    xmlnsXlink="http://www.w3.org/1999/xlink"
-                                    xmlSpace="preserve"
-                                    className="liquid-lp-gradient-border"
-                                    width="100%"
-                                    height="100%"
+                          </figure>
+                          <div className="px-4 pb-4">
+                            <header className="liquid-lp-header">
+                              <h2 className="liquid-lp-title h3">
+                                <a href={post.url}>{post.heading}</a>
+                              </h2>
+                              <div className="liquid-lp-date text-uppercase size-sm">
+                                {convertToIST(post.createdAt)}
+                              </div>
+                            </header>
+                            <div className="liquid-lp-excerpt">
+                              <p>{post.subHeading}</p>
+                            </div>
+                            <footer className="liquid-lp-footer">
+                              <a
+                                href={post.url}
+                                className="btn btn-naked liquid-lp-read-more text-uppercase font-size-13 font-weight-bold"
+                              >
+                                <span>
+                                  <span
+                                    onClick={() =>
+                                      navigate(`/Blogshow/${post._id}`)
+                                    }
+                                    className="btn-txt"
                                   >
-                                    <rect
-                                      x={0}
-                                      y={0}
-                                      rx={0}
-                                      ry={0}
-                                      width="100%"
-                                      height="100%"
-                                      stroke="url(#btn-grad-1)"
-                                    />
-                                  </svg>
-                                  <span>Blog</span>
-                                </a>
-                              </li>
-                            </ul>
-                            <h2 className="liquid-lp-title h5 font-weight-bold">
-                              <a >FOMO to JOMO</a>
-                            </h2>
-                          </header>
-                          <div className="liquid-lp-excerpt">
-                            <p />
-                          </div>
-                          <footer className="liquid-lp-footer">
-                            <time
-                              className="liquid-lp-date text-uppercase ltr-sp-1"
-                              dateTime="2023-05-13"
-                            >
-                              May 13 2023
-                            </time>
-                          </footer>
-                        </div>
-                      </article>
-                    </div>
-                    <div className="lqd-column col-md-10 col-md-offset-1 col-lg-6 col-lg-offset-0 masonry-item">
-                      <article className="liquid-lp liquid-lp-sp-block liquid-lp-reverse shadow-1">
-                        <figure
-                          data-bg="url(https://www.djjs.org/uploads/blog/021ebc5eae8b8b02d1295f0ae8b7c511.jpg)"
-                          className="liquid-lp-media ld-lazyload"
-                        >
-                          <a >
-                            <img
-                              className="ld-lazyload"
-                              data-src="https://www.djjs.org/uploads/blog/021ebc5eae8b8b02d1295f0ae8b7c511.jpg"
-                              alt="FOMO to JOMO"
-                              src="https://www.djjs.org/uploads/blog/021ebc5eae8b8b02d1295f0ae8b7c511.jpg"
-                            />
-                          </a>
-                        </figure>
-                        <div className="liquid-lp-inner">
-                          <header className="liquid-lp-header">
-                            <ul className="liquid-lp-category bordered square">
-                              <li>
-                                <a >
-                                  <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    xmlnsXlink="http://www.w3.org/1999/xlink"
-                                    xmlSpace="preserve"
-                                    className="liquid-lp-gradient-border"
-                                    width="100%"
-                                    height="100%"
-                                  >
-                                    <rect
-                                      x={0}
-                                      y={0}
-                                      rx={0}
-                                      ry={0}
-                                      width="100%"
-                                      height="100%"
-                                      stroke="url(#btn-grad-1)"
-                                    />
-                                  </svg>
-                                  <span>Blog</span>
-                                </a>
-                              </li>
-                            </ul>
-                            <h2 className="liquid-lp-title h5 font-weight-bold">
-                              <a >
-                                Conquering Corporate’s Unknown Battlegrounds
+                                    Read more
+                                  </span>
+                                  <span className="btn-icon">
+                                    <i className="fa fa-long-arrow-right" />
+                                  </span>
+                                </span>
                               </a>
-                            </h2>
-                          </header>
-                          <div className="liquid-lp-excerpt">
-                            <p />
+                            </footer>
                           </div>
-                          <footer className="liquid-lp-footer">
-                            <time
-                              className="liquid-lp-date text-uppercase ltr-sp-1"
-                              dateTime="2023-02-12"
-                            >
-                              February 12 2023
-                            </time>
-                          </footer>
-                        </div>
-                      </article>
-                    </div>
-                    <div className="lqd-column col-md-10 col-md-offset-1 col-lg-6 col-lg-offset-0 masonry-item">
-                      <article className="liquid-lp liquid-lp-sp-block liquid-lp-sp-instagram">
-                        <figure
-                          data-bg="url(https://www.djjs.org/uploads/blog/83089aa08151b3241de96636b5d9eaa0.jpg)"
-                          className="liquid-lp-media ld-lazyload"
-                        >
-                          <img
-                            // className="ld-lazyload"
-                            data-src="https://www.djjs.org/uploads/blog/83089aa08151b3241de96636b5d9eaa0.jpg"
-                            alt="Shrimad Devi Bhagwat Katha 2021 | TEASER | DJJS Katha | Sadhvi Aditi Bharti Ji"
-                            src="https://www.djjs.org/uploads/blog/83089aa08151b3241de96636b5d9eaa0.jpg"
-                          />
-                        </figure>
-                        <div className="liquid-lp-inner">
-                          <a
-                            
-                            className="liquid-overlay-link"
-                          />
-                          <header className="liquid-lp-header">
-                            <ul className="liquid-lp-category bordered square">
-                              <li>
-                                <a >Blog</a>
-                              </li>
-                            </ul>
-                          </header>
-                          <h3 className="font-weight-semibold">
-                            <a >
-                              Body Positivity
-                            </a>
-                          </h3>
-                        </div>
-                      </article>
-                    </div>
+                        </article>
+                      </div>
+                    ))}
                   </div>
                 </div>
+              </div>
+              </div>
+              <div style={{marginTop:"20px"}} className="lqd-column row">
+              <div className="col-md-12 text-center">
+                <p>
+                  <a
+                    style={{ fontSize: 13 }}
+                    onClick={() => navigate("/Blog")}
+                    className="btn btn-sm btn-solid btn-gradient circle text-uppercase wide ld-lp-carousel-filterable-btn"
+                  >
+                    <span >
+                      <span className="btn-gradient-bg" />
+                      <span  className="btn-txt">See all Blogs</span>
+                      <span className="btn-gradient-bg btn-gradient-bg-hover" />
+                    </span>
+                  </a>
+                </p>
               </div>
             </div>
           </div>

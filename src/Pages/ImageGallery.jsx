@@ -1,59 +1,40 @@
+
+
+
+
+
+
+
 import React, { useState } from "react";
 import Lightbox from "react-image-lightbox";
 import "react-image-lightbox/style.css";
 
-const Ebooks = () => {
+const ImageGallery = () => {
   const dailydivineimage = [
     {
       image:
-        "https://www.abcbooksmarket.com/image/cache/catalog/Books/Anmol/Abhinav%20Sansar-500x500.jpg",
+        "https://bhurijanadasa.com/wp-content/uploads/2021/08/Mustard_wuna.jpg",
     },
     {
       image:
-        "https://www.abcbooksmarket.com/image/cache/catalog/Books/Anmol/Atharvaved-500x500.jpg",
+        "https://bhurijanadasa.com/wp-content/uploads/2021/08/Peacefully_4.jpg8_.jpg",
     },
     {
       image:
-        "https://www.abcbooksmarket.com/image/cache/catalog/Books/Anmol/Hiranyagarbh-500x500.jpeg",
-    },
-    {
-      image:
-        "https://hindubookstore.com/wp-content/uploads/2024/03/Ek-Yogi-Ki-Aatmakatha3.jpg",
-    },
-    {
-      image:
-        "https://hindubookstore.com/wp-content/uploads/2021/10/Bhagwan-srikrishna-Tatwagya-Dharmasansthapak-300x466.jpg",
-    },
-    {
-      image:
-        "https://hindubookstore.com/wp-content/uploads/2021/10/Bhagwan-srikrishnaPradurbhav-aur-Parakram-300x453.jpg",
-    },
-    {
-      image:
-        "https://hindubookstore.com/wp-content/uploads/2021/10/Dashrath-Nandan-Sriram-300x466.jpg",
-    },
-    {
-      image:
-        "https://hindubookstore.com/wp-content/uploads/2021/10/Krishna-Katha-300x492.jpg",
-    },
-    {
-      image:
-        "https://hindubookstore.com/wp-content/uploads/2021/10/Gita-Yatha-Rup.jpg",
-    },
+        "https://bhurijanadasa.com/wp-content/uploads/2021/08/sadhu_enterfrs001.jpg",
+      },
+      {
+        image:
+          "    https://scontent.fjai1-3.fna.fbcdn.net/v/t39.30808-6/434726411_440400318563971_8967494144404261188_n.jpg?stp=cp6_dst-jpg&_nc_cat=103&ccb=1-7&_nc_sid=5f2048&_nc_ohc=QWjHaX1RZ-AAb5TCC-C&_nc_ht=scontent.fjai1-3.fna&oh=00_AfBhZz-DGZb6okZwxbgFin6a8kMlEdl40yq-HZt_kRBoMg&oe=662445DD",
+      },
 
-    {
-      image:
-        "https://hindubookstore.com/wp-content/uploads/2022/08/shrimad-bhagavad-geetadharavahi-hindi-me.jpg",
-    },
-    {
-      image:
-        "https://hindubookstore.com/wp-content/uploads/2021/10/Yogeshwar-krishna-300x467.jpg",
-    },
-
-    {
-      image:
-        "https://hindubookstore.com/wp-content/uploads/2023/08/Srikrishna-by-Gurudatt.jpg",
-    },
+      {
+          image:"https://scontent.fjai1-3.fna.fbcdn.net/v/t39.30808-6/356843923_2445518715623173_2283261093584050099_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=5f2048&_nc_ohc=qq25CwcuLxIAb69QdcW&_nc_ht=scontent.fjai1-3.fna&oh=00_AfDyykvxC9q1k6GDpQiQtf1S8jCff-KJkE5ItP_RBXVC6g&oe=66246113"
+      },
+      {
+          image:"https://scontent.fjai1-1.fna.fbcdn.net/v/t39.30808-6/353389655_272420028695335_8157961501742259159_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=5f2048&_nc_ohc=MnQCtymIa-0Ab43JHTb&_nc_ht=scontent.fjai1-1.fna&oh=00_AfAhBqmUOYoVGD6UGCVLedHg4cYneRaCdSqRtph0lqb_8w&oe=66244D85"
+      }
+   
     
   ];
 
@@ -101,11 +82,11 @@ const Ebooks = () => {
                       data-fittext-options='{"compressor":1, "maxFontSize":"maxFontSize", "minFontSize":"25"}'
                     >
                       <span className="text-gradient">
-                        <span className="t600">E-</span>Books
+                        <span className="t600">Images</span> Gallery
                       </span>
                     </h2>
               <p>Charaiveti Charaiveti</p>
-             
+              
             </div>
           </div>
         </div>
@@ -145,4 +126,4 @@ const Ebooks = () => {
   );
 };
 
-export default Ebooks;
+export default ImageGallery;

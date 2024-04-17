@@ -24,6 +24,8 @@ import Loading from "./loder/Loading";
 import AudioGallery from "./audio/AudioGallery";
 import Livecast from "./Pages/Livecast";
 import Ebooks from "./Pages/Ebooks";
+import ImageGallery from "./Pages/ImageGallery";
+
 
 function App() {
   return (
@@ -48,9 +50,11 @@ function App() {
         <Route path="/Ebooks" element={ <Ebooks /> } />
         <Route path="/Blogshow/:id" element={ <Blogshow /> } />
         <Route path="/Loading" element={ <Loading /> } />
+        {/* <Route path="/Books" element={ <Books /> } /> */}
+        <Route path="/ImageGallery" element={ <ImageGallery /> } />
         
-
-
+        
+        
 
       </Routes>
       <Footer />

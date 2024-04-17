@@ -70,6 +70,9 @@ const Headers = () => {
                     <li onClick={() => navigate("/audio-gallery")}>
                       Audio Gallery
                     </li>
+                    <li onClick={() => { closeResNav(); navigate("/ImageGallery"); }}>
+                        Image gallery 
+                      </li>
                     <li onClick={() => navigate("/Ebooks")}>
                       E-book
                     </li>
@@ -81,7 +84,7 @@ const Headers = () => {
             <li onClick={() => navigate("/events")}>Events</li>
             <li onClick={() => navigate("/Livecast")}>Livecast</li>
             <li onClick={() => navigate("/blog")}>Blog</li>
-            <li onClick={() => navigate("/contribute")}>Contribute</li>
+            {/* <li onClick={() => navigate("/contribute")}>Contribute</li> */}
             <li onClick={() => navigate("/contact")}>Contact</li>
           </ul>
           <div className="menu-icons" onClick={handleMenuIconClick}>
@@ -119,7 +122,10 @@ const Headers = () => {
       </li>
       <li onClick={() => { closeResNav(); navigate("/audio-gallery"); }}>
         Audio Gallery
-      </li>
+                      </li>
+                      <li onClick={() => { closeResNav(); navigate("/ImageGallery"); }}>
+                        Image gallery 
+                      </li>
       <li onClick={() => { closeResNav(); navigate("/Ebooks"); }}>
         E-book
       </li>
@@ -155,14 +161,14 @@ const Headers = () => {
               <li
                 onClick={() => navigate("/blog")}>Blog
               </li>
-              <li
+              {/* <li
                 onClick={() => {
                   closeResNav();
                   navigate("/contribute");
                 }}
               >
                 Contribute
-              </li>
+              </li> */}
               <li
                 onClick={() => {
                   closeResNav();

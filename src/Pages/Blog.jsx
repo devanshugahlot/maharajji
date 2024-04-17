@@ -317,7 +317,7 @@ const Blog = () => {
           <div className="container clearfix">
             <div className="row">
               <div className="col-md-8 nobottommargin clearfix">
-                <div className="liquid-blog-posts">
+                               <div className="liquid-blog-posts">
                   <div
                     className="liquid-blog-grid row"
                     data-liquid-masonry="true"

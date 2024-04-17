@@ -340,9 +340,9 @@ const AudioGallery = () =>
             <div className="row">
               <div className="col-md-9">
                 <div className="heading-block mb-0 noborder">
-                  <h3 className="text-gradient m-0 t500 font-size-26">
+                  <h1 className="text-gradient m-0 t700 font-size-30">
                     Prerna Pravah
-                  </h3>
+                  </h1>
                   <span>A dose of Motivational Discourses</span>
                 </div>
               </div>
@@ -474,10 +474,17 @@ const AudioGallery = () =>
                 </div>
               </div>
               <div className="heading-block bottommargin-sm topmargin noborder">
-                <h3 className="t500 font-size-26">
-                  <span className="text-gradient">Featured Categories</span>
-                </h3>
-                <span>Browse by audio categories</span>
+                 <h2
+                      className="lh-115 mb-0"
+                      data-fittext="true"
+                      data-fittext-options='{"compressor":1, "maxFontSize":"maxFontSize", "minFontSize":"25"}'
+                    >
+                      <span className="text-gradient">
+                        <span className="t600">Featured  Categories
+</span>
+                      </span>
+                    </h2>
+                <span className="text-gradient m-0 t400 font-size-26">Browse by audio categories</span>
               </div>
               <div className="row clearfix albumcategory">
                 <div className="col-md-6">
@@ -489,16 +496,16 @@ const AudioGallery = () =>
                       </span>
                       <div className="text-overlay-title">
                         <h2>
-                          <a href="audio/akhandgyan.html">Jeevan Ke Falsafe</a>
+                          <a >Jeevan Ke Falsafe</a>
                         </h2>
                       </div>
                       <a
-                        href="audio/akhandgyan.html"
+                        
                         className="btn btn-sm btn-solid btn-gradient circle text-uppercase wide ld-lp-carousel-filterable-btn split-inner"
                       >
                         <span>
                           <span className="btn-gradient-bg bg-gradient-primary-rl" />
-                          <span className="btn-txt">View All</span>
+                          <span className="btn-txt">Play Now</span>
                           <span className="btn-gradient-bg btn-gradient-bg-hover" />
                         </span>
                       </a>
@@ -506,7 +513,7 @@ const AudioGallery = () =>
                   </div>
                   <a
                     className="liquid-overlay-link z-index-3"
-                    href="audio/akhandgyan.html"
+                    
                   />
                 </div>
                 <div className="row mx-0 px-0 mt-3 mt-md-0 col-md-6">
@@ -580,81 +587,8 @@ const AudioGallery = () =>
                   </div>
                 </div>
               </div>
-              <div className="clear" />
-              <div className="row topmargin-lg clearfix">
-                <div className="col-lg-4 col-md-6">
-                  <h3>
-                    <span className="text-gradient">DJJS Soundcloud</span>
-                  </h3>
-                  <iframe
-                    width="100%"
-                    height={130}
-                    scrolling="no"
-                    frameBorder="no"
-                    allow="autoplay"
-                    src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/346828388&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=false"
-                  />
-                  <br />
-                  <br />
-                  <iframe
-                    width="100%"
-                    height={130}
-                    scrolling="no"
-                    frameBorder="no"
-                    allow="autoplay"
-                    src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/338998437&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=false"
-                  />
-                </div>
-                <div className="col-lg-8 col-md-6 ohidden">
-                  <div className="row clearfix">
-                    <div className="col-lg-6 col-md-6 order-lg-12">
-                      <div className="d-block d-md-none d-lg-none d-xl-block  clear" />
-                      <h3>
-                        <span className="text-gradient">
-                          Grab our Mobile app
-                        </span>
-                      </h3>
-                      <p>Listend and download audios in DJJS mobile app.</p>
-                      <p></p>
-                      <div className="row">
-                        <div className="col-md-6">
-                          <a
-                            href="https://play.google.com/store/apps/details?id=org.djjs.djjsapp"
-                            className="btn btn-default circle btn-bordered border-thin btn-icon-left btn-icon-circle btn-icon-bordered font-size-12 font-weight-bold text-uppercase ltr-sp-05 mb-2 w-100"
-                          >
-                            <span>
-                              <span className="btn-txt">Android</span>
-                              <span className="btn-icon">
-                                <i className="fa fa-android" />
-                              </span>
-                            </span>
-                          </a>
-                        </div>
-                        <div className="col-md-6">
-                          <a
-                            href="https://itunes.apple.com/us/app/djjs/id1189587046"
-                            className="btn btn-default circle btn-bordered border-thin btn-icon-left btn-icon-circle btn-icon-bordered font-size-12 font-weight-bold text-uppercase ltr-sp-05 mb-2 w-100 col-md-6"
-                          >
-                            <span>
-                              <span className="btn-txt">Ios</span>
-                              <span className="btn-icon">
-                                <i className="fa fa-apple" />
-                              </span>
-                            </span>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="col-lg-6 col-md-6 order-lg-1 d-sm-none d-md-none d-lg-block">
-                      <img
-                        src="../images/new/iphone.png"
-                        alt="DJJS App"
-                        data-animate="fadeInUp"
-                      />
-                    </div>
-                  </div>
-                </div>
-              </div>
+           
+        
             </div>
           </div>
         </div>

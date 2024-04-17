@@ -233,7 +233,7 @@ const Intiatives = () => {
                                 style={{ color: "#FFB09F" }}
                                 className="btn-txt"
                               >
-                                Social Initiatives
+                                VIHE
                               </span>
                             </span>
                           </a>
@@ -242,7 +242,7 @@ const Intiatives = () => {
                           <a className="btn btn-default text-uppercase btn-sm circle btn-bordered border-thin  font-size-12 lh-15 font-weight-bold ltr-sp-05 mb-2">
                             <span>
                               <span className="btn-txt">
-                                Spiritual Initiatives
+                              Gopinath Dham
                               </span>
                             </span>
                           </a>
@@ -251,7 +251,25 @@ const Intiatives = () => {
                           <a className="btn btn-default text-uppercase btn-sm circle btn-bordered border-thin  font-size-12 lh-15 font-weight-bold ltr-sp-05 mb-2">
                             <span>
                               <span className="btn-txt">
-                                Developmental Workshops
+                              GRC
+                              </span>
+                            </span>
+                          </a>
+                        </li>
+                        <li >
+                          <a className="btn btn-default text-uppercase btn-sm circle btn-bordered border-thin  font-size-12 lh-15 font-weight-bold ltr-sp-05 mb-2">
+                            <span>
+                              <span className="btn-txt">
+                              Scared India Gallery 
+                              </span>
+                            </span>
+                          </a>
+                        </li>
+                        <li >
+                          <a className="btn btn-default text-uppercase btn-sm circle btn-bordered border-thin  font-size-12 lh-15 font-weight-bold ltr-sp-05 mb-2">
+                            <span>
+                              <span className="btn-txt">
+                              Others  
                               </span>
                             </span>
                           </a>
@@ -299,12 +317,7 @@ const Intiatives = () => {
                             <p className="lh-175">{item.description}</p>
                           </div>
                         </div>
-                        <div className="fancy-box-footer">
-                          <h6 className="text-uppercase">Know More</h6>
-                          <span className="fancy-box-icon">
-                            <i className="icon-liquid_arrow_right" />
-                          </span>
-                        </div>
+                       
                         <a
                           target="_blank"
                           href={item.link}
@@ -352,12 +365,7 @@ const Intiatives = () => {
                             <p className="lh-175">{item.description}</p>
                           </div>
                         </div>
-                        <div className="fancy-box-footer">
-                          <h6 className="text-uppercase">Know More</h6>
-                          <span className="fancy-box-icon">
-                            <i className="icon-liquid_arrow_right" />
-                          </span>
-                        </div>
+                       
                         <a
                           target="_blank"
                           href={item.link}
@@ -406,12 +414,7 @@ const Intiatives = () => {
                             <p className="lh-175">{tab.description}</p>
                           </div>
                         </div>
-                        <div className="fancy-box-footer">
-                          <h6 className="text-uppercase">Know More</h6>
-                          <span className="fancy-box-icon">
-                            <i className="icon-liquid_arrow_right" />
-                          </span>
-                        </div>
+                       
                         <a
                           target="_blank"
                           href={tab.link}

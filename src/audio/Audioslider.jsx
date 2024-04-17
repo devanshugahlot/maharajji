@@ -35,7 +35,7 @@ export default function Audioslider() {
 
     {
       imageUrl:
-        "https://i1.sndcdn.com/artworks-000191278583-265df7-t500x500.jpg",
+        "https://www.djjs.org/images/app/pp/pp42.webp",
       time: "9:22",
       title: "PP144-Prathana (Hindi)",
       trackUrl:
@@ -44,7 +44,7 @@ export default function Audioslider() {
     },
     {
       imageUrl:
-        "https://i1.sndcdn.com/artworks-000191278583-265df7-t500x500.jpg",
+        "https://i1.sndcdn.com/artworks-000187358120-34ne1b-t500x500.jpg",
       time: "9:22",
       title: "PP144-Prathana (Hindi)",
       trackUrl:
@@ -54,7 +54,7 @@ export default function Audioslider() {
 
     {
       imageUrl:
-        "https://i1.sndcdn.com/artworks-000191278583-265df7-t500x500.jpg",
+        "https://i1.sndcdn.com/artworks-000183148048-4stdw8-t500x500.jpg",
       time: "9:22",
       title: "PP144-Prathana (Hindi)",
       trackUrl:
