@@ -1,0 +1,107 @@
+.maniradhadiv {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  /* padding: 100px 30px; */
+  background-color: #f6f2e8;
+  margin: auto;
+  align-items: center;
+  height: 100vh;
+  padding: 0px 100px;
+  text-align: center;
+}
+
+.secondmain img {
+  border-radius: 50%;
+  margin-top: 20px;
+  /* width: 300px; */
+}
+
+.thirddiv .thirdtext {
+  color: #6a7984;
+  font-family: "Cardo", Sans-serif;
+  font-size: 26px;
+  line-height: 39px;
+  letter-spacing: 0.1em;
+}
+
+.fristmain .fristtext {
+  /* line-height: 1px;
+   color: #6A7984; */
+  font-family: "Glacial", Sans-serif;
+  font-size: 18px;
+  line-height: 1.9em;
+  letter-spacing: 3.5px;
+}
+
+@media (max-width: 768px) {
+  .maniradhadiv {
+    flex-direction: column;
+    height: 150vh;
+    gap: 20px;
+  }
+}
+
+.home-bg-img-two {
+  background-image: url("https://www.radhanathswami.com/wp-content/uploads/2023/10/radhanath-swami-projects-worldwide.webp");
+}
+
+.home-bg-img-three {
+  background-image: url("https://www.radhanathswami.com/wp-content/uploads/2023/06/about-sunset.webp");
+}
+
+.mainradhadivtwo {
+  display: flex;
+  justify-content: space-around;
+  height: 100vh;
+  margin: auto;
+  align-items: center;
+  text-align: center;
+  background-color: #f6f2e8;
+}
+
+.homebgone {
+  background-image: url("https://www.radhanathswami.com/wp-content/uploads/2023/07/rns-smile-line-new.webp");
+  width: 100%;
+  height: 100vh;
+}
+
+.containerr {
+  background-color: #f6f2e8;
+  height: 100vh;
+}
+
+.maindasa {
+  display: flex;
+  justify-content: space-around;
+  height: 100vh;
+  margin: auto;
+  align-items: center;
+  text-align: center;
+  background-color: #f6f2e8;
+}
+
+@media (max-width: 768px) {
+  .maindasa {
+    flex-direction: column;
+    
+  }
+  .containerr{
+height: 154vh;
+  }
+
+  .fristhomeimg{
+  /* margin-left: 103px; */
+margin-left: 150px;
+}
+.sendmainimg{
+    
+ margin-left: -73px;
+}
+
+.mainradhadivtwo{
+    flex-direction: column;
+    height: 150vh;
+}
+  }
+

@@ -38,7 +38,7 @@ const Contact = () => {
 
       <div className="supprt-right-container">
         <div className="support-right-header">
-          <h3>Request For CallBack</h3>
+          <h3 style={{fontFamily:" monospace", fontSize:"30px", fontWeight:"bold"}}>Request For CallBack</h3>
           {/* <p>
             To know more about courses offered by us kindly fill in the
             below mention details you will get a call back soon.

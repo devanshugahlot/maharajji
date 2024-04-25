@@ -54,6 +54,34 @@ const Ebooks = () => {
       image:
         "https://hindubookstore.com/wp-content/uploads/2023/08/Srikrishna-by-Gurudatt.jpg",
     },
+    {
+      image:"https://bhurijanadasa.com/wp-content/uploads/2020/12/surrender_unto_me.jpg"
+    },
+    {
+      image:"https://bhurijanadasa.com/wp-content/uploads/2020/12/japa-bhurijan-prabhu.jpg"
+    },
+    {
+      image:"https://bhurijanadasa.com/wp-content/uploads/2020/12/my_glorious_master.jpg"
+    }
+    ,
+    {
+      image:"https://bhurijanadasa.com/wp-content/uploads/2020/12/the_art_of_teaching.jpg"
+    },
+    {
+      image:"https://bhurijanadasa.com/wp-content/uploads/2020/12/unveiling_his_lotus_feet.jpg"
+    },
+    {
+      image:"https://bhurijanadasa.com/wp-content/uploads/2021/08/the-veil-1-197x300.jpg"
+    },
+    {
+      image:"https://bhurijanadasa.com/wp-content/uploads/2021/08/BAckward-glance-e1629785980743.jpg"
+    },
+    {
+      image:"https://bhurijanadasa.com/wp-content/uploads/2021/09/Japa-hindi-front-230x300.jpg"
+    },
+    {
+      image:""
+    }
     
   ];
 

@@ -336,42 +336,10 @@ const AudioGallery = () =>
         style={{ overflow: "visible" }}
       >
         <div className="content-wrap pb-0">
-          <div className="container">
-            <div className="row">
-              <div className="col-md-9">
-                <div className="heading-block mb-0 noborder">
-                  <h1 className="text-gradient m-0 t700 font-size-30">
-                    Prerna Pravah
-                  </h1>
-                  <span>A dose of Motivational Discourses</span>
-                </div>
-              </div>
-              <div className="col-md-3">
-                <a
-                  href="audio/prerna-pravah.html"
-                  className="btn btn-xsm wide btn-solid btn-gradient circle text-uppercase font-weight-bold font-size-12 lh-2 pull-right"
-                >
-                  <span>
-                    <span className="btn-txt">See all</span>
-                    <span className="btn-gradient-bg btn-gradient-bg-hover bg-primary" />
-                  </span>
-                </a>
-              </div>
-            </div>
-          </div>
+         
           <div className="container-fluid clearfix">
             {/* slider div */}
-            <div className="mt-4 carousel-container carousel-shadow-all carousel-nav-left carousel-nav-md carousel-dots-style4 ">
-              <div
-                className="carousel-items row"
-                data-custom-animations="true"
-                data-ca-options='{"triggerHandler":"inview","animationTarget":".carousel-item","duration":"1200","delay":"150","easing":"easeOutQuint","direction":"forward","initValues":{"translateY":-55,"rotateX":-1,"opacity":0},"animations":{"translateY":0,"rotateX":0,"opacity":1}}'
-                data-lqd-flickity='{"cellAlign":"center","prevNextButtons":false,"buttonsAppendTo":"self","pageDots":false,"groupCells":true,"wrapAround":true,"pauseAutoPlayOnHover":false}'
-              >
-                {/* slider component */}
-                <Audioslider />
-              </div>
-            </div>
+           
             <div className="container">
             <div className="heading-block bottommargin-sm topmargin noborder">
                  <h2
@@ -513,6 +481,7 @@ const AudioGallery = () =>
                     ))}
                   </div>
                 </div>
+                
 
                 <div>
                   <div className="listHeader">
@@ -598,6 +567,33 @@ const AudioGallery = () =>
         </div>
         
       </section>
+     <div>
+     <div style={{marginLeft:"110px"}} className="heading-block bottommargin-sm topmargin noborder">
+                 <h2
+                      className="lh-115 mb-0"
+                      data-fittext="true"
+                      data-fittext-options='{"compressor":1, "maxFontSize":"maxFontSize", "minFontSize":"25"}'
+                    >
+                      <span className="text-gradient">
+                        <span className="t600">Featured  Categories
+</span>
+                      </span>
+                    </h2>
+                <span className="text-gradient m-0 t400 font-size-26">Browse by audio categories</span>
+              </div>
+</div>
+
+      <div style={{padding:"0 20px"}} className="mt-4 carousel-container carousel-shadow-all carousel-nav-left carousel-nav-md carousel-dots-style4 ">
+              <div
+                className="carousel-items row"
+                data-custom-animations="true"
+                data-ca-options='{"triggerHandler":"inview","animationTarget":".carousel-item","duration":"1200","delay":"150","easing":"easeOutQuint","direction":"forward","initValues":{"translateY":-55,"rotateX":-1,"opacity":0},"animations":{"translateY":0,"rotateX":0,"opacity":1}}'
+                data-lqd-flickity='{"cellAlign":"center","prevNextButtons":false,"buttonsAppendTo":"self","pageDots":false,"groupCells":true,"wrapAround":true,"pauseAutoPlayOnHover":false}'
+              >
+                {/* slider component */}
+                <Audioslider />
+              </div>
+            </div>
       <div className="gradient-bg" id="player">
         <div className="d-flex h-100">
           <div

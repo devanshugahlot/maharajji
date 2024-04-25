@@ -26,7 +26,7 @@ const Livecast = () => {
                 <div className="col-md-12 text-center mt-3 mb-3">
                   <a
                     target="_blank"
-                    href="https://youtu.be/XMI8ewcgMGA"
+                    href=""
                     className=" watch-on-youtube btn btn-default text-uppercase btn-xlg circle btn-solid font-size-12 lh-15 font-weight-bold ltr-sp-05 mb-2"
                   >
                     <span>

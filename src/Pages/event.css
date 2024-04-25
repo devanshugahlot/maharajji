@@ -1,0 +1,8 @@
+.filter-list li.is-checked span {
+  text-decoration: underline;
+  color: red;
+}
+
+.containerr {
+  padding: 10px;
+}

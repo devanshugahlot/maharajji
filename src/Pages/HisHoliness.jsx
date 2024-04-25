@@ -106,7 +106,7 @@ const HisHoliness = () => {
                             personality, a perfect Spiritual Master on the
                             world-stage who has mastered and subsequently
                             revealed the eternal science of Self-Realization–{" "}
-                            <a className="dark" href="brahmgyan.html">
+                            <a className="dark" >
                               <strong>Brahm Gyan</strong>
                             </a>{" "}
                             to transform the torn and tormented humanity into a
@@ -130,7 +130,7 @@ const HisHoliness = () => {
                             becomes an embodiment of truth, fraternity, and
                             justice through the eternal science of
                             Self-Realization–{" "}
-                            <a className="dark" href="brahmgyan.html">
+                            <a className="dark" >
                               'Brahm Gyan'
                             </a>
                             , uprooting in its wake all social evils and threat.
@@ -341,7 +341,7 @@ const HisHoliness = () => {
                   difficult to master technique. But this epoch is fortunate to
                   have revered perfect spiritual master - Shri Ashutosh Maharaj
                   Ji who has not just mastered this rare science of{" "}
-                  <a className="dark" href="brahmgyan.html">
+                  <a className="dark">
                     <strong>Brahm Gyan</strong>
                   </a>{" "}
                   but has also revealed it. And who has not just revealed it but
@@ -382,7 +382,7 @@ const HisHoliness = () => {
                   metaphysics.
                 </p>
                 <p>
-                  <a
+                  {/* <a
                     onClick={() => navigate("/brahmgyan")}
                     className="btn btn-xsm small btn-solid btn-gradient circle wide ld-lp-carousel-filterable-btn split-inner"
                     style={{ opacity: 1 }}
@@ -392,7 +392,7 @@ const HisHoliness = () => {
                       <span className="btn-txt">Continue Reading</span>
                       <span className="btn-gradient-bg btn-gradient-bg-hover bg-gradient-secondary-rl" />
                     </span>
-                  </a>
+                  </a> */}
                 </p>
               </div>
               <div className="lqd-column col-md-4">

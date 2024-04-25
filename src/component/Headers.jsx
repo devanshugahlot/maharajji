@@ -43,7 +43,7 @@ const Headers = () => {
       <div className="main-navbar-div">
         <div style={{cursor:"pointer"}} onClick={() => navigate("/")} className="navbar-logo-div">
           <img  
-            src={img1}
+            src="https://bhurijanadasa.com/wp-content/uploads/2020/12/logo-bhurijana-dark-300x96.png"
             alt=""
           />
         </div>

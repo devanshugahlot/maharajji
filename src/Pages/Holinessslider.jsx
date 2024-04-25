@@ -15,31 +15,31 @@ const settings = {
 // Define the content for each slide
 const slides = [
   {
-    imgSrc: "https://buffer.com/library/content/images/size/w1200/2023/10/free-images.jpg",
-    title: "Restoration of Peace in Punjab",
-    text: "The year 1983 was the darkest period in the history of Punjab. The prosperous and eventful state was thrown into a blazing fire of violence and terrorism. It was against this backdrop that His Holiness Shri Ashutosh Maharaj Ji appeared on the scene in Punjab and resurrected it to its bygone glory. The perpetual fear of war hanging over innocent people was totally uprooted and inter-faith harmony was re-established; with peaceful methods of counseling, discoursing and Brahm Gyan (eternal science of self-realization) based Dhyaan.",
+    imgSrc: "https://sc0.blr1.digitaloceanspaces.com/large/838860-60820-ojszkrnsgh-1497675650.jpg",
+    title: "Devotional Literature",
+    text: "His contributions to the world of Krishna bhakti encompass a rich tapestry of devotional literature. Through his poetic compositions, he has captured the essence of divine love and devotion, inspiring generations of devotees to deepen their spiritual connection with Lord Krishna. His works, filled with profound insights and heartfelt expressions of devotion, continue to resonate with seekers on the path of bhakti.",
     },
     
     {
-        imgSrc: "https://buffer.com/library/content/images/size/w1200/2023/10/free-images.jpg",
-        title: "Restoration of Peace in Punjab",
-        text: "The year 1983 was the darkest period in the history of Punjab. The prosperous and eventful state was thrown into a blazing fire of violence and terrorism. It was against this backdrop that His Holiness Shri Ashutosh Maharaj Ji appeared on the scene in Punjab and resurrected it to its bygone glory. The perpetual fear of war hanging over innocent people was totally uprooted and inter-faith harmony was re-established; with peaceful methods of counseling, discoursing and Brahm Gyan (eternal science of self-realization) based Dhyaan.",
+        imgSrc: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ863vnJtSDuc2qE4kOKM-FMzCV-_xhGZHCL7-AXkdDXA&s",
+        title: "Spiritual Teachings",
+        text: "As a spiritual teacher and guide, he has disseminated the timeless teachings of Bhagavad Gita and other sacred texts, illuminating the path of devotion and self-realization. Through discourses, lectures, and personal interactions, he has shared the wisdom of ancient scriptures in a way that is accessible and relevant to contemporary audiences, helping individuals to cultivate a deeper understanding of Krishna consciousness.",
     },
     
     {
-        imgSrc: "https://buffer.com/library/content/images/size/w1200/2023/10/free-images.jpg",
-        title: "Restoration of Peace in Punjab",
-        text: "The year 1983 was the darkest period in the history of Punjab. The prosperous and eventful state was thrown into a blazing fire of violence and terrorism. It was against this backdrop that His Holiness Shri Ashutosh Maharaj Ji appeared on the scene in Punjab and resurrected it to its bygone glory. The perpetual fear of war hanging over innocent people was totally uprooted and inter-faith harmony was re-established; with peaceful methods of counseling, discoursing and Brahm Gyan (eternal science of self-realization) based Dhyaan.",
+        imgSrc: "https://cf.bstatic.com/xdata/images/hotel/max1024x768/501602447.jpg?k=7e959804ba9cd9023ed74d459dbfcf6946857a2aac005b9237f4d3c557cafefc&o=&hp=1",
+        title: "Community Building",
+        text: "Central to his mission of spreading Krishna bhakti is the establishment of vibrant spiritual communities around the world. Through the construction of temples, ashrams, and retreat centers, he has provided sanctuaries where devotees can come together to worship, study, and engage in seva (selfless service). These spiritual hubs serve as catalysts for collective devotion and foster a sense of unity and belonging among practitioners.",
       },
       {
-        imgSrc: "https://buffer.com/library/content/images/size/w1200/2023/10/free-images.jpg",
-        title: "Restoration of Peace in Punjab",
-        text: "The year 1983 was the darkest period in the history of Punjab. The prosperous and eventful state was thrown into a blazing fire of violence and terrorism. It was against this backdrop that His Holiness Shri Ashutosh Maharaj Ji appeared on the scene in Punjab and resurrected it to its bygone glory. The perpetual fear of war hanging over innocent people was totally uprooted and inter-faith harmony was re-established; with peaceful methods of counseling, discoursing and Brahm Gyan (eternal science of self-realization) based Dhyaan.",
+        imgSrc: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRf5k585rXvxMO0CdOWwFkDLKQ8KoV_gRABOyumHqfG4g&s",
+        title: "Cultural Preservation",
+        text: "He has played a key role in preserving and promoting the rich cultural heritage associated with Krishna bhakti. Through initiatives such as festivals, music concerts, and art exhibitions, he has celebrated the diverse expressions of devotion to Lord Krishna, ensuring that traditional practices and customs are passed down to future generations. By fostering an appreciation for the arts and traditions of Krishna consciousness, he has helped to safeguard a valuable aspect of human cultural heritage.        ",
       },
       {
-        imgSrc: "https://buffer.com/library/content/images/size/w1200/2023/10/free-images.jpg",
-        title: "Restoration of Peace in Punjab",
-        text: "The year 1983 was the darkest period in the history of Punjab. The prosperous and eventful state was thrown into a blazing fire of violence and terrorism. It was against this backdrop that His Holiness Shri Ashutosh Maharaj Ji appeared on the scene in Punjab and resurrected it to its bygone glory. The perpetual fear of war hanging over innocent people was totally uprooted and inter-faith harmony was re-established; with peaceful methods of counseling, discoursing and Brahm Gyan (eternal science of self-realization) based Dhyaan.",
+        imgSrc: "https://study.com/cimages/videopreview/djk5z5jon7.jpg",
+        title: "Humanitarian Service",
+        text: "In alignment with the principles of Krishna bhakti, he has actively engaged in humanitarian service activities aimed at uplifting the less fortunate and alleviating suffering. Whether through food distribution programs, healthcare initiatives, or educational outreach efforts, he embodies the spirit of seva as taught by Lord Krishna in the Bhagavad Gita. His commitment to serving others with compassion and humility reflects the highest ideals of devotional practice.        ",
       },
   // Add more slides if needed
 ];

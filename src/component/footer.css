@@ -1,0 +1,22 @@
+.footpri{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+@media(max-width:768px){
+
+    .footpri{
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+    .main-footer .widget-title {
+        font-size: 28px;
+    }
+    .main-footer li {
+        font-size: 17px;
+        text-align:center
+    }
+}

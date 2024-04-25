@@ -1,14 +1,210 @@
-import React from "react";
-import  "./brahmgyan.css";
-
+import React, { useState } from "react";
+import "./brahmgyan.css";
+import Videogalleryslider from "./Videogalleryslider";
+import Videoslideone from "./Videoslideone";
+import List from "@mui/material/List";
+import ListItemButton from "@mui/material/ListItemButton";
+import ListItemText from "@mui/material/ListItemText";
+import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
+import ArrowDropUpIcon from "@mui/icons-material/ArrowDropUp";
+import { Divider } from "@mui/material";
+import './video.css'
 const VideoGallery = () => {
-    return (
-      <div>
-  <section id="content" className="content">
-    <div className="carousel-container carousel-shadow-active carousel-nav-floated carousel-nav-center carousel-nav-middle carousel-nav-md carousel-nav-square carousel-nav-solid carousel-dots-style4">
-      <div className="carousel-items row" data-lqd-flickity="{&quot;cellAlign&quot;:&quot;center&quot;,&quot;prevNextButtons&quot;:false,&quot;pageDots&quot;:false,&quot;groupCells&quot;:false,&quot;wrapAround&quot;:true,&quot;pauseAutoPlayOnHover&quot;:false,&quot;fullscreen&quot;:&quot;true&quot;,&quot;fade&quot;:true}">
-        <div className="carousel-item col-md-12">
-          <section className="vc_row  bg-cover vlog-cover" style={{height: 500}} data-parallax="true" data-parallax-options="{&quot;parallaxBG&quot;: true}" data-row-bg="https://img.youtube.com/vi/ijNONfZI7_0/maxresdefault.jpg" data-row-bg-webp="https://img.youtube.com/vi_webp/ijNONfZI7_0/maxresdefault.webp" data-row-bg-device="https://img.youtube.com/vi/ijNONfZI7_0/maxresdefault.jpg" data-row-bg-webp-device="https://img.youtube.com/vi_webp/ijNONfZI7_0/maxresdefault.webp">
+  const categories = [
+    {
+      name: "COVID19",
+      subcategories: [
+        {
+          name: "Subcategory 1",
+          subsubcategories: [
+            {
+              name: "Subsubcategory 1A",
+              subsubsubcategories: [
+                "Subsubsubcategory 1AA",
+                "Subsubsubcategory 1AB",
+              ],
+            },
+            {
+              name: "Subsubcategory 1B",
+              subsubsubcategories: [
+                "Subsubsubcategory 1BA",
+                "Subsubsubcategory 1BB",
+              ],
+            },
+          ],
+        },
+        {
+          name: "Subcategory 2",
+          subsubcategories: [
+            {
+              name: "Subsubcategory 2A",
+              subsubsubcategories: [
+                "Subsubsubcategory 2AA",
+                "Subsubsubcategory 2AB",
+              ],
+            },
+            {
+              name: "Subsubcategory 2B",
+              subsubsubcategories: [
+                "Subsubsubcategory 2BA",
+                "Subsubsubcategory 2BB",
+              ],
+            },
+          ],
+        },
+        // Add more subcategories with their respective subsubcategories as needed
+      ],
+    },
+    {
+      name: "meditation",
+      subcategories: [
+        {
+          name: "Subcategory 1",
+          subsubcategories: [
+            {
+              name: "Subsubcategory 1A",
+              subsubsubcategories: [
+                "Subsubsubcategory 1AA",
+                "Subsubsubcategory 1AB",
+              ],
+            },
+            {
+              name: "Subsubcategory 1B",
+              subsubsubcategories: [
+                "Subsubsubcategory 1BA",
+                "Subsubsubcategory 1BB",
+              ],
+            },
+          ],
+        },
+        {
+          name: "Subcategory 2",
+          subsubcategories: [
+            {
+              name: "Subsubcategory 2A",
+              subsubsubcategories: [
+                "Subsubsubcategory 2AA",
+                "Subsubsubcategory 2AB",
+              ],
+            },
+            {
+              name: "Subsubcategory 2B",
+              subsubsubcategories: [
+                "Subsubsubcategory 2BA",
+                "Subsubsubcategory 2BB",
+              ],
+            },
+          ],
+        },
+        // Add more subcategories with their respective subsubcategories as needed
+      ],
+    },
+    {
+      name: "SAMADHI",
+      subcategories: [
+        {
+          name: "Subcategory 1",
+          subsubcategories: [
+            {
+              name: "Subsubcategory 1A",
+              subsubsubcategories: [
+                "Subsubsubcategory 1AA",
+                "Subsubsubcategory 1AB",
+              ],
+            },
+            {
+              name: "Subsubcategory 1B",
+              subsubsubcategories: [
+                "Subsubsubcategory 1BA",
+                "Subsubsubcategory 1BB",
+              ],
+            },
+          ],
+        },
+        {
+          name: "Subcategory 2",
+          subsubcategories: [
+            {
+              name: "Subsubcategory 1B",
+              subsubsubcategories: [
+                "Subsubsubcategory 1AA",
+                "Subsubsubcategory 1AB",
+              ],
+            },
+            {
+              name: "Subsubcategory 1B",
+              subsubsubcategories: [
+                "Subsubsubcategory 1BA",
+                "Subsubsubcategory 1BB",
+              ],
+            },
+          ],
+        },
+      ],
+    },
+    // Add more main categories with their subcategories and subsubcategories as needed
+  ];
+  const [openCategory, setOpenCategory] = useState(null);
+  const [openSubCategory, setOpenSubCategory] = useState(null);
+  const [openSubSubCategory, setOpenSubSubCategory] = useState(null); // State to manage which subsubcategory is open
+
+  const handleCategoryClick = (index) => {
+    if (openCategory === index) {
+      setOpenCategory(null);
+    } else {
+      setOpenCategory(index);
+    }
+  };
+  const handleSubCategoryClick = (index) => {
+    if (openSubCategory === index) {
+      setOpenSubCategory(null);
+    } else {
+      setOpenSubCategory(index);
+    }
+  };
+  const handleSubSubCategoryClick = (index) => {
+    if (openSubSubCategory === index) {
+      setOpenSubSubCategory(null);
+    } else {
+      setOpenSubSubCategory(index);
+    }
+  };
+  return (
+    <div>
+       <div className="titlebar titlebar-sm scheme-dark bg-gray-2 bb-fade-black-005">
+        <div className="titlebar-inner py-5">
+          <div className="container titlebar-container">
+            <div className="row titlebar-container">
+              <div className="titlebar-col col-md-6">
+                <h1 className="font-size-26 mb-1">Video Gallery</h1>
+                <p className="font-size-14 text-fade-dark-06">
+                  Swing with the divine melodies
+                </p>
+              </div>
+              <div className="titlebar-col col-md-6 text-md-right">
+                <ol className="breadcrumb reset-ul inline-nav">
+                  <li>
+                    <a>
+                      <span>Home</span>
+                    </a>
+                  </li>
+                  <li>
+                    <span>Video Gallery</span>
+                  </li>
+                </ol>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <section id="content" className="content">
+        <div className="carousel-container carousel-shadow-active carousel-nav-floated carousel-nav-center carousel-nav-middle carousel-nav-md carousel-nav-square carousel-nav-solid carousel-dots-style4">
+          <div
+            className="carousel-items row"
+            data-lqd-flickity='{"cellAlign":"center","prevNextButtons":false,"pageDots":false,"groupCells":false,"wrapAround":true,"pauseAutoPlayOnHover":false,"fullscreen":"true","fade":true}'
+          >
+            <div className="carousel-item col-md-12">
+              {/* <section className="vc_row  bg-cover vlog-cover" style={{height: 500}} data-parallax="true" data-parallax-options="{&quot;parallaxBG&quot;: true}" data-row-bg="https://img.youtube.com/vi/ijNONfZI7_0/maxresdefault.jpg" data-row-bg-webp="https://img.youtube.com/vi_webp/ijNONfZI7_0/maxresdefault.webp" data-row-bg-device="https://img.youtube.com/vi/ijNONfZI7_0/maxresdefault.jpg" data-row-bg-webp-device="https://img.youtube.com/vi_webp/ijNONfZI7_0/maxresdefault.webp">
             <span className="row-bg-loader" />
             <div className="liquid-img-group-content content-floated-mid">
               <a href="https://www.youtube.com/watch?v=ijNONfZI7_0" className="btn btn-naked fresco btn-icon-block btn-icon-top btn-icon-xxlg btn-icon-circle btn-icon-solid btn-icon-ripple">
@@ -19,8 +215,8 @@ const VideoGallery = () => {
                 </span>
               </a>
             </div>
-          </section>
-          <div className="container" style={{marginTop: '-36px', position: 'relative', zIndex: 2}} data-custom-animations="true" data-ca-options="{&quot;triggerHandler&quot;:&quot;inview&quot;,&quot;animationTarget&quot;:&quot;.split-inner&quot;,&quot;duration&quot;:700,&quot;delay&quot;:100,&quot;easing&quot;:&quot;easeOutQuint&quot;,&quot;direction&quot;:&quot;forward&quot;,&quot;initValues&quot;:{&quot;translateY&quot;:70,&quot;scaleX&quot;:1.5,&quot;opacity&quot;:0},&quot;animations&quot;:{&quot;translateY&quot;:0,&quot;scaleX&quot;:1,&quot;opacity&quot;:1}}">
+          </section> */}
+              {/* <div className="container" style={{marginTop: '-36px', position: 'relative', zIndex: 2}} data-custom-animations="true" data-ca-options="{&quot;triggerHandler&quot;:&quot;inview&quot;,&quot;animationTarget&quot;:&quot;.split-inner&quot;,&quot;duration&quot;:700,&quot;delay&quot;:100,&quot;easing&quot;:&quot;easeOutQuint&quot;,&quot;direction&quot;:&quot;forward&quot;,&quot;initValues&quot;:{&quot;translateY&quot;:70,&quot;scaleX&quot;:1.5,&quot;opacity&quot;:0},&quot;animations&quot;:{&quot;translateY&quot;:0,&quot;scaleX&quot;:1,&quot;opacity&quot;:1}}">
             <div className="row bg-charade p-4 mx-0 shadow lqd-row ">
               <div className="col-md-9">
                 <header className="fancy-title mb-35">
@@ -33,75 +229,12 @@ const VideoGallery = () => {
                 </span>
               </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    {/* <div className="container hidden-xs relative topmargin notoppadding nobottompadding">
-      <section className="pt-50 mt-15 relative hidden-xs">
-        <div className="lqd-custom-menu lqd-sticky-menu" data-pin="false" data-pin-options="{ &quot;offset&quot;: &quot;[data-sticky-header] .mainbar-wrap.is-stuck&quot;, &quot;duration&quot;: &quot;last-link&quot;, &quot;pushFollowers&quot;: false }">
-          <div className="row d-flex flex-wrap ">
-            <div className="col-md-9">
-              <ul className="reset-ul inline-nav ">
-                <li><a href="videos/category/devotional-bhajans.html">Devotional Bhajans</a></li>
-                <li><a href="videos/category/discourses.html">Discourses</a></li>
-                <li className="dropdown"><a className="dropdown-toggle" data-toggle="dropdown" href="javascript:void(0)"><div>Spiritual Programs <span className="caret" /></div></a>
-                  <ul className="dropdown-menu">
-                    <li><a href="videos/category/shrimadbhagwatkatha.html">Shrimad Bhagwat Katha</a></li>
-                    <li><a href="videos/category/kumbh-prayagraj-2019.html">Kumbh Prayagraj 2019</a></li>
-                    <li><a href="videos/category/shriramkatha.html">Shri Ram Katha</a></li>
-                    <li><a href="videos/category/devibhagwatkatha.html">Devi Bhagwat Katha</a></li>
-                    <li><a href="videos/category/bhajansandhya.html">Bhajan Sandhya</a></li>
-                    <li><a href="videos/category/jagran-chowki.html">Jagran and Chowki</a></li>
-                    <li><a href="videos/category/divyajyotivedmandir.html">Divya Jyoti Ved Mandir</a></li>
-                    <li><a href="videos/category/divya-shanti-mahotsav.html">Divya Shanti Mahotsav</a></li>
-                    <li><a href="videos/category/guru-poornima.html">Guru Poornima</a></li>
-                    <li><a href="videos/category/spiritual-others.html">Others</a></li>
-                  </ul>
-                </li>
-                <li className="dropdown"><a className="dropdown-toggle" data-toggle="dropdown" href="javascript:void(0)"><div>Social Initiatives<span className="caret" /></div></a>
-                  <ul className="dropdown-menu">
-                    <li><a href="videos/category/manthan.html">Manthan</a></li>
-                    <li><a href="videos/category/kamdhenu.html">Kamdhenu</a></li>
-                    <li><a href="videos/category/antardrishti.html">Antardrishti</a></li>
-                    <li><a href="videos/category/antarkranti.html">Antarkranti</a></li>
-                    <li><a href="videos/category/bodh.html">Bodh</a></li>
-                    <li><a href="videos/category/santulan.html">Santulan</a></li>
-                    <li><a href="videos/category/sanrakshan.html">Sanrakshan</a></li>
-                    <li><a href="videos/category/aarogya.html">Aarogya</a></li>
-                    <li><a href="videos/category/samadhan.html">Samadhan</a></li>
-                  </ul>
-                </li>
-                <li className="dropdown"><a className="dropdown-toggle" data-toggle="dropdown" href="javascript:void(0)"><div>Workshops <span className="caret" /></div></a>
-                  <ul className="dropdown-menu">
-                    <li><a href="videos/category/sam.html">SAM Workshop</a></li>
-                    <li><a href="videos/category/peace.html">PEACE Workshop</a></li>
-                    <li><a href="videos/category/way.html">WAY Workshop</a></li>
-                  </ul>
-                </li>
-                <li>
-                  <div className="ml-3">
-                    <a id="search-video" href="#"><i className="icon-search3" /></a>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <div className="col-md-3">
-              <div className="titlebar-col text-md-right widget widget_search mt-0 text-center">
-                <form role="search" method="post" className="search-form d-inline-block" action="https://www.djjs.org/gallery/videos/search">
-                  <label>
-                    <span className="screen-reader-text">Search for:</span>
-                    <input type="search" className="search-field py-1" placeholder="Search Video" defaultValue name="search" />
-                  </label>
-                  <input type="submit" className="search-submit" defaultValue="Search" />
-                </form>
-              </div>
+          </div> */}
             </div>
           </div>
         </div>
-      </section>
-    </div> */}
-    <div className="container text-center mt-15">
+
+        {/* <div className="container text-center mt-15">
       <div className="row visible-xs bottommargin-xs videocats">
         <div className="col-md-12">
           <div className="ld-dropdown-menu">
@@ -146,71 +279,43 @@ const VideoGallery = () => {
           </div>
         </div>
       </div>
-    </div>
-    <div className="container topmargin clearfix">
-      <div className>
-        <header className="fancy-title mb-10 d-flex" id="fancy-title-unlimited-classes">
-          <h3 className="ld-gradient-heading col-xs-8"><a className="text-gradient" href="videos/category/latest.html">Recent Videos</a>
-            <a href="videos/category/latest.html" className=" btn btn-solid  text-uppercase btn-xsm circle font-size-12 lh-15 font-weight-bold ltr-sp-05 mb-2">
-              <span>
-                <span className="btn-txt">View All</span>
-              </span>
-            </a>
-          </h3>
-        </header>
-        <div className="carousel-container carousel-nav-right carousel-nav-sm carousel-nav-bordered carousel-nav-circle carousel-dots-style1">
-          <div className="carousel-items row" data-lqd-flickity="{&quot;cellAlign&quot;:&quot;left&quot;,&quot;prevNextButtons&quot;:true,&quot;buttonsAppendTo&quot;:&quot;#fancy-title-unlimited-classes&quot;,&quot;pageDots&quot;:false,&quot;groupCells&quot;:false,&quot;wrapAround&quot;:false,&quot;pauseAutoPlayOnHover&quot;:false,&quot;navArrow&quot;:6}" data-custom-animations="true" data-ca-options="{&quot;triggerHandler&quot;:&quot;inview&quot;,&quot;animationTarget&quot;:&quot;.carousel-item&quot;,&quot;duration&quot;:&quot;1200&quot;,&quot;delay&quot;:&quot;150&quot;,&quot;easing&quot;:&quot;easeOutQuint&quot;,&quot;initValues&quot;:{&quot;translateX&quot;:36,&quot;opacity&quot;:0},&quot;animations&quot;:{&quot;translateX&quot;:0,&quot;opacity&quot;:1}}">
-            <div className="carousel-item col-md-3 col-xs-12">
-              <div className="fancy-box fancy-box-classes fancy-box-heading-sm mb-0 shadow">
-                <div className="cb-img-container">
-                  <figure className="fancy-box-image">
-                    <img className="ld-lazyload" data-src="https://img.youtube.com/vi/zVfJuM4qtZw/hqdefault.jpg" alt="Milkar Aisi Khelein Holi | Sacred Colors of Holi | True Spirit | DJJS Bhajan [Hindi]" />
-                  </figure>
-                  <div className="cb-img-btn">
-                    <div className="cb-img-btn-bg" />
-                    <a href="videos/zVfJuM4qtZw/milkar-aisi-khelein-holi-sacred-colors-of-holi-true-spirit-djjs-bhajan-hindi.html" className="liquid-overlay-link" />
-                    <div className="cb-img-btn-inner">
-                      <a href="videos/zVfJuM4qtZw/milkar-aisi-khelein-holi-sacred-colors-of-holi-true-spirit-djjs-bhajan-hindi.html" className="btn btn-naked ld_button_5c7fc49d34c89">
-                        <span>
-                          <span className="btn-icon"><i className="fa fa-play" /></span>
-                        </span>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div className="fancy-box-contents">
-                  <div className="fancy-box-info">
-                    <h3 className="liquid-lp-title font-size-20-xs"><a href="videos/zVfJuM4qtZw/milkar-aisi-khelein-holi-sacred-colors-of-holi-true-spirit-djjs-bhajan-hindi.html">Milkar Aisi Khelein Holi | Sacred Colors of Holi | True Spirit | DJJS Bhajan [Hindi]</a></h3>
-                  </div>
-                </div>
+    </div> */}
+        <div className="container topmargin clearfix">
+          <div className>
+            {/* <div className="titlebar titlebar-sm scheme-dark bg-gray-2 bb-fade-black-005">
+        <div className="titlebar-inner py-5">
+          <div className="container titlebar-container">
+            <div className="row titlebar-container">
+              <div className="titlebar-col col-md-6">
+                <h1 className="font-size-26 mb-1">Blog</h1>
+                <p className="font-size-14 text-fade-dark-06">
+                  Swing with the divine melodies
+                </p>
+              </div>
+              <div className="titlebar-col col-md-6 text-md-right">
+                <ol className="breadcrumb reset-ul inline-nav">
+                  <li>
+                    <a>
+                      <span>Home</span>
+                    </a>
+                  </li>
+                  <li>
+                    <span>Blogs</span>
+                  </li>
+                </ol>
               </div>
             </div>
-            <div className="carousel-item col-md-3 col-xs-12">
-              <div className="fancy-box fancy-box-classes fancy-box-heading-sm mb-0 shadow">
-                <div className="cb-img-container">
-                  <figure className="fancy-box-image">
-                    <img className="ld-lazyload" data-src="https://img.youtube.com/vi/FH6fY3ZtZkI/hqdefault.jpg" alt="Taras Rahe Hum Ashu Baba, Tere Haathon Rangne Ko | Intense Longing of Devout Hearts | DJJS Bhajan" />
-                  </figure>
-                  <div className="cb-img-btn">
-                    <div className="cb-img-btn-bg" />
-                    <a href="videos/FH6fY3ZtZkI/taras-rahe-hum-ashu-baba-tere-haathon-rangne-ko-intense-longing-of-devout-hearts-djjs-bhajan.html" className="liquid-overlay-link" />
-                    <div className="cb-img-btn-inner">
-                      <a href="videos/FH6fY3ZtZkI/taras-rahe-hum-ashu-baba-tere-haathon-rangne-ko-intense-longing-of-devout-hearts-djjs-bhajan.html" className="btn btn-naked ld_button_5c7fc49d34c89">
-                        <span>
-                          <span className="btn-icon"><i className="fa fa-play" /></span>
-                        </span>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div className="fancy-box-contents">
-                  <div className="fancy-box-info">
-                    <h3 className="liquid-lp-title font-size-20-xs"><a href="videos/FH6fY3ZtZkI/taras-rahe-hum-ashu-baba-tere-haathon-rangne-ko-intense-longing-of-devout-hearts-djjs-bhajan.html">Taras Rahe Hum Ashu Baba, Tere Haathon Rangne Ko | Intense Longing of Devout Hearts | DJJS Bhajan</a></h3>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="carousel-item col-md-3 col-xs-12">
+          </div>
+        </div>
+      </div> */}
+            <div className="carousel-container carousel-nav-right carousel-nav-sm carousel-nav-bordered carousel-nav-circle carousel-dots-style1">
+              <div
+                className="carousel-items row"
+                data-lqd-flickity='{"cellAlign":"left","prevNextButtons":true,"buttonsAppendTo":"#fancy-title-unlimited-classes","pageDots":false,"groupCells":false,"wrapAround":false,"pauseAutoPlayOnHover":false,"navArrow":6}'
+                data-custom-animations="true"
+                data-ca-options='{"triggerHandler":"inview","animationTarget":".carousel-item","duration":"1200","delay":"150","easing":"easeOutQuint","initValues":{"translateX":36,"opacity":0},"animations":{"translateX":0,"opacity":1}}'
+              >
+                {/* <div className="carousel-item col-md-3 col-xs-12">
               <div className="fancy-box fancy-box-classes fancy-box-heading-sm mb-0 shadow">
                 <div className="cb-img-container">
                   <figure className="fancy-box-image">
@@ -234,8 +339,8 @@ const VideoGallery = () => {
                   </div>
                 </div>
               </div>
-            </div>
-            <div className="carousel-item col-md-3 col-xs-12">
+            </div> */}
+                {/* <div className="carousel-item col-md-3 col-xs-12">
               <div className="fancy-box fancy-box-classes fancy-box-heading-sm mb-0 shadow">
                 <div className="cb-img-container">
                   <figure className="fancy-box-image">
@@ -259,8 +364,8 @@ const VideoGallery = () => {
                   </div>
                 </div>
               </div>
-            </div>
-            <div className="carousel-item col-md-3 col-xs-12">
+            </div> */}
+                {/* <div className="carousel-item col-md-3 col-xs-12">
               <div className="fancy-box fancy-box-classes fancy-box-heading-sm mb-0 shadow">
                 <div className="cb-img-container">
                   <figure className="fancy-box-image">
@@ -284,8 +389,8 @@ const VideoGallery = () => {
                   </div>
                 </div>
               </div>
-            </div>
-            <div className="carousel-item col-md-3 col-xs-12">
+            </div> */}
+                {/* <div className="carousel-item col-md-3 col-xs-12">
               <div className="fancy-box fancy-box-classes fancy-box-heading-sm mb-0 shadow">
                 <div className="cb-img-container">
                   <figure className="fancy-box-image">
@@ -309,8 +414,8 @@ const VideoGallery = () => {
                   </div>
                 </div>
               </div>
-            </div>
-            <div className="carousel-item col-md-3 col-xs-12">
+            </div> */}
+                {/* <div className="carousel-item col-md-3 col-xs-12">
               <div className="fancy-box fancy-box-classes fancy-box-heading-sm mb-0 shadow">
                 <div className="cb-img-container">
                   <figure className="fancy-box-image">
@@ -334,8 +439,8 @@ const VideoGallery = () => {
                   </div>
                 </div>
               </div>
-            </div>
-            <div className="carousel-item col-md-3 col-xs-12">
+            </div> */}
+                {/* <div className="carousel-item col-md-3 col-xs-12">
               <div className="fancy-box fancy-box-classes fancy-box-heading-sm mb-0 shadow">
                 <div className="cb-img-container">
                   <figure className="fancy-box-image">
@@ -359,8 +464,8 @@ const VideoGallery = () => {
                   </div>
                 </div>
               </div>
-            </div>
-            <div className="carousel-item col-md-3 col-xs-12">
+            </div> */}
+                {/* <div className="carousel-item col-md-3 col-xs-12">
               <div className="fancy-box fancy-box-classes fancy-box-heading-sm mb-0 shadow">
                 <div className="cb-img-container">
                   <figure className="fancy-box-image">
@@ -384,8 +489,8 @@ const VideoGallery = () => {
                   </div>
                 </div>
               </div>
-            </div>
-            <div className="carousel-item col-md-3 col-xs-12">
+            </div> */}
+                {/* <div className="carousel-item col-md-3 col-xs-12">
               <div className="fancy-box fancy-box-classes fancy-box-heading-sm mb-0 shadow">
                 <div className="cb-img-container">
                   <figure className="fancy-box-image">
@@ -409,11 +514,181 @@ const VideoGallery = () => {
                   </div>
                 </div>
               </div>
+            </div> */}
+                <div>
+                  <Videoslideone />
+                </div>
+                <div style={{ marginTop: "100px" }}>
+                  <div>
+                    <Videogalleryslider />
+                  </div>
+                </div>
+                <div className="iframe-text"
+                
+                >
+                  <div>
+                    <iframe style={{padding:"10px"}}
+                      width="560"
+                      height="315"
+                      src="https://www.youtube.com/embed/2G4M5HLGysE?si=gXROxfavVOwsoLIr"
+                      title="YouTube video player"
+                      frameborder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      referrerpolicy="strict-origin-when-cross-origin"
+                      allowfullscreen
+                    ></iframe>
+                  </div>
+                  <div className="col-md-3 col-md-offset-1 sidebar-container">
+                    <aside className="main-sidebar">
+                      <div className="widget widget_search mt-0">
+                        <form
+                          role="search"
+                          method="post"
+                          className="search-form"
+                          action="https://www.djjs.org/blog/search"
+                        >
+                          <label>
+                            <span className="screen-reader-text">
+                              Search for:
+                            </span>
+                            <input
+                              type="search"
+                              className="search-field"
+                              placeholder="Search…"
+                            />
+                          </label>
+                          <input type="submit" className="search-submit" />
+                        </form>
+                      </div>
+                      <div className="widget">
+                        <h3 className="widget-title">Categories</h3>
+                        <List>
+                          {categories.map((category, index) => (
+                            <React.Fragment key={index}>
+                              <ListItemButton
+                                onClick={() => handleCategoryClick(index)}
+                                className={openCategory === index ? "open" : ""}
+                              >
+                                {openCategory === index ? (
+                                  <ArrowDropUpIcon />
+                                ) : (
+                                  <ArrowDropDownIcon />
+                                )}
+                                <ListItemText primary={category.name} />
+                              </ListItemButton>
+                              {openCategory === index && (
+                                <List component="div" disablePadding>
+                                  {category.subcategories.map(
+                                    (subcategory, subIndex) => (
+                                      <React.Fragment key={subIndex}>
+                                        <ListItemButton
+                                          onClick={() =>
+                                            handleSubCategoryClick(subIndex)
+                                          }
+                                          className={
+                                            openSubCategory === subIndex
+                                              ? "open"
+                                              : ""
+                                          }
+                                        >
+                                          {openSubCategory === subIndex ? (
+                                            <ArrowDropUpIcon />
+                                          ) : (
+                                            <ArrowDropDownIcon />
+                                          )}
+                                          <ListItemText
+                                            primary={subcategory.name}
+                                          />
+                                        </ListItemButton>
+                                        {openSubCategory === subIndex &&
+                                          subcategory.subsubcategories && (
+                                            <List
+                                              component="div"
+                                              disablePadding
+                                            >
+                                              {subcategory.subsubcategories.map(
+                                                (
+                                                  subsubcategory,
+                                                  subsubIndex
+                                                ) => (
+                                                  <React.Fragment
+                                                    key={subsubIndex}
+                                                  >
+                                                    <ListItemButton
+                                                      onClick={() =>
+                                                        handleSubSubCategoryClick(
+                                                          subsubIndex
+                                                        )
+                                                      }
+                                                      className={
+                                                        openSubSubCategory ===
+                                                        subsubIndex
+                                                          ? "open"
+                                                          : ""
+                                                      }
+                                                    >
+                                                      {openSubSubCategory ===
+                                                      subsubIndex ? (
+                                                        <ArrowDropUpIcon />
+                                                      ) : (
+                                                        <ArrowDropDownIcon />
+                                                      )}
+                                                      <ListItemText
+                                                        primary={
+                                                          subsubcategory.name
+                                                        }
+                                                      />
+                                                    </ListItemButton>
+                                                    {openSubSubCategory ===
+                                                      subsubIndex &&
+                                                      subsubcategory.subsubsubcategories && (
+                                                        <List
+                                                          component="div"
+                                                          disablePadding
+                                                        >
+                                                          {subsubcategory.subsubsubcategories.map(
+                                                            (
+                                                              subsubsubcategory,
+                                                              subsubsubIndex
+                                                            ) => (
+                                                              <ListItemButton
+                                                                key={
+                                                                  subsubsubIndex
+                                                                }
+                                                                className="sub-sub-sub-item"
+                                                              >
+                                                                <ListItemText
+                                                                  primary={
+                                                                    subsubsubcategory
+                                                                  }
+                                                                />
+                                                              </ListItemButton>
+                                                            )
+                                                          )}
+                                                        </List>
+                                                      )}
+                                                  </React.Fragment>
+                                                )
+                                              )}
+                                            </List>
+                                          )}
+                                      </React.Fragment>
+                                    )
+                                  )}
+                                </List>
+                              )}
+                              {index !== categories.length - 1 && <Divider />}
+                            </React.Fragment>
+                          ))}
+                        </List>
+                      </div>
+                    </aside>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-      </div>
-      <div className="row-fluid mt-3">
+          {/* <div className="row-fluid mt-3">
         <header className="fancy-title mb-10 d-flex" id="spiritual-discourses">
           <h3 className="ld-gradient-heading col-xs-8"><a className="text-gradient" href="videos/category/discourses.html">Spiritual Discourses</a>
             <a href="videos/category/discourses.html" className="btn btn-solid text-uppercase btn-xsm circle  font-size-12 lh-15 font-weight-bold ltr-sp-05 mb-2">
@@ -628,8 +903,8 @@ const VideoGallery = () => {
           </div>
         </div>
         <div className="clear" />
-      </div>
-      <div className="row-fluid mt-3">
+      </div> */}
+          {/* <div className="row-fluid mt-3">
         <header className="fancy-title mb-10 d-flex" id="devotional-bhajans">
           <h3 className="ld-gradient-heading col-xs-8"><a className="text-gradient" href="videos/category/devotional-bhajans.html">DJJS Bhajans</a>
             <a href="videos/category/devotional-bhajans.html" className="btn btn-solid text-uppercase btn-xsm circle  font-size-12 lh-15 font-weight-bold ltr-sp-05 mb-2">
@@ -845,12 +1120,11 @@ const VideoGallery = () => {
           </div>
         </div>
         <div className="clear" />
-      </div>
-      <div className="clearfix topmargin" />
+      </div> */}
+          <div className="clearfix topmargin" />
+        </div>
+      </section>
     </div>
-  </section>
-</div>
-
   );
 };
 

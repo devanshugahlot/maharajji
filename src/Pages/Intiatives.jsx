@@ -35,7 +35,7 @@ const Intiatives = () => {
       category: "Education",
       description:
         "Manthan is a Holistic Education Program for the underprivileged and underperforming children some of whom are drop-outs or even first generation learners.",
-      link: "manthan/index.html",
+      link: "",
     },
     {
       image: "https://www.djjs.org/images/new/initiatives/kamdhenu.jpg",
@@ -44,7 +44,7 @@ const Intiatives = () => {
       category: "Indian Cow Breed Improvement",
       description:
         "In the Indian spiritual and religious texts, cow has been extremely revered and Kamdhenu Gaushala under the guidance of founder Shri Ashutosh Maharaj is working for conservation and pr…",
-      link: "kamdhenu.html",
+      link: "",
     },
     {
       image: "https://www.djjs.org/images/new/initiatives/antardrishti.jpg",
@@ -53,7 +53,7 @@ const Intiatives = () => {
       category: "For visually impaired",
       description:
         "Antardrishti is a welfare program for visually impaired and physically disabled persons which aims for their overall growth & development.",
-      link: "antardrishti/index.html",
+      link: "",
     },
     {
       image: "https://www.djjs.org/images/new/initiatives/antarkranti.jpg",
@@ -62,7 +62,7 @@ const Intiatives = () => {
       category: "Prisoner Reformation",
       description:
         "Antarkranti is the Prisoner's Reformation and post-release Rehabilitation Program.",
-      link: "http://www.antarkranti.org/",
+      link: ""
     },
     {
       image: "https://www.djjs.org/images/new/initiatives/santulan.jpg",
@@ -71,7 +71,7 @@ const Intiatives = () => {
       category: "Gender Equality",
       description:
         "Santulan is the Gender Equality program of Divya Jyoti Jagrati Sansthan that is working for the elimination of all forms of discrimination and violence against the female gender; through a…",
-      link: "santulan/santulan.html",
+      link: "",
     },
     {
       image: "https://www.djjs.org/images/new/initiatives/bodh.jpg",
@@ -80,7 +80,7 @@ const Intiatives = () => {
       category: "Drug Abuse Eradication",
       description:
         "Bodh- the drug abuse eradication program of DJJS, works for the elimination of drug abuse and eradication of drug demand through ‘Dhyan Therapy’, thereby transforming the drug afflicted society in…",
-      link: "bodh/bodh.html",
+      link: "",
     },
     {
       image: "https://www.djjs.org/images/new/initiatives/sanrakshan.jpg",
@@ -89,7 +89,7 @@ const Intiatives = () => {
       category: "Environment",
       description:
         "Sanrakshan is Natural Resource Management and Environment Protection Program aims at rebuilding the fading human-nature relationship of mutualism for re-establishing the environmental bala…",
-      link: "sanrakshan/sanrakshan.html",
+      link: "",
     },
     {
       image: "https://www.djjs.org/images/new/initiatives/aarogya.jpg",
@@ -98,7 +98,7 @@ const Intiatives = () => {
       category: "Health",
       description:
         "Aarogya is a complete Health Program including Yoga, Herbal remedies and Ayurveda to prevent various diseases.",
-      link: "aarogya/index.html",
+      link: "",
     },
     {
       image: "https://www.djjs.org/images/new/initiatives/samadhan.jpg",
@@ -107,7 +107,7 @@ const Intiatives = () => {
       category: "Disaster Management",
       description:
         "Samadhan- Disaster Relief Programme has been dedicated to rescue, relief and rehabilitation of areas and victims struck by natural and man-made disasters.",
-      link: "samadhan/index.html",
+      link: "",
     },
   ];
 
@@ -119,7 +119,7 @@ const Intiatives = () => {
       category: "Prisoner Reformation",
       description:
         "Antarkranti is the Prisoner's Reformation and post-release Rehabilitation Program.",
-      link: "http://www.antarkranti.org/",
+      link: "",
     },
     {
       image: "https://www.djjs.org/images/new/initiatives/santulan.jpg",
@@ -128,7 +128,7 @@ const Intiatives = () => {
       category: "Gender Equality",
       description:
         "Santulan is the Gender Equality program of Divya Jyoti Jagrati Sansthan that is working for the elimination of all forms of discrimination and violence against the female gender.",
-      link: "santulan/santulan.html",
+      link: "",
     },
     // Add more objects for additional tabs if needed
   ];
@@ -141,7 +141,7 @@ const Intiatives = () => {
       category: "Health",
       description:
         "Aarogya is a complete Health Program including Yoga, Herbal remedies and Ayurveda to prevent various diseases.",
-      link: "aarogya/index.html",
+      link: "",
     },
     {
       image: "https://www.djjs.org/images/new/initiatives/samadhan.jpg",
@@ -150,7 +150,7 @@ const Intiatives = () => {
       category: "Disaster Management",
       description:
         "Samadhan- Disaster Relief Programme has been dedicated to rescue, relief and rehabilitation of areas and victims struck by natural and man-made disasters.",
-      link: "samadhan/index.html",
+      link: "",
     },
     // Add more objects for additional tabs if needed
   ];

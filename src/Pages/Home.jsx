@@ -2,13 +2,17 @@ import React, { useState } from "react";
 import { FaPlay, FaVideo } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import { convertToIST } from "../helpers/formatFunctions";
-const Home = () =>
-{
+import imgbook from "../assets/bookstwo.png";
+import img2 from "../assets/img/assetimg3.jpg";
+import "./home.css";
+const Home = () => {
   const posts = [
     {
       _id: 1,
-      heading: "Firm, Resolute & Stout-Hearted Mother of King Bharata - SHAKUNTALA!",
-      subHeading: "Do I have the success that I thought I would have? Where am I going with my life? Have I been able t…",
+      heading:
+        "Firm, Resolute & Stout-Hearted Mother of King Bharata - SHAKUNTALA!",
+      subHeading:
+        "Do I have the success that I thought I would have? Where am I going with my life? Have I been able t…",
       images: [
         "https://www.djjs.org/uploads/blog/aa38226f0fffabbcce83094ef3378fad.jpg",
         "image2.jpg",
@@ -21,7 +25,8 @@ const Home = () =>
     {
       _id: 2,
       heading: "Vedic Women: The Paragon of Absolute Women Empowerment",
-      subHeading: "In Indian classic literature like Ramayan, Mahabharata and the compendiums documented by Rishis in t…",
+      subHeading:
+        "In Indian classic literature like Ramayan, Mahabharata and the compendiums documented by Rishis in t…",
       images: [
         "https://www.djjs.org/uploads/blog/2b3916f02f98b2302094f78bab7845f9.jpg",
         "image2.jpg",
@@ -31,10 +36,6 @@ const Home = () =>
       author: "Example Author",
       createdAt: "2024-04-12T10:38:23.367+00:00",
     },
-   
-
-
-
   ];
   const navigate = useNavigate("");
   const [activeTab, setActiveTab] = useState(0);
@@ -49,34 +50,57 @@ const Home = () =>
   };
   const initiatives = [
     {
-      title: "Manthan",
+      title: "Vihe",
       category: "Education",
       description:
         "Manthan is a Holistic Education Program for the underprivileged and underperforming children some of whom are drop-outs or even first generation learners.",
-      imageUrl: "https://www.djjs.org/images/new/initiatives/manthan.jpg",
+      imageUrl:
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMT-cvj55jwJufpNXnVx8-kU3tVC6zWUJlpGrAds_yMQ&s",
       link: "",
     },
     {
-      title: "Kamdhenu",
+      title: "Vihe",
       category: "Indian Cow Breed Improvement",
       description:
         "In the Indian spiritual and religious texts, cow has been extremely revered and Kamdhenu Gaushala under the guidance of founder Shri Ashutosh Maharaj is working for conservation and propagation of this hol",
-      imageUrl: "https://www.djjs.org/images/new/initiatives/kamdhenu.jpg",
+      imageUrl:
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdKkFYXOClMAukLqmfoNrhmuUsq_Z2527eAqBSyDPiMQ&s",
       link: "",
     },
   ];
 
   const spiritualinitiatives = [
     {
-      title: "Kamdhenu",
+      title: "gopnath Dham",
       category: "Indian Cow Breed Improvement",
       description:
         "In the Indian spiritual and religious texts, cow has been extremely revered and Kamdhenu Gaushala under the guidance of founder Shri Ashutosh Maharaj is working for conservation and propagation of this hol",
-      imageUrl: "https://www.djjs.org/images/new/initiatives/kamdhenu.jpg",
+      imageUrl:
+        "https://upload.wikimedia.org/wikipedia/commons/6/67/Gopinath_Mandir_%2C_Gopeshwar_Chamoli.jpg",
       link: "",
     },
     {
-      title: "Manthan",
+      title: "Gopi Nath Dham",
+      category: "Education",
+      description:
+        "Manthan is a Holistic Education Program for the underprivileged and underperforming children some of whom are drop-outs or even first generation learners.",
+      imageUrl:
+        "https://content.jdmagicbox.com/comp/jaipur/t3/0141px141.x141.181127204533.j4t3/catalogue/gopinath-ji-thikana-mandir-purani-basti-jaipur-temples-1p1mzceokb.jpg",
+      link: "",
+    },
+  ];
+
+  const development = [
+    {
+      title: "GRC",
+      category: "Indian Cow Breed Improvement",
+      description:
+        "In the Indian spiritual and religious texts, cow has been extremely revered and Kamdhenu Gaushala under the guidance of founder Shri Ashutosh Maharaj is working for conservation and propagation of this hol",
+      imageUrl: "https://i.ytimg.com/vi/NHf2_FaGgvw/maxresdefault.jpg",
+      link: "",
+    },
+    {
+      title: "GRC",
       category: "Education",
       description:
         "Manthan is a Holistic Education Program for the underprivileged and underperforming children some of whom are drop-outs or even first generation learners.",
@@ -84,6 +108,47 @@ const Home = () =>
       link: "",
     },
   ];
+
+  const scared = [
+    {
+      title: "India",
+      category: "Indian Cow Breed Improvement",
+      description:
+        "In the Indian spiritual and religious texts, cow has been extremely revered and Kamdhenu Gaushala under the guidance of founder Shri Ashutosh Maharaj is working for conservation and propagation of this hol",
+      imageUrl:
+        "https://media.cnn.com/api/v1/images/stellar/prod/230915082701-04-india-ram-mandir-rebuild.jpg?c=16x9&q=w_800,c_fill",
+      link: "",
+    },
+    {
+      title: "India",
+      category: "Education",
+      description:
+        "Manthan is a Holistic Education Program for the underprivileged and underperforming children some of whom are drop-outs or even first generation learners.",
+      imageUrl:
+        "https://www.tourmyindia.com/blog//wp-content/uploads/2021/06/Famous-Temples-in-Mathura-Vrindavan-Prem-Mandir.jpg",
+      link: "",
+    },
+  ];
+
+  const others = [
+    {
+      title: "Kamdhenu2",
+      category: "Indian Cow Breed Improvement",
+      description:
+        "In the Indian spiritual and religious texts, cow has been extremely revered and Kamdhenu Gaushala under the guidance of founder Shri Ashutosh Maharaj is working for conservation and propagation of this hol",
+      imageUrl: "https://i.ytimg.com/vi/NHf2_FaGgvw/maxresdefault.jpg",
+      link: "",
+    },
+    {
+      title: "Manthan2",
+      category: "Education",
+      description:
+        "Manthan is a Holistic Education Program for the underprivileged and underperforming children some of whom are drop-outs or even first generation learners.",
+      imageUrl: "https://www.djjs.org/images/new/initiatives/manthan.jpg",
+      link: "",
+    },
+  ];
+
   const filteredInitiatives = initiatives.filter(
     (initiative) => initiative.category === activeFilter
   );
@@ -91,31 +156,54 @@ const Home = () =>
   const [socialtab, setSocialtab] = useState(true);
   const [spiritualtab, setSpiritualtab] = useState(false);
   const [developmenttab, setDevelopmenttab] = useState(false);
+  const [scaredtab, setScaredtab] = useState(false);
+  const [otherstab, setOtherstab] = useState(false);
 
   const handlesocialbutton = () => {
     setSocialtab(true);
     setSpiritualtab(false);
     setDevelopmenttab(false);
+    setScaredtab(false);
+    setOtherstab(false);
   };
 
   const handlespiritualbutton = () => {
     setSocialtab(false);
     setSpiritualtab(true);
     setDevelopmenttab(false);
+    setScaredtab(false);
+    setOtherstab(false);
   };
 
   const handledevelopmentbutton = () => {
     setSocialtab(false);
     setSpiritualtab(false);
     setDevelopmenttab(true);
+    setScaredtab(false);
+    setOtherstab(false);
   };
 
+  const handlescaredbutton = () => {
+    setSocialtab(false);
+    setSpiritualtab(false);
+    setDevelopmenttab(false);
+    setScaredtab(true);
+    setOtherstab(false);
+  };
+
+  const handleothersbutton = () => {
+    setSocialtab(false);
+    setSpiritualtab(false);
+    setDevelopmenttab(false);
+    setScaredtab(false);
+    setOtherstab(true);
+  };
   return (
     <div>
       <main id="" className="">
         <section
           id="bg-cover"
-          className="bg-contain bg-center d-flex align-items-center py-5 home-bg-img"
+          className="bg-contain      home-bg-img"
           style={{
             backgroundSize: "cover",
             backgroundPosition: "center !important",
@@ -125,18 +213,122 @@ const Home = () =>
           }}
         >
           {/* Your content here */}
+          <div className="fristhomeimg"
+            style={{
+              position: "absolute",
+              top: "50%",
+              left: "23%",
+              transform: "translate(-50%, -50%)",
+              textAlign: "center",
+              color: "#537292", // Change color as needed
+              fontSize: "4rem", // Adjust font size as needed
+              lineHeight: "1.5",
+              fontFamily: "monospace",
+              // fontWeight:"bold",
+              // Add any other styles as needed
+            }}
+          >
+            Welcome to the <br />
+            Website of Bhurijana Dasa
+          </div>
         </section>
+
+        <div className="maniradhadiv">
+          <div className="fristmain">
+            <div className="fristtext">
+              <h2 style={{ color: "#899CAE" }}>
+                TEACHER <br />
+                AUTHOR <br />
+                ACTIVIST
+              </h2>
+              <div>
+                <p>An introduction to His Holiness Radhanath Swami</p>
+              </div>
+            </div>
+          </div>
+          <div className="secondmain">
+            <img
+              src="https://www.radhanathswami.com/wp-content/uploads/2023/03/radhanath-swami-mumbai.jpg"
+              alt=""
+            />
+          </div>
+          <div className="thirddiv">
+            <div className="thirdtext">
+              <h5>
+                True wisdom,
+                <br />
+                True <em>enlightenment</em>…<br />
+                is to see every living being
+                <br />
+                with <em>equal vision</em>.<br />
+                <img
+                  decoding="async"
+                  className="alignright wp-image-385 entered lazyloaded"
+                  role="img"
+                  src="https://radhanathswami.com/wp-content/uploads/2023/03/icon-sign-close.svg"
+                  alt=""
+                  width={17}
+                  height={10}
+                  data-lazy-src="https://radhanathswami.com/wp-content/uploads/2023/03/icon-sign-close.svg"
+                  data-ll-status="loaded"
+                />
+                <noscript>
+                  &lt;img loading="lazy" decoding="async" class="alignright
+                  wp-image-385 " role="img"
+                  src="https://radhanathswami.com/wp-content/uploads/2023/03/icon-sign-close.svg"
+                  alt="" width="17" height="10" /&gt;
+                </noscript>
+              </h5>
+
+              <div>
+                <p>An introduction to His Holiness Radhanath Swami</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <section
-          id="topsection"
-          className="container"
-          style={{ background: 'url("images/new/bg-79.svg")' }}
+          id="bg-cover"
+          className="bg-contain-two home-bg-img-two"
+          style={{
+            position: "relative",
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            width: "100%",
+            minHeight: "100vh",
+            backgroundRepeat: "no-repeat",
+          }}
         >
+          {/* Your content here */}
+          <div className="sendmainimg"
+            style={{
+              position: "absolute",
+              top: "50%",
+              left: "70%",
+              transform: "translate(-50%, -50%)",
+              textAlign: "center",
+              color: "white",
+              fontSize: "4rem",
+              lineHeight: "1.5",
+              fontFamily: "monospace",
+              zIndex: "1", // Ensure content is above the background
+            }}
+          >
+            Welcome to the <br />
+            Website of Bhurijana Dasa
+          </div>
+
+          {/* Ensure that the image source is correctly set */}
+          {/* <img src="path_to_your_image" alt="Background Image" /> */}
+        </section>
+
+        <section id="topsection" className="containerr">
           <div
             className="clearfix intro mt-20"
             style={{ maxWidth: 1920, margin: "0 auto" }}
           >
-            <div className="row d-flex flex-wrap align-items-center pb-50">
-              <div className="lqd-column col-md-6 mb-20 mx-xs-15">
+            <div className="maindasa">
+              <div className="">
                 <div
                   className="liquid-img-group-single"
                   data-shadow-style={0}
@@ -148,21 +340,18 @@ const Home = () =>
                 >
                   <div className="liquid-img-group-img-container">
                     <div className="liquid-img-container-inner">
-                      <figure>
-                        <picture>
-                          <source
-                            type=""
-                            data-srcset="https://bhurijanadasa.com/wp-content/uploads/2020/12/bhurijan-prabhu-lecture.jpg"
-                          />
-                          <img
-                            style={{ width: "450px" }}
-                            alt="Brahm gyan DJJS"
-                            className="ld-lazyload"
-                            src="https://bhurijanadasa.com/wp-content/uploads/2020/12/bhurijan-prabhu-lecture.jpg"
-                            data-src="https://bhurijanadasa.com/wp-content/uploads/2020/12/bhurijan-prabhu-lecture.jpg"
-                          />
-                        </picture>
-                      </figure>
+                      <img
+                        style={{
+                          width: "400px",
+                          height: "60vh",
+                          boxShadow: "rgb(246,242,232) 0px 60px -40px -7px",
+                          borderRadius: "50%",
+                        }}
+                        alt="Brahm gyan DJJS"
+                        className="ld-lazyload"
+                        src={img2}
+                        data-src="https://bhurijanadasa.com/wp-content/uploads/2020/12/bhurijan-prabhu-lecture.jpg"
+                      />
                     </div>
                   </div>
                 </div>
@@ -180,34 +369,30 @@ const Home = () =>
                       data-fittext-options='{"compressor":1, "maxFontSize":"maxFontSize", "minFontSize":"25"}'
                     >
                       <span className="text-gradient">
-                        <span className="t600">GOD</span> CAN BE SEEN
+                        <span className="t600">Teacher</span> H.G. Bhurijana
+                        Prabhu
                       </span>
                     </h2>
                   </header>
-                  <p className="font-size-22 lh-105">
+                  {/* <p className="font-size-22 lh-105">
                     <i>
                       Discover yourself through Brahm Gyan (Eternal Science of
                       God-Realization)
                     </i>
-                  </p>
+                  </p> */}
                   <p className="font-size-24 lh-15 mb-55">
-                    Today, there is a strong perception that seeing God is
-                    practically impossible. And, this thick barricade in our
-                    minds tends to swell up gaining support from traditional
-                    thoughts and prejudices. Verily, this just needs a strong
-                    blow, and the impossible itself is compelled to say: I’m
-                    possible! This powerful smash is set forth by the Perfect
-                    Spiritual Masters (Satgurus), who descend on the Earth to
-                    tear apart the mental barriers among mankind about
-                    experiencing God! This happens in every Era. And, this is
-                    happening today as well!
-                    <strong>
+                    Bhurijana Dasa began chanting Hare Krsna in early 1968 while
+                    still a student at the University of Buffalo. A few months
+                    later he met his spiritual master, His Divine Grace A.C.
+                    Bhaktivedanta Swami Prabhupada, Founder Acarya of the
+                    International Society for Krishna Consciousness.
+                    {/* <strong>
                       Divya Guru Shri Ashutosh Maharaj Ji, founder &amp; head of
                       Divya Jyoti Jagrati Sansthan is benevolently transmitting
                       to mankind, the practical experience of God through Brahm
                       Gyan (Eternal Science of God-Realization), while upholding
                       the spirit of eternal message that GOD CAN BE SEEN!
-                    </strong>
+                    </strong> */}
                   </p>
                   <a
                     style={{ fontSize: 13 }}
@@ -226,7 +411,70 @@ const Home = () =>
           </div>
         </section>
 
-      
+        <section
+          id="bg-cover"
+          className="bg-contain-three home-bg-img-three"
+          style={{
+            position: "relative",
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            width: "100%",
+            minHeight: "100vh",
+            backgroundRepeat: "no-repeat",
+          }}
+        >
+          {/* Your content here */}
+          <div
+            style={{
+              position: "absolute",
+              top: "50%",
+              left: "70%",
+              transform: "translate(-50%, -50%)",
+              textAlign: "center",
+              color: "white",
+              fontSize: "4rem",
+              lineHeight: "1.5",
+              fontFamily: "monospace",
+              zIndex: "1", // Ensure content is above the background
+            }}
+          >
+            Welcome to the <br />
+            Website of Bhurijana Dasa
+          </div>
+
+          {/* Ensure that the image source is correctly set */}
+          {/* <img src="path_to_your_image" alt="Background Image" /> */}
+        </section>
+
+        <div className="mainradhadivtwo">
+          <div className="fristmain">
+            <div className="fristtext">
+              <h2 style={{ color: "#899CAE" }}>
+                SRILA PRABHUPADA <br />
+                & BHAKTI YOGA <br />
+              </h2>
+              <div>
+                <p>
+                  Discover Radhanath Swami's teacher, Srila <br /> Prabhupada,
+                  who introduced him to the path of <br /> Divine Love known as
+                  'Bhakti Yoga', a practice <br /> that has been passed down by
+                  saints and sages over <br /> thousands of years.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div className="radhadivinner">
+            <img
+              style={{ borderRadius: "50%" }}
+              src="https://www.radhanathswami.com/wp-content/uploads/2023/03/srila-prabhupada-rns.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+
+        <div className="homebgone"></div>
+
         <section className="vc_row pt-80 pb-70 pb-xs-0 bg-athens-gray">
           <div className="container">
             <div className="row">
@@ -245,10 +493,11 @@ const Home = () =>
                         // href="#ld-tab-pane-0"
                         aria-controls="ld-tab-pane-0"
                         role="tab"
-                        onClick={() => handleTabChange(0)}vay
+                        onClick={() => handleTabChange(0)}
+                        vay
                       >
-                        Om Namah Shivay | Glory of Adi Guru | Shiv Stuti |
-                        Mahashivratri 2022 | DJJS Bhajan
+                        The Day King Kaṁsa Died Part 1 of 3 – HG Bhurijana
+                        Prabhu
                       </a>
                     </li>
                     <li
@@ -261,8 +510,8 @@ const Home = () =>
                         role="tab"
                         onClick={() => handleTabChange(1)}
                       >
-                        Shrimad Devi Bhagwat Katha 2021 | TEASER | DJJS Katha |
-                        Sadhvi Aditi Bharti Ji
+                        The Day King Kaṁsa Died Part 3 of 3 – HG Bhurijana
+                        Prabhu
                       </a>
                     </li>
                   </ul>
@@ -289,9 +538,9 @@ const Home = () =>
                             >
                               <img
                                 className="  ld-lazyload"
-                                data-src="https://bhurijanadasa.com/wp-content/uploads/2021/08/Mustard_wuna-495x400.jpg"
-                                src="https://bhurijanadasa.com/wp-content/uploads/2021/08/Mustard_wuna-495x400.jpg"
-                                alt="Om Namah Shivay | Glory of Adi Guru | Shiv Stuti | Mahashivratri 2022 | DJJS Bhajan"
+                                data-src="https://i.ytimg.com/vi/xCKThRLeMUQ/hqdefault.jpg"
+                                src="https://i.ytimg.com/vi/xCKThRLeMUQ/hqdefault.jpg"
+                                alt="The Day King Kaṁsa Died Part 1 of 3 – HG Bhurijana Prabhu"
                               />
                             </figure>
                             <div className="liquid-img-group-content content-floated-mid">
@@ -301,7 +550,7 @@ const Home = () =>
                               >
                                 <span>
                                   <span className="btn-icon font-size-26">
-                                  <FaPlay />
+                                    <FaPlay />
                                   </span>
                                 </span>
                               </a>
@@ -312,8 +561,8 @@ const Home = () =>
                               spiritual
                             </span>
                             <h3>
-                              Om Namah Shivay | Glory of Adi Guru | Shiv Stuti |
-                              Mahashivratri 2022 | DJJS Bhajan
+                              The Day King Kaṁsa Died Part 1 of 3 – HG Bhurijana
+                              Prabhu
                             </h3>
                           </div>
                         </div>
@@ -341,9 +590,9 @@ const Home = () =>
                             >
                               <img
                                 className="  ld-lazyload"
-                                data-src="https://bhurijanadasa.com/wp-content/uploads/2021/08/sadhu_enterfrs001-495x400.jpg"
-                                src="https://bhurijanadasa.com/wp-content/uploads/2021/08/sadhu_enterfrs001-495x400.jpg"
-                                alt="Shrimad Devi Bhagwat Katha 2021 | TEASER | DJJS Katha | Sadhvi Aditi Bharti Ji"
+                                data-src="https://i.ytimg.com/vi/BuMEQO7nnyA/hqdefault.jpg"
+                                src="https://i.ytimg.com/vi/BuMEQO7nnyA/hqdefault.jpg"
+                                alt="The Day King Kaṁsa Died Part 3 of 3 – HG Bhurijana Prabhu"
                               />
                             </figure>
                             <div className="liquid-img-group-content content-floated-mid">
@@ -353,7 +602,7 @@ const Home = () =>
                               >
                                 <span>
                                   <span className="btn-icon font-size-26">
-                                  <FaPlay />
+                                    <FaPlay />
                                   </span>
                                 </span>
                               </a>
@@ -364,8 +613,8 @@ const Home = () =>
                               spiritual
                             </span>
                             <h3>
-                              Shrimad Devi Bhagwat Katha 2021 | TEASER | DJJS
-                              Katha | Sadhvi Aditi Bharti Ji
+                              The Day King Kaṁsa Died Part 3 of 3 – HG Bhurijana
+                              Prabhu
                             </h3>
                           </div>
                         </div>
@@ -391,132 +640,127 @@ const Home = () =>
           </div>
         </section>
 
-
-        <div style={ {
-          display: "flex",
-          flexDirection: "column",
-        padding:"100px "} }>
-      <div className="lqd-column col-md-12 text-center">
-                <h2 className="h1 mt-0 mb-3 text-gradient">Audios</h2>
-                <p className="font-size-16">Top Picks from Audio gallery</p>
-              </div>
-              <div className="row clearfix albumcategory">
-                <div className="col-md-6">
-                  <img src="https://www.djjs.org/images/new/falsafe.jpg" alt />
-                  <div className="overlay">
-                    <div className="text-overlay">
-                      <span className="font-primary text-white">
-                        Akhand Gyan
-                      </span>
-                      <div className="text-overlay-title">
-                        <h2>
-                          <a >Jeevan Ke Falsafe</a>
-                        </h2>
-                      </div>
-                      <a
-                        
-                        className="btn btn-sm btn-solid btn-gradient circle text-uppercase wide ld-lp-carousel-filterable-btn split-inner"
-                      >
-                        <span>
-                          <span className="btn-gradient-bg bg-gradient-primary-rl" />
-                          <span className="btn-txt">Play Now</span>
-                          <span className="btn-gradient-bg btn-gradient-bg-hover" />
-                        </span>
-                      </a>
-                    </div>
-                  </div>
-                  <a
-                    className="liquid-overlay-link z-index-3"
-                    
-                  />
-                </div>
-                <div className="row mx-0 px-0 mt-3 mt-md-0 col-md-6">
-                  <div className="col-md-6">
-                    <img src="https://www.djjs.org/images/new/bhajan.jpg" alt />
-                    <div className="overlay">
-                      <div className="text-overlay">
-                        <span className="font-primary">divine melodies</span>
-                        <div className="text-overlay-title">
-                          <h2>
-                            <a href="audio/bhajan.html">Bhajans</a>
-                          </h2>
-                        </div>
-                      </div>
-                    </div>
-                    <a
-                      className="liquid-overlay-link z-index-3"
-                      href="audio/bhajan.html"
-                    />
-                  </div>
-                  <div className="col-md-6">
-                    <img
-                      src="https://www.djjs.org/images/new/discourse.jpg"
-                      alt
-                    />
-                    <div className="overlay">
-                      <div className="text-overlay">
-                        <span className="font-primary">Food for soul</span>
-                        <div className="text-overlay-title">
-                          <h2>
-                            <a href="audio/discourses.html">Discourses</a>
-                          </h2>
-                        </div>
-                      </div>
-                    </div>
-                    <a
-                      className="liquid-overlay-link z-index-3"
-                      href="audio/discourses.html"
-                    />
-                  </div>
-                  <div className="col-md-12 mt-3 amplitude-song-container">
-                    <img src="https://www.djjs.org/images/new/naman.jpg" alt />
-                    <div className="overlay">
-                      <div className="text-overlay">
-                        <span className="font-primary">Daily Mangal Aarti</span>
-                        <div className="text-overlay-title">
-                          <h2>
-                            <a href="#">Naman &amp; Aarti</a>
-                          </h2>
-                        </div>
-                        <a
-                          data-amplitude-song-index={0}
-                          data-amplitude-playlist="aarti"
-                          className="amplitude-play-pause btn btn-sm btn-solid btn-gradient circle text-uppercase wide ld-lp-carousel-filterable-btn split-inner track-list"
-                          data-track="https://www.djjs.org/feed/playtrack/505856367?client_id=989dab6caab0f1cce36f9b8be8967360&oauth_token=2-111630--mZ9ImDpY3sDJATxFCA9C8Rf"
-                          data-poster="demos/music/tracks/poster-images/something-about-love.jpg"
-                          data-title="Naman & Aarti"
-                          data-singer="DJJS"
-                        >
-                          <span>
-                            <span className="btn-gradient-bg bg-gradient-primary-rl" />
-                            <span className="btn-txt">Play Now</span>
-                            <span className="btn-icon">
-                              <i className="fa fa-play" />
-                            </span>
-                            <span className="btn-gradient-bg btn-gradient-bg-hover" />
-                          </span>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            padding: "100px ",
+            backgroundColor: "#F6F2E8",
+          }}
+        >
+          <div className="lqd-column col-md-12 text-center">
+            <h2 className="h1 mt-0 mb-3 text-gradient">Audios</h2>
+            <p className="font-size-16">Top Picks from Audio gallery</p>
           </div>
-          <div style={{marginTop:"20px"}} className="text-center">
-                <a
-                  onClick={() => navigate("/audio-gallery")}
-                  className="btn btn-solid text-uppercase btn-lg semi-round btn-bordered border-thin font-size-12 font-weight-bold ltr-sp-2 px-2 p-xs-0"
-                >
-                  <span>
-                    <span className="btn-txt">See All</span>
-                    <span className="btn-icon">
-                      <FaPlay />
+          <div className="row clearfix albumcategory">
+            <div className="col-md-6">
+              <img src="https://www.djjs.org/images/new/falsafe.jpg" alt />
+              <div className="overlay">
+                <div className="text-overlay">
+                  <span className="font-primary text-white">Akhand Gyan</span>
+                  <div className="text-overlay-title">
+                    <h2>
+                      <a>Jeevan Ke Falsafe</a>
+                    </h2>
+                  </div>
+                  <a className="btn btn-sm btn-solid btn-gradient circle text-uppercase wide ld-lp-carousel-filterable-btn split-inner">
+                    <span>
+                      <span className="btn-gradient-bg bg-gradient-primary-rl" />
+                      <span className="btn-txt">Play Now</span>
+                      <span className="btn-gradient-bg btn-gradient-bg-hover" />
                     </span>
-                  </span>
-                </a>
+                  </a>
+                </div>
               </div>
+              <a className="liquid-overlay-link z-index-3" />
+            </div>
+            <div className="row mx-0 px-0 mt-3 mt-md-0 col-md-6">
+              <div className="col-md-6">
+                <img src="https://www.djjs.org/images/new/bhajan.jpg" alt />
+                <div className="overlay">
+                  <div className="text-overlay">
+                    <span className="font-primary">divine melodies</span>
+                    <div className="text-overlay-title">
+                      <h2>
+                        <a href="audio/bhajan.html">Bhajans</a>
+                      </h2>
+                    </div>
+                  </div>
+                </div>
+                <a
+                  className="liquid-overlay-link z-index-3"
+                  href="audio/bhajan.html"
+                />
+              </div>
+              <div className="col-md-6">
+                <img src="https://www.djjs.org/images/new/discourse.jpg" alt />
+                <div className="overlay">
+                  <div className="text-overlay">
+                    <span className="font-primary">Food for soul</span>
+                    <div className="text-overlay-title">
+                      <h2>
+                        <a href="audio/discourses.html">Discourses</a>
+                      </h2>
+                    </div>
+                  </div>
+                </div>
+                <a
+                  className="liquid-overlay-link z-index-3"
+                  href="audio/discourses.html"
+                />
+              </div>
+              <div className="col-md-12 mt-3 amplitude-song-container">
+                <img src="https://www.djjs.org/images/new/naman.jpg" alt />
+                <div className="overlay">
+                  <div className="text-overlay">
+                    <span className="font-primary">Daily Mangal Aarti</span>
+                    <div className="text-overlay-title">
+                      <h2>
+                        <a href="#">Naman &amp; Aarti</a>
+                      </h2>
+                    </div>
+                    <a
+                      data-amplitude-song-index={0}
+                      data-amplitude-playlist="aarti"
+                      className="amplitude-play-pause btn btn-sm btn-solid btn-gradient circle text-uppercase wide ld-lp-carousel-filterable-btn split-inner track-list"
+                      data-track="https://www.djjs.org/feed/playtrack/505856367?client_id=989dab6caab0f1cce36f9b8be8967360&oauth_token=2-111630--mZ9ImDpY3sDJATxFCA9C8Rf"
+                      data-poster="demos/music/tracks/poster-images/something-about-love.jpg"
+                      data-title="Naman & Aarti"
+                      data-singer="DJJS"
+                    >
+                      <span>
+                        <span className="btn-gradient-bg bg-gradient-primary-rl" />
+                        <span className="btn-txt">Play Now</span>
+                        <span className="btn-icon">
+                          <i className="fa fa-play" />
+                        </span>
+                        <span className="btn-gradient-bg btn-gradient-bg-hover" />
+                      </span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div style={{ marginTop: "20px" }} className="text-center">
+            <a
+              onClick={() => navigate("/audio-gallery")}
+              className="btn btn-solid text-uppercase btn-lg semi-round btn-bordered border-thin font-size-12 font-weight-bold ltr-sp-2 px-2 p-xs-0"
+            >
+              <span>
+                <span className="btn-txt">See All</span>
+                <span className="btn-icon">
+                  <FaPlay />
+                </span>
+              </span>
+            </a>
+          </div>
         </div>
 
-        <section className="vc_row pt-50 pb-50">
+        <section
+          style={{ backgroundColor: "#F6F2E8" }}
+          className="vc_row pt-50 pb-50"
+        >
           <div className="container">
             <span className="ld-sf-spinner">
               <span>Loading </span>
@@ -526,9 +770,9 @@ const Home = () =>
               <div className="lqd-column col-md-12">
                 <div className="liquid-filter-items justify-content-between align-items-center mb-5 m-xs-0">
                   <div className="liquid-filter-items-inner">
-                    <a >
+                    <a>
                       <h3 className="m-0 text-gradient font-size-40 t600">
-                      Bhurijana Dasa
+                        Bhurijana Dasa
                       </h3>
                     </a>
                     <ul className="filter-list filter-list-inline size-md mb-0 m-xs-0">
@@ -538,7 +782,12 @@ const Home = () =>
                         onClick={handlesocialbutton}
                       >
                         <button className="btn btn-default btn-solid text-uppercase btn-sm circle btn-bordered border-thin font-size-12 lh-15 font-weight-bold ltr-sp-05 mb-2">
-                          <span style={{color:"#E86740"}} className="btn-txt">VIHE</span>
+                          <span
+                            style={{ color: "#E86740" }}
+                            className="btn-txt"
+                          >
+                            VIHE
+                          </span>
                         </button>
                       </li>
                       <li
@@ -547,7 +796,12 @@ const Home = () =>
                         onClick={handlespiritualbutton}
                       >
                         <button className="btn btn-default text-uppercase btn-sm circle btn-bordered border-thin font-size-12 lh-15 font-weight-bold ltr-sp-05 mb-2">
-                          <span style={{color:"#E86740"}} className="btn-txt">Gopinath Dham</span>
+                          <span
+                            style={{ color: "#E86740" }}
+                            className="btn-txt"
+                          >
+                            Gopinath Dham
+                          </span>
                         </button>
                       </li>
                       <li
@@ -556,32 +810,40 @@ const Home = () =>
                         onClick={handledevelopmentbutton}
                       >
                         <button className="btn btn-default text-uppercase btn-sm circle btn-bordered border-thin font-size-12 lh-15 font-weight-bold ltr-sp-05 mb-2">
-                          <span style={{color:"#E86740"}} className="btn-txt">
+                          <span
+                            style={{ color: "#E86740" }}
+                            className="btn-txt"
+                          >
                             GRC
                           </span>
                         </button>
                       </li>
 
-
                       <li
                         data-filter="workshop"
-                        className={activeFilter === "workshop" ? "active" : ""}
-                        onClick={handledevelopmentbutton}
+                        className={activeFilter === "scared" ? "active" : ""}
+                        onClick={handlescaredbutton}
                       >
                         <button className="btn btn-default text-uppercase btn-sm circle btn-bordered border-thin font-size-12 lh-15 font-weight-bold ltr-sp-05 mb-2">
-                          <span style={{color:"#E86740"}} className="btn-txt">
-                          Scared India Gallery
+                          <span
+                            style={{ color: "#E86740" }}
+                            className="btn-txt"
+                          >
+                            Scared India Gallery
                           </span>
                         </button>
                       </li>
                       <li
                         data-filter="workshop"
-                        className={activeFilter === "workshop" ? "active" : ""}
-                        onClick={handledevelopmentbutton}
+                        className={activeFilter === "others" ? "active" : ""}
+                        onClick={handleothersbutton}
                       >
                         <button className="btn btn-default text-uppercase btn-sm circle btn-bordered border-thin font-size-12 lh-15 font-weight-bold ltr-sp-05 mb-2">
-                          <span style={{color:"#E86740"}} className="btn-txt">
-                          Others
+                          <span
+                            style={{ color: "#E86740" }}
+                            className="btn-txt"
+                          >
+                            Others
                           </span>
                         </button>
                       </li>
@@ -707,7 +969,121 @@ const Home = () =>
 
               {developmenttab && (
                 <div className="row d-flex flex-wrap">
-                  {initiatives.map((initiative, index) => (
+                  {development.map((initiative, index) => (
+                    <div key={index} className="lqd-column col-sm-6 col-md-6">
+                      <div
+                        className="fancy-box fancy-box-travel fancy-box-big"
+                        data-slideelement-onhover="true"
+                        data-slideelement-options='{ "visibleElement": ".fancy-box-header", "hiddenElement": ".fancy-box-info" }'
+                      >
+                        <figure
+                          className="fancy-box-image ld-lazyload"
+                          style={{
+                            backgroundImage: `url(${initiative.imageUrl})`,
+                          }}
+                        >
+                          <img
+                            className="ld-lazyload"
+                            data-src={initiative.imageUrl}
+                            alt={initiative.title}
+                          />
+                        </figure>
+                        <div className="fancy-box-contents">
+                          <div className="fancy-box-header">
+                            <span className="fancy-box-time lh-2">
+                              {initiative.category}
+                            </span>
+                            <h3>{initiative.title}</h3>
+                          </div>
+                          <div className="fancy-box-info">
+                            <p>{initiative.description}</p>
+                            <div className="fancy-box-footer">
+                              <a
+                                target="_blank"
+                                href={initiative.link}
+                                className="btn btn-naked text-uppercase text-white"
+                              >
+                                <span>
+                                  <span className="btn-txt">Read more</span>
+                                  <span className="btn-icon">
+                                    <i className="icon-liquid_arrow_right" />
+                                  </span>
+                                </span>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                        <a
+                          className="liquid-overlay-link z-index-3"
+                          target="_blank"
+                          href={initiative.link}
+                        />
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              )}
+
+              {scaredtab && (
+                <div className="row d-flex flex-wrap">
+                  {scared.map((initiative, index) => (
+                    <div key={index} className="lqd-column col-sm-6 col-md-6">
+                      <div
+                        className="fancy-box fancy-box-travel fancy-box-big"
+                        data-slideelement-onhover="true"
+                        data-slideelement-options='{ "visibleElement": ".fancy-box-header", "hiddenElement": ".fancy-box-info" }'
+                      >
+                        <figure
+                          className="fancy-box-image ld-lazyload"
+                          style={{
+                            backgroundImage: `url(${initiative.imageUrl})`,
+                          }}
+                        >
+                          <img
+                            className="ld-lazyload"
+                            data-src={initiative.imageUrl}
+                            alt={initiative.title}
+                          />
+                        </figure>
+                        <div className="fancy-box-contents">
+                          <div className="fancy-box-header">
+                            <span className="fancy-box-time lh-2">
+                              {initiative.category}
+                            </span>
+                            <h3>{initiative.title}</h3>
+                          </div>
+                          <div className="fancy-box-info">
+                            <p>{initiative.description}</p>
+                            <div className="fancy-box-footer">
+                              <a
+                                target="_blank"
+                                href={initiative.link}
+                                className="btn btn-naked text-uppercase text-white"
+                              >
+                                <span>
+                                  <span className="btn-txt">Read more</span>
+                                  <span className="btn-icon">
+                                    <i className="icon-liquid_arrow_right" />
+                                  </span>
+                                </span>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                        <a
+                          className="liquid-overlay-link z-index-3"
+                          target="_blank"
+                          href={initiative.link}
+                        />
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              )}
+
+              {otherstab && (
+                <div className="row d-flex flex-wrap">
+                  {others.map((initiative, index) => (
                     <div key={index} className="lqd-column col-sm-6 col-md-6">
                       <div
                         className="fancy-box fancy-box-travel fancy-box-big"
@@ -778,7 +1154,10 @@ const Home = () =>
             </div>
           </div>
         </section>
-        <section className="vc_row pt-60 pb-90">
+        <section
+          style={{ backgroundColor: "#F6F2E8" }}
+          className="vc_row pt-60 pb-90"
+        >
           <div className="container">
             <div className="row d-flex flex-wrap align-items-center">
               <div
@@ -787,14 +1166,14 @@ const Home = () =>
                 data-ca-options='{"triggerHandler":"inview","animationTarget":"all-childs","duration":1200,"delay":160,"initValues":{"translateY":50,"opacity":0},"animations":{"translateY":0,"opacity":1}}'
               >
                 <header className="fancy-title mb-60">
-                  <h6 className="text-uppercase ltr-sp-2 font-size-12 font-weight-semibold text-primary">
+                  {/* <h6 className="text-uppercase ltr-sp-2 font-size-12 font-weight-semibold text-primary">
                     Akhand Gyan - Monthly Publication
-                  </h6>
+                  </h6> */}
                   <h2 className="h1 mt-4 mb-4">
                     Provide complete nourishment to your body-mind-soul !
                   </h2>
                   <p>
-                    <a className="nocolor" >
+                    <a className="nocolor">
                       <strong>AKHAND GYAN</strong>
                     </a>
                     is a revolutionary monthly magazine of DJJS. Raising voice
@@ -803,6 +1182,7 @@ const Home = () =>
                   </p>
                 </header>
                 <a
+                  onClick={() => navigate("/Ebooks")}
                   // href="akhandgyan.html"
                   className="btn text-uppercase btn-lg semi-round btn-bordered border-thin font-size-12 font-weight-bold ltr-sp-2 px-2 p-xs-0"
                 >
@@ -821,7 +1201,7 @@ const Home = () =>
                   style={{ opacity: 1 }}
                 >
                   <span>
-                    <span className="btn-txt">Subscribe</span>
+                    <span className="btn-txt">books</span>
                     <span className="btn-icon">
                       <i className="icon-ion-ios-arrow-forward" />
                     </span>
@@ -839,29 +1219,14 @@ const Home = () =>
                   data-reveal-options='{"direction":"rl"}'
                 >
                   <div className="liquid-img-group-img-container">
-                    <div className="liquid-img-group-content content-floated-mid-left">
-                      <a
-                        href="https://www.youtube.com/watch?v=hnvuY1VYyPI"
-                        className="btn btn-naked text-uppercase btn-gradient fresco btn-icon-block btn-icon-top btn-icon-xlg btn-icon-circle btn-icon-solid font-size-13 text-dark"
-                      >
-                        <span>
-                          <span className="btn-txt">
-                            Watch Promotional Video
-                          </span>
-                          <span className="btn-icon font-size-24">
-                            {/* <span className="btn-gradient-bg bg-gradient-primary-lr" />
-                            <span className="btn-gradient-bg btn-gradient-bg-hover" /> */}
-                            <FaPlay />                          </span>
-                        </span>
-                      </a>
-                    </div>
                     <div className="liquid-img-container-inner">
                       <figure>
                         <img
+                          style={{ width: "72%" }}
                           className="ld-lazyload"
                           data-src="https://www.djjs.org/images/new/akhandgyan.jpg"
                           alt="Akhand Gyan Monthly Magazine DJJS"
-                          src="https://www.djjs.org/images/new/akhandgyan.jpg"
+                          src={imgbook}
                         />
                       </figure>
                     </div>
@@ -873,6 +1238,7 @@ const Home = () =>
         </section>
 
         <section
+          style={{ backgroundColor: "#F6F2E8" }}
           className="vc_row pt-40 pb-40 section-news"
           data-custom-animations="true"
           data-ca-options='{"triggerHandler":"inview","animationTarget":".ipost","duration":"1200","delay":"150","easing":"easeOutQuint","direction":"forward","initValues":{"translateY":55,"rotateX":-1,"opacity":0},"animations":{"translateY":0,"rotateX":0,"opacity":1}}'
@@ -909,7 +1275,7 @@ const Home = () =>
                           <img
                             className="ld-lazyload"
                             data-src="https://www.djjs.org/uploads/news/im_660a0a1b1991f.jpg"
-                            src="https://www.djjs.org/uploads/news/im_6617513a2c5f7.jpg"
+                            src="https://cdn.wionews.com/sites/default/files/2023/09/08/378210-f5ceoaabaaazs3.jpg?im=FitAndFill=(1200,900)"
                             alt="Shri Ram Katha reinvigorated the spiritual legacy of Lord Ram at Rewari, Haryana"
                           />
                         </a>
@@ -921,7 +1287,7 @@ const Home = () =>
                         data-split-text="true"
                         data-split-options='{"type":"lines"}'
                       >
-                        <a >
+                        <a>
                           Shri Ram Katha reinvigorated the spiritual legacy of
                           Lord Ram at Rewari, Haryana
                         </a>
@@ -945,8 +1311,8 @@ const Home = () =>
                         >
                           <img
                             className="ld-lazyload"
-                            data-src="https://www.djjs.org/uploads/news/im_660a098258abb.jpg"
-                            src="https://www.djjs.org/uploads/news/im_66174c67e2a73.jpg"
+                            data-src="https://rajasthantourismbuzz.files.wordpress.com/2013/08/faag_3.jpg"
+                            src="https://rajasthantourismbuzz.files.wordpress.com/2013/08/faag_3.jpg"
                             alt="Shri Ram Katha satiated the thirst for Spiritual Knowledge in Kurukshetra, Haryana"
                           />
                         </a>
@@ -958,7 +1324,7 @@ const Home = () =>
                         data-split-text="true"
                         data-split-options='{"type":"lines"}'
                       >
-                        <a >
+                        <a>
                           Shri Ram Katha satiated the thirst for Spiritual
                           Knowledge in Kurukshetra, Haryana
                         </a>
@@ -983,7 +1349,7 @@ const Home = () =>
                           <img
                             className="ld-lazyload"
                             data-src="https://www.djjs.org/uploads/news/im_65d5d58e376cd.jpg"
-                            src="https://www.djjs.org/uploads/news/im_6614f9f67e48b.jpg"
+                            src="https://iskconghaziabad.com/wp-content/uploads/2023/12/srmm.webp"
                             alt="DJJS Celebrated National Youth Day with an Awakening Call to the Youth at Rudrapur, Uttarakhand"
                           />
                         </a>
@@ -995,7 +1361,7 @@ const Home = () =>
                         data-split-text="true"
                         data-split-options='{"type":"lines"}'
                       >
-                        <a >
+                        <a>
                           DJJS Celebrated National Youth Day with an Awakening
                           Call to the Youth at Rudrapur, Uttarakhand
                         </a>
@@ -1011,7 +1377,7 @@ const Home = () =>
                 </div>
               </div>
             </div>
-            <div style={{marginTop:"20px"}} className="lqd-column row">
+            <div style={{ marginTop: "20px" }} className="lqd-column row">
               <div className="col-md-12 text-center">
                 <p>
                   <a
@@ -1019,9 +1385,9 @@ const Home = () =>
                     onClick={() => navigate("/events")}
                     className="btn btn-sm btn-solid btn-gradient circle text-uppercase wide ld-lp-carousel-filterable-btn"
                   >
-                    <span >
+                    <span>
                       <span className="btn-gradient-bg" />
-                      <span  className="btn-txt">See all News</span>
+                      <span className="btn-txt">See all News</span>
                       <span className="btn-gradient-bg btn-gradient-bg-hover" />
                     </span>
                   </a>
@@ -1031,7 +1397,10 @@ const Home = () =>
           </div>
         </section>
 
-        <section className="vc_row overflow-hidden">
+        <section
+          style={{ backgroundColor: "#F6F2E8" }}
+          className="vc_row overflow-hidden"
+        >
           <div className="lqd-particles-bg-wrap" style={{ height: 400 }}>
             <div className="ld-particles-container">
               <div
@@ -1043,109 +1412,100 @@ const Home = () =>
             </div>
           </div>
           <section
-          className="vc_row pt-50 pb-50 pb-xs-0 weekly_insights"
-          data-custom-animations="true"
-          data-ca-options='{"triggerHandler":"inview","animationTarget":".lqd-column","duration":"1200","delay":"150","easing":"easeOutQuint","direction":"forward","initValues":{"translateY":55,"rotateX":-1,"opacity":0},"animations":{"translateY":0,"rotateX":0,"opacity":1}}'
-        >
-          <div className="container">
-            <div className="row">
-              <div className="lqd-column col-md-12">
-                <header className="fancy-title mb-70 text-center">
-                  <h2 className="mt-0 h1">
-                    <span className="text-secondary ld-fh-txt text-gradient">
-                    Blog
-                    </span>
-                  </h2>
-                  <p className="font-size-16">
-                    Keep you connected with your innerself
-                  </p>
-                </header>
-              </div>
-              <div className="lqd-column col-md-12">
-              <div className="liquid-blog-posts">
-                  <div
-                    className="liquid-blog-grid row"
-                    data-liquid-masonry="true"
-                  >
-                    {posts.map((post) => (
-                      <div
-                        className="lqd-column col-md-6  masonry-item"
-                        key={post._id}
-                      >
-                        <article className="liquid-lp mb-60 shadow">
-                          <figure className="liquid-lp-media">
-                            <a href={post.url}>
-                              <img src={post.images[0]} />
-                            </a>
-                          </figure>
-                          <div className="px-4 pb-4">
-                            <header className="liquid-lp-header">
-                              <h2 className="liquid-lp-title h3">
-                                <a href={post.url}>{post.heading}</a>
-                              </h2>
-                              <div className="liquid-lp-date text-uppercase size-sm">
-                                {convertToIST(post.createdAt)}
-                              </div>
-                            </header>
-                            <div className="liquid-lp-excerpt">
-                              <p>{post.subHeading}</p>
-                            </div>
-                            <footer className="liquid-lp-footer">
-                              <a
-                                href={post.url}
-                                className="btn btn-naked liquid-lp-read-more text-uppercase font-size-13 font-weight-bold"
-                              >
-                                <span>
-                                  <span
-                                    onClick={() =>
-                                      navigate(`/Blogshow/${post._id}`)
-                                    }
-                                    className="btn-txt"
-                                  >
-                                    Read more
-                                  </span>
-                                  <span className="btn-icon">
-                                    <i className="fa fa-long-arrow-right" />
-                                  </span>
-                                </span>
+            className="vc_row pt-50 pb-50 pb-xs-0 weekly_insights"
+            data-custom-animations="true"
+            data-ca-options='{"triggerHandler":"inview","animationTarget":".lqd-column","duration":"1200","delay":"150","easing":"easeOutQuint","direction":"forward","initValues":{"translateY":55,"rotateX":-1,"opacity":0},"animations":{"translateY":0,"rotateX":0,"opacity":1}}'
+          >
+            <div className="container">
+              <div className="row">
+                <div className="lqd-column col-md-12">
+                  <header className="fancy-title mb-70 text-center">
+                    <h2 className="mt-0 h1">
+                      <span className="text-secondary ld-fh-txt text-gradient">
+                        Blog
+                      </span>
+                    </h2>
+                    <p className="font-size-16">
+                      Keep you connected with your innerself
+                    </p>
+                  </header>
+                </div>
+                <div className="lqd-column col-md-12">
+                  <div className="liquid-blog-posts">
+                    <div
+                      className="liquid-blog-grid row"
+                      data-liquid-masonry="true"
+                    >
+                      {posts.map((post) => (
+                        <div
+                          className="lqd-column col-md-6  masonry-item"
+                          key={post._id}
+                        >
+                          <article className="liquid-lp mb-60 shadow">
+                            <figure className="liquid-lp-media">
+                              <a href={post.url}>
+                                <img src={post.images[0]} />
                               </a>
-                            </footer>
-                          </div>
-                        </article>
-                      </div>
-                    ))}
+                            </figure>
+                            <div className="px-4 pb-4">
+                              <header className="liquid-lp-header">
+                                <h2 className="liquid-lp-title h3">
+                                  <a href={post.url}>{post.heading}</a>
+                                </h2>
+                                <div className="liquid-lp-date text-uppercase size-sm">
+                                  {convertToIST(post.createdAt)}
+                                </div>
+                              </header>
+                              <div className="liquid-lp-excerpt">
+                                <p>{post.subHeading}</p>
+                              </div>
+                              <footer className="liquid-lp-footer">
+                                <a
+                                  href={post.url}
+                                  className="btn btn-naked liquid-lp-read-more text-uppercase font-size-13 font-weight-bold"
+                                >
+                                  <span>
+                                    <span
+                                      onClick={() =>
+                                        navigate(`/Blogshow/${post._id}`)
+                                      }
+                                      className="btn-txt"
+                                    >
+                                      Read more
+                                    </span>
+                                    <span className="btn-icon">
+                                      <i className="fa fa-long-arrow-right" />
+                                    </span>
+                                  </span>
+                                </a>
+                              </footer>
+                            </div>
+                          </article>
+                        </div>
+                      ))}
+                    </div>
                   </div>
                 </div>
               </div>
-              </div>
-              <div style={{marginTop:"20px"}} className="lqd-column row">
-              <div className="col-md-12 text-center">
-                <p>
-                  <a
-                    style={{ fontSize: 13 }}
-                    onClick={() => navigate("/Blog")}
-                    className="btn btn-sm btn-solid btn-gradient circle text-uppercase wide ld-lp-carousel-filterable-btn"
-                  >
-                    <span >
-                      <span className="btn-gradient-bg" />
-                      <span  className="btn-txt">See all Blogs</span>
-                      <span className="btn-gradient-bg btn-gradient-bg-hover" />
-                    </span>
-                  </a>
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
-          <div className="container">
-            <div className="row">
-              <div className="lqd-column col-md-8 col-md-offset-2 text-center bg-white white-box-shadow pt-70 pb-50">
-                <div className="row">
-                  
+              <div style={{ marginTop: "20px" }} className="lqd-column row">
+                <div className="col-md-12 text-center">
+                  <p>
+                    <a
+                      style={{ fontSize: 13 }}
+                      onClick={() => navigate("/Blog")}
+                      className="btn btn-sm btn-solid btn-gradient circle text-uppercase wide ld-lp-carousel-filterable-btn"
+                    >
+                      <span>
+                        <span className="btn-gradient-bg" />
+                        <span className="btn-txt">See all Blogs</span>
+                        <span className="btn-gradient-bg btn-gradient-bg-hover" />
+                      </span>
+                    </a>
+                  </p>
                 </div>
               </div>
             </div>
-          </div>
+          </section>
         </section>
 
         {/* Content of the section */}

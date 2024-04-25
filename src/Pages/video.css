@@ -1,0 +1,16 @@
+
+
+.iframe-text{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+
+@media(max-width:768px){
+    .iframe-text{
+        display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+}

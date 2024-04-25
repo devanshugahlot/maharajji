@@ -19,7 +19,7 @@ const Header = () => {
     setIsSubMenuOpen(false);
   };
   return (
-    <div>
+    <div  >
       <header
         className={`main-header main-header-overlay ${
           isMenuOpen ? "menu-open" : ""

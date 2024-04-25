@@ -30,25 +30,34 @@ const ImageGallery = () => {
     },
     {
       image:
-        "https://scontent.fjai1-2.fna.fbcdn.net/v/t39.30808-6/285686413_314861977523993_1476172159150271144_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=5f2048&_nc_ohc=vyzAT6bF2uoAb7hwS7e&_nc_ht=scontent.fjai1-2.fna&oh=00_AfBSqAt7pBKuStsJcryBSmSTGIxBZOLOhDgM5Wx9XDxTfA&oe=66252D8B",
+        "https://i.ytimg.com/vi/hIIV9VSR_Tg/maxresdefault.jpg",
     },
     {
       image:
-        "https://scontent.fjai1-2.fna.fbcdn.net/v/t39.30808-6/356807383_2445519355623109_7059811934833627163_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=5f2048&_nc_ohc=y2-xbabCbN0Ab6xwEBP&_nc_ht=scontent.fjai1-2.fna&oh=00_AfDYjJdOUoOlk8cG_YCWJNSjYdUQ4DUD-vjbzbfHqLzcwQ&oe=66254802",
+        "https://i.ytimg.com/vi/OBq7-6MzAhw/maxresdefault.jpg",
     },
     {
       image:
-        "https://scontent.fjai1-3.fna.fbcdn.net/v/t39.30808-6/356869876_2445519438956434_4160302837541214726_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=5f2048&_nc_ohc=fisrp5M_ogUAb5WTutV&_nc_ht=scontent.fjai1-3.fna&oh=00_AfBSLJSy7xIvZvPrqRWidQbVsCDqkVHEbzqLwmJdLIvUlA&oe=662548DF",
+        "https://i.ytimg.com/vi/FTvh0MaP8cs/maxresdefault.jpg",
       },
       {
-        image:"https://scontent.fjai1-1.fna.fbcdn.net/v/t39.30808-6/290569571_154078053862867_4171269724000187565_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=5f2048&_nc_ohc=-KlAmaatMMIAb4-iHSw&_nc_ht=scontent.fjai1-1.fna&oh=00_AfCgFvXC8ELhroHnn4ARUrzfZtu5S_hVpWd4Q8VHNYDiFQ&oe=66256C02"
+        image:"https://i.ytimg.com/vi/sBI7NLPP3yo/hqdefault.jpg"
       },
       {
-          image:"https://scontent.fjai1-3.fna.fbcdn.net/v/t39.30808-6/240433494_130086016001591_3733657763458892551_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=5f2048&_nc_ohc=M5R51yDUwosAb6GfUG_&_nc_ht=scontent.fjai1-3.fna&oh=00_AfDn__cGxYCh5XfGfvLKKOZB7sPg_am6nxyVoVpjcQNLwg&oe=6625487F"
+          image:"https://i.ytimg.com/vi/8wSu9u9J-xo/hqdefault.jpg"
       },
       {
-          image:"https://scontent.fjai1-2.fna.fbcdn.net/v/t39.30808-6/281162278_296510529359138_5494572139170462070_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=5f2048&_nc_ohc=LF_WsvX9usYAb4n2la-&_nc_ht=scontent.fjai1-2.fna&oh=00_AfCJT4OY-_tgGPBH_c-l357jbbUg57veiUf5JiI2ITyr-w&oe=66255994"
-      }
+          image:"https://i.ytimg.com/vi/24_P12KznPM/hqdefault.jpg"
+    },
+    {
+        image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4T-Q6hCV6m_USk0bqvDiOqnzCJs_W0JCZtFqENi-6ag&s"
+    },
+    {
+      image:"https://dynamic-media-cdn.tripadvisor.com/media/photo-o/16/9b/f7/71/iskon-temple.jpg?w=1200&h=-1&s=1"
+    },
+    {
+      image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXtEejtmK7bAyjkpsIsIg1nc9byguS0E4HI98H-Sdvzw&s"
+    }
   ];
 
   const [lightboxOpen, setLightboxOpen] = useState(false);
