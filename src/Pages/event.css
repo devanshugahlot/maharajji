@@ -6,3 +6,11 @@
 .containerr {
   padding: 10px;
 }
+
+
+.col_one_third {
+  width: 25%;
+  float: left;
+  box-sizing: border-box;
+  padding: 0 15px;
+}

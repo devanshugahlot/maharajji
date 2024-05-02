@@ -8,22 +8,21 @@ import "../assets/css/vendor.min.css";
 import "./Header.css";
 import "../css/custom.css";
 import './footer.css'
-// import "../css/components/bs-datatable.css";
-// import "../css/components/ion.rangeslider.css";
-import img1 from "../assets/assetimg1.png"
+import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn } from 'react-icons/fa'; // Importing icons
+
 const Footer = () => {
   return (
     <div>
       <footer
         className="main-footer bg-cover ld-lazyload"
         data-bg="url(https://www.djjs.org/images/new/footer.jpg)"
-        style={{ backgroundColor: "#505050" }}
+        style={{ backgroundColor: "#F6F2E8" }}
       >
         <div  className="vc_row pb-22">
           <div  className="inner-footer container pt-30 mt-60 ">
             <div    className="row  footpri">
               <div>
-                <img src={img1} alt="" />
+                <img src="https://bhurijanadasa.com/wp-content/uploads/2020/12/logo-bhurijana-dark-300x96.png" alt="" />
               </div>
               <div className="lqd-column col-md-3 col-sm-6">
                 <h3 className="widget-title text-white">Useful Links</h3>
@@ -101,6 +100,36 @@ const Footer = () => {
                   </li>
                 </ul>
               </div>
+              <div className="lqd-column col-md-3 col-sm-6">
+  <h3 className="widget-title text-white">Social Initiatives</h3>
+  <ul className="lqd-custom-menu reset-ul text-white">
+    <li>
+      <a href="#" target="_blank">
+        <FaFacebookF /> Facebook
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_blank">
+        <FaTwitter /> Twitter
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_blank">
+        <FaInstagram /> Instagram
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_blank">
+        <FaLinkedinIn /> LinkedIn
+      </a>
+    </li>
+    {/* <li>
+      <a href="#" target="_blank">
+        <FaYourOtherSocialMediaIcon /> YourOtherSocialMedia
+      </a>
+    </li> */}
+  </ul>
+</div>
             </div>
           </div>
         </div>
@@ -110,17 +139,17 @@ const Footer = () => {
               <div className="lqd-column col-md-6">
                 <ul className="lqd-custom-menu reset-ul inline-nav">
                   <li>
-                    <a target="_blank" >
+                    <a style={{color:"#537292"}} target="_blank" >
                       Terms of Use
                     </a>
                   </li>
                   <li>
-                    <a target="_blank" >
+                    <a style={{color:"#537292"}} target="_blank" >
                       Privacy Policy
                     </a>
                   </li>
-                  <li>
-                    <a target="_blank">
+                  <li >
+                    <a style={{color:"#537292"}} target="_blank">
                       Report Abuse
                     </a>
                   </li>
@@ -134,6 +163,7 @@ const Footer = () => {
                   </span>
                 </p>
               </div>
+             
             </div>
           </div>
         </section>

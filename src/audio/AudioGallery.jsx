@@ -20,6 +20,29 @@ import { Divider } from "@mui/material";
 // import ArrowDropUpIcon from "@mui/icons-material/ArrowDropUpIcon";
 import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
 import ArrowDropUpIcon from "@mui/icons-material/ArrowDropUp"; 
+import audio1 from "../assets/audio4.jpg"
+import audio2 from "../assets/audio1.jpg"
+import audio3 from "../assets/audio3.jpg"
+import audio4 from "../assets/audio2.jpg"
+import audio5 from "../assets/audio5.jpg"
+import song1 from "../assets/song2.jpg"
+import song2 from "../assets/song1.jpg"
+import song3 from "../assets/song3.jpg"
+import song4 from "../assets/song4.jpg"
+import song5 from "../assets/song5.jpg"
+import song6 from "../assets/song6.jpg"
+import song7 from "../assets/song7.jpg.webp"
+import song8 from "../assets/song8.jpg"
+import song9 from "../assets/song9.jpg"
+import song10 from "../assets/song10.jpg"
+import song11 from "../assets/song11.jpg.avif"
+import song12 from "../assets/song12.jpg"
+import song13 from "../assets/song13.jpg"
+import song14 from "../assets/song14.jpg"
+import song15 from "../assets/song15.jpg"
+import song16 from "../assets/song16.jpg"
+
+
 const AudioGallery = () =>
 {
   const categories = [
@@ -159,60 +182,60 @@ const AudioGallery = () =>
   const bhajans = [
     {
       id: 1,
-      imageUrl: "https://images4.alphacoders.com/936/936378.jpg",
+      imageUrl: song1,
       length: "2:55",
-      videoTitle: "Gokhan 'YokanJS' Yildiz",
-      videoOwner: "YokanJS",
+      videoTitle: "Yashomati Nandan ",
+      videoOwner: "Nitaisevini Mataji",
     },
     {
       id: 2,
-      imageUrl: "https://images4.alphacoders.com/936/936378.jpg",
-      length: "2:55",
-      videoTitle: "Gokhan 'YokanJS' Yildiz",
-      videoOwner: "YokanJS",
+      imageUrl: song2,
+      length: "1:55",
+      videoTitle: "Vrajavadhus Kirtan",
+      videoOwner: "Vrajavadhu",
     },
     {
       id: 3,
-      imageUrl: "https://images4.alphacoders.com/936/936378.jpg",
-      length: "2:55",
-      videoTitle: "Gokhan 'YokanJS' Yildiz",
-      videoOwner: "YokanJS",
+      imageUrl: song3,
+      length: "2:34",
+      videoTitle: "Dhule Dhule Gora Chanda",
+      videoOwner: "Shiva Ram Prabhu",
     },
     {
       id: 4,
-      imageUrl: "https://images4.alphacoders.com/936/936378.jpg",
-      length: "2:55",
-      videoTitle: "Gokhan 'YokanJS' Yildiz",
-      videoOwner: "YokanJS",
+      imageUrl: song4,
+      length: "3:55",
+      videoTitle: "Hare Krishna Kirtan",
+      videoOwner: "Shyam Sunder Das",
     },
     {
       id: 4,
-      imageUrl: "https://images4.alphacoders.com/936/936378.jpg",
-      length: "2:55",
-      videoTitle: "Gokhan 'YokanJS' Yildiz",
-      videoOwner: "YokanJS",
+      imageUrl: song5,
+      length: "4:29",
+      videoTitle: "Namaste Narsimhaye",
+      videoOwner: "Vaiyasaki Das",
     },
     {
       id: 4,
-      imageUrl: "https://images4.alphacoders.com/936/936378.jpg",
-      length: "2:55",
-      videoTitle: "Gokhan 'YokanJS' Yildiz",
-      videoOwner: "YokanJS",
+      imageUrl: song6,
+      length: "1:43",
+      videoTitle: "Radhy Kirshna",
+      videoOwner: "Naambhav Prabhu",
     },
     {
       id: 4,
-      imageUrl: "https://images4.alphacoders.com/936/936378.jpg",
+      imageUrl: song7,
       length: "2:55",
-      videoTitle: "Gokhan 'YokanJS' Yildiz",
-      videoOwner: "YokanJS",
+      videoTitle: "Samsara Davanal Lidha Loka",
+      videoOwner: "Vaiyasaki Das",
     },
 
     {
       id: 4,
-      imageUrl: "https://images4.alphacoders.com/936/936378.jpg",
+      imageUrl: song8,
       length: "2:55",
-      videoTitle: "Gokhan 'YokanJS' Yildiz",
-      videoOwner: "YokanJS",
+      videoTitle: "Vande Kirshna Nand Kumara",
+      videoOwner: "Naambhav Prabhu",
     },
     // Add more items as needed
   ];
@@ -220,60 +243,61 @@ const AudioGallery = () =>
   const bhajanstwo = [
     {
       id: 1,
-      imageUrl: "https://images4.alphacoders.com/936/936378.jpg",
-      length: "2:55",
-      videoTitle: "Gokhan 'YokanJS' Yildiz",
-      videoOwner: "YokanJS",
+      imageUrl: song9,
+      length: "1:22",
+      videoTitle: "Aho Shri Satpurush ke",
+      videoOwner: "Sayla Nityakram",
     },
     {
       id: 2,
-      imageUrl: "https://images4.alphacoders.com/936/936378.jpg",
-      length: "2:55",
-      videoTitle: "Gokhan 'YokanJS' Yildiz",
-      videoOwner: "YokanJS",
+      imageUrl: song10,
+      length: "2:03",
+      videoTitle: "Shri Ram Naam Jaap",
+      videoOwner: "Vineet Setpal",
     },
     {
       id: 3,
-      imageUrl: "https://images4.alphacoders.com/936/936378.jpg",
+      imageUrl: song11,
       length: "2:55",
-      videoTitle: "Gokhan 'YokanJS' Yildiz",
-      videoOwner: "YokanJS",
+      videoTitle: "Shri Krishnaya Vasudevaya",
+      videoOwner: "Acharya Sudhir Sharma Ved Pathi",
     },
     {
       id: 4,
-      imageUrl: "https://images4.alphacoders.com/936/936378.jpg",
-      length: "2:55",
-      videoTitle: "Gokhan 'YokanJS' Yildiz",
-      videoOwner: "YokanJS",
+      imageUrl: song12,
+      length: "3:10",
+      videoTitle: "Maha Mrityunjaya Mantra",
+      videoOwner: "Maysa A. Hajjaj Makan",
     },
     {
       id: 4,
-      imageUrl: "https://images4.alphacoders.com/936/936378.jpg",
-      length: "2:55",
-      videoTitle: "Gokhan 'YokanJS' Yildiz",
-      videoOwner: "YokanJS",
+      imageUrl: song13,
+      length: "1:55",
+      videoTitle: "Bhramins",
+      videoOwner: "shestidesjatoelicoknigi",
+      
     },
     {
       id: 4,
-      imageUrl: "https://images4.alphacoders.com/936/936378.jpg",
-      length: "2:55",
-      videoTitle: "Gokhan 'YokanJS' Yildiz",
-      videoOwner: "YokanJS",
+      imageUrl:song14,
+      length: "2:02",
+      videoTitle: "Shiv Shiv Shiv Shiv",
+      videoOwner: "Suresh Kumar G",
     },
     {
       id: 4,
-      imageUrl: "https://images4.alphacoders.com/936/936378.jpg",
-      length: "2:55",
-      videoTitle: "Gokhan 'YokanJS' Yildiz",
-      videoOwner: "YokanJS",
+      imageUrl: song15,
+      length: "3:25",
+      videoTitle: "SHRI VINOD AGGARWAL",
+      videoOwner: "swapnil patil",
     },
 
     {
       id: 4,
-      imageUrl: "https://images4.alphacoders.com/936/936378.jpg",
+      imageUrl: song16,
       length: "2:55",
-      videoTitle: "Gokhan 'YokanJS' Yildiz",
-      videoOwner: "YokanJS",
+      videoTitle: "Radhe Krishan Dhun",
+      videoOwner: "Anupama Kotwani",
     },
   
   ];
@@ -303,7 +327,7 @@ const AudioGallery = () =>
     }
   };
   return (
-    <div>
+    <div style={{backgroundColor:"#F6F2E8"}}>
       <div className="titlebar titlebar-sm scheme-dark bg-gray-2 bb-fade-black-005">
         <div className="titlebar-inner py-5">
           <div className="container titlebar-container">
@@ -356,7 +380,7 @@ const AudioGallery = () =>
               </div>
               <div className="row clearfix albumcategory">
                 <div className="col-md-6">
-                  <img src="https://www.djjs.org/images/new/falsafe.jpg" alt />
+                  <img src={audio1} alt />
                   <div className="overlay">
                     <div className="text-overlay">
                       <span className="font-primary text-white">
@@ -386,7 +410,7 @@ const AudioGallery = () =>
                 </div>
                 <div className="row mx-0 px-0 mt-3 mt-md-0 col-md-6">
                   <div className="col-md-6">
-                    <img src="https://www.djjs.org/images/new/bhajan.jpg" alt />
+                  <img src={audio2} alt />
                     <div className="overlay">
                       <div className="text-overlay">
                         <span className="font-primary">divine melodies</span>
@@ -404,7 +428,7 @@ const AudioGallery = () =>
                   </div>
                   <div className="col-md-6">
                     <img
-                      src="https://www.djjs.org/images/new/discourse.jpg"
+                      src={audio3}
                       alt
                     />
                     <div className="overlay">
@@ -423,7 +447,7 @@ const AudioGallery = () =>
                     />
                   </div>
                   <div className="col-md-12 mt-3 amplitude-song-container">
-                    <img src="https://www.djjs.org/images/new/naman.jpg" alt />
+                    <img src={audio5} alt />
                     <div className="overlay">
                       <div className="text-overlay">
                         <span className="font-primary">Daily Mangal Aarti</span>
@@ -567,7 +591,8 @@ const AudioGallery = () =>
         </div>
         
       </section>
-     <div>
+    
+      <div style={{backgroundColor:"#F6F2E8"}}>
      <div style={{marginLeft:"110px"}} className="heading-block bottommargin-sm topmargin noborder">
                  <h2
                       className="lh-115 mb-0"
@@ -581,9 +606,8 @@ const AudioGallery = () =>
                     </h2>
                 <span className="text-gradient m-0 t400 font-size-26">Browse by audio categories</span>
               </div>
-</div>
 
-      <div style={{padding:"0 20px"}} className="mt-4 carousel-container carousel-shadow-all carousel-nav-left carousel-nav-md carousel-dots-style4 ">
+<div style={{padding:"0 20px"}} className="mb-8 carousel-container carousel-shadow-all carousel-nav-left carousel-nav-md carousel-dots-style4 ">
               <div
                 className="carousel-items row"
                 data-custom-animations="true"
@@ -593,8 +617,9 @@ const AudioGallery = () =>
                 {/* slider component */}
                 <Audioslider />
               </div>
-            </div>
-      <div className="gradient-bg" id="player">
+        </div>
+        </div>
+      <div className="play-bg" id="player">
         <div className="d-flex h-100">
           <div
             className="row d-flex flex-wrap justify-content-center align-items-center"
@@ -606,13 +631,13 @@ const AudioGallery = () =>
                   data-amplitude-song-info="name"
                   className="song-name lh-1"
                 >
-                  Guru Dev Daya
+                  Hare Krishna
                 </span>
                 <span
                   className="hidden-xs artist-name text-white lh-1"
                   data-amplitude-song-info="artist"
                 >
-                  Mere Gurudev
+                  Hare Krishna
                 </span>
               </div>
             </div>

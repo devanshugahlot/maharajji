@@ -4,6 +4,14 @@ import { useNavigate } from "react-router-dom";
 import { convertToIST } from "../helpers/formatFunctions";
 import imgbook from "../assets/bookstwo.png";
 import img2 from "../assets/img/assetimg3.jpg";
+import img4 from "../assets/assetimg9crop.jpeg";
+import img5 from "../assets/vihe1.jpeg";
+import img6 from "../assets/vihe2.jpeg";
+import img7 from "../assets/grc1.jpeg";
+import audio1 from "../assets/audio4.jpg"
+import audio2 from "../assets/audio1.jpg"
+import audio3 from "../assets/audio3.jpg"
+import audio4 from "../assets/audio2.jpg"
 import "./home.css";
 const Home = () => {
   const posts = [
@@ -54,8 +62,7 @@ const Home = () => {
       category: "Education",
       description:
         "Manthan is a Holistic Education Program for the underprivileged and underperforming children some of whom are drop-outs or even first generation learners.",
-      imageUrl:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMT-cvj55jwJufpNXnVx8-kU3tVC6zWUJlpGrAds_yMQ&s",
+      imageUrl: img5,
       link: "",
     },
     {
@@ -63,8 +70,7 @@ const Home = () => {
       category: "Indian Cow Breed Improvement",
       description:
         "In the Indian spiritual and religious texts, cow has been extremely revered and Kamdhenu Gaushala under the guidance of founder Shri Ashutosh Maharaj is working for conservation and propagation of this hol",
-      imageUrl:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdKkFYXOClMAukLqmfoNrhmuUsq_Z2527eAqBSyDPiMQ&s",
+      imageUrl: img6,
       link: "",
     },
   ];
@@ -96,7 +102,8 @@ const Home = () => {
       category: "Indian Cow Breed Improvement",
       description:
         "In the Indian spiritual and religious texts, cow has been extremely revered and Kamdhenu Gaushala under the guidance of founder Shri Ashutosh Maharaj is working for conservation and propagation of this hol",
-      imageUrl: "https://i.ytimg.com/vi/NHf2_FaGgvw/maxresdefault.jpg",
+      imageUrl:
+        "https://t3.ftcdn.net/jpg/05/98/03/54/360_F_598035451_NY3PDs8siAEJcc4oIdTZqnt7bGSitalF.jpg",
       link: "",
     },
     {
@@ -104,7 +111,7 @@ const Home = () => {
       category: "Education",
       description:
         "Manthan is a Holistic Education Program for the underprivileged and underperforming children some of whom are drop-outs or even first generation learners.",
-      imageUrl: "https://www.djjs.org/images/new/initiatives/manthan.jpg",
+      imageUrl: img7,
       link: "",
     },
   ];
@@ -213,7 +220,8 @@ const Home = () => {
           }}
         >
           {/* Your content here */}
-          <div className="fristhomeimg"
+          <div
+            className="fristhomeimg"
             style={{
               position: "absolute",
               top: "50%",
@@ -223,13 +231,15 @@ const Home = () => {
               color: "#537292", // Change color as needed
               fontSize: "4rem", // Adjust font size as needed
               lineHeight: "1.5",
-              fontFamily: "monospace",
+              // fontFamily: "monospace",
               // fontWeight:"bold",
               // Add any other styles as needed
             }}
           >
-            Welcome to the <br />
-            Website of Bhurijana Dasa
+            <em>
+              Welcome to the <br />
+              Website of Bhurijana Dasa
+            </em>
           </div>
         </section>
 
@@ -237,30 +247,31 @@ const Home = () => {
           <div className="fristmain">
             <div className="fristtext">
               <h2 style={{ color: "#899CAE" }}>
-                TEACHER <br />
-                AUTHOR <br />
-                ACTIVIST
+                Preacher <br />
+                Philosopher <br />
+                Spiritual Leader
               </h2>
               <div>
-                <p>An introduction to His Holiness Radhanath Swami</p>
+                <p>Prabhupada Ji: beacon of wisdom, source of inspiration.</p>
               </div>
             </div>
           </div>
           <div className="secondmain">
             <img
-              src="https://www.radhanathswami.com/wp-content/uploads/2023/03/radhanath-swami-mumbai.jpg"
+              style={{ width: "300px" }}
+              src="https://bhurijanadasa.com/wp-content/uploads/2021/09/vj8J-p3_400x400-180x180.jpg"
               alt=""
             />
           </div>
           <div className="thirddiv">
             <div className="thirdtext">
               <h5>
-                True wisdom,
+                Prabhupada Ji,
                 <br />
-                True <em>enlightenment</em>…<br />
-                is to see every living being
+                epitomized <em> true enlightenment</em>…<br />
+                teaching us to perceive
                 <br />
-                with <em>equal vision</em>.<br />
+                every <em>soul with equal </em>.<br />
                 <img
                   decoding="async"
                   className="alignright wp-image-385 entered lazyloaded"
@@ -281,7 +292,7 @@ const Home = () => {
               </h5>
 
               <div>
-                <p>An introduction to His Holiness Radhanath Swami</p>
+                <p>Prabhupada Ji: Spiritual pioneer, timeless guide.</p>
               </div>
             </div>
           </div>
@@ -300,7 +311,8 @@ const Home = () => {
           }}
         >
           {/* Your content here */}
-          <div className="sendmainimg"
+          <div
+            className="sendmainimg"
             style={{
               position: "absolute",
               top: "50%",
@@ -309,13 +321,32 @@ const Home = () => {
               textAlign: "center",
               color: "white",
               fontSize: "4rem",
-              lineHeight: "1.5",
+              lineHeight: "1.3",
               fontFamily: "monospace",
               zIndex: "1", // Ensure content is above the background
             }}
           >
-            Welcome to the <br />
-            Website of Bhurijana Dasa
+            <em> Author H.G. Bhurijana Prabhu</em>
+            <br />
+            <br />
+            <p style={{ color: "#F6F2E8", fontSize: "1.5rem" }}>
+              {" "}
+              <em>
+                Bhurijana Dasa began chanting Hare Krsna in early 1968 while
+                still a student at the University of Buffalo. A few months later
+                he met his spiritual master, His Divine Grace A.C. Bhaktivedanta
+                Swami Prabhupada, Founder Acarya of the International Society
+                for Krishna Consciousness, at the first Hare Krishna temple, on
+                Second Avenue in New York City. He was initiated by Prabhupada
+                later that year. In 1969 Prabhupada asked Bhurijana Dasa to help
+                pioneer the Krishna consciousness movement in Japan. A year
+                later, in December of 1970, Bhurijana Dasa married Jagattarini
+                Devi Dasi, and together they opened ISKCON’s first Hong Kong
+                center. During the next six years, he was fortunate to meet
+                Srila Prabhupada in Hong Kong, Manila, Mayapur, Vrindavan,
+                Melbourne, Auckland, Fiji, and Honolulu.
+              </em>
+            </p>
           </div>
 
           {/* Ensure that the image source is correctly set */}
@@ -425,6 +456,7 @@ const Home = () => {
         >
           {/* Your content here */}
           <div
+            className="autherimg"
             style={{
               position: "absolute",
               top: "50%",
@@ -438,8 +470,26 @@ const Home = () => {
               zIndex: "1", // Ensure content is above the background
             }}
           >
-            Welcome to the <br />
-            Website of Bhurijana Dasa
+            <em> Author H.G. Bhurijana Prabhu</em>
+            <br />
+            <br />
+            <p style={{ color: "#F6F2E8", fontSize: "1.5rem" }}>
+              {" "}
+              <em>
+                In 1976, during their last meeting, Srila Prabhupada asked
+                Bhurijana Dasa to help develop ISKCON’s educational system.
+                Bhurijana Dasa then worked in primary education and curriculum
+                development and later conducted teacher-training courses in
+                Vrindavan. While teaching at the Gita-Nagari farm community,
+                Bhurijana Dasa wrote curriculum for elementary and high school
+                academics, some of which in adapted form is still used in ISKCON
+                schools to the present. Also while at Gita-Nagari, he and
+                Jagattarini Dasi created and performed many puppet shows, which
+                became the basis of the Gita-Nagari Puppet Theatre video series
+                that has provided devotional entertainment for hundreds of
+                devotee children.
+              </em>
+            </p>
           </div>
 
           {/* Ensure that the image source is correctly set */}
@@ -466,8 +516,8 @@ const Home = () => {
 
           <div className="radhadivinner">
             <img
-              style={{ borderRadius: "50%" }}
-              src="https://www.radhanathswami.com/wp-content/uploads/2023/03/srila-prabhupada-rns.jpg"
+              style={{ borderRadius: "50%", maxWidth: "70%" }}
+              src={img4}
               alt=""
             />
           </div>
@@ -654,7 +704,7 @@ const Home = () => {
           </div>
           <div className="row clearfix albumcategory">
             <div className="col-md-6">
-              <img src="https://www.djjs.org/images/new/falsafe.jpg" alt />
+              <img src={audio1} alt />
               <div className="overlay">
                 <div className="text-overlay">
                   <span className="font-primary text-white">Akhand Gyan</span>
@@ -676,7 +726,7 @@ const Home = () => {
             </div>
             <div className="row mx-0 px-0 mt-3 mt-md-0 col-md-6">
               <div className="col-md-6">
-                <img src="https://www.djjs.org/images/new/bhajan.jpg" alt />
+                <img src={audio2} alt />
                 <div className="overlay">
                   <div className="text-overlay">
                     <span className="font-primary">divine melodies</span>
@@ -693,7 +743,7 @@ const Home = () => {
                 />
               </div>
               <div className="col-md-6">
-                <img src="https://www.djjs.org/images/new/discourse.jpg" alt />
+                <img src={audio3} alt />
                 <div className="overlay">
                   <div className="text-overlay">
                     <span className="font-primary">Food for soul</span>
@@ -883,20 +933,6 @@ const Home = () => {
                           </div>
                           <div className="fancy-box-info">
                             <p>{initiative.description}</p>
-                            <div className="fancy-box-footer">
-                              <a
-                                target="_blank"
-                                href={initiative.link}
-                                className="btn btn-naked text-uppercase text-white"
-                              >
-                                <span>
-                                  <span className="btn-txt">Read more</span>
-                                  <span className="btn-icon">
-                                    <i className="icon-liquid_arrow_right" />
-                                  </span>
-                                </span>
-                              </a>
-                            </div>
                           </div>
                         </div>
                         <a
@@ -1288,8 +1324,8 @@ const Home = () => {
                         data-split-options='{"type":"lines"}'
                       >
                         <a>
-                          Shri Ram Katha reinvigorated the spiritual legacy of
-                          Lord Ram at Rewari, Haryana
+                          ISKCON Janmashtami celebration happens all across the
+                          world with great Devotion.
                         </a>
                       </h2>
                       <time
@@ -1325,15 +1361,16 @@ const Home = () => {
                         data-split-options='{"type":"lines"}'
                       >
                         <a>
-                          Shri Ram Katha satiated the thirst for Spiritual
-                          Knowledge in Kurukshetra, Haryana
+                          ISKCON Dwarka's Holi celebration blends ancient
+                          traditions with modern festivities like Phoolon ki
+                          Holi and Matka Phod,
                         </a>
                       </h2>
                       <time
                         className="liquid-lp-date text-uppercase ltr-sp-1 my-0"
                         dateTime="2024-04-01"
                       >
-                        1 April, 2024
+                        4 April, 2024
                       </time>
                     </div>
                   </div>

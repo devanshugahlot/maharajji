@@ -27,12 +27,11 @@ import Ebooks from "./Pages/Ebooks";
 import ImageGallery from "./Pages/ImageGallery";
 import { ScrollToScroll } from "./WindowToScroll";
 
-
 function App() {
   return (
-    <div>
+    <div style={{backgroundColor:"#F6F2E8"}}>
       <Headers />
-      <ScrollToScroll/>
+      <ScrollToScroll />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/hisholiness" element={<HisHoliness />} />
@@ -40,24 +39,20 @@ function App() {
         <Route path="/initiatives-spiritual" element={<Spiritual />} />
         <Route path="/initiatives-workshop" element={<Workshop />} />
         <Route path="/events" element={<Events />} />
-        <Route path="/Livecast" element={<Livecast/>} />
+        <Route path="/Livecast" element={<Livecast />} />
         <Route path="/radio" element={<Radio />} />
         <Route path="/contribute" element={<Contribute />} />
         <Route path="/Contact" element={<Contact />} />
         <Route path="/brahmgyan" element={<Brahmgyan />} />
         {/* <Route path="/akhandgyan" element={<Akhandgyan />} /> */}
         <Route path="/blog" element={<Blog />} />
-        <Route path="/video-gallery" element={<VideoGallery/>} />
+        <Route path="/video-gallery" element={<VideoGallery />} />
         <Route path="/audio-gallery" element={<AudioGallery />} />
-        <Route path="/Ebooks" element={ <Ebooks /> } />
-        <Route path="/Blogshow/:id" element={ <Blogshow /> } />
-        <Route path="/Loading" element={ <Loading /> } />
+        <Route path="/Ebooks" element={<Ebooks />} />
+        <Route path="/Blogshow/:id" element={<Blogshow />} />
+        <Route path="/Loading" element={<Loading />} />
         {/* <Route path="/Books" element={ <Books /> } /> */}
-        <Route path="/ImageGallery" element={ <ImageGallery /> } />
-        
-        
-        
-
+        <Route path="/ImageGallery" element={<ImageGallery />} />
       </Routes>
       <Footer />
     </div>

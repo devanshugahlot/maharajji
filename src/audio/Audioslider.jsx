@@ -9,44 +9,27 @@ export default function Audioslider() {
     slidesToShow: 6,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 9000,
   };
-
+  if (window.innerWidth < 768) {
+    settings.slidesToShow = 1;
+  }
   // Sample data for the slider items
   const sliderData = [
     {
       imageUrl:
-        "https://i1.sndcdn.com/artworks-000191278583-265df7-t500x500.jpg",
-      time: "9:22",
-      title: "PP144-Prathana (Hindi)",
+        "https://avatars.mds.yandex.net/i?id=b60ef55b2ad644d996ce7171c102a9c38d8784a9-11454708-images-thumbs&n=13",
+      time: "6:00",
+      title: "Achyutam Keshavam",
       trackUrl:
         "https://www.djjs.org/feed/playtrack/290619604?client_id=989dab6caab0f1cce36f9b8be8967360&oauth_token=2-111630--mZ9ImDpY3sDJATxFCA9C8Rf",
       singer: "Prerna Pravah",
     },
     {
       imageUrl:
-        "https://i1.sndcdn.com/artworks-000191278583-265df7-t500x500.jpg",
-      time: "9:22",
-      title: "PP144-Prathana (Hindi)",
-      trackUrl:
-        "https://www.djjs.org/feed/playtrack/290619604?client_id=989dab6caab0f1cce36f9b8be8967360&oauth_token=2-111630--mZ9ImDpY3sDJATxFCA9C8Rf",
-      singer: "Prerna Pravah",
-    },
-
-    {
-      imageUrl:
-        "https://www.djjs.org/images/app/pp/pp42.webp",
-      time: "9:22",
-      title: "PP144-Prathana (Hindi)",
-      trackUrl:
-        "https://www.djjs.org/feed/playtrack/290619604?client_id=989dab6caab0f1cce36f9b8be8967360&oauth_token=2-111630--mZ9ImDpY3sDJATxFCA9C8Rf",
-      singer: "Prerna Pravah",
-    },
-    {
-      imageUrl:
-        "https://i1.sndcdn.com/artworks-000187358120-34ne1b-t500x500.jpg",
-      time: "9:22",
-      title: "PP144-Prathana (Hindi)",
+        "https://avatars.mds.yandex.net/i?id=b5e1e0920bdde33fba48a1754635edcc26e29366-10332115-images-thumbs&n=13",
+      time: "6:30",
+      title: "Shyam, call your flute",
       trackUrl:
         "https://www.djjs.org/feed/playtrack/290619604?client_id=989dab6caab0f1cce36f9b8be8967360&oauth_token=2-111630--mZ9ImDpY3sDJATxFCA9C8Rf",
       singer: "Prerna Pravah",
@@ -54,18 +37,18 @@ export default function Audioslider() {
 
     {
       imageUrl:
-        "https://i1.sndcdn.com/artworks-000183148048-4stdw8-t500x500.jpg",
-      time: "9:22",
-      title: "PP144-Prathana (Hindi)",
+        "https://avatars.mds.yandex.net/i?id=47c45bdb613792bd3580ea2b011a22d5-5877126-images-thumbs&n=13",
+      time: "7:00",
+      title: "Nandlala spoke to Yashomati Maiya",
       trackUrl:
         "https://www.djjs.org/feed/playtrack/290619604?client_id=989dab6caab0f1cce36f9b8be8967360&oauth_token=2-111630--mZ9ImDpY3sDJATxFCA9C8Rf",
       singer: "Prerna Pravah",
     },
     {
       imageUrl:
-        "https://i1.sndcdn.com/artworks-000191278583-265df7-t500x500.jpg",
-      time: "9:22",
-      title: "PP144-Prathana (Hindi)",
+        "https://avatars.mds.yandex.net/i?id=93103e65a8e2b7c7420d25a80e1dbc842828d590-9683943-images-thumbs&n=13",
+      time: "7:30",
+      title: "Shri Krishna Govind Hare Murari",
       trackUrl:
         "https://www.djjs.org/feed/playtrack/290619604?client_id=989dab6caab0f1cce36f9b8be8967360&oauth_token=2-111630--mZ9ImDpY3sDJATxFCA9C8Rf",
       singer: "Prerna Pravah",
@@ -73,18 +56,37 @@ export default function Audioslider() {
 
     {
       imageUrl:
-        "https://i1.sndcdn.com/artworks-000191278583-265df7-t500x500.jpg",
-      time: "9:22",
-      title: "PP144-Prathana (Hindi)",
+        "https://avatars.mds.yandex.net/i?id=0ea6182f3b3f8611ee3c34e0250544a7c0d7dda9-9065783-images-thumbs&n=13",
+      time: "8:00",
+      title: "Aarti Kunj Bihari",
       trackUrl:
         "https://www.djjs.org/feed/playtrack/290619604?client_id=989dab6caab0f1cce36f9b8be8967360&oauth_token=2-111630--mZ9ImDpY3sDJATxFCA9C8Rf",
       singer: "Prerna Pravah",
     },
     {
       imageUrl:
-        "https://i1.sndcdn.com/artworks-000191278583-265df7-t500x500.jpg",
-      time: "9:22",
-      title: "PP144-Prathana (Hindi)",
+        "https://avatars.mds.yandex.net/i?id=b08f3151d56bd34bfd157e7a3e6bafc99aba5134-4589919-images-thumbs&n=13",
+      time: "8:30",
+      title: "Choto Mero Madan Gopal",
+      trackUrl:
+        "https://www.djjs.org/feed/playtrack/290619604?client_id=989dab6caab0f1cce36f9b8be8967360&oauth_token=2-111630--mZ9ImDpY3sDJATxFCA9C8Rf",
+      singer: "Prerna Pravah",
+    },
+
+    {
+      imageUrl:
+        "https://avatars.mds.yandex.net/i?id=058d0c0611fb6e5a28711e95aa445287e9ebaa97-9042494-images-thumbs&n=13",
+      time: "9:00",
+      title: "Hare Ram",
+      trackUrl:
+        "https://www.djjs.org/feed/playtrack/290619604?client_id=989dab6caab0f1cce36f9b8be8967360&oauth_token=2-111630--mZ9ImDpY3sDJATxFCA9C8Rf",
+      singer: "Prerna Pravah",
+    },
+    {
+      imageUrl:
+        "https://avatars.mds.yandex.net/i?id=ac88a640b2eb18037f5eeea01d1f9c62-4338206-images-thumbs&n=13",
+      time: "9:30",
+      title: "Radha Krishna Namavali Mantra",
       trackUrl:
         "https://www.djjs.org/feed/playtrack/290619604?client_id=989dab6caab0f1cce36f9b8be8967360&oauth_token=2-111630--mZ9ImDpY3sDJATxFCA9C8Rf",
       singer: "Prerna Pravah",
@@ -101,27 +103,27 @@ export default function Audioslider() {
           key={index}
           className="carousel-item lqd-column col-sm-4 col-md-3 col-lg-2 col-xs-12"
         >
-          <div
+          <div style={{width:"100%",height:"100%"}}
             className="amplitude-song-container amplitude-play-pause"
             data-amplitude-song-index={index}
             data-amplitude-playlist="prerna"
           >
-            <div
+            <div style={{width:"100%",height:"100%"}}
               className="fancy-box mb-0 fancy-box-travel"
               data-slideelement-onhover="true"
               data-slideelement-options='{"visibleElement": ".fancy-box-header", "hiddenElement": ".fancy-box-info"}'
             >
-              <figure className="fancy-box-image">
-                <img src={item.imageUrl} alt="Content Box" />
+              <figure style={{width:"100%",height:"100%"}} className="fancy-box-image">
+                <img style={{width:"100%",height:"120%"}} src={item.imageUrl} alt="Content Box" />
               </figure>
               <div className="fancy-box-contents" style={{ margin: 10 }}>
-                <div className="fancy-box-header">
+                <div style={{width:"100%",height:"100%"}} className="fancy-box-header">
                   <span className="fancy-box-time">{item.time}</span>
-                  <p className="text-white font-size-13 lh-15">{item.title}</p>
+                  <p style={{color:"white"}} className="text-white font-size-13 lh-15">{item.title}</p>
                 </div>
                 <div className="fancy-box-info">
                   <p>&nbsp;</p>
-                  <div className="fancy-box-footer">
+                  <div style={{width:"100%",height:"100%"}} className="fancy-box-footer">
                     <a
                       className="play-icon track-list btn btn-naked text-uppercase"
                       data-track={item.trackUrl}

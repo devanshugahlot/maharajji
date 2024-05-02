@@ -1,41 +1,12 @@
 import React, { useState } from "react";
 import Lightbox from "react-image-lightbox";
 import "react-image-lightbox/style.css";
+import img1 from "../assets/हरे-कृष्णा-हरे-रामा.png"
+import "react-image-lightbox/style.css";
 
 const Ebooks = () => {
   const dailydivineimage = [
-    {
-      image:
-        "https://www.abcbooksmarket.com/image/cache/catalog/Books/Anmol/Abhinav%20Sansar-500x500.jpg",
-    },
-    {
-      image:
-        "https://www.abcbooksmarket.com/image/cache/catalog/Books/Anmol/Atharvaved-500x500.jpg",
-    },
-    {
-      image:
-        "https://www.abcbooksmarket.com/image/cache/catalog/Books/Anmol/Hiranyagarbh-500x500.jpeg",
-    },
-    {
-      image:
-        "https://hindubookstore.com/wp-content/uploads/2024/03/Ek-Yogi-Ki-Aatmakatha3.jpg",
-    },
-    {
-      image:
-        "https://hindubookstore.com/wp-content/uploads/2021/10/Bhagwan-srikrishna-Tatwagya-Dharmasansthapak-300x466.jpg",
-    },
-    {
-      image:
-        "https://hindubookstore.com/wp-content/uploads/2021/10/Bhagwan-srikrishnaPradurbhav-aur-Parakram-300x453.jpg",
-    },
-    {
-      image:
-        "https://hindubookstore.com/wp-content/uploads/2021/10/Dashrath-Nandan-Sriram-300x466.jpg",
-    },
-    {
-      image:
-        "https://hindubookstore.com/wp-content/uploads/2021/10/Krishna-Katha-300x492.jpg",
-    },
+ 
     {
       image:
         "https://hindubookstore.com/wp-content/uploads/2021/10/Gita-Yatha-Rup.jpg",
@@ -80,7 +51,16 @@ const Ebooks = () => {
       image:"https://bhurijanadasa.com/wp-content/uploads/2021/09/Japa-hindi-front-230x300.jpg"
     },
     {
-      image:""
+      image:"https://i0.wp.com/www.iskconbooks.com/wp-content/uploads/2020/10/Hindi-Cvr-Beyond-birth-and-death.jpg?zoom=3&resize=247%2C296&ssl=1"
+    },
+    {
+      image:"https://i0.wp.com/www.iskconbooks.com/wp-content/uploads/2020/10/Eng-Cvr-Introduction-to-Bhagavad-gita-1.jpg?zoom=3&resize=247%2C296&ssl=1"
+    },
+    {
+      image:"https://i0.wp.com/www.iskconbooks.com/wp-content/uploads/2020/10/Eng-Cvr-On-the-way-to-Krsna.jpg?zoom=3&resize=247%2C296&ssl=1"
+    },
+    {
+      image:"https://i0.wp.com/www.iskconbooks.com/wp-content/uploads/2020/10/Hindi-Cvr-Perfection-question-perfect-answer.jpg?resize=247%2C296&ssl=1"
     }
     
   ];
@@ -120,26 +100,25 @@ const Ebooks = () => {
 
   return (
     <div>
-      <div className="titlebar-inner">
-        <div className="container titlebar-container">
-          <div className="row titlebar-container">
+<div className="titlebar-inner-2">
+    <div className="container titlebar-container">
+        <div className="row titlebar-container">
             <div className="titlebar-col col-md-12">
-            <h2
-                      className="lh-115 mb-0"
-                      data-fittext="true"
-                      data-fittext-options='{"compressor":1, "maxFontSize":"maxFontSize", "minFontSize":"25"}'
-                    >
-                      <span className="text-gradient">
+                <h2 style={{marginTop:"200px"}} className="lh-115 mb-0" data-fittext="true" data-fittext-options='{"compressor":1, "maxFontSize":"maxFontSize", "minFontSize":"25"}'>
+                    <span className="">
                         <span className="t600">E-</span>Books
-                      </span>
-                    </h2>
-              <p>Charaiveti Charaiveti</p>
-             
+                    </span>
+                </h2>
+                <p>Charaiveti Charaiveti</p>
             </div>
-          </div>
         </div>
-      </div>
-      <div className="container">
+    </div>
+</div>
+
+
+
+
+      <div style={{marginTop:"20px"}} className="container">
         {rows.map((row, index) => (
           <div key={index} className="mb-4">
             {row}

@@ -27,129 +27,129 @@ const Intiatives = () => {
     setDevelopmenttab(true);
   };
 
-  const socialTabs = [
+  const vihe = [
     {
-      image: "https://www.djjs.org/images/new/initiatives/manthan.jpg",
+      image:
+        "https://i.ytimg.com/vi/nS3h-uejx7w/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDjerLR298OBaxeFWddIFRGMK2idw",
       alt: "Manthan",
       title: "Manthan",
       category: "Education",
       description:
-        "Manthan is a Holistic Education Program for the underprivileged and underperforming children some of whom are drop-outs or even first generation learners.",
+        " Manthan is a term used in the context of Krishna bhajans to describe a deep introspection or contemplation on the divine essence of Lord Krishna.It refers to the spiritual churn or reflection on the divine qualities, leelas (divine play), teachings, and form of Lord Krishna.",
       link: "",
     },
     {
-      image: "https://www.djjs.org/images/new/initiatives/kamdhenu.jpg",
+      image: "https://iskcongurukul.in/assets/img/overlay3.jpg",
       alt: "Kamdhenu",
       title: "Kamdhenu",
       category: "Indian Cow Breed Improvement",
       description:
-        "In the Indian spiritual and religious texts, cow has been extremely revered and Kamdhenu Gaushala under the guidance of founder Shri Ashutosh Maharaj is working for conservation and pr…",
+        "Kamadhenu is a divine bovine goddess often associated with Hindu mythology.In the context of Krishna, Kamadhenu is not directly associated with him in the same way as other characters like Radha, Sudama, or Arjuna, but there are instances where Kamadhenu appears in Krishna's stories.",
       link: "",
     },
     {
-      image: "https://www.djjs.org/images/new/initiatives/antardrishti.jpg",
+      image:
+        "https://www.mayapur.com/wp-content/uploads/2017/11/SMIS-Class-1024x576.jpg",
       alt: "Antardrishti",
       title: "Antardrishti",
       category: "For visually impaired",
       description:
-        "Antardrishti is a welfare program for visually impaired and physically disabled persons which aims for their overall growth & development.",
+        "Antardrishti is a term commonly associated with Lord Krishna, particularly in the context of his divine vision or inner sight. In Hindu mythology and scriptures, Krishna is often depicted as possessing a profound inner vision that transcends ordinary perception.",
       link: "",
     },
     {
-      image: "https://www.djjs.org/images/new/initiatives/antarkranti.jpg",
+      image:
+        "https://krishna.org/wp-content/uploads/2005/06/UrmilaDeviOnHarinamWithIps2003Italy.jpg",
       alt: "Antarkranti",
       title: "Antarkranti",
       category: "Prisoner Reformation",
       description:
-        "Antarkranti is the Prisoner's Reformation and post-release Rehabilitation Program.",
-      link: ""
+        "Antarkranti is a program initiated by the Art of Living Foundation, founded by spiritual leader Sri Sri Ravi Shankar. It aims to rehabilitate prison inmates through yoga, meditation, and spiritual practices. The program operates in various prisons around the world, including in India, where it has had significant success in transforming the lives of inmates.",
+      link: "",
     },
     {
-      image: "https://www.djjs.org/images/new/initiatives/santulan.jpg",
+      image:
+        "https://back2godhead.com/wp-content/uploads/2012/11/098_1975_10-01-23-6-8.jpg",
       alt: "Santulan",
       title: "Santulan",
       category: "Gender Equality",
       description:
-        "Santulan is the Gender Equality program of Divya Jyoti Jagrati Sansthan that is working for the elimination of all forms of discrimination and violence against the female gender; through a…",
+        "In the stories of Krishna's divine play (lila), santulan can also refer to the balance and harmony maintained by Krishna in his interactions with his devotees, friends, and enemies. Despite the challenges and adversities he faces, Krishna remains unperturbed and maintains a sense of equilibrium, thereby inspiring others to do the same.",
       link: "",
     },
     {
-      image: "https://www.djjs.org/images/new/initiatives/bodh.jpg",
+      image:
+        "https://iskcongurukul.in/assets/img/gallery/14706926_1065015960284539_7084913377255007935_o.jpg",
       alt: "Bodh",
       title: "Bodh",
       category: "Drug Abuse Eradication",
       description:
-        "Bodh- the drug abuse eradication program of DJJS, works for the elimination of drug abuse and eradication of drug demand through ‘Dhyan Therapy’, thereby transforming the drug afflicted society in…",
-      link: "",
-    },
-    {
-      image: "https://www.djjs.org/images/new/initiatives/sanrakshan.jpg",
-      alt: "Sanrakshan",
-      title: "Sanrakshan",
-      category: "Environment",
-      description:
-        "Sanrakshan is Natural Resource Management and Environment Protection Program aims at rebuilding the fading human-nature relationship of mutualism for re-establishing the environmental bala…",
-      link: "",
-    },
-    {
-      image: "https://www.djjs.org/images/new/initiatives/aarogya.jpg",
-      alt: "Aarogya",
-      title: "Aarogya",
-      category: "Health",
-      description:
-        "Aarogya is a complete Health Program including Yoga, Herbal remedies and Ayurveda to prevent various diseases.",
-      link: "",
-    },
-    {
-      image: "https://www.djjs.org/images/new/initiatives/samadhan.jpg",
-      alt: "Samadhan",
-      title: "Samadhan",
-      category: "Disaster Management",
-      description:
-        "Samadhan- Disaster Relief Programme has been dedicated to rescue, relief and rehabilitation of areas and victims struck by natural and man-made disasters.",
+        "Bodh is a term rooted in various Eastern philosophies, particularly in Buddhism. It derives from the Sanskrit word bodhi, which translates to awakening or enlightenment. In Buddhism, Bodh refers to the state of profound understanding and insight into the nature of reality, leading to liberation from suffering and the cycle of rebirth.",
       link: "",
     },
   ];
 
-  const developmentTabs = [
+  const Grc = [
     {
-      image: "https://www.djjs.org/images/new/initiatives/antarkranti.jpg",
+      image:
+        "https://1.bp.blogspot.com/-I_GMRXcf6FY/XITJAb-rPlI/AAAAAAAAXdg/3pU6rdSfElc4nV2fHH2oZB5edl17uwPAgCLcBGAs/s1600/FB_IMG_1552204536130.jpg",
       alt: "Antarkranti",
       title: "Antarkranti",
       category: "Prisoner Reformation",
       description:
-        "Antarkranti is the Prisoner's Reformation and post-release Rehabilitation Program.",
+        "Krishna, in the context of Antarkranti, could refer to various aspects. Krishna is a central figure in Hindu mythology and spirituality, known for his teachings in the Bhagavad Gita, which emphasizes duty, righteousness, and selflessness. In the context of Antarkranti, Krishna's teachings could serve as a philosophical and spiritual foundation for the rehabilitation process, guiding inmates towards inner transformation and moral upliftment.",
       link: "",
     },
     {
-      image: "https://www.djjs.org/images/new/initiatives/santulan.jpg",
+      image:
+        "https://resize.indiatvnews.com/en/resize/newbucket/1200_-/2024/02/iskcon-1707384122.jpg",
       alt: "Santulan",
       title: "Santulan",
       category: "Gender Equality",
       description:
-        "Santulan is the Gender Equality program of Divya Jyoti Jagrati Sansthan that is working for the elimination of all forms of discrimination and violence against the female gender.",
+        "Krishna, in the context of Antarkranti, could refer to various aspects. Krishna is a central figure in Hindu mythology and spirituality, known for his teachings in the Bhagavad Gita, which emphasizes duty, righteousness, and selflessness. In the context of Antarkranti, Krishna's teachings could serve as a philosophical and spiritual foundation for the rehabilitation process, guiding inmates towards inner transformation and moral upliftment.",
+      link: "",
+    },
+    {
+      image:
+        "https://storage.ning.com/topology/rest/1.0/file/get/2514875066?profile=original",
+      alt: "Advaita",
+      title: "Advaita",
+      category: "Teachings",
+      description: "Advaita Vedanta, a school of Hindu philosophy, teaches that there is ultimately only one reality, often referred to as Brahman, and that everything else, including the individual self (atman) and the material world, is an illusion (maya). This perspective is deeply rooted in the Upanishads, the philosophical texts that form the basis of Vedanta.",
       link: "",
     },
     // Add more objects for additional tabs if needed
   ];
 
-  const spiritualTabs = [
+  const gopinath = [
     {
-      image: "https://www.djjs.org/images/new/initiatives/aarogya.jpg",
+      image:
+        "https://imgstaticcontent.lbb.in/lbbnew/wp-content/uploads/sites/1/2018/05/26211958/260518iskcon_05.jpg",
       alt: "Aarogya",
       title: "Aarogya",
       category: "Health",
       description:
-        "Aarogya is a complete Health Program including Yoga, Herbal remedies and Ayurveda to prevent various diseases.",
+        "Gopinath Aarogya is a renowned healthcare institution nestled in the heart of Krishna, dedicated to serving the medical needs of the community. With a commitment to excellence and compassion, it stands as a beacon of hope for those seeking healing and wellness.In the pursuit of health and happiness, Aarogya continues to be trusted for individuals and families alike.",
       link: "",
     },
     {
-      image: "https://www.djjs.org/images/new/initiatives/samadhan.jpg",
+      image:
+        "https://t3.ftcdn.net/jpg/04/40/53/72/360_F_440537238_gjiow2HUqdYq4qHBKoRgqpiyCVQVHRwy.jpg",
       alt: "Samadhan",
       title: "Samadhan",
       category: "Disaster Management",
       description:
-        "Samadhan- Disaster Relief Programme has been dedicated to rescue, relief and rehabilitation of areas and victims struck by natural and man-made disasters.",
+        "Gopinath Samadhan is a vital institution in Krishna, dedicated to resolving societal issues and fostering community well-being. Through its tireless efforts and innovative approaches, Gopinath Samadhan addresses a myriad of challenges, from education to environmental sustainability.Gopinath Samadhan's impact resonates far beyond its borders.",
+      link: "",
+    },
+    {
+      image: "https://iskcongurukul.in/assets/img/overlay3.jpg",
+      alt: "Ananda",
+      title: "Ananda",
+      category: "Happiness",
+      description:
+        "Gopinath Ananda, resonating with the joyous spirit of Krishna, radiates bliss and positivity in every endeavor. It serves as a sanctuary of happiness and fulfillment, uplifting hearts with its vibrant energy and uplifting atmosphere. Inspired by Krishna's teachings of love and celebration, Gopinath Ananda spreads joy through community events, cultural festivals, and spiritual gatherings.",
       link: "",
     },
     // Add more objects for additional tabs if needed
@@ -185,10 +185,10 @@ const Intiatives = () => {
                   data-split-options='{"type":"lines"}'
                 >
                   Hence, to chisel such noble individuals through Self
-                  realization - Brahm Gyan and to
-                  achieve the objective of World Peace based on equality,
-                  fraternity, and dignity, Bhurijana Dasa undertakes multi farious and
-                  multi directional activities targeting all groups of society.
+                  realization - Brahm Gyan and to achieve the objective of World
+                  Peace based on equality, fraternity, and dignity, Bhurijana
+                  Dasa undertakes multi farious and multi directional activities
+                  targeting all groups of society.
                 </p>
               </div>
             </div>
@@ -203,10 +203,11 @@ const Intiatives = () => {
                   <div className=" ">
                     <figure data-responsive-bg="true" className="rounded">
                       <img
+                        style={{ borderRadius: "5px" }}
                         className="ld-lazyload"
                         data-src="https://www.djjs.org/images/new/initiatives/djjs-initiatives.jpg"
                         alt="DJJS Initiatives"
-                        src="https://www.djjs.org/images/new/initiatives/djjs-initiatives.jpg"
+                        src="https://blog.cdn.level.game/2023/11/manishaleveldesigner_lord_krishnas_images_with_his_characterist_824b3b26-f482-46ac-9f1f-3bb45c223f72.png"
                       />
                     </figure>
                   </div>
@@ -230,7 +231,7 @@ const Intiatives = () => {
                           <a className="btn btn-default text-uppercase btn-sm circle btn-bordered border-thin btn-solid font-size-12 lh-15 font-weight-bold ltr-sp-05 mb-2">
                             <span>
                               <span
-                               style={{color:"#E86740"}}
+                                style={{ color: "#E86740" }}
                                 className="btn-txt"
                               >
                                 VIHE
@@ -241,8 +242,11 @@ const Intiatives = () => {
                         <li onClick={handlespiritualbutton}>
                           <a className="btn btn-default text-uppercase btn-sm circle btn-bordered border-thin  font-size-12 lh-15 font-weight-bold ltr-sp-05 mb-2">
                             <span>
-                              <span style={{color:"#E86740"}} className="btn-txt">
-                              Gopinath Dham
+                              <span
+                                style={{ color: "#E86740" }}
+                                className="btn-txt"
+                              >
+                                Gopinath Dham
                               </span>
                             </span>
                           </a>
@@ -250,26 +254,35 @@ const Intiatives = () => {
                         <li onClick={handledevelopmentbutton}>
                           <a className="btn btn-default text-uppercase btn-sm circle btn-bordered border-thin  font-size-12 lh-15 font-weight-bold ltr-sp-05 mb-2">
                             <span>
-                              <span style={{color:"#E86740"}} className="btn-txt">
-                              GRC
+                              <span
+                                style={{ color: "#E86740" }}
+                                className="btn-txt"
+                              >
+                                GRC
                               </span>
                             </span>
                           </a>
                         </li>
-                        <li >
+                        <li>
                           <a className="btn btn-default text-uppercase btn-sm circle btn-bordered border-thin  font-size-12 lh-15 font-weight-bold ltr-sp-05 mb-2">
                             <span>
-                              <span style={{color:"#E86740"}} className="btn-txt">
-                              Scared India Gallery 
+                              <span
+                                style={{ color: "#E86740" }}
+                                className="btn-txt"
+                              >
+                                Scared India Gallery
                               </span>
                             </span>
                           </a>
                         </li>
-                        <li >
+                        <li>
                           <a className="btn btn-default text-uppercase btn-sm circle btn-bordered border-thin  font-size-12 lh-15 font-weight-bold ltr-sp-05 mb-2">
                             <span>
-                              <span style={{color:"#E86740"}} className="btn-txt">
-                              Others  
+                              <span
+                                style={{ color: "#E86740" }}
+                                className="btn-txt"
+                              >
+                                Others
                               </span>
                             </span>
                           </a>
@@ -287,14 +300,18 @@ const Intiatives = () => {
                   data-custom-animations="true"
                   data-ca-options='{"triggerHandler":"inview","animationTarget":".lqd-column", "animateTargetsWhenVisible": true, "duration":1000,"delay":100,"easing":"easeOutQuint","initValues":{"translateY":55, "opacity": 0},"animations":{"translateY":0, "opacity": 1	}}'
                 >
-                  {socialTabs.map((item, index) => (
+                  {vihe.map((item, index) => (
                     <div
                       className="lqd-column col-md-4 col-sm-6 social"
                       key={index}
                     >
                       <div className="fancy-box fancy-box-tour fancy-box-heading-lg">
                         <figure className="fancy-box-image">
-                          <img src={item.image} alt={item.alt} />
+                          <img
+                            style={{ height: "250px" }}
+                            src={item.image}
+                            alt={item.alt}
+                          />
                         </figure>
                         <div className="fancy-box-contents">
                           <div className="fancy-box-header">
@@ -314,10 +331,12 @@ const Intiatives = () => {
                             </li>
                           </ul>
                           <div className="fancy-box-info">
-                            <p className="lh-175">{item.description}</p>
+                            <p style={{ color: "black" }} className="lh-175">
+                              {item.description}
+                            </p>
                           </div>
                         </div>
-                       
+
                         <a
                           target="_blank"
                           href={item.link}
@@ -335,14 +354,18 @@ const Intiatives = () => {
                   data-custom-animations="true"
                   data-ca-options='{"triggerHandler":"inview","animationTarget":".lqd-column", "animateTargetsWhenVisible": true, "duration":1000,"delay":100,"easing":"easeOutQuint","initValues":{"translateY":55, "opacity": 0},"animations":{"translateY":0, "opacity": 1}}'
                 >
-                  {spiritualTabs.map((item, index) => (
+                  {gopinath.map((item, index) => (
                     <div
                       key={index}
                       className="lqd-column col-md-4 col-sm-6 social mt-4"
                     >
                       <div className="fancy-box fancy-box-tour fancy-box-heading-lg">
                         <figure className="fancy-box-image">
-                          <img src={item.image} alt={item.alt} />
+                          <img
+                            style={{ height: "250px" }}
+                            src={item.image}
+                            alt={item.alt}
+                          />
                         </figure>
                         <div className="fancy-box-contents">
                           <div className="fancy-box-header">
@@ -362,10 +385,12 @@ const Intiatives = () => {
                             </li>
                           </ul>
                           <div className="fancy-box-info">
-                            <p className="lh-175">{item.description}</p>
+                            <p style={{ color: "black" }} className="lh-175">
+                              {item.description}
+                            </p>
                           </div>
                         </div>
-                       
+
                         <a
                           target="_blank"
                           href={item.link}
@@ -384,14 +409,18 @@ const Intiatives = () => {
                   data-custom-animations="true"
                   data-ca-options='{"triggerHandler":"inview","animationTarget":".lqd-column", "animateTargetsWhenVisible": true, "duration":1000,"delay":100,"easing":"easeOutQuint","initValues":{"translateY":55, "opacity": 0},"animations":{"translateY":0, "opacity": 1}}'
                 >
-                  {developmentTabs.map((tab, index) => (
+                  {Grc.map((tab, index) => (
                     <div
                       key={index}
                       className="lqd-column col-md-4 col-sm-6 social mt-2"
                     >
                       <div className="fancy-box fancy-box-tour fancy-box-heading-lg">
                         <figure className="fancy-box-image">
-                          <img src={tab.image} alt={tab.alt} />
+                          <img
+                            style={{ height: "250px" }}
+                            src={tab.image}
+                            alt={tab.alt}
+                          />
                         </figure>
                         <div className="fancy-box-contents">
                           <div className="fancy-box-header">
@@ -411,10 +440,12 @@ const Intiatives = () => {
                             </li>
                           </ul>
                           <div className="fancy-box-info">
-                            <p className="lh-175">{tab.description}</p>
+                            <p style={{ color: "black" }} className="lh-175">
+                              {tab.description}
+                            </p>
                           </div>
                         </div>
-                       
+
                         <a
                           target="_blank"
                           href={tab.link}

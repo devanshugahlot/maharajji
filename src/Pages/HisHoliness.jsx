@@ -12,9 +12,8 @@ const HisHoliness = () => {
     setActiveTab(index);
   };
 
-
   return (
-    <div>
+    <div >
       <section id="content" className="content">
         <section
           className="vc_row bg-cover bg-left fullheight d-flex align-items-center py-5 mb-60"
@@ -102,15 +101,13 @@ const HisHoliness = () => {
                       <div className="row">
                         <div className="lqd-column col-md-8 col-md-offset-2 px-md-5">
                           <p className="font-size-24 lh-16 font-weight-light text-black">
-                            His Holiness Ashutosh Maharaj ji is an epoch making
-                            personality, a perfect Spiritual Master on the
-                            world-stage who has mastered and subsequently
-                            revealed the eternal science of Self-Realization–{" "}
-                            <a className="dark" >
-                              <strong>Brahm Gyan</strong>
-                            </a>{" "}
-                            to transform the torn and tormented humanity into a
-                            peaceful "global family".
+                            His Divine Right With his mastery and subsequent
+                            revelation of the eternal science of
+                            Self-Realization—Brahm Gyan—Ashok Maharaj ji has
+                            become an epoch-making personality and a perfect
+                            Spiritual Master on the global stage, transforming
+                            the divided and tormented human race into a
+                            harmonious "global family."
                           </p>
                         </div>
                       </div>
@@ -126,14 +123,11 @@ const HisHoliness = () => {
                       <div className="row">
                         <div className="lqd-column col-md-8 col-md-offset-2 px-md-5">
                           <p className="font-size-24 lh-16 font-weight-light text-black">
-                            To usher into a world wherein every individual
-                            becomes an embodiment of truth, fraternity, and
-                            justice through the eternal science of
-                            Self-Realization–{" "}
-                            <a className="dark" >
-                              'Brahm Gyan'
-                            </a>
-                            , uprooting in its wake all social evils and threat.
+                            To bring about a world in which each person, by
+                            means of the ageless science of Self-Realization, or
+                            "Brahm Gyan," becomes an embodiment of truth,
+                            fraternity, and justice, eradicating all social
+                            evils and threats in the process.
                           </p>
                         </div>
                       </div>
@@ -149,7 +143,14 @@ const HisHoliness = () => {
                       <div className="row">
                         <div className="lqd-column col-md-8 col-md-offset-2 px-md-5">
                           <p className="font-size-24 lh-16 font-weight-light text-black">
-                            From Self Awakening to Global Peace
+                            Global Dissemination of Krishna Consciousness: One
+                            of Prabhupada's main goals was to make the teachings
+                            of Krishna consciousness available to everyone. His
+                            mission was to bring back to life the ancient Indian
+                            spiritual wisdom, especially the teachings of the
+                            Srimad Bhagavatam and the Bhagavad Gita, and make
+                            them available to people from all walks of life and
+                            backgrounds.
                           </p>
                         </div>
                       </div>
@@ -177,7 +178,7 @@ const HisHoliness = () => {
             <div className="row">
               <div className="lqd-column col-md-12">
                 <div className="carousel-container carousel-nav-right px-md-5 mx-md-5">
-                  <div className="row">             
+                  <div className="row">
                     <Holinessslider />
                   </div>
                 </div>
@@ -251,21 +252,22 @@ const HisHoliness = () => {
             <div className="row">
               <div className="lqd-column col-md-12 mb-4">
                 <p>
-                  The spiritual saga undertaken by Shri Ashutosh Maharaj Ji is
-                  greatest of the great for its strength, depth and vision. Like
-                  the Perfect Masters in the past, the Master's outlook is
-                  universal. And most of the universal systems are directly
-                  managed or indirectly influenced by humans. Therefore, to
-                  bring a change in the world, the change needs to be triggered
-                  in its basic unit, i.e. human. A simple hierarchy underlies
-                  this belief of the Master:{" "}
+                  Because of its strength, depth, and vision, Shri Ashutosh
+                  Maharaj Ji's spiritual odyssey is the greatest of the great.
+                  Similar to previous Perfect Masters, the Master's perspective
+                  is worldwide. Furthermore, humans either directly manage or
+                  indirectly influence the majority of universal systems.
+                  Consequently, for a change to occur in the world, it must
+                  start with the human race—the fundamental unit of the
+                  universe. This belief of the Master is based on a
+                  straightforward hierarchy:{" "}
                 </p>
-                <p>Individual » Family » Society » Nation » World</p>
+                <p>Person » Family » Community » Country » Global</p>
                 <p>
-                  However, an individual himself is an integrated unit of
-                  multifarious dimensions, which can be delineated through the
-                  following order oriented from, outside to within in terms of
-                  subtlety and supremacy:
+                  On the other hand, a person is an integrated unit of many
+                  different dimensions, which can be distinguished using the
+                  following hierarchy, which is oriented from the outside in
+                  terms of Subtlety and absolute power:
                 </p>
                 <div className="lqd-column col-md-5 pull-right hidden-xs">
                   <div
@@ -320,35 +322,34 @@ const HisHoliness = () => {
                   </div>
                 </div>
                 <p>
-                  On this basis, for a change to be wholesome and non-relapsing,
-                  it has to sprout at the root level of complete human
-                  personality – Inner Self (Soul).{" "}
+                  Therefore, in order for a change to be healthy and prevent
+                  relapses, it must begin at the Inner Self (Soul), which is the
+                  foundation of the entire human personality.
                 </p>
                 <p>
-                  No intellectual knowledge or outside methodologies suffice in
-                  bringing a transformation in individual's action and
-                  behavioural pattern. Human action is the result of human
-                  thought. Therefore, to control human action, human thoughts
-                  have to be gauged. A bundle of thoughts make up human mind
-                  which can only be altered through the superior faculty of the
-                  Soul. For that, the soul must be awakened.{" "}
+                  To bring about a change in an individual's behaviour and way
+                  of thinking, intellectual knowledge or external approaches are
+                  insufficient. Human behaviour is a product of human pondered.
+                  As a result, measuring human thoughts is necessary to regulate
+                  human behaviour. The human mind is a collection of ideas that
+                  can only be changed by the higher power found in the Soul. The
+                  soul needs to be awakened for that.
                 </p>
                 <p>
-                  As has been proclaimed by all our Scriptures in unison, this
-                  awakening is possible only through the Divine Knowledge -
-                  eternal science of Brahm Gyan. Divine in itself is something
-                  out the world, hence, the knowledge – Brahm Gyan is a rare and
-                  difficult to master technique. But this epoch is fortunate to
-                  have revered perfect spiritual master - Shri Ashutosh Maharaj
-                  Ji who has not just mastered this rare science of{" "}
-                  <a className="dark">
-                    <strong>Brahm Gyan</strong>
-                  </a>{" "}
-                  but has also revealed it. And who has not just revealed it but
-                  made it reachable to masses which is again rare or may be
-                  first time in the history of mankind. The master is using this
-                  technique of self-awakening through divine knowledge as a
-                  unique tool to realize the vision of global peace.
+                  All of our scriptures together have declared that the only way
+                  to achieve this awakening is by means of the Divine Knowledge,
+                  or the timeless science of Brahm Gyan. Being divine in and of
+                  itself is something throughout the world, which is why the
+                  knowledge of Brahm Gyan is unique and challenging to acquire.
+                  However, this era is lucky to have a revered perfect spiritual
+                  master in Shri Ashutosh Maharaj Ji, who has not only mastered
+                  this uncommon science of but has also made it known.
+                  Furthermore, not only has it been revealed, but it has also
+                  been made accessible to the general public, which is extremely
+                  uncommon—possibly the first instance in human history. This is
+                  being used by the master. method of self-awakening via divine
+                  knowledge as a special instrument to fulfil the goal of world
+                  peace.
                 </p>
               </div>
             </div>
@@ -374,11 +375,11 @@ const HisHoliness = () => {
                   </h2>
                 </div>
                 <p className="font-size-18">
-                  When a person gets initiated into the eternal science of Self
-                  Realisation, Brahm Gyan, he becomes equipped with the art of
-                  practically perceiving the light of his inner conscience. This
-                  results in a total transformation in his mindset. How? It can
-                  be understood in the language of both, science as well as
+                  A person is endowed with the ability to practically perceive
+                  the light of his inner conscience when they are initiated into
+                  the eternal science of Self-Realization, Brahm Gyan. This
+                  leads to a complete change in his perspective. How? It is
+                  comprehensible in the vernacular of both science and
                   metaphysics.
                 </p>
                 <p>
@@ -406,7 +407,6 @@ const HisHoliness = () => {
                     <div className="">
                       <figure data-responsive-bg="true" className="rounded">
                         <img
-                         
                           data-src="https://www.djjs.org/images/new/brahmgyan-djjs.jpg"
                           alt="Brahmgyan"
                           src="https://www.djjs.org/images/new/brahmgyan-djjs.jpg"

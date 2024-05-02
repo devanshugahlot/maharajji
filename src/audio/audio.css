@@ -105,3 +105,12 @@
       }
     
   }
+
+  .play-bg{
+    background-color: black;
+  }
+
+  .audiotaghone{
+    margin-top: 200px;
+    font-size: 20px;
+  }

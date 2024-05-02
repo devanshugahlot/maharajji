@@ -173,7 +173,7 @@ body {
   transition: -webkit-transform 0.3s;
   transition: transform 0.3s;
   transition: transform 0.3s, -webkit-transform 0.3s;
-  background-color: #fff;
+  background-color: #F6F2E8;
 }
 
 #content:before,
@@ -11480,7 +11480,7 @@ svg+.liquid-lp-category {
 }
 
 .fancy-box p {
-  margin: 0;
+ color: white;
 }
 
 .fancy-box img {
@@ -11807,7 +11807,8 @@ svg+.liquid-lp-category {
 } */
 
 .fancy-box-travel .fancy-box-contents {
-  margin: 30px;
+  /* margin: 30px; */
+  padding: 10px;
   z-index: 2;
 }
 
@@ -17485,7 +17486,7 @@ ul.pagination .page-numbers.current {
 
 .lqd-custom-menu[class*=text-] a,
 .lqd-custom-menu[class*=text-hover] a {
-  color: inherit;
+  color: #537292 !important;
 }
 
 .lqd-custom-menu.active-dark li.is-active a {
@@ -23248,7 +23249,8 @@ MOBULE HEADER
 }
 
 .text-white {
-  color: #fff !important;
+  color: #537292 !important;
+
 }
 
 .text-black {

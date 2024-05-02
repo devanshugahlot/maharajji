@@ -39,7 +39,7 @@ const Headers = () => {
   };
 
   return (
-    <div className="top-header">
+    <div  className="top-header">
       <div className="main-navbar-div">
         <div style={{cursor:"pointer"}} onClick={() => navigate("/")} className="navbar-logo-div">
           <img  
@@ -100,6 +100,14 @@ const Headers = () => {
         {resnavopen && (
           <div className="responsive-navbars">
             <ul>
+            <li
+                onClick={() => {
+                  closeResNav();
+                  navigate("/");
+                }}
+              >
+                Home
+              </li>
               <li
                 onClick={() => {
                   closeResNav();
@@ -153,7 +161,7 @@ const Headers = () => {
               <li
                 onClick={() => {
                   closeResNav();
-                  navigate("/webcast");
+                  navigate("/Livecast");
                 }}
               >
                 Webcast

@@ -1,0 +1,29 @@
+
+
+
+/* Default background image */
+.titlebar-inner-2 {
+    background-image: url('../assets/हरे-कृष्णा-हरे-रामा.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    min-height: 400px;
+    /* Add other background properties here */
+  }
+  
+  /* Media query for screens wider than 768px */
+  @media screen and (max-width: 768px) {
+    /* New background image */
+    .titlebar-inner-2 {
+      background-image: url('../assets/responsiveimg.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+      width: 100%;
+      min-height: 500px;
+
+      /* Add other background properties here */
+    }
+  }
+  

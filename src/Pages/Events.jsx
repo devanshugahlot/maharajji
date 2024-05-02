@@ -29,28 +29,29 @@ const Events = () => {
     {
       title:
         "Youth Empowerment Takes Center Stage: SAM Shines at Yuva Utsav India@2047",
-      image: "https://www.djjs.org/uploads/news/im_65fa4ad49d027.jpg",
+        image: "https://back2godhead.com/wp-content/uploads/2012/12/117_1976_11-10-29.jpg",
+      
       link: "",
       date: "2024-03-20",
     },
     {
       title:
         "Unique Workshop on Mental Health Held by PEACE Program for Working Professionals",
-      image: "https://www.djjs.org/uploads/news/im_65cd838ad9731.jpg",
+      image: "https://krots.top/uploads/posts/2022-03/1647120856_27-krot-info-p-krishnaiti-prikol-smeshnie-foto-29.jpg",
       link: "",
       date: "2024-02-15",
     },
     {
       title:
         "SAM Hosts Grand National Youth Day Celebration at Central Park, Connaught Place",
-      image: "https://www.djjs.org/uploads/news/im_65ae11789af55.png",
+      image: "https://krishna.org/wp-content/uploads/2005/07/Srila-Prabhupada-and-Hansadutta-talk-on-morning-walk.jpg",
       link: "",
       date: "2024-01-22",
     },
     {
       title:
         "PEACE inspires corporate minds in a unique workshop on Psychology of Relationships",
-      image: "https://www.djjs.org/uploads/news/im_65a3b8028b87d.jpg",
+        image: "https://krishna.org/wp-content/uploads/2016/03/ISKCON-Portland-Devotees-1976.jpg",
       link: "",
       date: "2024-01-14",
     },
@@ -60,28 +61,28 @@ const Events = () => {
     {
       title:
         "Theology of Divine Science unveiled at Spiritual Forum organized by DJJS at London, UK",
-      image: "https://www.djjs.org/uploads/news/im_65f10d31d2d4f.jpg",
+      image: "https://avatars.mds.yandex.net/get-altay/1778671/2a000001861d3c88040eb3a8a28884402153/orig",
       link: "",
       date: "2024-03-13",
     },
     {
       title:
-        "Active Participation of DJJS in Nakshatra Fair, 2024 at Pragati Maidan, New Delhi; motivated people for Spiritual Upliftment",
-      image: "https://www.djjs.org/uploads/news/im_65e135eca7254.jpg",
+        "Active Participation of Bhurijana Dasa in Nakshatra Fair, 2024 at Pragati Maidan, New Delhi; motivated people for Spiritual Upliftment",
+      image: "https://back2godhead.com/wp-content/uploads/2012/12/106_1975_10-10-32.jpg",
       link: "",
       date: "2024-03-01",
     },
     {
       title:
-        "DJJS Celebrated National Youth Day with an Awakening Call to the Youth at Rudrapur, Uttarakhand",
-      image: "https://www.djjs.org/uploads/news/im_65d5d58e376cd.jpg",
+        "Bhurijana Dasa Celebrated National Youth Day with an Awakening Call to the Youth at Rudrapur, Uttarakhand",
+      image: "https://i2.wp.com/www.kksblog.com/wp-content/uploads/2019/12/46144290_2234368186586813_5526730166639788032_o.jpg?resize=1536%2C1024&ssl=1",
       link: "",
       date: "2024-02-21",
     },
     {
       title:
-        "DJJS organized hundreds of spiritual and cultural programs across the world to commemorate the establishment of Shri Ram Temple",
-      image: "https://www.djjs.org/uploads/news/im_65f10d31d2d4f.jpg",
+        "Bhurijana Dasa organized hundreds of spiritual and cultural programs across the world to commemorate the establishment of Shri Ram Temple",
+      image: "https://i.ytimg.com/vi/eU16HHBUrHQ/maxresdefault.jpg",
       link: "",
       date: "2024-02-15",
     },
@@ -89,24 +90,58 @@ const Events = () => {
 
   const items = [
     {
-      imageUrl: "https://www.djjs.org/uploads/news/im_660a098258abb.jpg",
-      title:
-        "Shri Ram Katha satiated the thirst for Spiritual Knowledge in Kurukshetra, Haryana",
-      date: "April 1, 2024",
+      imageUrl:
+        "https://d16qttj5aycdv0.cloudfront.net/upload/activity/other_img/IMG_3074_1657076565.JPG",
+      title: "ISKCON Temples Abuzz with Spiritual Fervor on Janmashtami ",
+      date: "April 4, 2024",
       link: "",
       category: "upcoming", // Specify the category for this item
     },
 
     {
-      imageUrl: "https://www.djjs.org/uploads/news/im_660a098258abb.jpg",
-      title:
-        "Shri Ram Katha satiated the thirst for Spiritual Knowledge in Kurukshetra, Haryana",
-      date: "April 3, 2024",
+      imageUrl:
+        "https://d16qttj5aycdv0.cloudfront.net/upload/major_event/other_img/Diwali_New_Year_Celebration_at_Rajkot_Gurukul_(19)_1636199578.jpg",
+      title: "Embracing Divine Love: Radiant Revelry on Radhasthami",
+      date: "May 4, 2024",
       link: "",
-      category: "past", 
+      category: "past",
     },
-
-    
+    {
+      imageUrl:
+        "https://www.iskconbangalore.org/wp-content/uploads/2024/03/sp-initiation.jpg",
+      title:
+        "Golden Glow of Devotion: Gaura Purnima - Illuminating Hearts with Divine Grace",
+      date: "July 12, 2024",
+      link: "",
+      category: "past",
+    },
+    {
+      imageUrl:
+        "https://i.pinimg.com/originals/22/e2/f0/22e2f081a5303caab95a6050c20cea62.jpg",
+      title:
+        "Journey of Devotion: Ratha Yatra - Uniting Souls on the Chariot of Faith",
+      date: "September 42, 2024",
+      link: "",
+      category: "Retreats",
+    },
+    {
+      imageUrl:
+        "https://back2godhead.com/wp-content/uploads/2012/12/116_1976_11-09-3.jpg",
+      title:
+        "Divine Illumination: Diwali Festival in ISKCON - Sparkling Lights, Sacred Delights",
+      date: "July 5, 2024",
+      link: "",
+      category: "Alone",
+    },
+    {
+      imageUrl:
+        "https://back2godhead.com/wp-content/uploads/2012/12/116_1976_11-09-3.jpg",
+      title:
+        "Sheltered in Devotion: Govardhan Puja - Building Mountains of Love and Gratitude",
+      date: "May 17, 2024",
+      link: "",
+      category: "holy",
+    },
   ];
   const getFilteredItems = () => {
     if (activeTab === "all") {
@@ -274,26 +309,27 @@ const Events = () => {
                         Latest in Categories
                       </h3>
                     </a>
-                    <ul className="filter-list filter-list-inline size-md mb-0" id="portdolio-grid-1">
+                    <u className="filter-list filter-list-inline size-md mb-0" id="portdolio-grid-1">
   <li onClick={() => handleTabClick("all")} className={activeTab === "all" ? "is-checked" : ""}>
-    <span style={{ fontSize: "17px", fontWeight: "bold" ,color:"black" }}>All</span>
+    <span style={{ fontSize: "17px", fontWeight: "bold", color: "black" }}>All</span>
   </li>
   <li onClick={() => handleTabClick("upcoming")} className={activeTab === "upcoming" ? "is-checked" : ""}>
-    <span style={{ fontSize: "17px", fontWeight: "bold",color:"black" }}>upcoming</span>
+    <span style={{ fontSize: "17px", fontWeight: "bold", color: "black" }}>Upcoming</span>
   </li>
   <li onClick={() => handleTabClick("past")} className={activeTab === "past" ? "is-checked" : ""}>
-    <span style={{ fontSize: "17px", fontWeight: "bold" ,color:"black"}}>Past Events</span>
+    <span style={{ fontSize: "17px", fontWeight: "bold", color: "black" }}>Past Event</span>
   </li>
   <li onClick={() => handleTabClick("Retreats")} className={activeTab === "Retreats" ? "is-checked" : ""}>
-    <span style={{ fontSize: "17px", fontWeight: "bold" ,color:"black"}}>Retreats</span>
+    <span style={{ fontSize: "17px", fontWeight: "bold", color: "black" }}>Retreat</span>
   </li>
   <li onClick={() => handleTabClick("Alone")} className={activeTab === "Alone" ? "is-checked" : ""}>
-    <span style={{ fontSize: "17px", fontWeight: "bold",color:"black" }}>Alone with Krishna</span>
+    <span style={{ fontSize: "17px", fontWeight: "bold", color: "black" }}>Alone with Krishna</span>
   </li>
   <li onClick={() => handleTabClick("Holy")} className={activeTab === "Holy" ? "is-checked" : ""}>
-    <span style={{ fontSize: "17px", fontWeight: "bold" ,color:"black"}}>Holy Name Retreat</span>
+    <span style={{ fontSize: "17px", fontWeight: "bold", color: "black" }}>Holy Name Retreat</span>
   </li>
-</ul>
+</u>
+
 
                   </div>
                 </div>
@@ -401,7 +437,7 @@ const Events = () => {
                         className="ld-lazyload"
                         data-src="https://www.djjs.org/uploads/news/im_6617513a2c5f7.jpg"
                         alt="djjs news"
-                        src="https://www.djjs.org/uploads/news/im_6617513a2c5f7.jpg"
+                        src="https://storage.ning.com/topology/rest/1.0/file/get/2515282138?profile=original"
                       />
                     </figure>
                     <div className="fancy-box-contents">
@@ -410,29 +446,13 @@ const Events = () => {
                         <h3
                           className="font-size-30 lh-15"
                           style={{ fontSize: "24px !important" }}
-                        >
-                          Bhagwan Shiv Katha highlighted the vital requisite of
-                          attaining the Divine Knowledge in Jodhpur, Rajasthan
-                        </h3>
-                      </div>
-                      <div className="fancy-box-info">
-                        <p />
-                        <div className="fancy-box-footer">
-                          <a
-                            target="_blank"
-                            // href="news/bhagwan-shiv-katha-highlighted-the-vital-requisite-of-attaining-the-divine-knowledge-in-jodhpur-rajasthan.html"
-                            className="btn btn-naked text-uppercase text-white"
-                          >
-                            <span>
-                              <span className="btn-txt">Read more</span>
-                              <span className="btn-icon">
-                                <i className="icon-liquid_arrow_right" />
-                              </span>
-                            </span>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
+                       >
+                          Devotional singing, chanting of mantras, and group kirtan sessions are integral parts of temple activities. These sessions often involve traditional in truments like the mridanga drum and kartals.
+                          </h3>
+                       </div>
+  
+                
+                     </div>
                     <a
                       className="liquid-overlay-link z-index-3"
                       // href="news/bhagwan-shiv-katha-highlighted-the-vital-requisite-of-attaining-the-divine-knowledge-in-jodhpur-rajasthan.html"
@@ -455,7 +475,7 @@ const Events = () => {
                           className="ld-lazyload"
                           data-src="https://www.djjs.org/uploads/news/im_660a0a1b1991f.jpg"
                           alt="djjs news"
-                          src="https://www.djjs.org/uploads/news/im_66174c67e2a73.jpg"
+                          src="https://www.iskconbangalore.org/wp-content/uploads/2015/11/de05-816x544.jpg"
                         />
                       </figure>
                       <div className="fancy-box-contents">
@@ -465,23 +485,9 @@ const Events = () => {
                             Lord Ram at Rewar…
                           </h3>
                         </div>
-                        <div className="fancy-box-info">
-                          <p>&nbsp;</p>
-                          <div className="fancy-box-footer">
-                            <a
-                              // href="news/shri-ram-katha-reinvigorated-the-spiritual-legacy-of-lord-ram-at-rewari-haryana.html"
-                              className="btn btn-naked text-uppercase text-white"
-                            >
-                              <span>
-                                <span className="btn-txt">Read more</span>
-                                <span className="btn-icon">
-                                  <i className="icon-liquid_arrow_right" />
-                                </span>
-                              </span>
-                            </a>
-                          </div>
-                        </div>
-                      </div>
+  
+                   
+                       </div>
                       <a
                         className="liquid-overlay-link z-index-3"
                         // href="news/shri-ram-katha-reinvigorated-the-spiritual-legacy-of-lord-ram-at-rewari-haryana.html"
@@ -503,7 +509,7 @@ const Events = () => {
                           className="ld-lazyload"
                           data-src="https://www.djjs.org/uploads/news/im_660a098258abb.jpg"
                           alt="djjs news"
-                          src="https://www.djjs.org/uploads/news/im_6614f9f67e48b.jpg"
+                          src="https://i.ytimg.com/vi/hjwXeWnM7lA/maxresdefault.jpg"
                         />
                       </figure>
                       <div className="fancy-box-contents">
@@ -512,23 +518,8 @@ const Events = () => {
                             Shri Ram Katha satiated the thirst for Spiritual
                             Knowledge in Kurukshe…
                           </h3>
-                        </div>
-                        <div className="fancy-box-info">
-                          <p>&nbsp;</p>
-                          <div className="fancy-box-footer">
-                            <a
-                              // href="news/shri-ram-katha-satiated-the-thirst-for-spiritual-knowledge-in-kurukshetra-haryana.html"
-                              className="btn btn-naked text-uppercase text-white"
-                            >
-                              <span>
-                                <span className="btn-txt">Read more</span>
-                                <span className="btn-icon">
-                                  <i className="icon-liquid_arrow_right" />
-                                </span>
-                              </span>
-                            </a>
-                          </div>
-                        </div>
+                        </div
+                       >
                       </div>
                       <a
                         className="liquid-overlay-link z-index-3"
@@ -551,7 +542,7 @@ const Events = () => {
                           className="ld-lazyload"
                           data-src="https://www.djjs.org/uploads/news/im_65fa49f30b5e1.jpg"
                           alt="djjs news"
-                          src="https://www.djjs.org/uploads/news/im_660a0ad615b9f.jpg"
+                          src="https://live.staticflickr.com/6114/6210416427_6f0c5c2b6a_b.jpg"
                         />
                       </figure>
                       <div className="fancy-box-contents">
@@ -560,23 +551,8 @@ const Events = () => {
                             Bhagwan Shiv Katha Urges the people of Chhatarpur,
                             Delhi to perceive G…
                           </h3>
-                        </div>
-                        <div className="fancy-box-info">
-                          <p>&nbsp;</p>
-                          <div className="fancy-box-footer">
-                            <a
-                              // href="news/bhagwan-shiv-katha-urges-the-people-of-chhatarpur-delhi-to-perceive-god-through-divine-knowledge.html"
-                              className="btn btn-naked text-uppercase text-white"
-                            >
-                              <span>
-                                <span className="btn-txt">Read more</span>
-                                <span className="btn-icon">
-                                  <i className="icon-liquid_arrow_right" />
-                                </span>
-                              </span>
-                            </a>
-                          </div>
-                        </div>
+                        </div
+                     >
                       </div>
                       <a
                         className="liquid-overlay-link z-index-3"
@@ -599,32 +575,17 @@ const Events = () => {
                           className="ld-lazyload"
                           data-src="https://www.djjs.org/uploads/news/im_65e135eca7254.jpg"
                           alt="djjs news"
-                          src="https://www.djjs.org/uploads/news/im_660a0a1b1991f.jpg"
+                          src="https://www.iskconbangalore.org/wp-content/uploads/2015/11/de7-816x544.jpg"
                         />
                       </figure>
                       <div className="fancy-box-contents">
                         <div className="fancy-box-header">
                           <h3 className="t500">
-                            Active Participation of DJJS in Nakshatra Fair, 2024
+                            Active Participation of Bhurijana Dasa in Nakshatra Fair, 2024
                             at Pragati Maidan…
                           </h3>
-                        </div>
-                        <div className="fancy-box-info">
-                          <p>&nbsp;</p>
-                          <div className="fancy-box-footer">
-                            <a
-                              // href="news/djjs-active-participation-in-nakshatra-fair-2024-at-pragati-maidan-new-delhi-motivated-people-for-spiritual-upliftment.html"
-                              className="btn btn-naked text-uppercase text-white"
-                            >
-                              <span>
-                                <span className="btn-txt">Read more</span>
-                                <span className="btn-icon">
-                                  <i className="icon-liquid_arrow_right" />
-                                </span>
-                              </span>
-                            </a>
-                          </div>
-                        </div>
+                        </div
+                       >
                       </div>
                       <a
                         className="liquid-overlay-link z-index-3"
