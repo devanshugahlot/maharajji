@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { FaMinusCircle, FaPlusCircle } from "react-icons/fa";
 import { MdAddCircle, MdRemoveCircle } from "react-icons/md";
-import './event.css'
+import "./event.css";
 const Events = () => {
   const [isExpanded, setIsExpanded] = useState(false);
   const [isopen, setIsopen] = useState(false);
@@ -20,38 +20,40 @@ const Events = () => {
     setIsopen(!isopen);
   };
   const handleCategoryClick = (category) => {
-    setActiveTab(category);    
+    setActiveTab(category);
   };
-
- 
 
   const workshops = [
     {
       title:
         "Youth Empowerment Takes Center Stage: SAM Shines at Yuva Utsav India@2047",
-        image: "https://back2godhead.com/wp-content/uploads/2012/12/117_1976_11-10-29.jpg",
-      
+      image:
+        "https://back2godhead.com/wp-content/uploads/2012/12/117_1976_11-10-29.jpg",
+
       link: "",
       date: "2024-03-20",
     },
     {
       title:
         "Unique Workshop on Mental Health Held by PEACE Program for Working Professionals",
-      image: "https://krots.top/uploads/posts/2022-03/1647120856_27-krot-info-p-krishnaiti-prikol-smeshnie-foto-29.jpg",
+      image:
+        "https://krots.top/uploads/posts/2022-03/1647120856_27-krot-info-p-krishnaiti-prikol-smeshnie-foto-29.jpg",
       link: "",
       date: "2024-02-15",
     },
     {
       title:
         "SAM Hosts Grand National Youth Day Celebration at Central Park, Connaught Place",
-      image: "https://krishna.org/wp-content/uploads/2005/07/Srila-Prabhupada-and-Hansadutta-talk-on-morning-walk.jpg",
+      image:
+        "https://krishna.org/wp-content/uploads/2005/07/Srila-Prabhupada-and-Hansadutta-talk-on-morning-walk.jpg",
       link: "",
       date: "2024-01-22",
     },
     {
       title:
         "PEACE inspires corporate minds in a unique workshop on Psychology of Relationships",
-        image: "https://krishna.org/wp-content/uploads/2016/03/ISKCON-Portland-Devotees-1976.jpg",
+      image:
+        "https://krishna.org/wp-content/uploads/2016/03/ISKCON-Portland-Devotees-1976.jpg",
       link: "",
       date: "2024-01-14",
     },
@@ -61,21 +63,24 @@ const Events = () => {
     {
       title:
         "Theology of Divine Science unveiled at Spiritual Forum organized by DJJS at London, UK",
-      image: "https://avatars.mds.yandex.net/get-altay/1778671/2a000001861d3c88040eb3a8a28884402153/orig",
+      image:
+        "https://avatars.mds.yandex.net/get-altay/1778671/2a000001861d3c88040eb3a8a28884402153/orig",
       link: "",
       date: "2024-03-13",
     },
     {
       title:
         "Active Participation of Bhurijana Dasa in Nakshatra Fair, 2024 at Pragati Maidan, New Delhi; motivated people for Spiritual Upliftment",
-      image: "https://back2godhead.com/wp-content/uploads/2012/12/106_1975_10-10-32.jpg",
+      image:
+        "https://back2godhead.com/wp-content/uploads/2012/12/106_1975_10-10-32.jpg",
       link: "",
       date: "2024-03-01",
     },
     {
       title:
         "Bhurijana Dasa Celebrated National Youth Day with an Awakening Call to the Youth at Rudrapur, Uttarakhand",
-      image: "https://i2.wp.com/www.kksblog.com/wp-content/uploads/2019/12/46144290_2234368186586813_5526730166639788032_o.jpg?resize=1536%2C1024&ssl=1",
+      image:
+        "https://i2.wp.com/www.kksblog.com/wp-content/uploads/2019/12/46144290_2234368186586813_5526730166639788032_o.jpg?resize=1536%2C1024&ssl=1",
       link: "",
       date: "2024-02-21",
     },
@@ -309,28 +314,95 @@ const Events = () => {
                         Latest in Categories
                       </h3>
                     </a>
-                    <u className="filter-list filter-list-inline size-md mb-0" id="portdolio-grid-1">
-  <li onClick={() => handleTabClick("all")} className={activeTab === "all" ? "is-checked" : ""}>
-    <span style={{ fontSize: "17px", fontWeight: "bold", color: "black" }}>All</span>
-  </li>
-  <li onClick={() => handleTabClick("upcoming")} className={activeTab === "upcoming" ? "is-checked" : ""}>
-    <span style={{ fontSize: "17px", fontWeight: "bold", color: "black" }}>Upcoming</span>
-  </li>
-  <li onClick={() => handleTabClick("past")} className={activeTab === "past" ? "is-checked" : ""}>
-    <span style={{ fontSize: "17px", fontWeight: "bold", color: "black" }}>Past Event</span>
-  </li>
-  <li onClick={() => handleTabClick("Retreats")} className={activeTab === "Retreats" ? "is-checked" : ""}>
-    <span style={{ fontSize: "17px", fontWeight: "bold", color: "black" }}>Retreat</span>
-  </li>
-  <li onClick={() => handleTabClick("Alone")} className={activeTab === "Alone" ? "is-checked" : ""}>
-    <span style={{ fontSize: "17px", fontWeight: "bold", color: "black" }}>Alone with Krishna</span>
-  </li>
-  <li onClick={() => handleTabClick("Holy")} className={activeTab === "Holy" ? "is-checked" : ""}>
-    <span style={{ fontSize: "17px", fontWeight: "bold", color: "black" }}>Holy Name Retreat</span>
-  </li>
-</u>
-
-
+                    <u
+                      className="filter-list filter-list-inline size-md mb-0"
+                      id="portdolio-grid-1"
+                    >
+                      <li
+                        onClick={() => handleTabClick("all")}
+                        className={activeTab === "all" ? "is-checked" : ""}
+                      >
+                        <span
+                          style={{
+                            fontSize: "17px",
+                            fontWeight: "bold",
+                            color: "black",
+                          }}
+                        >
+                          All
+                        </span>
+                      </li>
+                      <li
+                        onClick={() => handleTabClick("upcoming")}
+                        className={activeTab === "upcoming" ? "is-checked" : ""}
+                      >
+                        <span
+                          style={{
+                            fontSize: "17px",
+                            fontWeight: "bold",
+                            color: "black",
+                          }}
+                        >
+                          Upcoming
+                        </span>
+                      </li>
+                      <li
+                        onClick={() => handleTabClick("past")}
+                        className={activeTab === "past" ? "is-checked" : ""}
+                      >
+                        <span
+                          style={{
+                            fontSize: "17px",
+                            fontWeight: "bold",
+                            color: "black",
+                          }}
+                        >
+                          Past Event
+                        </span>
+                      </li>
+                      <li
+                        onClick={() => handleTabClick("Retreats")}
+                        className={activeTab === "Retreats" ? "is-checked" : ""}
+                      >
+                        <span
+                          style={{
+                            fontSize: "17px",
+                            fontWeight: "bold",
+                            color: "black",
+                          }}
+                        >
+                          Retreat
+                        </span>
+                      </li>
+                      <li
+                        onClick={() => handleTabClick("Alone")}
+                        className={activeTab === "Alone" ? "is-checked" : ""}
+                      >
+                        <span
+                          style={{
+                            fontSize: "17px",
+                            fontWeight: "bold",
+                            color: "black",
+                          }}
+                        >
+                          Alone with Krishna
+                        </span>
+                      </li>
+                      <li
+                        onClick={() => handleTabClick("Holy")}
+                        className={activeTab === "Holy" ? "is-checked" : ""}
+                      >
+                        <span
+                          style={{
+                            fontSize: "17px",
+                            fontWeight: "bold",
+                            color: "black",
+                          }}
+                        >
+                          Holy Name Retreat
+                        </span>
+                      </li>
+                    </u>
                   </div>
                 </div>
               </div>
@@ -376,31 +448,32 @@ const Events = () => {
                   </div>
                 )} */}
                 {getFilteredItems().map((item, index) => (
-                  <div className="col_one_third mb-xs" key={index}>
-                    <div className="ipost clearfix">
-                      <div className="entry-image mb-10">
-                        <a className="img_scale" href={item.link}>
-                          <img
-                            className="image_fade ld-lazyload"
-                            data-src={item.imageUrl}
-                            alt={item.title}
-                            src={item.imageUrl}
-                          />
-                        </a>
-                      </div>
-                      <div className="entry-title">
-                        <h4 className="font-size-22 font-weight-semibold">
-                          <a href={item.link}>{item.title}</a>
-                        </h4>
-                      </div>
-                      <time
-                        className="liquid-lp-date text-uppercase ltr-sp-1 my-0"
-                        dateTime={item.date}
-                      >
-                        {item.date}
-                      </time>
-                    </div>
-                  </div>
+                 <div className="col_one_third mb-xs" key={index}>
+                 <div className="ipost clearfix">
+                   <div className="entry-image mb-10">
+                     <a className="img_scale" href={item.link}>
+                       <img
+                         className="image_fade ld-lazyload img-fluid" // added img-fluid class
+                         data-src={item.imageUrl}
+                         alt={item.title}
+                         src={item.imageUrl}
+                       />
+                     </a>
+                   </div>
+                   <div className="entry-title">
+                     <h4 className="font-size-22 font-weight-semibold">
+                       <a href={item.link}>{item.title}</a>
+                     </h4>
+                   </div>
+                   <time
+                     className="liquid-lp-date text-uppercase ltr-sp-1 my-0"
+                     dateTime={item.date}
+                   >
+                     {item.date}
+                   </time>
+                 </div>
+               </div>
+               
                 ))}
               </div>
               <div className="clear" />
@@ -446,13 +519,14 @@ const Events = () => {
                         <h3
                           className="font-size-30 lh-15"
                           style={{ fontSize: "24px !important" }}
-                       >
-                          Devotional singing, chanting of mantras, and group kirtan sessions are integral parts of temple activities. These sessions often involve traditional in truments like the mridanga drum and kartals.
-                          </h3>
-                       </div>
-  
-                
-                     </div>
+                        >
+                          Devotional singing, chanting of mantras, and group
+                          kirtan sessions are integral parts of temple
+                          activities. These sessions often involve traditional
+                          in truments like the mridanga drum and kartals.
+                        </h3>
+                      </div>
+                    </div>
                     <a
                       className="liquid-overlay-link z-index-3"
                       // href="news/bhagwan-shiv-katha-highlighted-the-vital-requisite-of-attaining-the-divine-knowledge-in-jodhpur-rajasthan.html"
@@ -485,9 +559,7 @@ const Events = () => {
                             Lord Ram at Rewar…
                           </h3>
                         </div>
-  
-                   
-                       </div>
+                      </div>
                       <a
                         className="liquid-overlay-link z-index-3"
                         // href="news/shri-ram-katha-reinvigorated-the-spiritual-legacy-of-lord-ram-at-rewari-haryana.html"
@@ -518,8 +590,7 @@ const Events = () => {
                             Shri Ram Katha satiated the thirst for Spiritual
                             Knowledge in Kurukshe…
                           </h3>
-                        </div
-                       >
+                        </div>
                       </div>
                       <a
                         className="liquid-overlay-link z-index-3"
@@ -551,8 +622,7 @@ const Events = () => {
                             Bhagwan Shiv Katha Urges the people of Chhatarpur,
                             Delhi to perceive G…
                           </h3>
-                        </div
-                     >
+                        </div>
                       </div>
                       <a
                         className="liquid-overlay-link z-index-3"
@@ -581,11 +651,10 @@ const Events = () => {
                       <div className="fancy-box-contents">
                         <div className="fancy-box-header">
                           <h3 className="t500">
-                            Active Participation of Bhurijana Dasa in Nakshatra Fair, 2024
-                            at Pragati Maidan…
+                            Active Participation of Bhurijana Dasa in Nakshatra
+                            Fair, 2024 at Pragati Maidan…
                           </h3>
-                        </div
-                       >
+                        </div>
                       </div>
                       <a
                         className="liquid-overlay-link z-index-3"
